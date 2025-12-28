@@ -341,7 +341,7 @@ function App() {
               </a>
 
               <a
-                href="https://www.linkedin.com/in/toka-gamal-b81a67242"
+                href="https://www.linkedin.com/in/tokagabr/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-semibold transition-all transform hover:scale-105 shadow-lg hover:shadow-blue-500/50"
