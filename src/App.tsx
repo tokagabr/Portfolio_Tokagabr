@@ -40,7 +40,7 @@ function App() {
                 Data Analyst | Business Analyst
               </h2>
               <p className="text-lg text-gray-400 mb-8 leading-relaxed">
-                Transforming complex data into actionable insights that drive KPI performance and support data-driven decision-making for stakeholders.
+              Turning data into insights that tell a story and drive smarter decisions.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
                 <a
@@ -70,8 +70,8 @@ function App() {
           <h2 className="text-4xl font-bold text-center mb-12 text-teal-400">About Me</h2>
           <div className="max-w-4xl mx-auto">
             <p className="text-xl text-gray-300 leading-relaxed text-center">
-              Entry-Level Data & Business Analyst with strong expertise in BI dashboards, data analysis, and business process optimization.
-              Skilled in translating business requirements into actionable insights that support data-driven decision-making for stakeholders.
+             Hi, I’m Toka! I’m passionate about exploring data and uncovering the stories it hides. I enjoy transforming raw numbers into meaningful insights, creating interactive BI dashboards, and finding smarter ways to improve business processes. 
+              I thrive on solving problems with data and helping teams make confident, informed decisions.
             </p>
           </div>
         </div>
