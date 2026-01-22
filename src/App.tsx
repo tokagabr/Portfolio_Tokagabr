@@ -1,4 +1,4 @@
-import { Mail, Linkedin, Github, Download, ExternalLink, ChevronDown } from 'lucide-react';
+import { Mail, Linkedin, Github, Download, ExternalLink, ChevronDown, Database, BarChart3, Code, Network, Brain, Target } from 'lucide-react';
 import profileImage from './assets/images/1.png';
 
 function App() {
@@ -40,7 +40,7 @@ function App() {
                 Data Analyst | Business Analyst
               </h2>
               <p className="text-lg text-gray-400 mb-8 leading-relaxed">
-              Turning data into insights that tell a story and drive smarter decisions.
+                Transforming complex data into actionable insights that drive KPI performance and support data-driven decision-making for stakeholders.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
                 <a
@@ -51,7 +51,7 @@ function App() {
                   <ChevronDown className="w-5 h-5" />
                 </a>
                 <a
-                  href="https://drive.google.com/file/d/1Sex3mouUveOFy70vyBB2sSUgVeowEDy0/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1Zkw6SMRpAQXBwRq6IbpyGgnV-v3_TTQv/view?usp=sharing"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-8 py-3 bg-gray-800 hover:bg-gray-700 text-white rounded-lg font-semibold transition-all transform hover:scale-105 border border-gray-700 hover:border-teal-400 flex items-center justify-center gap-2"
@@ -70,8 +70,8 @@ function App() {
           <h2 className="text-4xl font-bold text-center mb-12 text-teal-400">About Me</h2>
           <div className="max-w-4xl mx-auto">
             <p className="text-xl text-gray-300 leading-relaxed text-center">
-             Hi, I’m Toka! I’m passionate about exploring data and uncovering the stories it hides. I enjoy transforming raw numbers into meaningful insights, creating interactive BI dashboards, and finding smarter ways to improve business processes. 
-              I thrive on solving problems with data and helping teams make confident, informed decisions.
+              Entry-Level Data & Business Analyst with strong expertise in BI dashboards, data analysis, and business process optimization.
+              Skilled in translating business requirements into actionable insights that support data-driven decision-making for stakeholders.
             </p>
           </div>
         </div>
@@ -81,9 +81,9 @@ function App() {
         <div className="container mx-auto px-6">
           <h2 className="text-4xl font-bold text-center mb-16 text-teal-400">Skills & Expertise</h2>
 
-          <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             <div className="bg-gray-800/50 p-8 rounded-xl border border-gray-700 hover:border-teal-400 transition-all hover:shadow-lg hover:shadow-teal-500/20">
-              <h3 className="text-2xl font-bold mb-6 text-teal-400">Business Analysis</h3>
+              <h3 className="text-2xl font-bold mb-6 text-teal-400">Business Analysis / Soft Skills</h3>
               <ul className="space-y-3">
                 <li className="flex items-start gap-3">
                   <span className="text-teal-400 mt-1">▸</span>
@@ -127,12 +127,6 @@ function App() {
                   <span className="text-teal-400 mt-1">▸</span>
                   <span className="text-gray-300">Excel (Advanced Functions, Dashboards)</span>
                 </li>
-              </ul>
-            </div>
-
-            <div className="bg-gray-800/50 p-8 rounded-xl border border-gray-700 hover:border-teal-400 transition-all hover:shadow-lg hover:shadow-teal-500/20">
-              <h3 className="text-2xl font-bold mb-6 text-teal-400">Technical</h3>
-              <ul className="space-y-3">
                 <li className="flex items-start gap-3">
                   <span className="text-teal-400 mt-1">▸</span>
                   <span className="text-gray-300">SQL</span>
@@ -141,6 +135,38 @@ function App() {
                   <span className="text-teal-400 mt-1">▸</span>
                   <span className="text-gray-300">Python (Pandas, NumPy, Matplotlib)</span>
                 </li>
+              </ul>
+            </div>
+
+            <div className="bg-gray-800/50 p-8 rounded-xl border border-gray-700 hover:border-teal-400 transition-all hover:shadow-lg hover:shadow-teal-500/20">
+              <h3 className="text-2xl font-bold mb-6 text-teal-400">Programming & Web</h3>
+              <ul className="space-y-3">
+                <li className="flex items-start gap-3">
+                  <span className="text-teal-400 mt-1">▸</span>
+                  <span className="text-gray-300">C++</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-teal-400 mt-1">▸</span>
+                  <span className="text-gray-300">Java</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-teal-400 mt-1">▸</span>
+                  <span className="text-gray-300">HTML</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-teal-400 mt-1">▸</span>
+                  <span className="text-gray-300">CSS</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-teal-400 mt-1">▸</span>
+                  <span className="text-gray-300">WordPress</span>
+                </li>
+              </ul>
+            </div>
+
+            <div className="bg-gray-800/50 p-8 rounded-xl border border-gray-700 hover:border-teal-400 transition-all hover:shadow-lg hover:shadow-teal-500/20">
+              <h3 className="text-2xl font-bold mb-6 text-teal-400">Technical</h3>
+              <ul className="space-y-3">
                 <li className="flex items-start gap-3">
                   <span className="text-teal-400 mt-1">▸</span>
                   <span className="text-gray-300">SQL Server</span>
@@ -152,6 +178,36 @@ function App() {
                 <li className="flex items-start gap-3">
                   <span className="text-teal-400 mt-1">▸</span>
                   <span className="text-gray-300">MySQL</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-teal-400 mt-1">▸</span>
+                  <span className="text-gray-300">Networking Basics</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-teal-400 mt-1">▸</span>
+                  <span className="text-gray-300">Windows Server</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-teal-400 mt-1">▸</span>
+                  <span className="text-gray-300">CCNA & CCNB Concepts</span>
+                </li>
+              </ul>
+            </div>
+
+            <div className="bg-gray-800/50 p-8 rounded-xl border border-gray-700 hover:border-teal-400 transition-all hover:shadow-lg hover:shadow-teal-500/20">
+              <h3 className="text-2xl font-bold mb-6 text-teal-400">AI / Emerging Tech</h3>
+              <ul className="space-y-3">
+                <li className="flex items-start gap-3">
+                  <span className="text-teal-400 mt-1">▸</span>
+                  <span className="text-gray-300">ChatGPT</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-teal-400 mt-1">▸</span>
+                  <span className="text-gray-300">Copilot</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-teal-400 mt-1">▸</span>
+                  <span className="text-gray-300">AI-assisted Workflow Automation</span>
                 </li>
               </ul>
             </div>
@@ -183,11 +239,24 @@ function App() {
 
           <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
             <div className="bg-gray-900 rounded-xl overflow-hidden border border-gray-700 hover:border-teal-400 transition-all hover:shadow-xl hover:shadow-teal-500/20 transform hover:-translate-y-2">
-              <div className="h-64 bg-gradient-to-br from-red-900 to-black flex items-center justify-center">
-                <div className="text-center">
-                  <div className="text-8xl font-bold text-red-600 mb-4">N</div>
-                  <p className="text-red-400 text-xl font-semibold">NETFLIX</p>
-                </div>
+              <div className="h-64 relative overflow-hidden">
+                <img 
+                  src="https://raw.githubusercontent.com/tokagabr/netflix-dashboard/main/netflix-dashboard-preview.png" 
+                  alt="Netflix Dashboard" 
+                  className="w-full h-full object-cover"
+                  onError={(e) => {
+                    e.target.style.display = 'none';
+                    e.target.parentElement.innerHTML = `
+                      <div class="h-64 bg-gradient-to-br from-red-900 to-black flex items-center justify-center">
+                        <div class="text-center">
+                          <div class="text-8xl font-bold text-red-600 mb-4">N</div>
+                          <p class="text-red-400 text-xl font-semibold">NETFLIX</p>
+                        </div>
+                      </div>
+                    `;
+                  }}
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent"></div>
               </div>
               <div className="p-6">
                 <h3 className="text-2xl font-bold mb-3 text-white">Netflix Content Analytics Dashboard</h3>
@@ -206,11 +275,24 @@ function App() {
             </div>
 
             <div className="bg-gray-900 rounded-xl overflow-hidden border border-gray-700 hover:border-teal-400 transition-all hover:shadow-xl hover:shadow-teal-500/20 transform hover:-translate-y-2">
-              <div className="h-64 bg-gradient-to-br from-green-900 to-black flex items-center justify-center">
-                <div className="text-center">
-                  <div className="text-6xl font-bold text-green-500 mb-4">UBER</div>
-                  <p className="text-green-400 text-xl font-semibold">EATS</p>
-                </div>
+              <div className="h-64 relative overflow-hidden">
+                <img 
+                  src="https://raw.githubusercontent.com/tokagabr/uber-eats-analysis/main/uber-eats-dashboard-preview.png" 
+                  alt="Uber Eats Dashboard" 
+                  className="w-full h-full object-cover"
+                  onError={(e) => {
+                    e.target.style.display = 'none';
+                    e.target.parentElement.innerHTML = `
+                      <div class="h-64 bg-gradient-to-br from-green-900 to-black flex items-center justify-center">
+                        <div class="text-center">
+                          <div class="text-6xl font-bold text-green-500 mb-4">UBER</div>
+                          <p class="text-green-400 text-xl font-semibold">EATS</p>
+                        </div>
+                      </div>
+                    `;
+                  }}
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent"></div>
               </div>
               <div className="p-6">
                 <h3 className="text-2xl font-bold mb-3 text-white">Uber Eats Analytics Dashboard</h3>
@@ -224,6 +306,78 @@ function App() {
                 >
                   <ExternalLink className="w-5 h-5" />
                   View Full Analysis on GitHub
+                </a>
+              </div>
+            </div>
+
+            <div className="bg-gray-900 rounded-xl overflow-hidden border border-gray-700 hover:border-teal-400 transition-all hover:shadow-xl hover:shadow-teal-500/20 transform hover:-translate-y-2">
+              <div className="h-64 relative overflow-hidden">
+                <img 
+                  src="https://raw.githubusercontent.com/tokagabr/SQL-Queries-School-System/main/sql-school-database-preview.png" 
+                  alt="SQL School Database" 
+                  className="w-full h-full object-cover"
+                  onError={(e) => {
+                    e.target.style.display = 'none';
+                    e.target.parentElement.innerHTML = `
+                      <div class="h-64 bg-gradient-to-br from-blue-900 to-black flex items-center justify-center">
+                        <div class="text-center">
+                          <div class="text-6xl font-bold text-blue-500 mb-4">SQL</div>
+                          <p class="text-blue-400 text-xl font-semibold">SCHOOL</p>
+                        </div>
+                      </div>
+                    `;
+                  }}
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent"></div>
+              </div>
+              <div className="p-6">
+                <h3 className="text-2xl font-bold mb-3 text-white">SQL Practice – School Database</h3>
+                <p className="text-gray-400 mb-4">SQL practice database applying core and advanced concepts including SELECT, JOINs, GROUP BY, Subqueries, and real business scenarios for school system management.</p>
+                <span className="inline-block px-3 py-1 bg-gray-800 text-teal-400 rounded-full text-sm mb-4">2025</span>
+                <a
+                  href="https://github.com/tokagabr/SQL-Queries-School-System"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 text-teal-400 hover:text-teal-300 transition-colors font-semibold"
+                >
+                  <ExternalLink className="w-5 h-5" />
+                  View Project on GitHub
+                </a>
+              </div>
+            </div>
+
+            <div className="bg-gray-900 rounded-xl overflow-hidden border border-gray-700 hover:border-teal-400 transition-all hover:shadow-xl hover:shadow-teal-500/20 transform hover:-translate-y-2">
+              <div className="h-64 relative overflow-hidden">
+                <img 
+                  src="https://raw.githubusercontent.com/tokagabr/Service-Channel-ROI-Analysis/main/handypro-roi-analysis-preview.png" 
+                  alt="HandyPro ROI Analysis" 
+                  className="w-full h-full object-cover"
+                  onError={(e) => {
+                    e.target.style.display = 'none';
+                    e.target.parentElement.innerHTML = `
+                      <div class="h-64 bg-gradient-to-br from-purple-900 to-black flex items-center justify-center">
+                        <div class="text-center">
+                          <div class="text-6xl font-bold text-purple-500 mb-4">ROI</div>
+                          <p class="text-purple-400 text-xl font-semibold">ANALYSIS</p>
+                        </div>
+                      </div>
+                    `;
+                  }}
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent"></div>
+              </div>
+              <div className="p-6">
+                <h3 className="text-2xl font-bold mb-3 text-white">HandyPro Lead Value Analysis</h3>
+                <p className="text-gray-400 mb-4">Comprehensive analysis of services and channels driving the most valuable leads for HandyPro Hub, evaluating urgency, seasonality, and customer segments to optimize lead management and marketing ROI.</p>
+                <span className="inline-block px-3 py-1 bg-gray-800 text-teal-400 rounded-full text-sm mb-4">2025</span>
+                <a
+                  href="https://github.com/tokagabr/Service-Channel-ROI-Analysis/tree/main"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 text-teal-400 hover:text-teal-300 transition-colors font-semibold"
+                >
+                  <ExternalLink className="w-5 h-5" />
+                  View Project on GitHub
                 </a>
               </div>
             </div>
