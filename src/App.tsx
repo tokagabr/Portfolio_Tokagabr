@@ -84,150 +84,150 @@ function App() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             <div className="bg-gray-800/50 p-8 rounded-xl border border-gray-700 hover:border-teal-400 transition-all hover:shadow-lg hover:shadow-teal-500/20">
               <h3 className="text-2xl font-bold mb-6 text-teal-400">Business Analysis / Soft Skills</h3>
-              <ul className="space-y-3">
-                <li className="flex items-start gap-3">
-                  <span className="text-teal-400 mt-1">▸</span>
-                  <span className="text-gray-300">Requirements Gathering</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-teal-400 mt-1">▸</span>
-                  <span className="text-gray-300">Process Optimization</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-teal-400 mt-1">▸</span>
-                  <span className="text-gray-300">Workflow Mapping</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-teal-400 mt-1">▸</span>
-                  <span className="text-gray-300">KPI Definition</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-teal-400 mt-1">▸</span>
-                  <span className="text-gray-300">Stakeholder Communication</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-teal-400 mt-1">▸</span>
-                  <span className="text-gray-300">Gap Analysis</span>
-                </li>
-              </ul>
+              <div className="grid grid-cols-3 gap-4">
+                <div className="flex flex-col items-center p-3 bg-gray-900/50 rounded-lg hover:bg-gray-900 transition-colors">
+                  <Target className="w-8 h-8 text-teal-400 mb-2" />
+                  <span className="text-xs text-gray-300 text-center">Requirements</span>
+                </div>
+                <div className="flex flex-col items-center p-3 bg-gray-900/50 rounded-lg hover:bg-gray-900 transition-colors">
+                  <Brain className="w-8 h-8 text-teal-400 mb-2" />
+                  <span className="text-xs text-gray-300 text-center">Optimization</span>
+                </div>
+                <div className="flex flex-col items-center p-3 bg-gray-900/50 rounded-lg hover:bg-gray-900 transition-colors">
+                  <Network className="w-8 h-8 text-teal-400 mb-2" />
+                  <span className="text-xs text-gray-300 text-center">Workflows</span>
+                </div>
+                <div className="flex flex-col items-center p-3 bg-gray-900/50 rounded-lg hover:bg-gray-900 transition-colors">
+                  <BarChart3 className="w-8 h-8 text-teal-400 mb-2" />
+                  <span className="text-xs text-gray-300 text-center">KPIs</span>
+                </div>
+                <div className="flex flex-col items-center p-3 bg-gray-900/50 rounded-lg hover:bg-gray-900 transition-colors">
+                  <Target className="w-8 h-8 text-teal-400 mb-2" />
+                  <span className="text-xs text-gray-300 text-center">Communication</span>
+                </div>
+                <div className="flex flex-col items-center p-3 bg-gray-900/50 rounded-lg hover:bg-gray-900 transition-colors">
+                  <Brain className="w-8 h-8 text-teal-400 mb-2" />
+                  <span className="text-xs text-gray-300 text-center">Gap Analysis</span>
+                </div>
+              </div>
             </div>
 
             <div className="bg-gray-800/50 p-8 rounded-xl border border-gray-700 hover:border-teal-400 transition-all hover:shadow-lg hover:shadow-teal-500/20">
               <h3 className="text-2xl font-bold mb-6 text-teal-400">Data & BI</h3>
-              <ul className="space-y-3">
-                <li className="flex items-start gap-3">
-                  <span className="text-teal-400 mt-1">▸</span>
-                  <span className="text-gray-300">Power BI (DAX, Power Query, Data Modeling)</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-teal-400 mt-1">▸</span>
-                  <span className="text-gray-300">Tableau</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-teal-400 mt-1">▸</span>
-                  <span className="text-gray-300">Excel (Advanced Functions, Dashboards)</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-teal-400 mt-1">▸</span>
-                  <span className="text-gray-300">SQL</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-teal-400 mt-1">▸</span>
-                  <span className="text-gray-300">Python (Pandas, NumPy, Matplotlib)</span>
-                </li>
-              </ul>
+              <div className="grid grid-cols-3 gap-4">
+                <div className="flex flex-col items-center p-3 bg-gray-900/50 rounded-lg hover:bg-gray-900 transition-colors">
+                  <BarChart3 className="w-8 h-8 text-teal-400 mb-2" />
+                  <span className="text-xs text-gray-300 text-center">Power BI</span>
+                </div>
+                <div className="flex flex-col items-center p-3 bg-gray-900/50 rounded-lg hover:bg-gray-900 transition-colors">
+                  <Database className="w-8 h-8 text-teal-400 mb-2" />
+                  <span className="text-xs text-gray-300 text-center">Tableau</span>
+                </div>
+                <div className="flex flex-col items-center p-3 bg-gray-900/50 rounded-lg hover:bg-gray-900 transition-colors">
+                  <BarChart3 className="w-8 h-8 text-teal-400 mb-2" />
+                  <span className="text-xs text-gray-300 text-center">Excel</span>
+                </div>
+                <div className="flex flex-col items-center p-3 bg-gray-900/50 rounded-lg hover:bg-gray-900 transition-colors">
+                  <Database className="w-8 h-8 text-teal-400 mb-2" />
+                  <span className="text-xs text-gray-300 text-center">SQL</span>
+                </div>
+                <div className="flex flex-col items-center p-3 bg-gray-900/50 rounded-lg hover:bg-gray-900 transition-colors">
+                  <Code className="w-8 h-8 text-teal-400 mb-2" />
+                  <span className="text-xs text-gray-300 text-center">Python</span>
+                </div>
+              </div>
             </div>
 
             <div className="bg-gray-800/50 p-8 rounded-xl border border-gray-700 hover:border-teal-400 transition-all hover:shadow-lg hover:shadow-teal-500/20">
               <h3 className="text-2xl font-bold mb-6 text-teal-400">Programming & Web</h3>
-              <ul className="space-y-3">
-                <li className="flex items-start gap-3">
-                  <span className="text-teal-400 mt-1">▸</span>
-                  <span className="text-gray-300">C++</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-teal-400 mt-1">▸</span>
-                  <span className="text-gray-300">Java</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-teal-400 mt-1">▸</span>
-                  <span className="text-gray-300">HTML</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-teal-400 mt-1">▸</span>
-                  <span className="text-gray-300">CSS</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-teal-400 mt-1">▸</span>
-                  <span className="text-gray-300">WordPress</span>
-                </li>
-              </ul>
+              <div className="grid grid-cols-3 gap-4">
+                <div className="flex flex-col items-center p-3 bg-gray-900/50 rounded-lg hover:bg-gray-900 transition-colors">
+                  <Code className="w-8 h-8 text-teal-400 mb-2" />
+                  <span className="text-xs text-gray-300 text-center">C++</span>
+                </div>
+                <div className="flex flex-col items-center p-3 bg-gray-900/50 rounded-lg hover:bg-gray-900 transition-colors">
+                  <Code className="w-8 h-8 text-teal-400 mb-2" />
+                  <span className="text-xs text-gray-300 text-center">Java</span>
+                </div>
+                <div className="flex flex-col items-center p-3 bg-gray-900/50 rounded-lg hover:bg-gray-900 transition-colors">
+                  <Code className="w-8 h-8 text-teal-400 mb-2" />
+                  <span className="text-xs text-gray-300 text-center">HTML</span>
+                </div>
+                <div className="flex flex-col items-center p-3 bg-gray-900/50 rounded-lg hover:bg-gray-900 transition-colors">
+                  <Code className="w-8 h-8 text-teal-400 mb-2" />
+                  <span className="text-xs text-gray-300 text-center">CSS</span>
+                </div>
+                <div className="flex flex-col items-center p-3 bg-gray-900/50 rounded-lg hover:bg-gray-900 transition-colors">
+                  <Code className="w-8 h-8 text-teal-400 mb-2" />
+                  <span className="text-xs text-gray-300 text-center">WordPress</span>
+                </div>
+              </div>
             </div>
 
             <div className="bg-gray-800/50 p-8 rounded-xl border border-gray-700 hover:border-teal-400 transition-all hover:shadow-lg hover:shadow-teal-500/20">
               <h3 className="text-2xl font-bold mb-6 text-teal-400">Technical</h3>
-              <ul className="space-y-3">
-                <li className="flex items-start gap-3">
-                  <span className="text-teal-400 mt-1">▸</span>
-                  <span className="text-gray-300">SQL Server</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-teal-400 mt-1">▸</span>
-                  <span className="text-gray-300">PostgreSQL</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-teal-400 mt-1">▸</span>
-                  <span className="text-gray-300">MySQL</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-teal-400 mt-1">▸</span>
-                  <span className="text-gray-300">Networking Basics</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-teal-400 mt-1">▸</span>
-                  <span className="text-gray-300">Windows Server</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-teal-400 mt-1">▸</span>
-                  <span className="text-gray-300">CCNA & CCNB Concepts</span>
-                </li>
-              </ul>
+              <div className="grid grid-cols-3 gap-4">
+                <div className="flex flex-col items-center p-3 bg-gray-900/50 rounded-lg hover:bg-gray-900 transition-colors">
+                  <Database className="w-8 h-8 text-teal-400 mb-2" />
+                  <span className="text-xs text-gray-300 text-center">SQL Server</span>
+                </div>
+                <div className="flex flex-col items-center p-3 bg-gray-900/50 rounded-lg hover:bg-gray-900 transition-colors">
+                  <Database className="w-8 h-8 text-teal-400 mb-2" />
+                  <span className="text-xs text-gray-300 text-center">PostgreSQL</span>
+                </div>
+                <div className="flex flex-col items-center p-3 bg-gray-900/50 rounded-lg hover:bg-gray-900 transition-colors">
+                  <Database className="w-8 h-8 text-teal-400 mb-2" />
+                  <span className="text-xs text-gray-300 text-center">MySQL</span>
+                </div>
+                <div className="flex flex-col items-center p-3 bg-gray-900/50 rounded-lg hover:bg-gray-900 transition-colors">
+                  <Network className="w-8 h-8 text-teal-400 mb-2" />
+                  <span className="text-xs text-gray-300 text-center">Networking</span>
+                </div>
+                <div className="flex flex-col items-center p-3 bg-gray-900/50 rounded-lg hover:bg-gray-900 transition-colors">
+                  <Database className="w-8 h-8 text-teal-400 mb-2" />
+                  <span className="text-xs text-gray-300 text-center">Windows Server</span>
+                </div>
+                <div className="flex flex-col items-center p-3 bg-gray-900/50 rounded-lg hover:bg-gray-900 transition-colors">
+                  <Network className="w-8 h-8 text-teal-400 mb-2" />
+                  <span className="text-xs text-gray-300 text-center">CCNA</span>
+                </div>
+              </div>
             </div>
 
             <div className="bg-gray-800/50 p-8 rounded-xl border border-gray-700 hover:border-teal-400 transition-all hover:shadow-lg hover:shadow-teal-500/20">
               <h3 className="text-2xl font-bold mb-6 text-teal-400">AI / Emerging Tech</h3>
-              <ul className="space-y-3">
-                <li className="flex items-start gap-3">
-                  <span className="text-teal-400 mt-1">▸</span>
-                  <span className="text-gray-300">ChatGPT</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-teal-400 mt-1">▸</span>
-                  <span className="text-gray-300">Copilot</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-teal-400 mt-1">▸</span>
-                  <span className="text-gray-300">AI-assisted Workflow Automation</span>
-                </li>
-              </ul>
+              <div className="grid grid-cols-3 gap-4">
+                <div className="flex flex-col items-center p-3 bg-gray-900/50 rounded-lg hover:bg-gray-900 transition-colors">
+                  <Brain className="w-8 h-8 text-teal-400 mb-2" />
+                  <span className="text-xs text-gray-300 text-center">ChatGPT</span>
+                </div>
+                <div className="flex flex-col items-center p-3 bg-gray-900/50 rounded-lg hover:bg-gray-900 transition-colors">
+                  <Brain className="w-8 h-8 text-teal-400 mb-2" />
+                  <span className="text-xs text-gray-300 text-center">Copilot</span>
+                </div>
+                <div className="flex flex-col items-center p-3 bg-gray-900/50 rounded-lg hover:bg-gray-900 transition-colors">
+                  <Brain className="w-8 h-8 text-teal-400 mb-2" />
+                  <span className="text-xs text-gray-300 text-center">AI Automation</span>
+                </div>
+              </div>
             </div>
 
             <div className="bg-gray-800/50 p-8 rounded-xl border border-gray-700 hover:border-teal-400 transition-all hover:shadow-lg hover:shadow-teal-500/20">
               <h3 className="text-2xl font-bold mb-6 text-teal-400">Methodologies</h3>
-              <ul className="space-y-3">
-                <li className="flex items-start gap-3">
-                  <span className="text-teal-400 mt-1">▸</span>
-                  <span className="text-gray-300">Agile / Scrum</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-teal-400 mt-1">▸</span>
-                  <span className="text-gray-300">Business Process Management</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-teal-400 mt-1">▸</span>
-                  <span className="text-gray-300">Decision Support Systems</span>
-                </li>
-              </ul>
+              <div className="grid grid-cols-3 gap-4">
+                <div className="flex flex-col items-center p-3 bg-gray-900/50 rounded-lg hover:bg-gray-900 transition-colors">
+                  <Target className="w-8 h-8 text-teal-400 mb-2" />
+                  <span className="text-xs text-gray-300 text-center">Agile</span>
+                </div>
+                <div className="flex flex-col items-center p-3 bg-gray-900/50 rounded-lg hover:bg-gray-900 transition-colors">
+                  <Network className="w-8 h-8 text-teal-400 mb-2" />
+                  <span className="text-xs text-gray-300 text-center">BPM</span>
+                </div>
+                <div className="flex flex-col items-center p-3 bg-gray-900/50 rounded-lg hover:bg-gray-900 transition-colors">
+                  <Brain className="w-8 h-8 text-teal-400 mb-2" />
+                  <span className="text-xs text-gray-300 text-center">DSS</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
