@@ -113,7 +113,7 @@ function App() {
             </div>
 
             <div className="bg-gray-800/50 p-8 rounded-xl border border-gray-700 hover:border-teal-400 transition-all hover:shadow-lg hover:shadow-teal-500/20">
-              <h3 className="text-2xl font-bold mb-6 text-teal-400">Data & BI</h3>
+              <h3 className="text-2xl font-bold mb-6 text-teal-400">Technical Tools</h3>
               <div className="grid grid-cols-2 gap-4">
                 <div className="flex flex-col items-center p-4 bg-gray-900/50 rounded-lg hover:bg-gray-900 transition-colors">
                   <BarChart3 className="w-10 h-10 text-blue-400 mb-3" />
@@ -131,12 +131,6 @@ function App() {
                   <Code className="w-10 h-10 text-yellow-400 mb-3" />
                   <span className="text-sm text-gray-300 text-center font-medium">Python</span>
                 </div>
-              </div>
-            </div>
-
-            <div className="bg-gray-800/50 p-8 rounded-xl border border-gray-700 hover:border-teal-400 transition-all hover:shadow-lg hover:shadow-teal-500/20">
-              <h3 className="text-2xl font-bold mb-6 text-teal-400">Tools</h3>
-              <div className="grid grid-cols-2 gap-4">
                 <div className="flex flex-col items-center p-4 bg-gray-900/50 rounded-lg hover:bg-gray-900 transition-colors">
                   <Server className="w-10 h-10 text-purple-400 mb-3" />
                   <span className="text-sm text-gray-300 text-center font-medium">SQL Server</span>
@@ -154,28 +148,6 @@ function App() {
                   <span className="text-sm text-gray-300 text-center font-medium">Windows Server</span>
                 </div>
               </div>
-            </div>
-
-            <div className="bg-gray-800/50 p-8 rounded-xl border border-gray-700 hover:border-teal-400 transition-all hover:shadow-lg hover:shadow-teal-500/20">
-              <h3 className="text-2xl font-bold mb-6 text-teal-400">Soft Skills</h3>
-              <ul className="space-y-3">
-                <li className="flex items-start gap-3">
-                  <span className="text-teal-400 mt-1">▸</span>
-                  <span className="text-gray-300">Communication</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-teal-400 mt-1">▸</span>
-                  <span className="text-gray-300">Team Leadership</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-teal-400 mt-1">▸</span>
-                  <span className="text-gray-300">Problem Solving</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-teal-400 mt-1">▸</span>
-                  <span className="text-gray-300">Time Management</span>
-                </li>
-              </ul>
             </div>
           </div>
         </div>
