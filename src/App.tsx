@@ -131,22 +131,6 @@ function App() {
                   <Code className="w-10 h-10 text-yellow-400 mb-3" />
                   <span className="text-sm text-gray-300 text-center font-medium">Python</span>
                 </div>
-                <div className="flex flex-col items-center p-4 bg-gray-900/50 rounded-lg hover:bg-gray-900 transition-colors">
-                  <Server className="w-10 h-10 text-purple-400 mb-3" />
-                  <span className="text-sm text-gray-300 text-center font-medium">SQL Server</span>
-                </div>
-                <div className="flex flex-col items-center p-4 bg-gray-900/50 rounded-lg hover:bg-gray-900 transition-colors">
-                  <Database className="w-10 h-10 text-blue-400 mb-3" />
-                  <span className="text-sm text-gray-300 text-center font-medium">MySQL</span>
-                </div>
-                <div className="flex flex-col items-center p-4 bg-gray-900/50 rounded-lg hover:bg-gray-900 transition-colors">
-                  <Database className="w-10 h-10 text-cyan-400 mb-3" />
-                  <span className="text-sm text-gray-300 text-center font-medium">PostgreSQL</span>
-                </div>
-                <div className="flex flex-col items-center p-4 bg-gray-900/50 rounded-lg hover:bg-gray-900 transition-colors">
-                  <Server className="w-10 h-10 text-indigo-400 mb-3" />
-                  <span className="text-sm text-gray-300 text-center font-medium">Windows Server</span>
-                </div>
               </div>
             </div>
           </div>
