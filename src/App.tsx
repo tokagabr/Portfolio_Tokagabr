@@ -1,4 +1,4 @@
-import { Mail, Linkedin, Github, Download, ExternalLink, ChevronDown, Database, BarChart3, Code, Server } from 'lucide-react';
+import { Mail, Linkedin, Github, Download, ExternalLink, ChevronDown, Database, BarChart3, Code } from 'lucide-react';
 import profileImage from './assets/images/1.png';
 
 function App() {
@@ -81,8 +81,8 @@ function App() {
         <div className="container mx-auto px-6">
           <h2 className="text-4xl font-bold text-center mb-16 text-teal-400">Skills & Expertise</h2>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            <div className="bg-gray-800/50 p-8 rounded-xl border border-gray-700 hover:border-teal-400 transition-all hover:shadow-lg hover:shadow-teal-500/20">
+          <div className="flex flex-col lg:flex-row gap-8 max-w-6xl mx-auto">
+            <div className="bg-gray-800/50 p-8 rounded-xl border border-gray-700 hover:border-teal-400 transition-all hover:shadow-lg hover:shadow-teal-500/20 lg:w-1/2">
               <h3 className="text-2xl font-bold mb-6 text-teal-400">Business Analysis / Soft Skills</h3>
               <ul className="space-y-3">
                 <li className="flex items-start gap-3">
@@ -112,7 +112,7 @@ function App() {
               </ul>
             </div>
 
-            <div className="bg-gray-800/50 p-8 rounded-xl border border-gray-700 hover:border-teal-400 transition-all hover:shadow-lg hover:shadow-teal-500/20">
+            <div className="bg-gray-800/50 p-8 rounded-xl border border-gray-700 hover:border-teal-400 transition-all hover:shadow-lg hover:shadow-teal-500/20 lg:w-1/2">
               <h3 className="text-2xl font-bold mb-6 text-teal-400">Technical Tools</h3>
               <div className="grid grid-cols-2 gap-4">
                 <div className="flex flex-col items-center p-4 bg-gray-900/50 rounded-lg hover:bg-gray-900 transition-colors">
