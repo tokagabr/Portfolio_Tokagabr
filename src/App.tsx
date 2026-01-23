@@ -1,5 +1,4 @@
-import { Mail, Linkedin, Github, Download, ExternalLink, ChevronDown } from 'lucide-react';
-import { ChartBar, Database as PhosphorDatabase, Code as PhosphorCode, Server } from '@phosphor-icons/react';
+import { Mail, Linkedin, Github, Download, ExternalLink, ChevronDown, Database, BarChart3, Code, Server } from 'lucide-react';
 import profileImage from './assets/images/1.png';
 
 function App() {
@@ -117,19 +116,19 @@ function App() {
               <h3 className="text-2xl font-bold mb-6 text-teal-400">Data & BI</h3>
               <div className="grid grid-cols-2 gap-4">
                 <div className="flex flex-col items-center p-4 bg-gray-900/50 rounded-lg hover:bg-gray-900 transition-colors">
-                  <ChartBar className="w-10 h-10 text-blue-400 mb-3" weight="duotone" />
+                  <BarChart3 className="w-10 h-10 text-blue-400 mb-3" />
                   <span className="text-sm text-gray-300 text-center font-medium">Power BI</span>
                 </div>
                 <div className="flex flex-col items-center p-4 bg-gray-900/50 rounded-lg hover:bg-gray-900 transition-colors">
-                  <PhosphorDatabase className="w-10 h-10 text-orange-400 mb-3" weight="duotone" />
+                  <Database className="w-10 h-10 text-orange-400 mb-3" />
                   <span className="text-sm text-gray-300 text-center font-medium">SQL</span>
                 </div>
                 <div className="flex flex-col items-center p-4 bg-gray-900/50 rounded-lg hover:bg-gray-900 transition-colors">
-                  <ChartBar className="w-10 h-10 text-green-400 mb-3" weight="duotone" />
+                  <BarChart3 className="w-10 h-10 text-green-400 mb-3" />
                   <span className="text-sm text-gray-300 text-center font-medium">Excel</span>
                 </div>
                 <div className="flex flex-col items-center p-4 bg-gray-900/50 rounded-lg hover:bg-gray-900 transition-colors">
-                  <PhosphorCode className="w-10 h-10 text-yellow-400 mb-3" weight="duotone" />
+                  <Code className="w-10 h-10 text-yellow-400 mb-3" />
                   <span className="text-sm text-gray-300 text-center font-medium">Python</span>
                 </div>
               </div>
@@ -139,19 +138,19 @@ function App() {
               <h3 className="text-2xl font-bold mb-6 text-teal-400">Tools</h3>
               <div className="grid grid-cols-2 gap-4">
                 <div className="flex flex-col items-center p-4 bg-gray-900/50 rounded-lg hover:bg-gray-900 transition-colors">
-                  <Server className="w-10 h-10 text-purple-400 mb-3" weight="duotone" />
+                  <Server className="w-10 h-10 text-purple-400 mb-3" />
                   <span className="text-sm text-gray-300 text-center font-medium">SQL Server</span>
                 </div>
                 <div className="flex flex-col items-center p-4 bg-gray-900/50 rounded-lg hover:bg-gray-900 transition-colors">
-                  <PhosphorDatabase className="w-10 h-10 text-blue-400 mb-3" weight="duotone" />
+                  <Database className="w-10 h-10 text-blue-400 mb-3" />
                   <span className="text-sm text-gray-300 text-center font-medium">MySQL</span>
                 </div>
                 <div className="flex flex-col items-center p-4 bg-gray-900/50 rounded-lg hover:bg-gray-900 transition-colors">
-                  <PhosphorDatabase className="w-10 h-10 text-cyan-400 mb-3" weight="duotone" />
+                  <Database className="w-10 h-10 text-cyan-400 mb-3" />
                   <span className="text-sm text-gray-300 text-center font-medium">PostgreSQL</span>
                 </div>
                 <div className="flex flex-col items-center p-4 bg-gray-900/50 rounded-lg hover:bg-gray-900 transition-colors">
-                  <Server className="w-10 h-10 text-indigo-400 mb-3" weight="duotone" />
+                  <Server className="w-10 h-10 text-indigo-400 mb-3" />
                   <span className="text-sm text-gray-300 text-center font-medium">Windows Server</span>
                 </div>
               </div>
