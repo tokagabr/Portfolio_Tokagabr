@@ -33,8 +33,8 @@ function App() {
         </div>
         
         <div className="container mx-auto px-6 relative z-10">
-          <div className="flex flex-col md:flex-row items-center justify-center gap-12">
-            <div className="w-64 h-64 rounded-full overflow-hidden border-4 border-blue-400 shadow-2xl shadow-blue-500/50">
+          <div className="flex flex-col md:flex-row items-center justify-center gap-8">
+            <div className="w-56 h-56 rounded-full overflow-hidden border-4 border-blue-400 shadow-2xl shadow-blue-500/50">
               <img src={profileImage} alt="Toka Gamal Gabr" className="w-full h-full object-cover" />
             </div>
 
@@ -112,8 +112,8 @@ function App() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-20 bg-gradient-to-br from-gray-900 via-slate-900 to-gray-900">
-        <div className="absolute inset-0 opacity-10">
+      <section id="about" className="py-20 bg-gradient-to-br from-gray-900 via-slate-900 to-gray-900 relative overflow-hidden">
+        <div className="absolute inset-0 opacity-20">
           <div className="absolute top-10 left-10 w-64 h-64 bg-blue-500 rounded-full filter blur-3xl animate-pulse"></div>
           <div className="absolute bottom-10 right-10 w-80 h-80 bg-cyan-500 rounded-full filter blur-3xl animate-pulse delay-1000"></div>
         </div>
@@ -130,8 +130,8 @@ function App() {
       </section>
 
       {/* Skills Section */}
-      <section id="skills" className="py-20 bg-gradient-to-br from-gray-900 via-slate-900 to-gray-900">
-        <div className="absolute inset-0 opacity-10">
+      <section id="skills" className="py-20 bg-gradient-to-br from-gray-900 via-slate-900 to-gray-900 relative overflow-hidden">
+        <div className="absolute inset-0 opacity-20">
           <div className="absolute top-20 right-20 w-72 h-72 bg-blue-500 rounded-full filter blur-3xl animate-pulse"></div>
           <div className="absolute bottom-20 left-20 w-96 h-96 bg-cyan-500 rounded-full filter blur-3xl animate-pulse delay-1000"></div>
         </div>
@@ -195,8 +195,8 @@ function App() {
       </section>
 
       {/* Projects Section */}
-      <section id="projects" className="py-20 bg-gradient-to-br from-gray-900 via-slate-900 to-gray-900">
-        <div className="absolute inset-0 opacity-10">
+      <section id="projects" className="py-20 bg-gradient-to-br from-gray-900 via-slate-900 to-gray-900 relative overflow-hidden">
+        <div className="absolute inset-0 opacity-20">
           <div className="absolute top-10 left-10 w-64 h-64 bg-blue-500 rounded-full filter blur-3xl animate-pulse"></div>
           <div className="absolute bottom-10 right-10 w-80 h-80 bg-cyan-500 rounded-full filter blur-3xl animate-pulse delay-1000"></div>
         </div>
@@ -351,8 +351,8 @@ function App() {
         </div>
       </section>
 
-      <section id="experience" className="py-20 bg-gradient-to-br from-gray-900 via-slate-900 to-gray-900">
-        <div className="absolute inset-0 opacity-10">
+      <section id="experience" className="py-20 bg-gradient-to-br from-gray-900 via-slate-900 to-gray-900 relative overflow-hidden">
+        <div className="absolute inset-0 opacity-20">
           <div className="absolute top-10 right-10 w-72 h-72 bg-blue-500 rounded-full filter blur-3xl animate-pulse"></div>
           <div className="absolute bottom-10 left-10 w-96 h-96 bg-cyan-500 rounded-full filter blur-3xl animate-pulse delay-1000"></div>
         </div>
@@ -415,8 +415,8 @@ function App() {
         </div>
       </section>
 
-      <section id="education" className="py-20 bg-gradient-to-br from-gray-900 via-slate-900 to-gray-900">
-        <div className="absolute inset-0 opacity-10">
+      <section id="education" className="py-20 bg-gradient-to-br from-gray-900 via-slate-900 to-gray-900 relative overflow-hidden">
+        <div className="absolute inset-0 opacity-20">
           <div className="absolute top-10 left-10 w-64 h-64 bg-blue-500 rounded-full filter blur-3xl animate-pulse"></div>
           <div className="absolute bottom-10 right-10 w-80 h-80 bg-cyan-500 rounded-full filter blur-3xl animate-pulse delay-1000"></div>
         </div>
@@ -436,8 +436,8 @@ function App() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-20 bg-gradient-to-br from-gray-900 via-slate-900 to-gray-900">
-        <div className="absolute inset-0 opacity-10">
+      <section id="contact" className="py-20 bg-gradient-to-br from-gray-900 via-slate-900 to-gray-900 relative overflow-hidden">
+        <div className="absolute inset-0 opacity-20">
           <div className="absolute top-10 right-10 w-72 h-72 bg-blue-500 rounded-full filter blur-3xl animate-pulse"></div>
           <div className="absolute bottom-10 left-10 w-96 h-96 bg-cyan-500 rounded-full filter blur-3xl animate-pulse delay-1000"></div>
         </div>
@@ -469,8 +469,8 @@ function App() {
         </div>
       </section>
 
-      <footer className="py-8 bg-gradient-to-br from-gray-900 via-slate-900 to-gray-900 border-t border-gray-800">
-        <div className="absolute inset-0 opacity-10">
+      <footer className="py-8 bg-gradient-to-br from-gray-900 via-slate-900 to-gray-900 border-t border-gray-800 relative overflow-hidden">
+        <div className="absolute inset-0 opacity-20">
           <div className="absolute top-5 left-5 w-32 h-32 bg-blue-500 rounded-full filter blur-3xl animate-pulse"></div>
           <div className="absolute bottom-5 right-5 w-40 h-40 bg-cyan-500 rounded-full filter blur-3xl animate-pulse delay-1000"></div>
         </div>
