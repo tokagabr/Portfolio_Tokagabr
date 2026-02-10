@@ -25,7 +25,7 @@ function App() {
       </header>
 
       {/* Hero Section */}
-      <section id="hero" className="min-h-screen flex items-center justify-center pt-20 relative overflow-hidden">
+      <section id="hero" className="min-h-screen flex items-center justify-center pt-16 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-slate-900 to-gray-900"></div>
         <div className="absolute inset-0 opacity-20">
           <div className="absolute top-20 left-20 w-72 h-72 bg-blue-500 rounded-full filter blur-3xl animate-pulse"></div>
@@ -49,7 +49,7 @@ function App() {
                 Transforming complex data into actionable insights that drive KPI performance and support data-driven decision-making for stakeholders.
               </p>
               
-              <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+              <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start mb-8">
                 <a
                   href="#projects"
                   className="px-8 py-3 bg-blue-500 hover:bg-blue-600 text-white rounded-lg font-semibold transition-all transform hover:scale-105 flex items-center justify-center gap-2 shadow-lg hover:shadow-blue-500/50"
@@ -58,13 +58,52 @@ function App() {
                   <ChevronDown className="w-5 h-5" />
                 </a>
                 <a
-                  href="https://drive.google.com/file/d/1Zkw6SMRpAQXBwRq6IbpyGgnV-v3_TTQv/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1rdbqPSE_2IcpPUdZ00xMAiR_ps4uvtcH/view?usp=sharing"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-8 py-3 bg-gray-800 hover:bg-gray-700 text-white rounded-lg font-semibold transition-all transform hover:scale-105 border border-gray-700 hover:border-blue-400 flex items-center justify-center gap-2"
                 >
                   <Download className="w-5 h-5" />
                   Download CV
+                </a>
+              </div>
+
+              <div className="flex flex-wrap gap-4 justify-center md:justify-start">
+                <a
+                  href="https://wa.me/201065046029"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 text-green-400 hover:text-green-300 transition-colors"
+                >
+                  <div className="w-8 h-8 bg-green-500 rounded-lg flex items-center justify-center">
+                    <span className="text-white text-sm font-bold">W</span>
+                  </div>
+                  <span className="text-gray-300">WhatsApp</span>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/tokagabr/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors"
+                >
+                  <Linkedin className="w-6 h-6" />
+                  <span className="text-gray-300">LinkedIn</span>
+                </a>
+                <a
+                  href="mailto:tokagbr25@gmail.com"
+                  className="flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors"
+                >
+                  <Mail className="w-6 h-6" />
+                  <span className="text-gray-300">Email</span>
+                </a>
+                <a
+                  href="https://github.com/tokagabr"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 text-gray-400 hover:text-gray-300 transition-colors"
+                >
+                  <Github className="w-6 h-6" />
+                  <span className="text-gray-300">GitHub</span>
                 </a>
               </div>
             </div>
