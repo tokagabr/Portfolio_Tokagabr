@@ -1,5 +1,9 @@
 import { Mail, Linkedin, Github, Download, ExternalLink, ChevronDown, Database, BarChart3, Code } from 'lucide-react';
 import profileImage from './assets/images/1.png';
+import netflixImage from './assets/images/netflix-dashboard.png';
+import uberEatsImage from './assets/images/uber-eats-dashboard.png';
+import sqlImage from './assets/images/sql-school-database.png';
+import roiImage from './assets/images/handypro-roi-analysis.png';
 
 function App() {
   return (
@@ -69,8 +73,12 @@ function App() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-20 bg-gray-900">
-        <div className="container mx-auto px-6">
+      <section id="about" className="py-20 bg-gradient-to-br from-gray-900 via-slate-900 to-gray-900">
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute top-10 left-10 w-64 h-64 bg-blue-500 rounded-full filter blur-3xl animate-pulse"></div>
+          <div className="absolute bottom-10 right-10 w-80 h-80 bg-cyan-500 rounded-full filter blur-3xl animate-pulse delay-1000"></div>
+        </div>
+        <div className="container mx-auto px-6 relative z-10">
           <h2 className="text-4xl font-bold text-center mb-12 text-blue-400">About Me</h2>
           
           <div className="max-w-4xl mx-auto">
@@ -83,8 +91,12 @@ function App() {
       </section>
 
       {/* Skills Section */}
-      <section id="skills" className="py-20 bg-gray-800">
-        <div className="container mx-auto px-6">
+      <section id="skills" className="py-20 bg-gradient-to-br from-gray-900 via-slate-900 to-gray-900">
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute top-20 right-20 w-72 h-72 bg-blue-500 rounded-full filter blur-3xl animate-pulse"></div>
+          <div className="absolute bottom-20 left-20 w-96 h-96 bg-cyan-500 rounded-full filter blur-3xl animate-pulse delay-1000"></div>
+        </div>
+        <div className="container mx-auto px-6 relative z-10">
           <h2 className="text-4xl font-bold text-center mb-16 text-blue-400">Skills & Expertise</h2>
 
           <div className="flex flex-col lg:flex-row gap-8 max-w-6xl mx-auto">
@@ -144,15 +156,19 @@ function App() {
       </section>
 
       {/* Projects Section */}
-      <section id="projects" className="py-20 bg-gray-800">
-        <div className="container mx-auto px-6">
+      <section id="projects" className="py-20 bg-gradient-to-br from-gray-900 via-slate-900 to-gray-900">
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute top-10 left-10 w-64 h-64 bg-blue-500 rounded-full filter blur-3xl animate-pulse"></div>
+          <div className="absolute bottom-10 right-10 w-80 h-80 bg-cyan-500 rounded-full filter blur-3xl animate-pulse delay-1000"></div>
+        </div>
+        <div className="container mx-auto px-6 relative z-10">
           <h2 className="text-4xl font-bold text-center mb-16 text-blue-400">Featured Projects</h2>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
             <div className="bg-gray-900 rounded-xl overflow-hidden border border-gray-700 hover:border-blue-400 transition-all hover:shadow-xl hover:shadow-blue-500/20 transform hover:-translate-y-2">
               <div className="h-64 relative overflow-hidden">
                 <img 
-                  src="https://raw.githubusercontent.com/tokagabr/netflix-dashboard/main/netflix-dashboard-preview.png" 
+                  src={netflixImage} 
                   alt="Netflix Dashboard" 
                   className="w-full h-full object-cover"
                   onError={(e) => {
@@ -188,7 +204,7 @@ function App() {
             <div className="bg-gray-900 rounded-xl overflow-hidden border border-gray-700 hover:border-blue-400 transition-all hover:shadow-xl hover:shadow-blue-500/20 transform hover:-translate-y-2">
               <div className="h-64 relative overflow-hidden">
                 <img 
-                  src="https://raw.githubusercontent.com/tokagabr/uber-eats-analysis/main/uber-eats-dashboard-preview.png" 
+                  src={uberEatsImage} 
                   alt="Uber Eats Dashboard" 
                   className="w-full h-full object-cover"
                   onError={(e) => {
@@ -224,7 +240,7 @@ function App() {
             <div className="bg-gray-900 rounded-xl overflow-hidden border border-gray-700 hover:border-blue-400 transition-all hover:shadow-xl hover:shadow-blue-500/20 transform hover:-translate-y-2">
               <div className="h-64 relative overflow-hidden">
                 <img 
-                  src="https://raw.githubusercontent.com/tokagabr/SQL-Queries-School-System/main/sql-school-database-preview.png" 
+                  src={sqlImage} 
                   alt="SQL School Database" 
                   className="w-full h-full object-cover"
                   onError={(e) => {
@@ -260,7 +276,7 @@ function App() {
             <div className="bg-gray-900 rounded-xl overflow-hidden border border-gray-700 hover:border-blue-400 transition-all hover:shadow-xl hover:shadow-blue-500/20 transform hover:-translate-y-2">
               <div className="h-64 relative overflow-hidden">
                 <img 
-                  src="https://raw.githubusercontent.com/tokagabr/Service-Channel-ROI-Analysis/main/handypro-roi-analysis-preview.png" 
+                  src={roiImage} 
                   alt="HandyPro ROI Analysis" 
                   className="w-full h-full object-cover"
                   onError={(e) => {
@@ -296,8 +312,12 @@ function App() {
         </div>
       </section>
 
-      <section id="experience" className="py-20 bg-gray-900">
-        <div className="container mx-auto px-6">
+      <section id="experience" className="py-20 bg-gradient-to-br from-gray-900 via-slate-900 to-gray-900">
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute top-10 right-10 w-72 h-72 bg-blue-500 rounded-full filter blur-3xl animate-pulse"></div>
+          <div className="absolute bottom-10 left-10 w-96 h-96 bg-cyan-500 rounded-full filter blur-3xl animate-pulse delay-1000"></div>
+        </div>
+        <div className="container mx-auto px-6 relative z-10">
           <h2 className="text-4xl font-bold text-center mb-16 text-blue-400">Experience</h2>
 
           <div className="max-w-4xl mx-auto space-y-8">
@@ -356,8 +376,12 @@ function App() {
         </div>
       </section>
 
-      <section id="education" className="py-20 bg-gray-800">
-        <div className="container mx-auto px-6">
+      <section id="education" className="py-20 bg-gradient-to-br from-gray-900 via-slate-900 to-gray-900">
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute top-10 left-10 w-64 h-64 bg-blue-500 rounded-full filter blur-3xl animate-pulse"></div>
+          <div className="absolute bottom-10 right-10 w-80 h-80 bg-cyan-500 rounded-full filter blur-3xl animate-pulse delay-1000"></div>
+        </div>
+        <div className="container mx-auto px-6 relative z-10">
           <h2 className="text-4xl font-bold text-center mb-16 text-blue-400">Education & Certifications</h2>
           
           <div className="max-w-4xl mx-auto">
@@ -373,8 +397,12 @@ function App() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-20 bg-gray-900">
-        <div className="container mx-auto px-6">
+      <section id="contact" className="py-20 bg-gradient-to-br from-gray-900 via-slate-900 to-gray-900">
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute top-10 right-10 w-72 h-72 bg-blue-500 rounded-full filter blur-3xl animate-pulse"></div>
+          <div className="absolute bottom-10 left-10 w-96 h-96 bg-cyan-500 rounded-full filter blur-3xl animate-pulse delay-1000"></div>
+        </div>
+        <div className="container mx-auto px-6 relative z-10">
           <h2 className="text-4xl font-bold text-center mb-16 text-blue-400">Get In Touch</h2>
           
           <div className="max-w-2xl mx-auto">
@@ -402,8 +430,12 @@ function App() {
         </div>
       </section>
 
-      <footer className="py-8 bg-gray-900 border-t border-gray-800">
-        <div className="container mx-auto px-6 text-center">
+      <footer className="py-8 bg-gradient-to-br from-gray-900 via-slate-900 to-gray-900 border-t border-gray-800">
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute top-5 left-5 w-32 h-32 bg-blue-500 rounded-full filter blur-3xl animate-pulse"></div>
+          <div className="absolute bottom-5 right-5 w-40 h-40 bg-cyan-500 rounded-full filter blur-3xl animate-pulse delay-1000"></div>
+        </div>
+        <div className="container mx-auto px-6 text-center relative z-10">
           <p className="text-gray-400">
             © 2025 Toka Gamal Gabr. All rights reserved.
           </p>
