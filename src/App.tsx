@@ -195,13 +195,13 @@ function App() {
       </section>
 
       {/* Projects Section */}
-      <section id="projects" className="py-6 bg-gradient-to-br from-gray-800 via-slate-800 to-gray-800 relative overflow-hidden">
+      <section id="projects" className="py-8 bg-gradient-to-br from-gray-900 via-slate-900 to-gray-900 relative overflow-hidden">
         <div className="absolute inset-0 opacity-20">
-          <div className="absolute top-10 left-10 w-64 h-64 bg-purple-500 rounded-full filter blur-3xl animate-pulse"></div>
-          <div className="absolute bottom-10 right-10 w-80 h-80 bg-pink-500 rounded-full filter blur-3xl animate-pulse delay-1000"></div>
+          <div className="absolute top-10 left-10 w-64 h-64 bg-blue-500 rounded-full filter blur-3xl animate-pulse"></div>
+          <div className="absolute bottom-10 right-10 w-80 h-80 bg-cyan-500 rounded-full filter blur-3xl animate-pulse delay-1000"></div>
         </div>
         <div className="container mx-auto px-6 relative z-10">
-          <h2 className="text-4xl font-bold text-center mb-12 text-purple-400">Featured Projects</h2>
+          <h2 className="text-4xl font-bold text-center mb-16 text-blue-400">Featured Projects</h2>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
             <div className="bg-gray-900 rounded-xl overflow-hidden border border-gray-700 hover:border-blue-400 transition-all hover:shadow-xl hover:shadow-blue-500/20 transform hover:-translate-y-2">
