@@ -21,28 +21,34 @@ function App() {
       </header>
 
       {/* Hero Section */}
-      <section id="hero" className="min-h-screen flex items-center justify-center pt-20 relative">
+      <section id="hero" className="min-h-screen flex items-center justify-center pt-20 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-900 via-blue-800 to-blue-900"></div>
+        <div className="absolute inset-0 opacity-20">
+          <div className="absolute top-20 left-20 w-72 h-72 bg-blue-500 rounded-full filter blur-3xl animate-pulse"></div>
+          <div className="absolute bottom-20 right-20 w-96 h-96 bg-cyan-500 rounded-full filter blur-3xl animate-pulse delay-1000"></div>
+        </div>
+        
         <div className="container mx-auto px-6 relative z-10">
           <div className="flex flex-col md:flex-row items-center justify-center gap-12">
-            <div className="w-64 h-64 rounded-full overflow-hidden border-4 border-blue-500 shadow-xl">
+            <div className="w-64 h-64 rounded-full overflow-hidden border-4 border-blue-400 shadow-2xl shadow-blue-500/50">
               <img src={profileImage} alt="Toka Gamal Gabr" className="w-full h-full object-cover" />
             </div>
 
             <div className="text-center md:text-left max-w-2xl">
-              <h1 className="text-5xl md:text-6xl font-bold mb-4 text-gray-900">
+              <h1 className="text-5xl md:text-6xl font-bold mb-4 text-white">
                 Toka Gamal Gabr
               </h1>
-              <h2 className="text-2xl md:text-3xl text-gray-600 mb-6 font-light">
+              <h2 className="text-2xl md:text-3xl text-blue-200 mb-6 font-light">
                 Data Analyst | Business Analyst
               </h2>
-              <p className="text-lg text-gray-700 mb-8 leading-relaxed">
+              <p className="text-lg text-blue-100 mb-8 leading-relaxed">
                 Transforming complex data into actionable insights that drive KPI performance and support data-driven decision-making for stakeholders.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
                 <a
                   href="#projects"
-                  className="px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-semibold transition-all transform hover:scale-105 flex items-center justify-center gap-2"
+                  className="px-8 py-3 bg-blue-500 hover:bg-blue-600 text-white rounded-lg font-semibold transition-all transform hover:scale-105 flex items-center justify-center gap-2 shadow-lg hover:shadow-blue-500/50"
                 >
                   View Projects
                   <ChevronDown className="w-5 h-5" />
@@ -51,7 +57,7 @@ function App() {
                   href="https://drive.google.com/file/d/1Zkw6SMRpAQXBwRq6IbpyGgnV-v3_TTQv/view?usp=sharing"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-8 py-3 border-2 border-gray-300 text-gray-700 hover:bg-gray-100 rounded-lg font-semibold transition-all transform hover:scale-105 flex items-center justify-center gap-2"
+                  className="px-8 py-3 bg-gray-800 hover:bg-gray-700 text-white rounded-lg font-semibold transition-all transform hover:scale-105 border border-gray-700 hover:border-blue-400 flex items-center justify-center gap-2"
                 >
                   <Download className="w-5 h-5" />
                   Download CV
