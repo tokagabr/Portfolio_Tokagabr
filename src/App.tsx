@@ -185,26 +185,35 @@ function App() {
               </div>
             </div>
 
-            <div className="bg-white rounded-xl overflow-hidden border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
+            <div className="bg-gray-900 rounded-xl overflow-hidden border border-gray-700 hover:border-blue-400 transition-all hover:shadow-xl hover:shadow-blue-500/20 transform hover:-translate-y-2">
               <div className="h-64 relative overflow-hidden">
                 <img 
                   src="https://raw.githubusercontent.com/tokagabr/uber-eats-analysis/main/uber-eats-dashboard-preview.png" 
                   alt="Uber Eats Dashboard" 
                   className="w-full h-full object-cover"
                   onError={(e) => {
-                    e.target.src = 'https://via.placeholder.com/600x400/f3f4f6/10b981?text=Uber+Eats+Dashboard';
+                    e.target.style.display = 'none';
+                    e.target.parentElement.innerHTML = `
+                      <div class="h-64 bg-gradient-to-br from-green-900 to-black flex items-center justify-center">
+                        <div class="text-center">
+                          <div class="text-6xl font-bold text-green-500 mb-4">UBER</div>
+                          <p class="text-green-400 text-xl font-semibold">EATS</p>
+                        </div>
+                      </div>
+                    `;
                   }}
                 />
+                <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent"></div>
               </div>
               <div className="p-6">
-                <h3 className="text-2xl font-bold mb-3 text-gray-900">Uber Eats Analytics Dashboard</h3>
-                <p className="text-gray-700 mb-4">In-depth analysis of food delivery operations, customer behavior patterns, and performance metrics to optimize delivery efficiency and customer satisfaction.</p>
-                <span className="inline-block px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm mb-4">2025</span>
+                <h3 className="text-2xl font-bold mb-3 text-white">Uber Eats Analytics Dashboard</h3>
+                <p className="text-gray-400 mb-4">In-depth analysis of food delivery operations, customer behavior patterns, and performance metrics to optimize delivery efficiency and customer satisfaction.</p>
+                <span className="inline-block px-3 py-1 bg-gray-800 text-blue-400 rounded-full text-sm mb-4">2025</span>
                 <a
                   href="https://github.com/tokagabr/uber-eats-analysis"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-blue-600 hover:text-blue-700 transition-colors font-semibold"
+                  className="flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors font-semibold"
                 >
                   <ExternalLink className="w-5 h-5" />
                   View Full Analysis on GitHub
@@ -212,26 +221,35 @@ function App() {
               </div>
             </div>
 
-            <div className="bg-white rounded-xl overflow-hidden border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
+            <div className="bg-gray-900 rounded-xl overflow-hidden border border-gray-700 hover:border-blue-400 transition-all hover:shadow-xl hover:shadow-blue-500/20 transform hover:-translate-y-2">
               <div className="h-64 relative overflow-hidden">
                 <img 
                   src="https://raw.githubusercontent.com/tokagabr/SQL-Queries-School-System/main/sql-school-database-preview.png" 
                   alt="SQL School Database" 
                   className="w-full h-full object-cover"
                   onError={(e) => {
-                    e.target.src = 'https://via.placeholder.com/600x400/f3f4f6/3b82f6?text=SQL+School+Database';
+                    e.target.style.display = 'none';
+                    e.target.parentElement.innerHTML = `
+                      <div class="h-64 bg-gradient-to-br from-blue-900 to-black flex items-center justify-center">
+                        <div class="text-center">
+                          <div class="text-6xl font-bold text-blue-500 mb-4">SQL</div>
+                          <p class="text-blue-400 text-xl font-semibold">SCHOOL</p>
+                        </div>
+                      </div>
+                    `;
                   }}
                 />
+                <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent"></div>
               </div>
               <div className="p-6">
-                <h3 className="text-2xl font-bold mb-3 text-gray-900">SQL Practice – School Database</h3>
-                <p className="text-gray-700 mb-4">SQL practice database applying core and advanced concepts including SELECT, JOINs, GROUP BY, Subqueries, and real business scenarios for school system management.</p>
-                <span className="inline-block px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm mb-4">2025</span>
+                <h3 className="text-2xl font-bold mb-3 text-white">SQL Practice – School Database</h3>
+                <p className="text-gray-400 mb-4">SQL practice database applying core and advanced concepts including SELECT, JOINs, GROUP BY, Subqueries, and real business scenarios for school system management.</p>
+                <span className="inline-block px-3 py-1 bg-gray-800 text-blue-400 rounded-full text-sm mb-4">2025</span>
                 <a
                   href="https://github.com/tokagabr/SQL-Queries-School-System"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-blue-600 hover:text-blue-700 transition-colors font-semibold"
+                  className="flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors font-semibold"
                 >
                   <ExternalLink className="w-5 h-5" />
                   View Project on GitHub
@@ -239,26 +257,35 @@ function App() {
               </div>
             </div>
 
-            <div className="bg-white rounded-xl overflow-hidden border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
+            <div className="bg-gray-900 rounded-xl overflow-hidden border border-gray-700 hover:border-blue-400 transition-all hover:shadow-xl hover:shadow-blue-500/20 transform hover:-translate-y-2">
               <div className="h-64 relative overflow-hidden">
                 <img 
                   src="https://raw.githubusercontent.com/tokagabr/Service-Channel-ROI-Analysis/main/handypro-roi-analysis-preview.png" 
                   alt="HandyPro ROI Analysis" 
                   className="w-full h-full object-cover"
                   onError={(e) => {
-                    e.target.src = 'https://via.placeholder.com/600x400/f3f4f6/8b5cf6?text=ROI+Analysis';
+                    e.target.style.display = 'none';
+                    e.target.parentElement.innerHTML = `
+                      <div class="h-64 bg-gradient-to-br from-purple-900 to-black flex items-center justify-center">
+                        <div class="text-center">
+                          <div class="text-6xl font-bold text-purple-500 mb-4">ROI</div>
+                          <p class="text-purple-400 text-xl font-semibold">ANALYSIS</p>
+                        </div>
+                      </div>
+                    `;
                   }}
                 />
+                <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent"></div>
               </div>
               <div className="p-6">
-                <h3 className="text-2xl font-bold mb-3 text-gray-900">HandyPro Lead Value Analysis</h3>
-                <p className="text-gray-700 mb-4">Comprehensive analysis of services and channels driving the most valuable leads for HandyPro Hub, evaluating urgency, seasonality, and customer segments to optimize lead management and marketing ROI.</p>
-                <span className="inline-block px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm mb-4">2025</span>
+                <h3 className="text-2xl font-bold mb-3 text-white">HandyPro Lead Value Analysis</h3>
+                <p className="text-gray-400 mb-4">Comprehensive analysis of services and channels driving the most valuable leads for HandyPro Hub, evaluating urgency, seasonality, and customer segments to optimize lead management and marketing ROI.</p>
+                <span className="inline-block px-3 py-1 bg-gray-800 text-blue-400 rounded-full text-sm mb-4">2025</span>
                 <a
                   href="https://github.com/tokagabr/Service-Channel-ROI-Analysis/tree/main"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-blue-600 hover:text-blue-700 transition-colors font-semibold"
+                  className="flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors font-semibold"
                 >
                   <ExternalLink className="w-5 h-5" />
                   View Full Analysis on GitHub
@@ -269,16 +296,16 @@ function App() {
         </div>
       </section>
 
-      <section id="experience" className="py-20">
+      <section id="experience" className="py-20 bg-gray-900">
         <div className="container mx-auto px-6">
-          <h2 className="text-4xl font-bold text-center mb-16 text-gray-900">Experience</h2>
+          <h2 className="text-4xl font-bold text-center mb-16 text-blue-400">Experience</h2>
 
           <div className="max-w-4xl mx-auto space-y-8">
-            <div className="bg-gray-800/50 p-8 rounded-xl border-l-4 border-teal-400 hover:shadow-lg hover:shadow-teal-500/20 transition-all">
+            <div className="bg-gray-800/50 p-8 rounded-xl border-l-4 border-blue-400 hover:shadow-lg hover:shadow-blue-500/20 transition-all">
               <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
                 <div>
                   <h3 className="text-2xl font-bold text-white mb-2">Business Analysis Trainee</h3>
-                  <p className="text-teal-400 font-semibold">Digital Egypt Builders Initiative (MCIT)</p>
+                  <p className="text-blue-400 font-semibold">Digital Egypt Builders Initiative (MCIT)</p>
                 </div>
                 <div className="text-gray-400 mt-2 md:mt-0 md:text-right">
                   <p>Cairo</p>
@@ -287,11 +314,11 @@ function App() {
               </div>
             </div>
 
-            <div className="bg-gray-800/50 p-8 rounded-xl border-l-4 border-teal-400 hover:shadow-lg hover:shadow-teal-500/20 transition-all">
+            <div className="bg-gray-800/50 p-8 rounded-xl border-l-4 border-blue-400 hover:shadow-lg hover:shadow-blue-500/20 transition-all">
               <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
                 <div>
                   <h3 className="text-2xl font-bold text-white mb-2">Power BI Trainee</h3>
-                  <p className="text-teal-400 font-semibold">National Telecommunication Institute (NTI)</p>
+                  <p className="text-blue-400 font-semibold">National Telecommunication Institute (NTI)</p>
                 </div>
                 <div className="text-gray-400 mt-2 md:mt-0 md:text-right">
                   <p>Cairo</p>
@@ -300,11 +327,11 @@ function App() {
               </div>
             </div>
 
-            <div className="bg-gray-800/50 p-8 rounded-xl border-l-4 border-teal-400 hover:shadow-lg hover:shadow-teal-500/20 transition-all">
+            <div className="bg-gray-800/50 p-8 rounded-xl border-l-4 border-blue-400 hover:shadow-lg hover:shadow-blue-500/20 transition-all">
               <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
                 <div>
                   <h3 className="text-2xl font-bold text-white mb-2">IT Intern</h3>
-                  <p className="text-teal-400 font-semibold">Banque du Caire</p>
+                  <p className="text-blue-400 font-semibold">Banque du Caire</p>
                 </div>
                 <div className="text-gray-400 mt-2 md:mt-0 md:text-right">
                   <p>Cairo</p>
@@ -313,11 +340,11 @@ function App() {
               </div>
             </div>
 
-            <div className="bg-gray-800/50 p-8 rounded-xl border-l-4 border-teal-400 hover:shadow-lg hover:shadow-teal-500/20 transition-all">
+            <div className="bg-gray-800/50 p-8 rounded-xl border-l-4 border-blue-400 hover:shadow-lg hover:shadow-blue-500/20 transition-all">
               <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
                 <div>
                   <h3 className="text-2xl font-bold text-white mb-2">Intern</h3>
-                  <p className="text-teal-400 font-semibold">Banque Misr</p>
+                  <p className="text-blue-400 font-semibold">Banque Misr</p>
                 </div>
                 <div className="text-gray-400 mt-2 md:mt-0 md:text-right">
                   <p>Mit Ghamr</p>
@@ -329,43 +356,43 @@ function App() {
         </div>
       </section>
 
-      <section id="education" className="py-20 bg-gray-50">
+      <section id="education" className="py-20 bg-gray-800">
         <div className="container mx-auto px-6">
-          <h2 className="text-4xl font-bold text-center mb-16 text-gray-900">Education & Certifications</h2>
+          <h2 className="text-4xl font-bold text-center mb-16 text-blue-400">Education & Certifications</h2>
           
           <div className="max-w-4xl mx-auto">
-            <div className="bg-white rounded-xl p-8 border border-gray-200 shadow-sm">
+            <div className="bg-gray-900/50 rounded-xl p-8 border border-gray-700">
               <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
-                <h3 className="text-2xl font-bold text-gray-900">B.Sc. in Management Information Systems (MIS)</h3>
-                <span className="text-gray-600">GPA: 3.5 / 4.0</span>
+                <h3 className="text-2xl font-bold text-blue-400">B.Sc. in Management Information Systems (MIS)</h3>
+                <span className="text-gray-400">GPA: 3.5 / 4.0</span>
               </div>
-              <p className="text-gray-700 mb-4">Sadat Academy for Management Sciences</p>
+              <p className="text-gray-300 mb-4">Sadat Academy for Management Sciences</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-20">
+      <section id="contact" className="py-20 bg-gray-900">
         <div className="container mx-auto px-6">
-          <h2 className="text-4xl font-bold text-center mb-16 text-gray-900">Get In Touch</h2>
+          <h2 className="text-4xl font-bold text-center mb-16 text-blue-400">Get In Touch</h2>
           
           <div className="max-w-2xl mx-auto">
-            <div className="bg-white rounded-xl p-8 border border-gray-200 shadow-sm">
-              <p className="text-center text-gray-700 mb-8">
+            <div className="bg-gray-800/50 rounded-xl p-8 border border-gray-700">
+              <p className="text-center text-gray-300 mb-8">
                 I'm always interested in hearing about new projects and opportunities.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="mailto:tokagbr25@gmail.com" className="flex items-center justify-center gap-2 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-semibold transition-all transform hover:scale-105">
+                <a href="mailto:tokagbr25@gmail.com" className="flex items-center justify-center gap-2 px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white rounded-lg font-semibold transition-all transform hover:scale-105">
                   <Mail className="w-5 h-5" />
                   Email Me
                 </a>
-                <a href="https://www.linkedin.com/in/tokagabr/" className="flex items-center justify-center gap-2 px-6 py-3 border-2 border-gray-300 text-gray-700 hover:bg-gray-100 rounded-lg font-semibold transition-all transform hover:scale-105">
+                <a href="https://www.linkedin.com/in/tokagabr/" className="flex items-center justify-center gap-2 px-6 py-3 border-2 border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-gray-900 rounded-lg font-semibold transition-all transform hover:scale-105">
                   <Linkedin className="w-5 h-5" />
                   LinkedIn
                 </a>
-                <a href="https://github.com/tokagabr" className="flex items-center justify-center gap-2 px-6 py-3 border-2 border-gray-300 text-gray-700 hover:bg-gray-100 rounded-lg font-semibold transition-all transform hover:scale-105">
+                <a href="https://github.com/tokagabr" className="flex items-center justify-center gap-2 px-6 py-3 border-2 border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-gray-900 rounded-lg font-semibold transition-all transform hover:scale-105">
                   <Github className="w-5 h-5" />
                   GitHub
                 </a>
@@ -375,9 +402,9 @@ function App() {
         </div>
       </section>
 
-      <footer className="py-8 bg-gray-50 border-t border-gray-200">
+      <footer className="py-8 bg-gray-900 border-t border-gray-800">
         <div className="container mx-auto px-6 text-center">
-          <p className="text-gray-600">
+          <p className="text-gray-400">
             © 2025 Toka Gamal Gabr. All rights reserved.
           </p>
         </div>
