@@ -3,18 +3,18 @@ import profileImage from './assets/images/1.png';
 
 function App() {
   return (
-    <div className="min-h-screen bg-white text-gray-900">
+    <div className="min-h-screen bg-gray-900 text-gray-100">
       {/* Header */}
-      <header className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm z-50 border-b border-gray-200">
+      <header className="fixed top-0 left-0 right-0 bg-gray-900/95 backdrop-blur-sm z-50 border-b border-gray-800">
         <nav className="container mx-auto px-6 py-4">
           <div className="flex justify-between items-center">
-            <h1 className="text-xl font-bold text-gray-900">Toka Gamal Gabr</h1>
+            <h1 className="text-xl font-bold text-blue-400">Toka Gamal Gabr</h1>
             <div className="hidden md:flex space-x-8">
-              <a href="#about" className="hover:text-blue-600 transition-colors">About</a>
-              <a href="#skills" className="hover:text-blue-600 transition-colors">Skills</a>
-              <a href="#projects" className="hover:text-blue-600 transition-colors">Projects</a>
-              <a href="#experience" className="hover:text-blue-600 transition-colors">Experience</a>
-              <a href="#contact" className="hover:text-blue-600 transition-colors">Contact</a>
+              <a href="#about" className="hover:text-blue-400 transition-colors">About</a>
+              <a href="#skills" className="hover:text-blue-400 transition-colors">Skills</a>
+              <a href="#projects" className="hover:text-blue-400 transition-colors">Projects</a>
+              <a href="#experience" className="hover:text-blue-400 transition-colors">Experience</a>
+              <a href="#contact" className="hover:text-blue-400 transition-colors">Contact</a>
             </div>
           </div>
         </nav>
