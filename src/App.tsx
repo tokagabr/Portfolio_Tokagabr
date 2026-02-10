@@ -69,12 +69,12 @@ function App() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-20 bg-gray-50">
+      <section id="about" className="py-20 bg-gray-900">
         <div className="container mx-auto px-6">
-          <h2 className="text-4xl font-bold text-center mb-12 text-gray-900">About Me</h2>
+          <h2 className="text-4xl font-bold text-center mb-12 text-blue-400">About Me</h2>
           
           <div className="max-w-4xl mx-auto">
-            <p className="text-xl text-gray-700 leading-relaxed text-center">
+            <p className="text-xl text-gray-300 leading-relaxed text-center">
               Entry-Level Data & Business Analyst with strong expertise in BI dashboards, data analysis, and business process optimization.
               Skilled in translating business requirements into actionable insights that support data-driven decision-making for stakeholders.
             </p>
@@ -83,59 +83,59 @@ function App() {
       </section>
 
       {/* Skills Section */}
-      <section id="skills" className="py-20">
+      <section id="skills" className="py-20 bg-gray-800">
         <div className="container mx-auto px-6">
-          <h2 className="text-4xl font-bold text-center mb-16 text-gray-900">Skills & Expertise</h2>
+          <h2 className="text-4xl font-bold text-center mb-16 text-blue-400">Skills & Expertise</h2>
 
           <div className="flex flex-col lg:flex-row gap-8 max-w-6xl mx-auto">
-            <div className="bg-white p-8 rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow lg:w-1/2">
-              <h3 className="text-2xl font-bold mb-6 text-gray-900">Business Analysis / Soft Skills</h3>
+            <div className="bg-gray-900/50 p-8 rounded-xl border border-gray-700 hover:border-blue-400 transition-all hover:shadow-lg hover:shadow-blue-500/20 lg:w-1/2">
+              <h3 className="text-2xl font-bold mb-6 text-blue-400">Business Analysis / Soft Skills</h3>
               <ul className="space-y-3">
                 <li className="flex items-start gap-3">
-                  <span className="text-blue-600 mt-1">▸</span>
-                  <span className="text-gray-700">Requirements Gathering</span>
+                  <span className="text-blue-400 mt-1">▸</span>
+                  <span className="text-gray-300">Requirements Gathering</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-blue-600 mt-1">▸</span>
-                  <span className="text-gray-700">Process Optimization</span>
+                  <span className="text-blue-400 mt-1">▸</span>
+                  <span className="text-gray-300">Process Optimization</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-blue-600 mt-1">▸</span>
-                  <span className="text-gray-700">Workflow Mapping</span>
+                  <span className="text-blue-400 mt-1">▸</span>
+                  <span className="text-gray-300">Workflow Mapping</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-blue-600 mt-1">▸</span>
-                  <span className="text-gray-700">KPI Definition</span>
+                  <span className="text-blue-400 mt-1">▸</span>
+                  <span className="text-gray-300">KPI Definition</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-blue-600 mt-1">▸</span>
-                  <span className="text-gray-700">Stakeholder Communication</span>
+                  <span className="text-blue-400 mt-1">▸</span>
+                  <span className="text-gray-300">Stakeholder Communication</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-blue-600 mt-1">▸</span>
-                  <span className="text-gray-700">Gap Analysis</span>
+                  <span className="text-blue-400 mt-1">▸</span>
+                  <span className="text-gray-300">Gap Analysis</span>
                 </li>
               </ul>
             </div>
 
-            <div className="bg-white p-8 rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow lg:w-1/2">
-              <h3 className="text-2xl font-bold mb-6 text-gray-900">Technical Tools</h3>
+            <div className="bg-gray-900/50 p-8 rounded-xl border border-gray-700 hover:border-blue-400 transition-all hover:shadow-lg hover:shadow-blue-500/20 lg:w-1/2">
+              <h3 className="text-2xl font-bold mb-6 text-blue-400">Technical Tools</h3>
               <div className="grid grid-cols-2 gap-4">
-                <div className="flex flex-col items-center p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
-                  <BarChart3 className="w-10 h-10 text-blue-600 mb-3" />
-                  <span className="text-sm text-gray-700 text-center font-medium">Power BI</span>
+                <div className="flex flex-col items-center p-4 bg-gray-900/50 rounded-lg hover:bg-gray-900 transition-colors">
+                  <BarChart3 className="w-10 h-10 text-blue-400 mb-3" />
+                  <span className="text-sm text-gray-300 text-center font-medium">Power BI</span>
                 </div>
-                <div className="flex flex-col items-center p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
-                  <Database className="w-10 h-10 text-orange-600 mb-3" />
-                  <span className="text-sm text-gray-700 text-center font-medium">SQL</span>
+                <div className="flex flex-col items-center p-4 bg-gray-900/50 rounded-lg hover:bg-gray-900 transition-colors">
+                  <Database className="w-10 h-10 text-orange-400 mb-3" />
+                  <span className="text-sm text-gray-300 text-center font-medium">SQL</span>
                 </div>
-                <div className="flex flex-col items-center p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
-                  <BarChart3 className="w-10 h-10 text-green-600 mb-3" />
-                  <span className="text-sm text-gray-700 text-center font-medium">Excel</span>
+                <div className="flex flex-col items-center p-4 bg-gray-900/50 rounded-lg hover:bg-gray-900 transition-colors">
+                  <BarChart3 className="w-10 h-10 text-green-400 mb-3" />
+                  <span className="text-sm text-gray-300 text-center font-medium">Excel</span>
                 </div>
-                <div className="flex flex-col items-center p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
-                  <Code className="w-10 h-10 text-yellow-600 mb-3" />
-                  <span className="text-sm text-gray-700 text-center font-medium">Python</span>
+                <div className="flex flex-col items-center p-4 bg-gray-900/50 rounded-lg hover:bg-gray-900 transition-colors">
+                  <Code className="w-10 h-10 text-yellow-400 mb-3" />
+                  <span className="text-sm text-gray-300 text-center font-medium">Python</span>
                 </div>
               </div>
             </div>
@@ -144,31 +144,40 @@ function App() {
       </section>
 
       {/* Projects Section */}
-      <section id="projects" className="py-20 bg-gray-50">
+      <section id="projects" className="py-20 bg-gray-800">
         <div className="container mx-auto px-6">
-          <h2 className="text-4xl font-bold text-center mb-16 text-gray-900">Featured Projects</h2>
+          <h2 className="text-4xl font-bold text-center mb-16 text-blue-400">Featured Projects</h2>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-            <div className="bg-white rounded-xl overflow-hidden border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
+            <div className="bg-gray-900 rounded-xl overflow-hidden border border-gray-700 hover:border-blue-400 transition-all hover:shadow-xl hover:shadow-blue-500/20 transform hover:-translate-y-2">
               <div className="h-64 relative overflow-hidden">
                 <img 
                   src="https://raw.githubusercontent.com/tokagabr/netflix-dashboard/main/netflix-dashboard-preview.png" 
                   alt="Netflix Dashboard" 
                   className="w-full h-full object-cover"
                   onError={(e) => {
-                    e.target.src = 'https://via.placeholder.com/600x400/f3f4f6/3b82f6?text=Netflix+Dashboard';
+                    e.target.style.display = 'none';
+                    e.target.parentElement.innerHTML = `
+                      <div class="h-64 bg-gradient-to-br from-red-900 to-black flex items-center justify-center">
+                        <div class="text-center">
+                          <div class="text-8xl font-bold text-red-600 mb-4">N</div>
+                          <p class="text-red-400 text-xl font-semibold">NETFLIX</p>
+                        </div>
+                      </div>
+                    `;
                   }}
                 />
+                <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent"></div>
               </div>
               <div className="p-6">
-                <h3 className="text-2xl font-bold mb-3 text-gray-900">Netflix Content Analytics Dashboard</h3>
-                <p className="text-gray-700 mb-4">Comprehensive analysis of Netflix content library, revealing insights into genre distribution, content trends, and regional availability patterns.</p>
-                <span className="inline-block px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-sm mb-4">2025</span>
+                <h3 className="text-2xl font-bold mb-3 text-white">Netflix Content Analytics Dashboard</h3>
+                <p className="text-gray-400 mb-4">Comprehensive analysis of Netflix content library, revealing insights into genre distribution, content trends, and regional availability patterns.</p>
+                <span className="inline-block px-3 py-1 bg-gray-800 text-blue-400 rounded-full text-sm mb-4">2025</span>
                 <a
                   href="https://github.com/tokagabr/netflix-dashboard"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-blue-600 hover:text-blue-700 transition-colors font-semibold"
+                  className="flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors font-semibold"
                 >
                   <ExternalLink className="w-5 h-5" />
                   View Full Analysis on GitHub
