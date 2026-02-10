@@ -25,7 +25,7 @@ function App() {
       </header>
 
       {/* Hero Section */}
-      <section id="hero" className="min-h-screen flex items-center justify-center pt-16 relative overflow-hidden">
+      <section id="hero" className="min-h-screen flex items-center justify-center pt-8 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-slate-900 to-gray-900"></div>
         <div className="absolute inset-0 opacity-20">
           <div className="absolute top-20 left-20 w-72 h-72 bg-blue-500 rounded-full filter blur-3xl animate-pulse"></div>
@@ -112,7 +112,7 @@ function App() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-20 bg-gradient-to-br from-gray-900 via-slate-900 to-gray-900 relative overflow-hidden">
+      <section id="about" className="py-12 bg-gradient-to-br from-gray-900 via-slate-900 to-gray-900 relative overflow-hidden">
         <div className="absolute inset-0 opacity-20">
           <div className="absolute top-10 left-10 w-64 h-64 bg-blue-500 rounded-full filter blur-3xl animate-pulse"></div>
           <div className="absolute bottom-10 right-10 w-80 h-80 bg-cyan-500 rounded-full filter blur-3xl animate-pulse delay-1000"></div>
@@ -130,7 +130,7 @@ function App() {
       </section>
 
       {/* Skills Section */}
-      <section id="skills" className="py-20 bg-gradient-to-br from-gray-900 via-slate-900 to-gray-900 relative overflow-hidden">
+      <section id="skills" className="py-12 bg-gradient-to-br from-gray-900 via-slate-900 to-gray-900 relative overflow-hidden">
         <div className="absolute inset-0 opacity-20">
           <div className="absolute top-20 right-20 w-72 h-72 bg-blue-500 rounded-full filter blur-3xl animate-pulse"></div>
           <div className="absolute bottom-20 left-20 w-96 h-96 bg-cyan-500 rounded-full filter blur-3xl animate-pulse delay-1000"></div>
@@ -195,7 +195,7 @@ function App() {
       </section>
 
       {/* Projects Section */}
-      <section id="projects" className="py-20 bg-gradient-to-br from-gray-900 via-slate-900 to-gray-900 relative overflow-hidden">
+      <section id="projects" className="py-12 bg-gradient-to-br from-gray-900 via-slate-900 to-gray-900 relative overflow-hidden">
         <div className="absolute inset-0 opacity-20">
           <div className="absolute top-10 left-10 w-64 h-64 bg-blue-500 rounded-full filter blur-3xl animate-pulse"></div>
           <div className="absolute bottom-10 right-10 w-80 h-80 bg-cyan-500 rounded-full filter blur-3xl animate-pulse delay-1000"></div>
@@ -351,7 +351,7 @@ function App() {
         </div>
       </section>
 
-      <section id="experience" className="py-20 bg-gradient-to-br from-gray-900 via-slate-900 to-gray-900 relative overflow-hidden">
+      <section id="experience" className="py-12 bg-gradient-to-br from-gray-900 via-slate-900 to-gray-900 relative overflow-hidden">
         <div className="absolute inset-0 opacity-20">
           <div className="absolute top-10 right-10 w-72 h-72 bg-blue-500 rounded-full filter blur-3xl animate-pulse"></div>
           <div className="absolute bottom-10 left-10 w-96 h-96 bg-cyan-500 rounded-full filter blur-3xl animate-pulse delay-1000"></div>
@@ -415,7 +415,7 @@ function App() {
         </div>
       </section>
 
-      <section id="education" className="py-20 bg-gradient-to-br from-gray-900 via-slate-900 to-gray-900 relative overflow-hidden">
+      <section id="education" className="py-12 bg-gradient-to-br from-gray-900 via-slate-900 to-gray-900 relative overflow-hidden">
         <div className="absolute inset-0 opacity-20">
           <div className="absolute top-10 left-10 w-64 h-64 bg-blue-500 rounded-full filter blur-3xl animate-pulse"></div>
           <div className="absolute bottom-10 right-10 w-80 h-80 bg-cyan-500 rounded-full filter blur-3xl animate-pulse delay-1000"></div>
@@ -436,7 +436,7 @@ function App() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-20 bg-gradient-to-br from-gray-900 via-slate-900 to-gray-900 relative overflow-hidden">
+      <section id="contact" className="py-12 bg-gradient-to-br from-gray-900 via-slate-900 to-gray-900 relative overflow-hidden">
         <div className="absolute inset-0 opacity-20">
           <div className="absolute top-10 right-10 w-72 h-72 bg-blue-500 rounded-full filter blur-3xl animate-pulse"></div>
           <div className="absolute bottom-10 left-10 w-96 h-96 bg-cyan-500 rounded-full filter blur-3xl animate-pulse delay-1000"></div>
