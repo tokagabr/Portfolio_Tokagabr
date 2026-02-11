@@ -73,16 +73,7 @@ function App() {
                 </a>
               </div>
 
-              <div className="flex flex-wrap gap-4 justify-center">
-                <a
-                  href="https://wa.me/201065046029"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-2 px-6 py-3 bg-green-500 hover:bg-green-600 text-white rounded-lg font-semibold transition-all transform hover:scale-105"
-                >
-                  <Phone className="w-5 h-5" />
-                  WhatsApp
-                </a>
+              <div className="flex flex-wrap gap-4 justify-center md:justify-start">
                 <a
                   href="https://www.linkedin.com/in/tokagabr/"
                   target="_blank"
