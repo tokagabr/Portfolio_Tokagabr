@@ -1,5 +1,4 @@
 import { Mail, Linkedin, Github, Download, ExternalLink, ChevronDown, Database, BarChart3, Code } from 'lucide-react';
-import { FaWhatsapp } from "react-icons/fa";
 import profileImage from './assets/images/1.png';
 import netflixImage from './assets/images/netflix-dashboard.png';
 import uberEatsImage from './assets/images/uber-eats-dashboard.png';
