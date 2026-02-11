@@ -75,17 +75,6 @@ function App() {
 
               <div className="flex flex-wrap gap-4 justify-center md:justify-start">
                 <a
-                  href="https://wa.me/201065046029"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-green-400 hover:text-green-300 transition-colors"
-                >
-                  <div className="w-8 h-8 bg-green-500 rounded-lg flex items-center justify-center">
-                    <span className="text-white text-sm font-bold">📞</span>
-                  </div>
-                  <span className="text-gray-300">WhatsApp</span>
-                </a>
-                <a
                   href="https://www.linkedin.com/in/tokagabr/"
                   target="_blank"
                   rel="noopener noreferrer"
