@@ -285,17 +285,6 @@ function App() {
                   src={sqlImage} 
                   alt="SQL School Database" 
                   className="w-full h-full object-cover"
-                  onError={(e) => {
-                    e.target.style.display = 'none';
-                    e.target.parentElement.innerHTML = `
-                      <div class="h-64 bg-gradient-to-br from-blue-900 to-black flex items-center justify-center">
-                        <div class="text-center">
-                          <div class="text-6xl font-bold text-blue-500 mb-4">SQL</div>
-                          <p class="text-blue-400 text-xl font-semibold">SCHOOL</p>
-                        </div>
-                      </div>
-                    `;
-                  }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent"></div>
               </div>
