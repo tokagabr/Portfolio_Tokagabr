@@ -1,4 +1,5 @@
 import { Mail, Linkedin, Github, Download, ExternalLink, ChevronDown, Database, BarChart3, Code } from 'lucide-react';
+import { FaWhatsapp } from "react-icons/fa";
 import profileImage from './assets/images/1.png';
 import netflixImage from './assets/images/netflix-dashboard.png';
 import uberEatsImage from './assets/images/uber-eats-dashboard.png';
@@ -74,17 +75,16 @@ function App() {
               </div>
 
               <div className="flex flex-wrap gap-4 justify-center md:justify-start">
-                <a
-                  href="https://wa.me/201065046029"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-green-400 hover:text-green-300 transition-colors"
-                >
-                  <div className="w-8 h-8 bg-green-500 rounded-lg flex items-center justify-center">
-                    <span className="text-white text-sm font-bold">W</span>
-                  </div>
-                  <span className="text-gray-300">WhatsApp</span>
-                </a>
+               <a
+  href="https://wa.me/201065046029"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="flex items-center gap-2 text-green-400 hover:text-green-300 transition-colors"
+>
+  <FaWhatsapp className="w-6 h-6" />
+  <span className="text-gray-300">WhatsApp</span>
+               </a>
+
                 <a
                   href="https://www.linkedin.com/in/tokagabr/"
                   target="_blank"
