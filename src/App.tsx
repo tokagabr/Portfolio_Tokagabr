@@ -81,7 +81,7 @@ function App() {
                   className="flex items-center gap-2 text-green-400 hover:text-green-300 transition-colors"
                 >
                   <div className="w-8 h-8 bg-green-500 rounded-lg flex items-center justify-center">
-                    <span className="text-white text-sm font-bold">W</span>
+                    <span className="text-white text-sm font-bold">📞</span>
                   </div>
                   <span className="text-gray-300">WhatsApp</span>
                 </a>
@@ -456,6 +456,15 @@ function App() {
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <a
+                  href="https://wa.me/201065046029"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 px-6 py-3 bg-green-500 hover:bg-green-600 text-white rounded-lg font-semibold transition-all transform hover:scale-105"
+                >
+                  <span className="text-white text-sm font-bold">📞</span>
+                  WhatsApp
+                </a>
                 <a href="mailto:tokagbr25@gmail.com" className="flex items-center justify-center gap-2 px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white rounded-lg font-semibold transition-all transform hover:scale-105">
                   <Mail className="w-5 h-5" />
                   Email Me
