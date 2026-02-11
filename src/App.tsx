@@ -73,15 +73,17 @@ function App() {
                 </a>
               </div>
 
-              <div className="flex flex-wrap gap-4 justify-center">
+              <div className="flex flex-wrap gap-4 justify-center md:justify-start">
                 <a
                   href="https://wa.me/201065046029"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 text-green-400 hover:text-green-300 transition-colors"
                 >
-                  <span className="text-white text-sm font-bold">📞</span>
-                  WhatsApp
+                  <div className="w-8 h-8 bg-green-500 rounded-lg flex items-center justify-center">
+                    <span className="text-white text-sm font-bold">W</span>
+                  </div>
+                  <span className="text-gray-300">WhatsApp</span>
                 </a>
                 <a
                   href="https://www.linkedin.com/in/tokagabr/"
@@ -133,13 +135,13 @@ function App() {
       </section>
 
       {/* Skills Section */}
-      <section id="skills" className="py-8 bg-gradient-to-br from-gray-800 via-slate-800 to-gray-800 relative overflow-hidden">
+      <section id="skills" className="py-8 bg-gradient-to-br from-gray-900 via-slate-900 to-gray-900 relative overflow-hidden">
         <div className="absolute inset-0 opacity-20">
-          <div className="absolute top-20 right-20 w-72 h-72 bg-purple-500 rounded-full filter blur-3xl animate-pulse"></div>
-          <div className="absolute bottom-20 left-20 w-96 h-96 bg-pink-500 rounded-full filter blur-3xl animate-pulse delay-1000"></div>
+          <div className="absolute top-20 right-20 w-72 h-72 bg-blue-500 rounded-full filter blur-3xl animate-pulse"></div>
+          <div className="absolute bottom-20 left-20 w-96 h-96 bg-cyan-500 rounded-full filter blur-3xl animate-pulse delay-1000"></div>
         </div>
         <div className="container mx-auto px-6 relative z-10">
-          <h2 className="text-4xl font-bold text-center mb-16 text-purple-400">Skills & Expertise</h2>
+          <h2 className="text-4xl font-bold text-center mb-16 text-blue-400">Skills & Expertise</h2>
 
           <div className="flex flex-col lg:flex-row gap-8 max-w-6xl mx-auto">
             <div className="bg-gray-900/50 p-8 rounded-xl border border-gray-700 hover:border-blue-400 transition-all hover:shadow-lg hover:shadow-blue-500/20 lg:w-1/2">
@@ -198,13 +200,13 @@ function App() {
       </section>
 
       {/* Projects Section */}
-      <section id="projects" className="py-8 bg-gradient-to-br from-gray-900 via-slate-900 to-gray-900 relative overflow-hidden">
+      <section id="projects" className="py-6 bg-gradient-to-br from-gray-800 via-slate-800 to-gray-800 relative overflow-hidden">
         <div className="absolute inset-0 opacity-20">
-          <div className="absolute top-10 left-10 w-64 h-64 bg-blue-500 rounded-full filter blur-3xl animate-pulse"></div>
-          <div className="absolute bottom-10 right-10 w-80 h-80 bg-cyan-500 rounded-full filter blur-3xl animate-pulse delay-1000"></div>
+          <div className="absolute top-10 left-10 w-64 h-64 bg-purple-500 rounded-full filter blur-3xl animate-pulse"></div>
+          <div className="absolute bottom-10 right-10 w-80 h-80 bg-pink-500 rounded-full filter blur-3xl animate-pulse delay-1000"></div>
         </div>
         <div className="container mx-auto px-6 relative z-10">
-          <h2 className="text-4xl font-bold text-center mb-16 text-blue-400">Featured Projects</h2>
+          <h2 className="text-4xl font-bold text-center mb-12 text-purple-400">Featured Projects</h2>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
             <div className="bg-gray-900 rounded-xl overflow-hidden border border-gray-700 hover:border-blue-400 transition-all hover:shadow-xl hover:shadow-blue-500/20 transform hover:-translate-y-2">
@@ -454,15 +456,6 @@ function App() {
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <a
-                  href="https://wa.me/201065046029"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-2 px-6 py-3 bg-green-500 hover:bg-green-600 text-white rounded-lg font-semibold transition-all transform hover:scale-105"
-                >
-                  <span className="text-white text-sm font-bold">📞</span>
-                  WhatsApp
-                </a>
                 <a href="mailto:tokagbr25@gmail.com" className="flex items-center justify-center gap-2 px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white rounded-lg font-semibold transition-all transform hover:scale-105">
                   <Mail className="w-5 h-5" />
                   Email Me
