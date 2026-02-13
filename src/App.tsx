@@ -6,6 +6,7 @@ import sqlImage from './assets/images/sql-school-database.png';
 import roiImage from './assets/images/handypro-roi-analysis.png';
 
 function App() {
+  
   return (
     <div className="min-h-screen bg-gray-900 text-gray-100">
       {/* Header */}
@@ -118,8 +119,8 @@ function App() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-8 bg-gradient-to-br from-gray-900 via-slate-900 to-gray-900 relative overflow-hidden">
-        <div className="absolute inset-0 opacity-20">
+   <section id="about" className="py-8 relative overflow-hidden"> 
+  <div className="absolute inset-0 opacity-20">
           <div className="absolute top-10 left-10 w-64 h-64 bg-blue-500 rounded-full filter blur-3xl animate-pulse"></div>
           <div className="absolute bottom-10 right-10 w-80 h-80 bg-cyan-500 rounded-full filter blur-3xl animate-pulse delay-1000"></div>
         </div>
