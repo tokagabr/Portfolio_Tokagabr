@@ -233,7 +233,6 @@ function App() {
               <div className="p-6">
                 <h3 className="text-2xl font-bold mb-3 text-white">Netflix Content Analytics Dashboard</h3>
                 <p className="text-gray-400 mb-4">Comprehensive analysis of Netflix content library, revealing insights into genre distribution, content trends, and regional availability patterns.</p>
-                <span className="inline-block px-3 py-1 bg-gray-800 text-blue-400 rounded-full text-sm mb-4">2025</span>
                 <a
                   href="https://github.com/tokagabr/netflix-dashboard"
                   target="_blank"
@@ -269,7 +268,6 @@ function App() {
               <div className="p-6">
                 <h3 className="text-2xl font-bold mb-3 text-white">Uber Eats Analytics Dashboard</h3>
                 <p className="text-gray-400 mb-4">In-depth analysis of food delivery operations, customer behavior patterns, and performance metrics to optimize delivery efficiency and customer satisfaction.</p>
-                <span className="inline-block px-3 py-1 bg-gray-800 text-blue-400 rounded-full text-sm mb-4">2025</span>
                 <a
                   href="https://github.com/tokagabr/uber-eats-analysis"
                   target="_blank"
@@ -305,7 +303,6 @@ function App() {
               <div className="p-6">
                 <h3 className="text-2xl font-bold mb-3 text-white">SQL Practice – School Database</h3>
                 <p className="text-gray-400 mb-4">SQL practice database applying core and advanced concepts including SELECT, JOINs, GROUP BY, Subqueries, and real business scenarios for school system management.</p>
-                <span className="inline-block px-3 py-1 bg-gray-800 text-blue-400 rounded-full text-sm mb-4">2025</span>
                 <a
                   href="https://github.com/tokagabr/SQL-Queries-School-System"
                   target="_blank"
@@ -341,7 +338,6 @@ function App() {
               <div className="p-6">
                 <h3 className="text-2xl font-bold mb-3 text-white">HandyPro Lead Value Analysis</h3>
                 <p className="text-gray-400 mb-4">Comprehensive analysis of services and channels driving the most valuable leads for HandyPro Hub, evaluating urgency, seasonality, and customer segments to optimize lead management and marketing ROI.</p>
-                <span className="inline-block px-3 py-1 bg-gray-800 text-blue-400 rounded-full text-sm mb-4">2025</span>
                 <a
                   href="https://github.com/tokagabr/Service-Channel-ROI-Analysis/tree/main"
                   target="_blank"
