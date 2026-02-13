@@ -207,7 +207,7 @@ function App() {
           <div className="absolute bottom-10 right-10 w-80 h-80 bg-pink-500 rounded-full filter blur-3xl animate-pulse delay-1000"></div>
         </div>
         <div className="container mx-auto px-6 relative z-10">
-          <h2 className="text-4xl font-bold text-center mb-12 text-purple-400">Featured Projects</h2>
+          <h2 className="text-4xl font-bold text-center mb-12 text-blue-400">Featured Projects</h2>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
             <div className="bg-gray-900 rounded-xl overflow-hidden border border-gray-700 hover:border-blue-400 transition-all hover:shadow-xl hover:shadow-blue-500/20 transform hover:-translate-y-2">
