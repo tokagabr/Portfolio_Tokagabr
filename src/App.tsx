@@ -1,4 +1,4 @@
-import { Mail, Linkedin, Github, Phone, Download, ExternalLink, ChevronDown, Database, BarChart3, Code } from 'lucide-react';
+import { Mail, Linkedin, Github, Download, ExternalLink, ChevronDown, Database, BarChart3, Code, Phone } from 'lucide-react';
 import profileImage from './assets/images/1.png';
 import netflixImage from './assets/images/netflix-dashboard.png';
 import uberEatsImage from './assets/images/uber-eats-dashboard.png';
@@ -6,7 +6,6 @@ import sqlImage from './assets/images/sql-school-database.png';
 import roiImage from './assets/images/handypro-roi-analysis.png';
 
 function App() {
-  
   return (
     <div className="min-h-screen bg-gray-900 text-gray-100">
       {/* Header */}
@@ -76,17 +75,6 @@ function App() {
 
               <div className="flex flex-wrap gap-4 justify-center md:justify-start">
                 <a
-    href="https://wa.me/201065046029"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="flex items-center gap-2 text-green-400 hover:text-green-300 transition-colors"
-  >
-    <div className="w-8 h-8 bg-green-500 rounded-lg flex items-center justify-center">
-      <Phone className="w-5 h-5 text-white" />
-    </div>
-    <span className="text-gray-300">WhatsApp</span>
-  </a>
-                <a
                   href="https://www.linkedin.com/in/tokagabr/"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -94,8 +82,7 @@ function App() {
                 >
                   <Linkedin className="w-6 h-6" />
                   <span className="text-gray-300">LinkedIn</span>
-                </a> 
-                
+                </a>
                 <a
                   href="mailto:tokagbr25@gmail.com"
                   className="flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors"
@@ -119,10 +106,10 @@ function App() {
       </section>
 
       {/* About Section */}
-   <section id="about" className="py-8 relative overflow-hidden"> 
-  <div className="absolute inset-0 opacity-20">
-          <div className="absolute top-10 left-10 w-64 h-64 bg-blue-500 rounded-full filter blur-3xl animate-pulse"></div>
-          <div className="absolute bottom-10 right-10 w-80 h-80 bg-cyan-500 rounded-full filter blur-3xl animate-pulse delay-1000"></div>
+      <section id="about" className="py-8 bg-gradient-to-br from-gray-900 via-slate-900 to-gray-900 relative overflow-hidden"> 
+        <div className="absolute inset-0 opacity-20">
+          <div className="absolute top-20 left-20 w-72 h-72 bg-blue-500 rounded-full filter blur-3xl animate-pulse"></div>
+          <div className="absolute bottom-20 right-20 w-96 h-96 bg-cyan-500 rounded-full filter blur-3xl animate-pulse delay-1000"></div>
         </div>
         <div className="container mx-auto px-6 relative z-10">
           <h2 className="text-4xl font-bold text-center mb-12 text-blue-400">About Me</h2>
@@ -139,11 +126,11 @@ function App() {
       {/* Skills Section */}
       <section id="skills" className="py-8 bg-gradient-to-br from-gray-900 via-slate-900 to-gray-900 relative overflow-hidden">
         <div className="absolute inset-0 opacity-20">
-          <div className="absolute top-20 right-20 w-72 h-72 bg-blue-500 rounded-full filter blur-3xl animate-pulse"></div>
-          <div className="absolute bottom-20 left-20 w-96 h-96 bg-cyan-500 rounded-full filter blur-3xl animate-pulse delay-1000"></div>
+          <div className="absolute top-20 left-20 w-72 h-72 bg-blue-500 rounded-full filter blur-3xl animate-pulse"></div>
+          <div className="absolute bottom-20 right-20 w-96 h-96 bg-cyan-500 rounded-full filter blur-3xl animate-pulse delay-1000"></div>
         </div>
         <div className="container mx-auto px-6 relative z-10">
-          <h2 className="text-4xl font-bold text-center mb-16 text-blue-400">Skills & Expertise</h2>
+          <h2 className="text-4xl font-bold text-center mb-16 text-purple-400">Skills & Expertise</h2>
 
           <div className="flex flex-col lg:flex-row gap-8 max-w-6xl mx-auto">
             <div className="bg-gray-900/50 p-8 rounded-xl border border-gray-700 hover:border-blue-400 transition-all hover:shadow-lg hover:shadow-blue-500/20 lg:w-1/2">
@@ -202,13 +189,13 @@ function App() {
       </section>
 
       {/* Projects Section */}
-      <section id="projects" className="py-6 bg-gradient-to-br from-gray-800 via-slate-800 to-gray-800 relative overflow-hidden">
+      <section id="projects" className="py-6 bg-gradient-to-br from-gray-900 via-slate-900 to-gray-900 relative overflow-hidden">
         <div className="absolute inset-0 opacity-20">
-          <div className="absolute top-10 left-10 w-64 h-64 bg-purple-500 rounded-full filter blur-3xl animate-pulse"></div>
-          <div className="absolute bottom-10 right-10 w-80 h-80 bg-pink-500 rounded-full filter blur-3xl animate-pulse delay-1000"></div>
+          <div className="absolute top-20 left-20 w-72 h-72 bg-blue-500 rounded-full filter blur-3xl animate-pulse"></div>
+          <div className="absolute bottom-20 right-20 w-96 h-96 bg-cyan-500 rounded-full filter blur-3xl animate-pulse delay-1000"></div>
         </div>
         <div className="container mx-auto px-6 relative z-10">
-          <h2 className="text-4xl font-bold text-center mb-12 text-blue-400">Featured Projects</h2>
+          <h2 className="text-4xl font-bold text-center mb-16 text-blue-400">Featured Projects</h2>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
             <div className="bg-gray-900 rounded-xl overflow-hidden border border-gray-700 hover:border-blue-400 transition-all hover:shadow-xl hover:shadow-blue-500/20 transform hover:-translate-y-2">
@@ -234,6 +221,7 @@ function App() {
               <div className="p-6">
                 <h3 className="text-2xl font-bold mb-3 text-white">Netflix Content Analytics Dashboard</h3>
                 <p className="text-gray-400 mb-4">Comprehensive analysis of Netflix content library, revealing insights into genre distribution, content trends, and regional availability patterns.</p>
+                <span className="inline-block px-3 py-1 bg-gray-800 text-blue-400 rounded-full text-sm mb-4">2025</span>
                 <a
                   href="https://github.com/tokagabr/netflix-dashboard"
                   target="_blank"
@@ -269,6 +257,7 @@ function App() {
               <div className="p-6">
                 <h3 className="text-2xl font-bold mb-3 text-white">Uber Eats Analytics Dashboard</h3>
                 <p className="text-gray-400 mb-4">In-depth analysis of food delivery operations, customer behavior patterns, and performance metrics to optimize delivery efficiency and customer satisfaction.</p>
+                <span className="inline-block px-3 py-1 bg-gray-800 text-blue-400 rounded-full text-sm mb-4">2025</span>
                 <a
                   href="https://github.com/tokagabr/uber-eats-analysis"
                   target="_blank"
@@ -287,23 +276,13 @@ function App() {
                   src={sqlImage} 
                   alt="SQL School Database" 
                   className="w-full h-full object-cover"
-                  onError={(e) => {
-                    e.target.style.display = 'none';
-                    e.target.parentElement.innerHTML = `
-                      <div class="h-64 bg-gradient-to-br from-blue-900 to-black flex items-center justify-center">
-                        <div class="text-center">
-                          <div class="text-6xl font-bold text-blue-500 mb-4">SQL</div>
-                          <p class="text-blue-400 text-xl font-semibold">SCHOOL</p>
-                        </div>
-                      </div>
-                    `;
-                  }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent"></div>
               </div>
               <div className="p-6">
                 <h3 className="text-2xl font-bold mb-3 text-white">SQL Practice – School Database</h3>
                 <p className="text-gray-400 mb-4">SQL practice database applying core and advanced concepts including SELECT, JOINs, GROUP BY, Subqueries, and real business scenarios for school system management.</p>
+                <span className="inline-block px-3 py-1 bg-gray-800 text-blue-400 rounded-full text-sm mb-4">2025</span>
                 <a
                   href="https://github.com/tokagabr/SQL-Queries-School-System"
                   target="_blank"
@@ -339,6 +318,7 @@ function App() {
               <div className="p-6">
                 <h3 className="text-2xl font-bold mb-3 text-white">HandyPro Lead Value Analysis</h3>
                 <p className="text-gray-400 mb-4">Comprehensive analysis of services and channels driving the most valuable leads for HandyPro Hub, evaluating urgency, seasonality, and customer segments to optimize lead management and marketing ROI.</p>
+                <span className="inline-block px-3 py-1 bg-gray-800 text-blue-400 rounded-full text-sm mb-4">2025</span>
                 <a
                   href="https://github.com/tokagabr/Service-Channel-ROI-Analysis/tree/main"
                   target="_blank"
@@ -356,8 +336,8 @@ function App() {
 
       <section id="experience" className="py-8 bg-gradient-to-br from-gray-900 via-slate-900 to-gray-900 relative overflow-hidden">
         <div className="absolute inset-0 opacity-20">
-          <div className="absolute top-10 right-10 w-72 h-72 bg-blue-500 rounded-full filter blur-3xl animate-pulse"></div>
-          <div className="absolute bottom-10 left-10 w-96 h-96 bg-cyan-500 rounded-full filter blur-3xl animate-pulse delay-1000"></div>
+          <div className="absolute top-20 left-20 w-72 h-72 bg-blue-500 rounded-full filter blur-3xl animate-pulse"></div>
+          <div className="absolute bottom-20 right-20 w-96 h-96 bg-cyan-500 rounded-full filter blur-3xl animate-pulse delay-1000"></div>
         </div>
         <div className="container mx-auto px-6 relative z-10">
           <h2 className="text-4xl font-bold text-center mb-16 text-blue-400">Experience</h2>
@@ -420,8 +400,8 @@ function App() {
 
       <section id="education" className="py-8 bg-gradient-to-br from-gray-900 via-slate-900 to-gray-900 relative overflow-hidden">
         <div className="absolute inset-0 opacity-20">
-          <div className="absolute top-10 left-10 w-64 h-64 bg-blue-500 rounded-full filter blur-3xl animate-pulse"></div>
-          <div className="absolute bottom-10 right-10 w-80 h-80 bg-cyan-500 rounded-full filter blur-3xl animate-pulse delay-1000"></div>
+          <div className="absolute top-20 left-20 w-72 h-72 bg-blue-500 rounded-full filter blur-3xl animate-pulse"></div>
+          <div className="absolute bottom-20 right-20 w-96 h-96 bg-cyan-500 rounded-full filter blur-3xl animate-pulse delay-1000"></div>
         </div>
         <div className="container mx-auto px-6 relative z-10">
           <h2 className="text-4xl font-bold text-center mb-16 text-blue-400">Education & Certifications</h2>
@@ -441,8 +421,8 @@ function App() {
       {/* Contact Section */}
       <section id="contact" className="py-8 bg-gradient-to-br from-gray-900 via-slate-900 to-gray-900 relative overflow-hidden">
         <div className="absolute inset-0 opacity-20">
-          <div className="absolute top-10 right-10 w-72 h-72 bg-blue-500 rounded-full filter blur-3xl animate-pulse"></div>
-          <div className="absolute bottom-10 left-10 w-96 h-96 bg-cyan-500 rounded-full filter blur-3xl animate-pulse delay-1000"></div>
+          <div className="absolute top-20 left-20 w-72 h-72 bg-blue-500 rounded-full filter blur-3xl animate-pulse"></div>
+          <div className="absolute bottom-20 right-20 w-96 h-96 bg-cyan-500 rounded-full filter blur-3xl animate-pulse delay-1000"></div>
         </div>
         <div className="container mx-auto px-6 relative z-10">
           <h2 className="text-4xl font-bold text-center mb-16 text-blue-400">Get In Touch</h2>
@@ -454,28 +434,17 @@ function App() {
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="mailto:tokagbr25@gmail.com" className="flex items-center justify-center gap-2 px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white rounded-lg font-semibold transition-all transform hover:scale-105">
-                  <Mail className="w-5 h-5" />
-                  Email Me
-                </a>
-                <a href="https://www.linkedin.com/in/tokagabr/" className="flex items-center justify-center gap-2 px-6 py-3 border-2 border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-gray-900 rounded-lg font-semibold transition-all transform hover:scale-105">
-                  <Linkedin className="w-5 h-5" />
-                  LinkedIn
-                </a>
-                <a href="https://github.com/tokagabr" className="flex items-center justify-center gap-2 px-6 py-3 border-2 border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-gray-900 rounded-lg font-semibold transition-all transform hover:scale-105">
-                  <Github className="w-5 h-5" />
-                  GitHub
-                </a>
-              </div>
-            </div>
-          </div>
+                <a
+                  href="https://wa.me/201065046029"
+                  target="_blank"
+                  rel="noopener noreferrer"
         </div>
       </section>
 
       <footer className="py-4 bg-gradient-to-br from-gray-900 via-slate-900 to-gray-900 border-t border-gray-800 relative overflow-hidden">
         <div className="absolute inset-0 opacity-20">
-          <div className="absolute top-5 left-5 w-32 h-32 bg-blue-500 rounded-full filter blur-3xl animate-pulse"></div>
-          <div className="absolute bottom-5 right-5 w-40 h-40 bg-cyan-500 rounded-full filter blur-3xl animate-pulse delay-1000"></div>
+          <div className="absolute top-20 left-20 w-72 h-72 bg-blue-500 rounded-full filter blur-3xl animate-pulse"></div>
+          <div className="absolute bottom-20 right-20 w-96 h-96 bg-cyan-500 rounded-full filter blur-3xl animate-pulse delay-1000"></div>
         </div>
         <div className="container mx-auto px-6 text-center relative z-10">
           <p className="text-gray-400">
