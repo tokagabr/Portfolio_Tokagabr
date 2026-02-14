@@ -360,7 +360,7 @@ function App() {
           <div className="absolute bottom-10 left-10 w-96 h-96 bg-cyan-500 rounded-full filter blur-3xl animate-pulse delay-1000"></div>
         </div>
         <div className="container mx-auto px-6 relative z-10">
-          <h2 className="text-4xl font-bold text-center mb-16 text-blue-400">Experience</h2>
+          <h2 className="text-4xl font-bold text-center mb-16 text-blue-400">Professional Experience</h2>
 
           <div className="max-w-4xl mx-auto space-y-8">
             <div className="bg-gray-800/50 p-8 rounded-xl border-l-4 border-blue-400 hover:shadow-lg hover:shadow-blue-500/20 transition-all">
