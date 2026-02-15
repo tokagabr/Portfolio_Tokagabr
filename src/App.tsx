@@ -54,7 +54,7 @@ function App() {
                 Toka Gamal Gabr
               </h1>
               <h2 className="text-2xl md:text-3xl text-blue-200 mb-6 font-light">
-                Data Analyst | Business Analyst
+              Technical Business Analyst | Data Analyst 
               </h2>
               <p className="text-lg text-blue-100 mb-8 leading-relaxed">
                 Transforming complex data into actionable insights that drive KPI performance and support data-driven decision-making for stakeholders.
@@ -130,8 +130,8 @@ function App() {
           
           <div className="max-w-4xl mx-auto">
             <p className="text-xl text-gray-300 leading-relaxed text-center">
-              Entry-Level Data & Business Analyst with strong expertise in BI dashboards, data analysis, and business process optimization.
-              Skilled in translating business requirements into actionable insights that support data-driven decision-making for stakeholders.
+Technical Business Analyst with a strong foundation in MIS and Networking. I specialize in translating 
+              complex business needs into technical specifications using UML, SDLC, and Data Visualization.
             </p>
           </div>
         </div>
@@ -695,21 +695,6 @@ function App() {
         </div>
       </section>
 
-      <section id="education" className="py-8 relative z-10">
-        <div className="container mx-auto px-6 relative z-10">
-          <h2 className="text-4xl font-bold text-center mb-16 text-blue-400">Education & Certifications</h2>
-          
-          <div className="max-w-4xl mx-auto">
-            <div className="bg-gray-900/50 rounded-xl p-8 border border-gray-700">
-              <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
-                <h3 className="text-2xl font-bold text-blue-400">B.Sc. in Management Information Systems (MIS)</h3>
-                <span className="text-gray-400">GPA: 3.5 / 4.0</span>
-              </div>
-              <p className="text-gray-300 mb-4">Sadat Academy for Management Sciences</p>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Contact Section */}
       <section id="contact" className="py-8 relative z-10">
