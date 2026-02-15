@@ -142,16 +142,16 @@ function App() {
         <div className="container mx-auto px-6 relative z-10">
           <h2 className="text-4xl font-bold text-center mb-16 text-blue-400">Technical Skills</h2>
 
-          <div className="max-w-6xl mx-auto space-y-12">
-            
-            {/* Business & Systems Analysis */}
-            <div className="bg-gray-800/50 p-8 rounded-xl border border-gray-700 hover:border-blue-400 transition-all hover:shadow-lg hover:shadow-blue-500/20">
-              <h3 className="text-2xl font-bold mb-8 text-blue-400 flex items-center gap-3">
-                <BarChart3 className="w-8 h-8" />
-                Business & Systems Analysis
-              </h3>
+          <div className="max-w-6xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-8 space-y-8">
               
-              <div className="grid md:grid-cols-2 gap-6">
+              {/* Business & Systems Analysis */}
+              <div className="bg-gray-800/50 p-8 rounded-xl border border-gray-700 hover:border-blue-400 transition-all hover:shadow-lg hover:shadow-blue-500/20">
+                <h3 className="text-2xl font-bold mb-8 text-blue-400 flex items-center gap-3">
+                  <BarChart3 className="w-8 h-8" />
+                  Business & Systems Analysis
+                </h3>
+                
                 <div className="space-y-4">
                   <div className="flex items-center gap-4 p-4 bg-gray-900/50 rounded-lg hover:bg-gray-900 transition-colors">
                     <div className="w-12 h-12 bg-blue-600/20 rounded-lg flex items-center justify-center">
@@ -175,9 +175,7 @@ function App() {
                       <p className="text-gray-400 text-sm">BRD, FRD, NFR</p>
                     </div>
                   </div>
-                </div>
-                
-                <div className="space-y-4">
+                  
                   <div className="flex items-center gap-4 p-4 bg-gray-900/50 rounded-lg hover:bg-gray-900 transition-colors">
                     <div className="w-12 h-12 bg-purple-600/20 rounded-lg flex items-center justify-center">
                       <Code className="w-6 h-6 text-purple-400" />
@@ -199,16 +197,14 @@ function App() {
                   </div>
                 </div>
               </div>
-            </div>
 
-            {/* Data Analytics & BI */}
-            <div className="bg-gray-800/50 p-8 rounded-xl border border-gray-700 hover:border-blue-400 transition-all hover:shadow-lg hover:shadow-blue-500/20">
-              <h3 className="text-2xl font-bold mb-8 text-blue-400 flex items-center gap-3">
-                <Database className="w-8 h-8" />
-                Data Analytics & BI
-              </h3>
-              
-              <div className="grid md:grid-cols-2 gap-6">
+              {/* Data Analytics & BI */}
+              <div className="bg-gray-800/50 p-8 rounded-xl border border-gray-700 hover:border-blue-400 transition-all hover:shadow-lg hover:shadow-blue-500/20">
+                <h3 className="text-2xl font-bold mb-8 text-blue-400 flex items-center gap-3">
+                  <Database className="w-8 h-8" />
+                  Data Analytics & BI
+                </h3>
+                
                 <div className="space-y-4">
                   <div className="flex items-center gap-4 p-4 bg-gray-900/50 rounded-lg hover:bg-gray-900 transition-colors">
                     <div className="w-12 h-12 bg-orange-600/20 rounded-lg flex items-center justify-center">
@@ -235,9 +231,7 @@ function App() {
                       </a>
                     </div>
                   </div>
-                </div>
-                
-                <div className="space-y-4">
+                  
                   <div className="flex items-center gap-4 p-4 bg-gray-900/50 rounded-lg hover:bg-gray-900 transition-colors">
                     <div className="w-12 h-12 bg-green-600/20 rounded-lg flex items-center justify-center">
                       <BarChart3 className="w-6 h-6 text-green-400" />
@@ -262,16 +256,14 @@ function App() {
                   </div>
                 </div>
               </div>
-            </div>
 
-            {/* Software Development */}
-            <div className="bg-gray-800/50 p-8 rounded-xl border border-gray-700 hover:border-blue-400 transition-all hover:shadow-lg hover:shadow-blue-500/20">
-              <h3 className="text-2xl font-bold mb-8 text-blue-400 flex items-center gap-3">
-                <Code className="w-8 h-8" />
-                Software Development
-              </h3>
-              
-              <div className="grid md:grid-cols-2 gap-6">
+              {/* Software Development */}
+              <div className="bg-gray-800/50 p-8 rounded-xl border border-gray-700 hover:border-blue-400 transition-all hover:shadow-lg hover:shadow-blue-500/20">
+                <h3 className="text-2xl font-bold mb-8 text-blue-400 flex items-center gap-3">
+                  <Code className="w-8 h-8" />
+                  Software Development
+                </h3>
+                
                 <div className="space-y-4">
                   <div className="flex items-center gap-4 p-4 bg-gray-900/50 rounded-lg hover:bg-gray-900 transition-colors">
                     <div className="w-12 h-12 bg-purple-600/20 rounded-lg flex items-center justify-center">
@@ -298,9 +290,7 @@ function App() {
                       </a>
                     </div>
                   </div>
-                </div>
-                
-                <div className="space-y-4">
+                  
                   <div className="flex items-center gap-4 p-4 bg-gray-900/50 rounded-lg hover:bg-gray-900 transition-colors">
                     <div className="w-12 h-12 bg-pink-600/20 rounded-lg flex items-center justify-center">
                       <Code className="w-6 h-6 text-pink-400" />
@@ -312,16 +302,14 @@ function App() {
                   </div>
                 </div>
               </div>
-            </div>
 
-            {/* IT Infrastructure & Tools */}
-            <div className="bg-gray-800/50 p-8 rounded-xl border border-gray-700 hover:border-blue-400 transition-all hover:shadow-lg hover:shadow-blue-500/20">
-              <h3 className="text-2xl font-bold mb-8 text-blue-400 flex items-center gap-3">
-                <Database className="w-8 h-8" />
-                IT Infrastructure & Tools
-              </h3>
-              
-              <div className="grid md:grid-cols-2 gap-6">
+              {/* IT Infrastructure & Tools */}
+              <div className="bg-gray-800/50 p-8 rounded-xl border border-gray-700 hover:border-blue-400 transition-all hover:shadow-lg hover:shadow-blue-500/20">
+                <h3 className="text-2xl font-bold mb-8 text-blue-400 flex items-center gap-3">
+                  <Database className="w-8 h-8" />
+                  IT Infrastructure & Tools
+                </h3>
+                
                 <div className="space-y-4">
                   <div className="flex items-center gap-4 p-4 bg-gray-900/50 rounded-lg hover:bg-gray-900 transition-colors">
                     <div className="w-12 h-12 bg-red-600/20 rounded-lg flex items-center justify-center">
@@ -342,9 +330,7 @@ function App() {
                       <p className="text-gray-400 text-sm">Git & GitHub</p>
                     </div>
                   </div>
-                </div>
-                
-                <div className="space-y-4">
+                  
                   <div className="flex items-center gap-4 p-4 bg-gray-900/50 rounded-lg hover:bg-gray-900 transition-colors">
                     <div className="w-12 h-12 bg-blue-600/20 rounded-lg flex items-center justify-center">
                       <Code className="w-6 h-6 text-blue-400" />
@@ -356,8 +342,8 @@ function App() {
                   </div>
                 </div>
               </div>
-            </div>
 
+            </div>
           </div>
         </div>
       </section>
