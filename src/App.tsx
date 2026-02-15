@@ -125,8 +125,8 @@ Bridging the gap between business strategy and technical execution through Syste
           
           <div className="max-w-4xl mx-auto">
             <p className="text-xl text-gray-300 leading-relaxed text-center">
-              Entry-Level Data & Business Analyst with strong expertise in BI dashboards, data analysis, and business process optimization.
-              Skilled in translating business requirements into actionable insights that support data-driven decision-making for stakeholders.
+             Technical Business Analyst with a strong foundation in MIS and Networking. 
+              I specialize in translating complex business needs into technical specifications using UML, SDLC, and Data Visualization.
             </p>
           </div>
         </div>
