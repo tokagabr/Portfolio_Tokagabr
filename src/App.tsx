@@ -403,7 +403,7 @@ function App() {
                 </div>
                 <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
                   <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 bg-white/10 backdrop-blur-sm rounded-lg opacity-30 hover:opacity-60 hover:scale-110 transition-all duration-300 flex-shrink-0 flex items-center justify-center p-2">
+                    <div className="w-12 h-12 bg-white/30 backdrop-blur-sm rounded-lg opacity-30 hover:opacity-60 hover:scale-110 transition-all duration-300 flex-shrink-0 flex items-center justify-center p-2">
                       <img src={mcitLogo} alt="MCIT Logo" className="w-full h-full object-contain" />
                     </div>
                     <div>
@@ -435,7 +435,7 @@ function App() {
                 </div>
                 <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
                   <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 bg-white/10 backdrop-blur-sm rounded-lg opacity-30 hover:opacity-60 hover:scale-110 transition-all duration-300 flex-shrink-0 flex items-center justify-center p-2">
+                    <div className="w-12 h-12 bg-white/30 backdrop-blur-sm rounded-lg opacity-30 hover:opacity-60 hover:scale-110 transition-all duration-300 flex-shrink-0 flex items-center justify-center p-2">
                       <img src={ntiLogo} alt="NTI Logo" className="w-full h-full object-contain" />
                     </div>
                     <div>
@@ -474,7 +474,7 @@ function App() {
                 </div>
                 <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
                   <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 bg-white/10 backdrop-blur-sm rounded-lg opacity-30 hover:opacity-60 hover:scale-110 transition-all duration-300 flex-shrink-0 flex items-center justify-center p-2">
+                    <div className="w-12 h-12 bg-white/30 backdrop-blur-sm rounded-lg opacity-30 hover:opacity-60 hover:scale-110 transition-all duration-300 flex-shrink-0 flex items-center justify-center p-2">
                       <img src={banqueDuCaireLogo} alt="Banque du Caire Logo" className="w-full h-full object-contain" />
                     </div>
                     <div>
@@ -516,7 +516,7 @@ function App() {
                 </div>
                 <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
                   <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 bg-white/10 backdrop-blur-sm rounded-lg opacity-30 hover:opacity-60 hover:scale-110 transition-all duration-300 flex-shrink-0 flex items-center justify-center p-2">
+                    <div className="w-12 h-12 bg-white/30 backdrop-blur-sm rounded-lg opacity-30 hover:opacity-60 hover:scale-110 transition-all duration-300 flex-shrink-0 flex items-center justify-center p-2">
                       <img src={banqueMisrLogo} alt="Banque Misr Logo" className="w-full h-full object-contain" />
                     </div>
                     <div>
