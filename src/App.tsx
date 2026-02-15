@@ -143,7 +143,7 @@ function App() {
           <h2 className="text-4xl font-bold text-center mb-16 text-blue-400">Technical Skills</h2>
 
           <div className="max-w-6xl mx-auto">
-            <div className="grid md:grid-cols-2 gap-8 space-y-8">
+            <div className="grid md:grid-cols-2 gap-8">
               
               {/* Business & Systems Analysis */}
               <div className="bg-gray-800/50 p-8 rounded-xl border border-gray-700 hover:border-blue-400 transition-all hover:shadow-lg hover:shadow-blue-500/20">
