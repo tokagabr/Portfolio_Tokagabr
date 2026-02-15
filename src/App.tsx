@@ -403,8 +403,8 @@ function App() {
                 </div>
                 <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
                   <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 opacity-30 hover:opacity-60 hover:scale-110 transition-all duration-300 flex-shrink-0">
-                      <img src={mcitLogo} alt="MCIT Logo" className="w-full h-full object-contain rounded-lg shadow-md" />
+                    <div className="w-12 h-12 bg-white/10 backdrop-blur-sm rounded-lg opacity-30 hover:opacity-60 hover:scale-110 transition-all duration-300 flex-shrink-0 flex items-center justify-center p-2">
+                      <img src={mcitLogo} alt="MCIT Logo" className="w-full h-full object-contain" />
                     </div>
                     <div>
                       <h3 className="text-2xl font-bold text-white mb-2">Business Analysis Scholar</h3>
@@ -435,8 +435,8 @@ function App() {
                 </div>
                 <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
                   <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 opacity-30 hover:opacity-60 hover:scale-110 transition-all duration-300 flex-shrink-0">
-                      <img src={ntiLogo} alt="NTI Logo" className="w-full h-full object-contain rounded-lg shadow-md" />
+                    <div className="w-12 h-12 bg-white/10 backdrop-blur-sm rounded-lg opacity-30 hover:opacity-60 hover:scale-110 transition-all duration-300 flex-shrink-0 flex items-center justify-center p-2">
+                      <img src={ntiLogo} alt="NTI Logo" className="w-full h-full object-contain" />
                     </div>
                     <div>
                       <h3 className="text-2xl font-bold text-white mb-2">Power BI Trainee</h3>
@@ -474,8 +474,8 @@ function App() {
                 </div>
                 <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
                   <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 opacity-30 hover:opacity-60 hover:scale-110 transition-all duration-300 flex-shrink-0">
-                      <img src={banqueDuCaireLogo} alt="Banque du Caire Logo" className="w-full h-full object-contain rounded-lg shadow-md" />
+                    <div className="w-12 h-12 bg-white/10 backdrop-blur-sm rounded-lg opacity-30 hover:opacity-60 hover:scale-110 transition-all duration-300 flex-shrink-0 flex items-center justify-center p-2">
+                      <img src={banqueDuCaireLogo} alt="Banque du Caire Logo" className="w-full h-full object-contain" />
                     </div>
                     <div>
                       <h3 className="text-2xl font-bold text-white mb-2">IT Intern</h3>
@@ -516,8 +516,8 @@ function App() {
                 </div>
                 <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
                   <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 opacity-30 hover:opacity-60 hover:scale-110 transition-all duration-300 flex-shrink-0">
-                      <img src={banqueMisrLogo} alt="Banque Misr Logo" className="w-full h-full object-contain rounded-lg shadow-md" />
+                    <div className="w-12 h-12 bg-white/10 backdrop-blur-sm rounded-lg opacity-30 hover:opacity-60 hover:scale-110 transition-all duration-300 flex-shrink-0 flex items-center justify-center p-2">
+                      <img src={banqueMisrLogo} alt="Banque Misr Logo" className="w-full h-full object-contain" />
                     </div>
                     <div>
                       <h3 className="text-2xl font-bold text-white mb-2">Intern</h3>
