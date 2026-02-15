@@ -500,7 +500,7 @@ function App() {
               <div className="bg-gray-800/50 p-8 rounded-xl border-l-4 border-blue-400 hover:shadow-lg hover:shadow-blue-500/20 transition-all relative">
                 <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
                   <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 bg-white rounded-lg shadow-lg opacity-80 hover:opacity-100 hover:scale-110 transition-all duration-300 flex-shrink-0 flex items-center justify-center p-2">
+                    <div className="w-12 h-12 bg-red-500 rounded-lg shadow-lg opacity-80 hover:opacity-100 hover:scale-110 transition-all duration-300 flex-shrink-0 flex items-center justify-center p-2">
                       <img src={banqueMisrLogo} alt="Banque Misr Logo" className="w-full h-full object-contain" />
                     </div>
                     <div>
