@@ -130,7 +130,7 @@ function App() {
           
           <div className="max-w-4xl mx-auto">
             <p className="text-xl text-gray-300 leading-relaxed text-center">
-"Technical Business Analyst & MIS Scholar with a focus on bridging the gap between business needs and tech implementation. Experienced in System Analysis (UML), Data Analytics (Power BI/SQL), and Full-Stack development. Currently sharpening my skills at the DEBI (MCIT) scholarship
+Technical Business Analyst & MIS Scholar with a focus on bridging the gap between business needs and tech implementation. Experienced in System Analysis (UML), Data Analytics (Power BI/SQL), and Full-Stack development. Currently sharpening my skills at the DEBI (MCIT) scholarship
             </p>
           </div>
         </div>
