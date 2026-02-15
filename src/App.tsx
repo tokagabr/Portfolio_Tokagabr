@@ -49,10 +49,10 @@ function App() {
                 Toka Gamal Gabr
               </h1>
               <h2 className="text-2xl md:text-3xl text-blue-200 mb-6 font-light">
-              Technical Business Analyst | Data Analyst
+                Data Analyst | Business Analyst
               </h2>
               <p className="text-lg text-blue-100 mb-8 leading-relaxed">
-Bridging the gap between business strategy and technical execution through System Design, Data Analytics, and Full-stack development.              
+                Transforming complex data into actionable insights that drive KPI performance and support data-driven decision-making for stakeholders.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start mb-8">
@@ -119,21 +119,21 @@ Bridging the gap between business strategy and technical execution through Syste
       </section>
 
       {/* About Section */}
-   <section id="about" className="py-8 relative z-10" style={{scrollMarginTop: '80px'}}>
+   <section id="about" className="py-8 relative z-10">
         <div className="container mx-auto px-6 relative z-10">
           <h2 className="text-4xl font-bold text-center mb-12 text-blue-400">About Me</h2>
           
           <div className="max-w-4xl mx-auto">
             <p className="text-xl text-gray-300 leading-relaxed text-center">
-             Technical Business Analyst with a strong foundation in MIS and Networking. 
-              I specialize in translating complex business needs into technical specifications using UML, SDLC, and Data Visualization.
+              Entry-Level Data & Business Analyst with strong expertise in BI dashboards, data analysis, and business process optimization.
+              Skilled in translating business requirements into actionable insights that support data-driven decision-making for stakeholders.
             </p>
           </div>
         </div>
       </section>
 
       {/* Skills Section */}
-      <section id="skills" className="py-8 relative z-10" style={{scrollMarginTop: '80px'}}>
+      <section id="skills" className="py-8 relative z-10">
         <div className="container mx-auto px-6 relative z-10">
           <h2 className="text-4xl font-bold text-center mb-16 text-blue-400">Skills & Expertise</h2>
 
@@ -194,7 +194,7 @@ Bridging the gap between business strategy and technical execution through Syste
       </section>
 
       {/* Projects Section */}
-      <section id="projects" className="py-8 relative z-10" style={{scrollMarginTop: '80px'}}>
+      <section id="projects" className="py-8 relative z-10">
         <div className="container mx-auto px-6 relative z-10">
           <h2 className="text-4xl font-bold text-center mb-16 text-blue-400">Featured Projects</h2>
 
@@ -344,57 +344,154 @@ Bridging the gap between business strategy and technical execution through Syste
 
       <section id="experience" className="py-8 relative z-10" style={{scrollMarginTop: '80px'}}>
         <div className="container mx-auto px-6 relative z-10">
-          <h2 className="text-4xl font-bold text-center mb-16 text-blue-400">Experience</h2>
-
-          <div className="max-w-4xl mx-auto space-y-8">
-            <div className="bg-gray-800/50 p-8 rounded-xl border-l-4 border-blue-400 hover:shadow-lg hover:shadow-blue-500/20 transition-all">
-              <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
-                <div>
-                  <h3 className="text-2xl font-bold text-white mb-2">Business Analysis Trainee</h3>
-                  <p className="text-blue-400 font-semibold">Digital Egypt Builders Initiative (MCIT)</p>
+          
+          {/* Professional Development Section */}
+          <div className="mb-16">
+            <h2 className="text-4xl font-bold text-center mb-12 text-blue-400">Professional Development</h2>
+            
+            <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+              <div className="bg-gray-900 rounded-xl overflow-hidden border border-gray-700 hover:border-blue-400 transition-all hover:shadow-xl hover:shadow-blue-500/20 transform hover:-translate-y-2">
+                <div className="h-48 relative overflow-hidden bg-gradient-to-br from-blue-900 to-black">
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <div className="text-center">
+                      <div className="text-6xl font-bold text-blue-400 mb-2">MCIT</div>
+                      <p className="text-blue-300 text-lg font-semibold">DEBI Program</p>
+                    </div>
+                  </div>
                 </div>
-                <div className="text-gray-400 mt-2 md:mt-0 md:text-right">
-                  <p>Cairo</p>
-                  <p className="font-semibold">NOV 2025 – Present</p>
+                <div className="p-6">
+                  <h3 className="text-2xl font-bold mb-2 text-white">Business Analysis Scholar</h3>
+                  <p className="text-blue-400 font-semibold mb-3">Digital Egypt Builders Initiative (MCIT)</p>
+                  <div className="flex items-center gap-2 text-gray-400 mb-4">
+                    <div className="w-4 h-4 bg-blue-400 rounded-full"></div>
+                    <span className="text-sm">Cairo</span>
+                    <span className="text-sm">•</span>
+                    <span className="text-sm font-semibold">Nov 2025 – Present</span>
+                  </div>
+                  <ul className="space-y-2 text-gray-300">
+                    <li className="flex items-start gap-2">
+                      <span className="text-blue-400 mt-1">▸</span>
+                      <span>Selected for a 9-month scholarship specializing in Agile, BPMN 2.0, and Digital Transformation</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-blue-400 mt-1">▸</span>
+                      <span>Designing system architectures and technical requirements for digital solutions</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="bg-gray-900 rounded-xl overflow-hidden border border-gray-700 hover:border-blue-400 transition-all hover:shadow-xl hover:shadow-blue-500/20 transform hover:-translate-y-2">
+                <div className="h-48 relative overflow-hidden bg-gradient-to-br from-green-900 to-black">
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <div className="text-center">
+                      <div className="text-6xl font-bold text-green-400 mb-2">NTI</div>
+                      <p className="text-green-300 text-lg font-semibold">Power BI Training</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="p-6">
+                  <h3 className="text-2xl font-bold mb-2 text-white">Power BI Trainee</h3>
+                  <p className="text-blue-400 font-semibold mb-3">National Telecommunication Institute (NTI)</p>
+                  <div className="flex items-center gap-2 text-gray-400 mb-4">
+                    <div className="w-4 h-4 bg-green-400 rounded-full"></div>
+                    <span className="text-sm">Zagazig</span>
+                    <span className="text-sm">•</span>
+                    <span className="text-sm font-semibold">Aug 2025 – Oct 2025</span>
+                  </div>
+                  <ul className="space-y-2 text-gray-300">
+                    <li className="flex items-start gap-2">
+                      <span className="text-green-400 mt-1">▸</span>
+                      <span>Mastered advanced Data Visualization and DAX formulas to create interactive business dashboards</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-green-400 mt-1">▸</span>
+                      <span>Transformed complex raw datasets into actionable insights for stakeholder decision-making</span>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
+          </div>
 
-            <div className="bg-gray-800/50 p-8 rounded-xl border-l-4 border-blue-400 hover:shadow-lg hover:shadow-blue-500/20 transition-all">
-              <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
-                <div>
-                  <h3 className="text-2xl font-bold text-white mb-2">Power BI Trainee</h3>
-                  <p className="text-blue-400 font-semibold">National Telecommunication Institute (NTI)</p>
+          {/* Professional Experience Section */}
+          <div>
+            <h2 className="text-4xl font-bold text-center mb-12 text-blue-400">Professional Experience</h2>
+            
+            <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+              <div className="bg-gray-900 rounded-xl overflow-hidden border border-gray-700 hover:border-blue-400 transition-all hover:shadow-xl hover:shadow-blue-500/20 transform hover:-translate-y-2">
+                <div className="h-48 relative overflow-hidden bg-gradient-to-br from-yellow-900 to-black">
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <div className="text-center">
+                      <div className="text-6xl font-bold text-yellow-400 mb-2">BDC</div>
+                      <p className="text-yellow-300 text-lg font-semibold">Banque du Caire</p>
+                    </div>
+                  </div>
                 </div>
-                <div className="text-gray-400 mt-2 md:mt-0 md:text-right">
-                  <p>Cairo</p>
-                  <p className="font-semibold">Aug 2025 – Oct 2025</p>
+                <div className="p-6">
+                  <h3 className="text-2xl font-bold mb-2 text-white">IT Intern</h3>
+                  <p className="text-blue-400 font-semibold mb-3">Banque du Caire</p>
+                  <div className="flex items-center gap-2 text-gray-400 mb-4">
+                    <div className="w-4 h-4 bg-yellow-400 rounded-full"></div>
+                    <span className="text-sm">Cairo</span>
+                    <span className="text-sm">•</span>
+                    <span className="text-sm font-semibold">Jul 2024 – Aug 2024</span>
+                  </div>
+                  <ul className="space-y-2 text-gray-300 mb-4">
+                    <li className="flex items-start gap-2">
+                      <span className="text-yellow-400 mt-1">▸</span>
+                      <span>Analysed IT service desk workflows, identifying bottlenecks that improved ticket response time by 25%</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-yellow-400 mt-1">▸</span>
+                      <span>Developed automated weekly performance reports using Excel PivotTables & Power Query</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-yellow-400 mt-1">▸</span>
+                      <span>Collaborated with IT infrastructure team to monitor internal reporting tools, ensuring 99% data accuracy</span>
+                    </li>
+                  </ul>
+                  <div className="flex flex-wrap gap-2">
+                    <span className="px-3 py-1 bg-green-900/50 text-green-300 rounded-full text-sm font-medium">Excel</span>
+                    <span className="px-3 py-1 bg-blue-900/50 text-blue-300 rounded-full text-sm font-medium">Power BI</span>
+                    <span className="px-3 py-1 bg-orange-900/50 text-orange-300 rounded-full text-sm font-medium">SQL</span>
+                    <span className="px-3 py-1 bg-purple-900/50 text-purple-300 rounded-full text-sm font-medium">Windows Server</span>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div className="bg-gray-800/50 p-8 rounded-xl border-l-4 border-blue-400 hover:shadow-lg hover:shadow-blue-500/20 transition-all">
-              <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
-                <div>
-                  <h3 className="text-2xl font-bold text-white mb-2">IT Intern</h3>
-                  <p className="text-blue-400 font-semibold">Banque du Caire</p>
+              <div className="bg-gray-900 rounded-xl overflow-hidden border border-gray-700 hover:border-blue-400 transition-all hover:shadow-xl hover:shadow-blue-500/20 transform hover:-translate-y-2">
+                <div className="h-48 relative overflow-hidden bg-gradient-to-br from-red-900 to-black">
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <div className="text-center">
+                      <div className="text-6xl font-bold text-red-400 mb-2">BM</div>
+                      <p className="text-red-300 text-lg font-semibold">Banque Misr</p>
+                    </div>
+                  </div>
                 </div>
-                <div className="text-gray-400 mt-2 md:mt-0 md:text-right">
-                  <p>Cairo</p>
-                  <p className="font-semibold">Jul 2024 – Aug 2024</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-gray-800/50 p-8 rounded-xl border-l-4 border-blue-400 hover:shadow-lg hover:shadow-blue-500/20 transition-all">
-              <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
-                <div>
-                  <h3 className="text-2xl font-bold text-white mb-2">Intern</h3>
-                  <p className="text-blue-400 font-semibold">Banque Misr</p>
-                </div>
-                <div className="text-gray-400 mt-2 md:mt-0 md:text-right">
-                  <p>Mit Ghamr</p>
-                  <p className="font-semibold">Aug 2023 – Sep 2023</p>
+                <div className="p-6">
+                  <h3 className="text-2xl font-bold mb-2 text-white">Intern</h3>
+                  <p className="text-blue-400 font-semibold mb-3">Banque Misr</p>
+                  <div className="flex items-center gap-2 text-gray-400 mb-4">
+                    <div className="w-4 h-4 bg-red-400 rounded-full"></div>
+                    <span className="text-sm">Mit Ghamr</span>
+                    <span className="text-sm">•</span>
+                    <span className="text-sm font-semibold">Aug 2023 – Sep 2023</span>
+                  </div>
+                  <ul className="space-y-2 text-gray-300">
+                    <li className="flex items-start gap-2">
+                      <span className="text-red-400 mt-1">▸</span>
+                      <span>Optimized customer service workflows by analysing service cycles, achieving a 20% reduction in processing time</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-red-400 mt-1">▸</span>
+                      <span>Enhanced data integrity and digital adoption by designing standardized tracking templates—reducing errors by 15%</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-red-400 mt-1">▸</span>
+                      <span>Facilitated customer transition to digital banking tools through improved service delivery</span>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -402,7 +499,7 @@ Bridging the gap between business strategy and technical execution through Syste
         </div>
       </section>
 
-      <section id="education" className="py-8 relative z-10" style={{scrollMarginTop: '80px'}}>
+      <section id="education" className="py-8 relative z-10">
         <div className="container mx-auto px-6 relative z-10">
           <h2 className="text-4xl font-bold text-center mb-16 text-blue-400">Education & Certifications</h2>
           
@@ -419,7 +516,7 @@ Bridging the gap between business strategy and technical execution through Syste
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-8 relative z-10" style={{scrollMarginTop: '80px'}}>
+      <section id="contact" className="py-8 relative z-10">
         <div className="container mx-auto px-6 relative z-10">
           <h2 className="text-4xl font-bold text-center mb-16 text-blue-400">Get In Touch</h2>
           
