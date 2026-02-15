@@ -1,5 +1,10 @@
 import { Mail, Linkedin, Github, Phone, Download, ExternalLink, ChevronDown, Database, BarChart3, Code } from 'lucide-react';
 import profileImage from './assets/images/1.png';
+import ecoCycleImage from './assets/images/eco-cycle.png';
+import mcitLogo from './assets/images/mcit-logo.png';
+import ntiLogo from './assets/images/nti-logo.png';
+import banqueDuCaireLogo from './assets/images/banque-du-caire-logo.png';
+import banqueMisrLogo from './assets/images/banque-misr-logo.png';
 import netflixImage from './assets/images/netflix-dashboard.png';
 import uberEatsImage from './assets/images/uber-eats-dashboard.png';
 import sqlImage from './assets/images/sql-school-database.png';
@@ -345,111 +350,135 @@ function App() {
       <section id="experience" className="py-8 relative z-10" style={{scrollMarginTop: '80px'}}>
         <div className="container mx-auto px-6 relative z-10">
           
-          <div className="max-w-4xl mx-auto space-y-8">
-            <div className="bg-gray-800/50 p-8 rounded-xl border-l-4 border-blue-400 hover:shadow-lg hover:shadow-blue-500/20 transition-all">
-              <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
-                <div>
-                  <h3 className="text-2xl font-bold text-white mb-2">Business Analysis Scholar</h3>
-                  <p className="text-blue-400 font-semibold">Digital Egypt Builders Initiative (MCIT)</p>
+          {/* Professional Development Section */}
+          <div className="mb-16">
+            <h2 className="text-4xl font-bold text-center mb-12 text-blue-400">Professional Development</h2>
+            
+            <div className="max-w-4xl mx-auto space-y-8">
+              <div className="bg-gray-800/50 p-8 rounded-xl border-l-4 border-blue-400 hover:shadow-lg hover:shadow-blue-500/20 transition-all relative">
+                <div className="absolute top-6 right-6 w-16 h-16 opacity-20">
+                  <img src={mcitLogo} alt="MCIT Logo" className="w-full h-full object-contain" />
                 </div>
-                <div className="text-gray-400 mt-2 md:mt-0 md:text-right">
-                  <p>Cairo</p>
-                  <p className="font-semibold">Nov 2025 – Present</p>
+                <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
+                  <div>
+                    <h3 className="text-2xl font-bold text-white mb-2">Business Analysis Scholar</h3>
+                    <p className="text-blue-400 font-semibold">Digital Egypt Builders Initiative (MCIT)</p>
+                  </div>
+                  <div className="text-gray-400 mt-2 md:mt-0 md:text-right">
+                    <p>Cairo</p>
+                    <p className="font-semibold">Nov 2025 – Present</p>
+                  </div>
                 </div>
+                <ul className="space-y-2 text-gray-300">
+                  <li className="flex items-start gap-2">
+                    <span className="text-blue-400 mt-1">▸</span>
+                    <span>Selected for a 9-month scholarship specializing in Agile, BPMN 2.0, and Digital Transformation</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-blue-400 mt-1">▸</span>
+                    <span>Designing system architectures and technical requirements for digital solutions</span>
+                  </li>
+                </ul>
               </div>
-              <ul className="space-y-2 text-gray-300">
-                <li className="flex items-start gap-2">
-                  <span className="text-blue-400 mt-1">▸</span>
-                  <span>Selected for a 9-month scholarship specializing in Agile, BPMN 2.0, and Digital Transformation</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-blue-400 mt-1">▸</span>
-                  <span>Designing system architectures and technical requirements for digital solutions</span>
-                </li>
-              </ul>
-            </div>
 
-            <div className="bg-gray-800/50 p-8 rounded-xl border-l-4 border-blue-400 hover:shadow-lg hover:shadow-blue-500/20 transition-all">
-              <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
-                <div>
-                  <h3 className="text-2xl font-bold text-white mb-2">Power BI Trainee</h3>
-                  <p className="text-blue-400 font-semibold">National Telecommunication Institute (NTI)</p>
+              <div className="bg-gray-800/50 p-8 rounded-xl border-l-4 border-blue-400 hover:shadow-lg hover:shadow-blue-500/20 transition-all relative">
+                <div className="absolute top-6 right-6 w-16 h-16 opacity-20">
+                  <img src={ntiLogo} alt="NTI Logo" className="w-full h-full object-contain" />
                 </div>
-                <div className="text-gray-400 mt-2 md:mt-0 md:text-right">
-                  <p>Zagazig</p>
-                  <p className="font-semibold">Aug 2025 – Oct 2025</p>
+                <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
+                  <div>
+                    <h3 className="text-2xl font-bold text-white mb-2">Power BI Trainee</h3>
+                    <p className="text-blue-400 font-semibold">National Telecommunication Institute (NTI)</p>
+                  </div>
+                  <div className="text-gray-400 mt-2 md:mt-0 md:text-right">
+                    <p>Zagazig</p>
+                    <p className="font-semibold">Aug 2025 – Oct 2025</p>
+                  </div>
                 </div>
-              </div>
-              <ul className="space-y-2 text-gray-300">
-                <li className="flex items-start gap-2">
-                  <span className="text-blue-400 mt-1">▸</span>
-                  <span>Mastered advanced Data Visualization and DAX formulas to create interactive business dashboards</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-blue-400 mt-1">▸</span>
-                  <span>Transformed complex raw datasets into actionable insights for stakeholder decision-making</span>
-                </li>
-              </ul>
-            </div>
-
-            <div className="bg-gray-800/50 p-8 rounded-xl border-l-4 border-blue-400 hover:shadow-lg hover:shadow-blue-500/20 transition-all">
-              <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
-                <div>
-                  <h3 className="text-2xl font-bold text-white mb-2">IT Intern</h3>
-                  <p className="text-blue-400 font-semibold">Banque du Caire</p>
-                </div>
-                <div className="text-gray-400 mt-2 md:mt-0 md:text-right">
-                  <p>Cairo</p>
-                  <p className="font-semibold">Jul 2024 – Aug 2024</p>
-                </div>
-              </div>
-              <ul className="space-y-2 text-gray-300 mb-4">
-                <li className="flex items-start gap-2">
-                  <span className="text-blue-400 mt-1">▸</span>
-                  <span>Analysed IT service desk workflows, identifying bottlenecks that improved ticket response time by 25%</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-blue-400 mt-1">▸</span>
-                  <span>Developed automated weekly performance reports using Excel PivotTables & Power Query</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-blue-400 mt-1">▸</span>
-                  <span>Collaborated with IT infrastructure team to monitor internal reporting tools, ensuring 99% data accuracy</span>
-                </li>
-              </ul>
-              <div className="flex flex-wrap gap-2">
-                <span className="px-3 py-1 bg-green-900/50 text-green-300 rounded-full text-sm font-medium">Excel</span>
-                <span className="px-3 py-1 bg-blue-900/50 text-blue-300 rounded-full text-sm font-medium">Power BI</span>
-                <span className="px-3 py-1 bg-orange-900/50 text-orange-300 rounded-full text-sm font-medium">SQL</span>
-                <span className="px-3 py-1 bg-purple-900/50 text-purple-300 rounded-full text-sm font-medium">Windows Server</span>
+                <ul className="space-y-2 text-gray-300">
+                  <li className="flex items-start gap-2">
+                    <span className="text-blue-400 mt-1">▸</span>
+                    <span>Mastered advanced Data Visualization and DAX formulas to create interactive business dashboards</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-blue-400 mt-1">▸</span>
+                    <span>Transformed complex raw datasets into actionable insights for stakeholder decision-making</span>
+                  </li>
+                </ul>
               </div>
             </div>
+          </div>
 
-            <div className="bg-gray-800/50 p-8 rounded-xl border-l-4 border-blue-400 hover:shadow-lg hover:shadow-blue-500/20 transition-all">
-              <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
-                <div>
-                  <h3 className="text-2xl font-bold text-white mb-2">Intern</h3>
-                  <p className="text-blue-400 font-semibold">Banque Misr</p>
+          {/* Professional Experience Section */}
+          <div>
+            <h2 className="text-4xl font-bold text-center mb-12 text-blue-400">Professional Experience</h2>
+            
+            <div className="max-w-4xl mx-auto space-y-8">
+              <div className="bg-gray-800/50 p-8 rounded-xl border-l-4 border-blue-400 hover:shadow-lg hover:shadow-blue-500/20 transition-all relative">
+                <div className="absolute top-6 right-6 w-16 h-16 opacity-20">
+                  <img src={banqueDuCaireLogo} alt="Banque du Caire Logo" className="w-full h-full object-contain" />
                 </div>
-                <div className="text-gray-400 mt-2 md:mt-0 md:text-right">
-                  <p>Mit Ghamr</p>
-                  <p className="font-semibold">Aug 2023 – Sep 2023</p>
+                <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
+                  <div>
+                    <h3 className="text-2xl font-bold text-white mb-2">IT Intern</h3>
+                    <p className="text-blue-400 font-semibold">Banque du Caire</p>
+                  </div>
+                  <div className="text-gray-400 mt-2 md:mt-0 md:text-right">
+                    <p>Cairo</p>
+                    <p className="font-semibold">Jul 2024 – Aug 2024</p>
+                  </div>
+                </div>
+                <ul className="space-y-2 text-gray-300 mb-4">
+                  <li className="flex items-start gap-2">
+                    <span className="text-blue-400 mt-1">▸</span>
+                    <span>Analysed IT service desk workflows, identifying bottlenecks that improved ticket response time by 25%</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-blue-400 mt-1">▸</span>
+                    <span>Developed automated weekly performance reports using Excel PivotTables & Power Query</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-blue-400 mt-1">▸</span>
+                    <span>Collaborated with IT infrastructure team to monitor internal reporting tools, ensuring 99% data accuracy</span>
+                  </li>
+                </ul>
+                <div className="flex flex-wrap gap-2">
+                  <span className="px-3 py-1 bg-green-900/50 text-green-300 rounded-full text-sm font-medium">Excel</span>
+                  <span className="px-3 py-1 bg-blue-900/50 text-blue-300 rounded-full text-sm font-medium">Power BI</span>
+                  <span className="px-3 py-1 bg-orange-900/50 text-orange-300 rounded-full text-sm font-medium">SQL</span>
+                  <span className="px-3 py-1 bg-purple-900/50 text-purple-300 rounded-full text-sm font-medium">Windows Server</span>
                 </div>
               </div>
-              <ul className="space-y-2 text-gray-300">
-                <li className="flex items-start gap-2">
-                  <span className="text-blue-400 mt-1">▸</span>
-                  <span>Optimized customer service workflows by analysing service cycles, achieving a 20% reduction in processing time</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-blue-400 mt-1">▸</span>
-                  <span>Enhanced data integrity and digital adoption by designing standardized tracking templates—reducing errors by 15%</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <span className="text-blue-400 mt-1">▸</span>
-                  <span>Facilitated customer transition to digital banking tools through improved service delivery</span>
-                </li>
-              </ul>
+
+              <div className="bg-gray-800/50 p-8 rounded-xl border-l-4 border-blue-400 hover:shadow-lg hover:shadow-blue-500/20 transition-all relative">
+                <div className="absolute top-6 right-6 w-16 h-16 opacity-20">
+                  <img src={banqueMisrLogo} alt="Banque Misr Logo" className="w-full h-full object-contain" />
+                </div>
+                <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
+                  <div>
+                    <h3 className="text-2xl font-bold text-white mb-2">Intern</h3>
+                    <p className="text-blue-400 font-semibold">Banque Misr</p>
+                  </div>
+                  <div className="text-gray-400 mt-2 md:mt-0 md:text-right">
+                    <p>Mit Ghamr</p>
+                    <p className="font-semibold">Aug 2023 – Sep 2023</p>
+                  </div>
+                </div>
+                <ul className="space-y-2 text-gray-300">
+                  <li className="flex items-start gap-2">
+                    <span className="text-blue-400 mt-1">▸</span>
+                    <span>Optimized customer service workflows by analysing service cycles, achieving a 20% reduction in processing time</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-blue-400 mt-1">▸</span>
+                    <span>Enhanced data integrity and digital adoption by designing standardized tracking templates—reducing errors by 15%</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-blue-400 mt-1">▸</span>
+                    <span>Facilitated customer transition to digital banking tools through improved service delivery</span>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
