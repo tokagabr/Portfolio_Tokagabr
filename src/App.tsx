@@ -8,7 +8,12 @@ import roiImage from './assets/images/handypro-roi-analysis.png';
 function App() {
   
   return (
-    <div className="min-h-screen bg-gray-900 text-gray-100">
+    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-slate-900 to-gray-900 text-gray-100 relative overflow-hidden">
+      {/* Background Effects */}
+      <div className="fixed inset-0 opacity-20 pointer-events-none">
+        <div className="absolute top-20 left-20 w-72 h-72 bg-blue-500 rounded-full filter blur-3xl animate-pulse"></div>
+        <div className="absolute bottom-20 right-20 w-96 h-96 bg-cyan-500 rounded-full filter blur-3xl animate-pulse delay-1000"></div>
+      </div>
       {/* Header */}
       <header className="fixed top-0 left-0 right-0 bg-gray-900/95 backdrop-blur-sm z-50 border-b border-gray-800">
         <nav className="container mx-auto px-6 py-4">
@@ -31,12 +36,7 @@ function App() {
       </header>
 
       {/* Hero Section */}
-      <section id="hero" className="min-h-screen flex items-center justify-center pt-4 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-slate-900 to-gray-900"></div>
-        <div className="absolute inset-0 opacity-20">
-          <div className="absolute top-20 left-20 w-72 h-72 bg-blue-500 rounded-full filter blur-3xl animate-pulse"></div>
-          <div className="absolute bottom-20 right-20 w-96 h-96 bg-cyan-500 rounded-full filter blur-3xl animate-pulse delay-1000"></div>
-        </div>
+      <section id="hero" className="min-h-screen flex items-center justify-center pt-20 md:pt-4 relative z-10">
         
         <div className="container mx-auto px-6 relative z-10">
           <div className="flex flex-col md:flex-row items-center justify-center gap-4">
@@ -49,10 +49,10 @@ function App() {
                 Toka Gamal Gabr
               </h1>
               <h2 className="text-2xl md:text-3xl text-blue-200 mb-6 font-light">
-                Data Analyst | Business Analyst
+              Technical Business Analyst | Data Analyst
               </h2>
               <p className="text-lg text-blue-100 mb-8 leading-relaxed">
-                Transforming complex data into actionable insights that drive KPI performance and support data-driven decision-making for stakeholders.
+Bridging the gap between business strategy and technical execution through System Design, Data Analytics, and Full-stack development.              
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start mb-8">
@@ -119,11 +119,7 @@ function App() {
       </section>
 
       {/* About Section */}
-   <section id="about" className="py-8 bg-gradient-to-br from-gray-900 via-slate-900 to-gray-900 relative overflow-hidden"> 
-  <div className="absolute inset-0 opacity-20">
-          <div className="absolute top-10 left-10 w-64 h-64 bg-blue-500 rounded-full filter blur-3xl animate-pulse"></div>
-          <div className="absolute bottom-10 right-10 w-80 h-80 bg-cyan-500 rounded-full filter blur-3xl animate-pulse delay-1000"></div>
-        </div>
+   <section id="about" className="py-8 relative z-10" style={{scrollMarginTop: '80px'}}>
         <div className="container mx-auto px-6 relative z-10">
           <h2 className="text-4xl font-bold text-center mb-12 text-blue-400">About Me</h2>
           
@@ -137,11 +133,7 @@ function App() {
       </section>
 
       {/* Skills Section */}
-      <section id="skills" className="py-8 bg-gradient-to-br from-gray-900 via-slate-900 to-gray-900 relative overflow-hidden">
-        <div className="absolute inset-0 opacity-20">
-          <div className="absolute top-20 right-20 w-72 h-72 bg-blue-500 rounded-full filter blur-3xl animate-pulse"></div>
-          <div className="absolute bottom-20 left-20 w-96 h-96 bg-cyan-500 rounded-full filter blur-3xl animate-pulse delay-1000"></div>
-        </div>
+      <section id="skills" className="py-8 relative z-10" style={{scrollMarginTop: '80px'}}>
         <div className="container mx-auto px-6 relative z-10">
           <h2 className="text-4xl font-bold text-center mb-16 text-blue-400">Skills & Expertise</h2>
 
@@ -202,11 +194,7 @@ function App() {
       </section>
 
       {/* Projects Section */}
-      <section id="projects" className="py-8 bg-gradient-to-br from-gray-900 via-slate-900 to-gray-900 relative overflow-hidden">
-        <div className="absolute inset-0 opacity-20">
-          <div className="absolute top-10 left-10 w-64 h-64 bg-blue-500 rounded-full filter blur-3xl animate-pulse"></div>
-          <div className="absolute bottom-10 right-10 w-80 h-80 bg-cyan-500 rounded-full filter blur-3xl animate-pulse delay-1000"></div>
-        </div>
+      <section id="projects" className="py-8 relative z-10" style={{scrollMarginTop: '80px'}}>
         <div className="container mx-auto px-6 relative z-10">
           <h2 className="text-4xl font-bold text-center mb-16 text-blue-400">Featured Projects</h2>
 
@@ -354,13 +342,9 @@ function App() {
         </div>
       </section>
 
-      <section id="experience" className="py-8 bg-gradient-to-br from-gray-900 via-slate-900 to-gray-900 relative overflow-hidden">
-        <div className="absolute inset-0 opacity-20">
-          <div className="absolute top-10 right-10 w-72 h-72 bg-blue-500 rounded-full filter blur-3xl animate-pulse"></div>
-          <div className="absolute bottom-10 left-10 w-96 h-96 bg-cyan-500 rounded-full filter blur-3xl animate-pulse delay-1000"></div>
-        </div>
+      <section id="experience" className="py-8 relative z-10" style={{scrollMarginTop: '80px'}}>
         <div className="container mx-auto px-6 relative z-10">
-          <h2 className="text-4xl font-bold text-center mb-16 text-blue-400">Professional Experience</h2>
+          <h2 className="text-4xl font-bold text-center mb-16 text-blue-400">Experience</h2>
 
           <div className="max-w-4xl mx-auto space-y-8">
             <div className="bg-gray-800/50 p-8 rounded-xl border-l-4 border-blue-400 hover:shadow-lg hover:shadow-blue-500/20 transition-all">
@@ -418,11 +402,7 @@ function App() {
         </div>
       </section>
 
-      <section id="education" className="py-8 bg-gradient-to-br from-gray-900 via-slate-900 to-gray-900 relative overflow-hidden">
-        <div className="absolute inset-0 opacity-20">
-          <div className="absolute top-10 left-10 w-64 h-64 bg-blue-500 rounded-full filter blur-3xl animate-pulse"></div>
-          <div className="absolute bottom-10 right-10 w-80 h-80 bg-cyan-500 rounded-full filter blur-3xl animate-pulse delay-1000"></div>
-        </div>
+      <section id="education" className="py-8 relative z-10" style={{scrollMarginTop: '80px'}}>
         <div className="container mx-auto px-6 relative z-10">
           <h2 className="text-4xl font-bold text-center mb-16 text-blue-400">Education & Certifications</h2>
           
@@ -439,11 +419,7 @@ function App() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-8 bg-gradient-to-br from-gray-900 via-slate-900 to-gray-900 relative overflow-hidden">
-        <div className="absolute inset-0 opacity-20">
-          <div className="absolute top-10 right-10 w-72 h-72 bg-blue-500 rounded-full filter blur-3xl animate-pulse"></div>
-          <div className="absolute bottom-10 left-10 w-96 h-96 bg-cyan-500 rounded-full filter blur-3xl animate-pulse delay-1000"></div>
-        </div>
+      <section id="contact" className="py-8 relative z-10" style={{scrollMarginTop: '80px'}}>
         <div className="container mx-auto px-6 relative z-10">
           <h2 className="text-4xl font-bold text-center mb-16 text-blue-400">Get In Touch</h2>
           
@@ -472,11 +448,7 @@ function App() {
         </div>
       </section>
 
-      <footer className="py-4 bg-gradient-to-br from-gray-900 via-slate-900 to-gray-900 border-t border-gray-800 relative overflow-hidden">
-        <div className="absolute inset-0 opacity-20">
-          <div className="absolute top-5 left-5 w-32 h-32 bg-blue-500 rounded-full filter blur-3xl animate-pulse"></div>
-          <div className="absolute bottom-5 right-5 w-40 h-40 bg-cyan-500 rounded-full filter blur-3xl animate-pulse delay-1000"></div>
-        </div>
+      <footer className="py-4 border-t border-gray-800 relative z-10">
         <div className="container mx-auto px-6 text-center relative z-10">
           <p className="text-gray-400">
             © 2025 Toka Gamal Gabr. All rights reserved.
