@@ -397,8 +397,8 @@ function App() {
             
             <div className="max-w-4xl mx-auto space-y-8">
               <div className="bg-gray-800/50 p-8 rounded-xl border-l-4 border-blue-400 hover:shadow-lg hover:shadow-blue-500/20 transition-all relative">
-                <div className="absolute top-8 right-8 w-24 h-24 opacity-0 hover:opacity-40 transition-opacity duration-300">
-                  <img src={mcitLogo} alt="MCIT Logo" className="w-full h-full object-contain rounded-lg" />
+                <div className="absolute top-4 right-4 w-20 h-20 opacity-30 hover:opacity-60 hover:scale-110 transition-all duration-300">
+                  <img src={mcitLogo} alt="MCIT Logo" className="w-full h-full object-contain rounded-lg shadow-lg" />
                 </div>
                 <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
                   <div>
@@ -423,8 +423,8 @@ function App() {
               </div>
 
               <div className="bg-gray-800/50 p-8 rounded-xl border-l-4 border-blue-400 hover:shadow-lg hover:shadow-blue-500/20 transition-all relative">
-                <div className="absolute top-8 right-8 w-24 h-24 opacity-0 hover:opacity-40 transition-opacity duration-300">
-                  <img src={ntiLogo} alt="NTI Logo" className="w-full h-full object-contain rounded-lg" />
+                <div className="absolute top-4 right-4 w-20 h-20 opacity-30 hover:opacity-60 hover:scale-110 transition-all duration-300">
+                  <img src={ntiLogo} alt="NTI Logo" className="w-full h-full object-contain rounded-lg shadow-lg" />
                 </div>
                 <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
                   <div>
@@ -456,8 +456,8 @@ function App() {
             
             <div className="max-w-4xl mx-auto space-y-8">
               <div className="bg-gray-800/50 p-8 rounded-xl border-l-4 border-blue-400 hover:shadow-lg hover:shadow-blue-500/20 transition-all relative">
-                <div className="absolute top-8 right-8 w-24 h-24 opacity-0 hover:opacity-40 transition-opacity duration-300">
-                  <img src={banqueDuCaireLogo} alt="Banque du Caire Logo" className="w-full h-full object-contain rounded-lg" />
+                <div className="absolute top-4 right-4 w-20 h-20 opacity-30 hover:opacity-60 hover:scale-110 transition-all duration-300">
+                  <img src={banqueDuCaireLogo} alt="Banque du Caire Logo" className="w-full h-full object-contain rounded-lg shadow-lg" />
                 </div>
                 <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
                   <div>
@@ -492,8 +492,8 @@ function App() {
               </div>
 
               <div className="bg-gray-800/50 p-8 rounded-xl border-l-4 border-blue-400 hover:shadow-lg hover:shadow-blue-500/20 transition-all relative">
-                <div className="absolute top-8 right-8 w-24 h-24 opacity-0 hover:opacity-40 transition-opacity duration-300">
-                  <img src={banqueMisrLogo} alt="Banque Misr Logo" className="w-full h-full object-contain rounded-lg" />
+                <div className="absolute top-4 right-4 w-20 h-20 opacity-30 hover:opacity-60 hover:scale-110 transition-all duration-300">
+                  <img src={banqueMisrLogo} alt="Banque Misr Logo" className="w-full h-full object-contain rounded-lg shadow-lg" />
                 </div>
                 <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
                   <div>
