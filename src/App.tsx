@@ -137,63 +137,227 @@ function App() {
         </div>
       </section>
 
-      {/* Skills Section */}
+      {/* Technical Skills Section */}
       <section id="skills" className="py-8 relative z-10">
         <div className="container mx-auto px-6 relative z-10">
-          <h2 className="text-4xl font-bold text-center mb-16 text-blue-400">Skills & Expertise</h2>
+          <h2 className="text-4xl font-bold text-center mb-16 text-blue-400">Technical Skills</h2>
 
-          <div className="flex flex-col lg:flex-row gap-8 max-w-6xl mx-auto">
-            <div className="bg-gray-900/50 p-8 rounded-xl border border-gray-700 hover:border-blue-400 transition-all hover:shadow-lg hover:shadow-blue-500/20 lg:w-1/2">
-              <h3 className="text-2xl font-bold mb-6 text-blue-400">Business Analysis / Soft Skills</h3>
-              <ul className="space-y-3">
-                <li className="flex items-start gap-3">
-                  <span className="text-blue-400 mt-1">▸</span>
-                  <span className="text-gray-300">Requirements Gathering</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-blue-400 mt-1">▸</span>
-                  <span className="text-gray-300">Process Optimization</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-blue-400 mt-1">▸</span>
-                  <span className="text-gray-300">Workflow Mapping</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-blue-400 mt-1">▸</span>
-                  <span className="text-gray-300">KPI Definition</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-blue-400 mt-1">▸</span>
-                  <span className="text-gray-300">Stakeholder Communication</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-blue-400 mt-1">▸</span>
-                  <span className="text-gray-300">Gap Analysis</span>
-                </li>
-              </ul>
-            </div>
-
-            <div className="bg-gray-900/50 p-8 rounded-xl border border-gray-700 hover:border-blue-400 transition-all hover:shadow-lg hover:shadow-blue-500/20 lg:w-1/2">
-              <h3 className="text-2xl font-bold mb-6 text-blue-400">Technical Tools</h3>
-              <div className="grid grid-cols-2 gap-4">
-                <div className="flex flex-col items-center p-4 bg-gray-900/50 rounded-lg hover:bg-gray-900 transition-colors">
-                  <BarChart3 className="w-10 h-10 text-blue-400 mb-3" />
-                  <span className="text-sm text-gray-300 text-center font-medium">Power BI</span>
+          <div className="max-w-6xl mx-auto space-y-12">
+            
+            {/* Business & Systems Analysis */}
+            <div className="bg-gray-800/50 p-8 rounded-xl border border-gray-700 hover:border-blue-400 transition-all hover:shadow-lg hover:shadow-blue-500/20">
+              <h3 className="text-2xl font-bold mb-8 text-blue-400 flex items-center gap-3">
+                <BarChart3 className="w-8 h-8" />
+                Business & Systems Analysis
+              </h3>
+              
+              <div className="grid md:grid-cols-2 gap-6">
+                <div className="space-y-4">
+                  <div className="flex items-center gap-4 p-4 bg-gray-900/50 rounded-lg hover:bg-gray-900 transition-colors">
+                    <div className="w-12 h-12 bg-blue-600/20 rounded-lg flex items-center justify-center">
+                      <BarChart3 className="w-6 h-6 text-blue-400" />
+                    </div>
+                    <div>
+                      <h4 className="text-white font-semibold mb-1">UML Modeling</h4>
+                      <p className="text-gray-400 text-sm">Use Case, Sequence, Class Diagrams</p>
+                      <a href="#projects" className="text-blue-400 text-xs hover:text-blue-300 transition-colors mt-1 inline-block">
+                        → See in Eco Cycle Project
+                      </a>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-center gap-4 p-4 bg-gray-900/50 rounded-lg hover:bg-gray-900 transition-colors">
+                    <div className="w-12 h-12 bg-green-600/20 rounded-lg flex items-center justify-center">
+                      <Database className="w-6 h-6 text-green-400" />
+                    </div>
+                    <div>
+                      <h4 className="text-white font-semibold mb-1">Requirements Engineering</h4>
+                      <p className="text-gray-400 text-sm">BRD, FRD, NFR</p>
+                    </div>
+                  </div>
                 </div>
-                <div className="flex flex-col items-center p-4 bg-gray-900/50 rounded-lg hover:bg-gray-900 transition-colors">
-                  <Database className="w-10 h-10 text-orange-400 mb-3" />
-                  <span className="text-sm text-gray-300 text-center font-medium">SQL</span>
-                </div>
-                <div className="flex flex-col items-center p-4 bg-gray-900/50 rounded-lg hover:bg-gray-900 transition-colors">
-                  <BarChart3 className="w-10 h-10 text-green-400 mb-3" />
-                  <span className="text-sm text-gray-300 text-center font-medium">Excel</span>
-                </div>
-                <div className="flex flex-col items-center p-4 bg-gray-900/50 rounded-lg hover:bg-gray-900 transition-colors">
-                  <Code className="w-10 h-10 text-yellow-400 mb-3" />
-                  <span className="text-sm text-gray-300 text-center font-medium">Python</span>
+                
+                <div className="space-y-4">
+                  <div className="flex items-center gap-4 p-4 bg-gray-900/50 rounded-lg hover:bg-gray-900 transition-colors">
+                    <div className="w-12 h-12 bg-purple-600/20 rounded-lg flex items-center justify-center">
+                      <Code className="w-6 h-6 text-purple-400" />
+                    </div>
+                    <div>
+                      <h4 className="text-white font-semibold mb-1">SDLC</h4>
+                      <p className="text-gray-400 text-sm">Agile, Scrum, Waterfall</p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-center gap-4 p-4 bg-gray-900/50 rounded-lg hover:bg-gray-900 transition-colors">
+                    <div className="w-12 h-12 bg-orange-600/20 rounded-lg flex items-center justify-center">
+                      <BarChart3 className="w-6 h-6 text-orange-400" />
+                    </div>
+                    <div>
+                      <h4 className="text-white font-semibold mb-1">BPMN 2.0</h4>
+                      <p className="text-gray-400 text-sm">Business Process Mapping</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
+
+            {/* Data Analytics & BI */}
+            <div className="bg-gray-800/50 p-8 rounded-xl border border-gray-700 hover:border-blue-400 transition-all hover:shadow-lg hover:shadow-blue-500/20">
+              <h3 className="text-2xl font-bold mb-8 text-blue-400 flex items-center gap-3">
+                <Database className="w-8 h-8" />
+                Data Analytics & BI
+              </h3>
+              
+              <div className="grid md:grid-cols-2 gap-6">
+                <div className="space-y-4">
+                  <div className="flex items-center gap-4 p-4 bg-gray-900/50 rounded-lg hover:bg-gray-900 transition-colors">
+                    <div className="w-12 h-12 bg-orange-600/20 rounded-lg flex items-center justify-center">
+                      <Database className="w-6 h-6 text-orange-400" />
+                    </div>
+                    <div>
+                      <h4 className="text-white font-semibold mb-1">SQL</h4>
+                      <p className="text-gray-400 text-sm">MySQL</p>
+                      <a href="#projects" className="text-blue-400 text-xs hover:text-blue-300 transition-colors mt-1 inline-block">
+                        → See in SQL Project
+                      </a>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-center gap-4 p-4 bg-gray-900/50 rounded-lg hover:bg-gray-900 transition-colors">
+                    <div className="w-12 h-12 bg-blue-600/20 rounded-lg flex items-center justify-center">
+                      <BarChart3 className="w-6 h-6 text-blue-400" />
+                    </div>
+                    <div>
+                      <h4 className="text-white font-semibold mb-1">Power BI</h4>
+                      <p className="text-gray-400 text-sm">DAX, Interactive Dashboards</p>
+                      <a href="#projects" className="text-blue-400 text-xs hover:text-blue-300 transition-colors mt-1 inline-block">
+                        → See in Netflix & Uber Eats
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                
+                <div className="space-y-4">
+                  <div className="flex items-center gap-4 p-4 bg-gray-900/50 rounded-lg hover:bg-gray-900 transition-colors">
+                    <div className="w-12 h-12 bg-green-600/20 rounded-lg flex items-center justify-center">
+                      <BarChart3 className="w-6 h-6 text-green-400" />
+                    </div>
+                    <div>
+                      <h4 className="text-white font-semibold mb-1">Advanced Excel</h4>
+                      <p className="text-gray-400 text-sm">Power Query, Pivot Tables</p>
+                      <a href="#projects" className="text-blue-400 text-xs hover:text-blue-300 transition-colors mt-1 inline-block">
+                        → See in ROI Analysis
+                      </a>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-center gap-4 p-4 bg-gray-900/50 rounded-lg hover:bg-gray-900 transition-colors">
+                    <div className="w-12 h-12 bg-yellow-600/20 rounded-lg flex items-center justify-center">
+                      <Code className="w-6 h-6 text-yellow-400" />
+                    </div>
+                    <div>
+                      <h4 className="text-white font-semibold mb-1">Python</h4>
+                      <p className="text-gray-400 text-sm">Data Exploration</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Software Development */}
+            <div className="bg-gray-800/50 p-8 rounded-xl border border-gray-700 hover:border-blue-400 transition-all hover:shadow-lg hover:shadow-blue-500/20">
+              <h3 className="text-2xl font-bold mb-8 text-blue-400 flex items-center gap-3">
+                <Code className="w-8 h-8" />
+                Software Development
+              </h3>
+              
+              <div className="grid md:grid-cols-2 gap-6">
+                <div className="space-y-4">
+                  <div className="flex items-center gap-4 p-4 bg-gray-900/50 rounded-lg hover:bg-gray-900 transition-colors">
+                    <div className="w-12 h-12 bg-purple-600/20 rounded-lg flex items-center justify-center">
+                      <Code className="w-6 h-6 text-purple-400" />
+                    </div>
+                    <div>
+                      <h4 className="text-white font-semibold mb-1">Backend</h4>
+                      <p className="text-gray-400 text-sm">PHP</p>
+                      <a href="#projects" className="text-blue-400 text-xs hover:text-blue-300 transition-colors mt-1 inline-block">
+                        → See in Eco Cycle Project
+                      </a>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-center gap-4 p-4 bg-gray-900/50 rounded-lg hover:bg-gray-900 transition-colors">
+                    <div className="w-12 h-12 bg-cyan-600/20 rounded-lg flex items-center justify-center">
+                      <Code className="w-6 h-6 text-cyan-400" />
+                    </div>
+                    <div>
+                      <h4 className="text-white font-semibold mb-1">Frontend</h4>
+                      <p className="text-gray-400 text-sm">React, JavaScript (jQuery), HTML5/CSS3</p>
+                      <a href="#projects" className="text-blue-400 text-xs hover:text-blue-300 transition-colors mt-1 inline-block">
+                        → See in Eco Cycle Project
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                
+                <div className="space-y-4">
+                  <div className="flex items-center gap-4 p-4 bg-gray-900/50 rounded-lg hover:bg-gray-900 transition-colors">
+                    <div className="w-12 h-12 bg-pink-600/20 rounded-lg flex items-center justify-center">
+                      <Code className="w-6 h-6 text-pink-400" />
+                    </div>
+                    <div>
+                      <h4 className="text-white font-semibold mb-1">Styling</h4>
+                      <p className="text-gray-400 text-sm">Bootstrap, Tailwind CSS</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* IT Infrastructure & Tools */}
+            <div className="bg-gray-800/50 p-8 rounded-xl border border-gray-700 hover:border-blue-400 transition-all hover:shadow-lg hover:shadow-blue-500/20">
+              <h3 className="text-2xl font-bold mb-8 text-blue-400 flex items-center gap-3">
+                <Database className="w-8 h-8" />
+                IT Infrastructure & Tools
+              </h3>
+              
+              <div className="grid md:grid-cols-2 gap-6">
+                <div className="space-y-4">
+                  <div className="flex items-center gap-4 p-4 bg-gray-900/50 rounded-lg hover:bg-gray-900 transition-colors">
+                    <div className="w-12 h-12 bg-red-600/20 rounded-lg flex items-center justify-center">
+                      <Database className="w-6 h-6 text-red-400" />
+                    </div>
+                    <div>
+                      <h4 className="text-white font-semibold mb-1">Networking</h4>
+                      <p className="text-gray-400 text-sm">TCP/IP, Windows Server</p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-center gap-4 p-4 bg-gray-900/50 rounded-lg hover:bg-gray-900 transition-colors">
+                    <div className="w-12 h-12 bg-orange-600/20 rounded-lg flex items-center justify-center">
+                      <Code className="w-6 h-6 text-orange-400" />
+                    </div>
+                    <div>
+                      <h4 className="text-white font-semibold mb-1">Version Control</h4>
+                      <p className="text-gray-400 text-sm">Git & GitHub</p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div className="space-y-4">
+                  <div className="flex items-center gap-4 p-4 bg-gray-900/50 rounded-lg hover:bg-gray-900 transition-colors">
+                    <div className="w-12 h-12 bg-blue-600/20 rounded-lg flex items-center justify-center">
+                      <Code className="w-6 h-6 text-blue-400" />
+                    </div>
+                    <div>
+                      <h4 className="text-white font-semibold mb-1">Development Environment</h4>
+                      <p className="text-gray-400 text-sm">VS Code, XAMPP</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </section>
@@ -228,18 +392,10 @@ function App() {
                 <h3 className="text-2xl font-bold mb-3 text-white">Eco Cycle | Integrated Waste Management System</h3>
                 <p className="text-gray-400 mb-4">A Technical System Analysis and Full-Stack platform designed to automate plastic waste lifecycle and reward systems.</p>
                 <div className="flex flex-wrap gap-2 mb-4">
-                  <span className="px-3 py-1 bg-blue-600 rounded-lg shadow-lg opacity-80 hover:opacity-100 transition-all duration-300 flex-shrink-0 flex items-center justify-center p-2">
-                    <div className="text-white font-bold text-sm">PHP</div>
-                  </span>
-                  <span className="px-3 py-1 bg-cyan-600 rounded-lg shadow-lg opacity-80 hover:opacity-100 transition-all duration-300 flex-shrink-0 flex items-center justify-center p-2">
-                    <div className="text-white font-bold text-sm">React</div>
-                  </span>
-                  <span className="px-3 py-1 bg-orange-600 rounded-lg shadow-lg opacity-80 hover:opacity-100 transition-all duration-300 flex-shrink-0 flex items-center justify-center p-2">
-                    <div className="text-white font-bold text-sm">MySQL</div>
-                  </span>
-                  <span className="px-3 py-1 bg-purple-600 rounded-lg shadow-lg opacity-80 hover:opacity-100 transition-all duration-300 flex-shrink-0 flex items-center justify-center p-2">
-                    <div className="text-white font-bold text-sm">UML</div>
-                  </span>
+                  <span className="px-3 py-1 bg-blue-900/50 text-blue-300 rounded-full text-sm font-medium">PHP</span>
+                  <span className="px-3 py-1 bg-cyan-900/50 text-cyan-300 rounded-full text-sm font-medium">React</span>
+                  <span className="px-3 py-1 bg-orange-900/50 text-orange-300 rounded-full text-sm font-medium">MySQL</span>
+                  <span className="px-3 py-1 bg-purple-900/50 text-purple-300 rounded-full text-sm font-medium">UML</span>
                 </div>
                 <a
                   href="https://github.com/tokagabr/Eco-Cycle-System-Analysis"
