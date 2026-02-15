@@ -397,10 +397,6 @@ function App() {
             
             <div className="max-w-4xl mx-auto space-y-8">
               <div className="bg-gray-800/50 p-8 rounded-xl border-l-4 border-blue-400 hover:shadow-lg hover:shadow-blue-500/20 transition-all relative">
-                <div className="absolute top-2 right-2 w-16 h-16 opacity-20 hover:opacity-50 hover:scale-105 transition-all duration-300">
-                  <img src={mcitLogo} alt="MCIT Logo" className="w-full h-full object-contain rounded-lg shadow-md" />
-                  <p className="absolute -bottom-6 left-1/2 transform -translate-x-1/2 text-xs text-blue-300 font-medium whitespace-nowrap">Digital Egypt Builders</p>
-                </div>
                 <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 bg-white/30 backdrop-blur-sm rounded-lg opacity-30 hover:opacity-60 hover:scale-110 transition-all duration-300 flex-shrink-0 flex items-center justify-center p-2">
@@ -429,10 +425,6 @@ function App() {
               </div>
 
               <div className="bg-gray-800/50 p-8 rounded-xl border-l-4 border-blue-400 hover:shadow-lg hover:shadow-blue-500/20 transition-all relative">
-                <div className="absolute top-2 right-2 w-16 h-16 opacity-20 hover:opacity-50 hover:scale-105 transition-all duration-300">
-                  <img src={ntiLogo} alt="NTI Logo" className="w-full h-full object-contain rounded-lg shadow-md" />
-                  <p className="absolute -bottom-6 left-1/2 transform -translate-x-1/2 text-xs text-blue-300 font-medium whitespace-nowrap">National Telecom Institute</p>
-                </div>
                 <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 bg-white/30 backdrop-blur-sm rounded-lg opacity-30 hover:opacity-60 hover:scale-110 transition-all duration-300 flex-shrink-0 flex items-center justify-center p-2">
@@ -468,10 +460,6 @@ function App() {
             
             <div className="max-w-4xl mx-auto space-y-8">
               <div className="bg-gray-800/50 p-8 rounded-xl border-l-4 border-blue-400 hover:shadow-lg hover:shadow-blue-500/20 transition-all relative">
-                <div className="absolute top-2 right-2 w-16 h-16 opacity-20 hover:opacity-50 hover:scale-105 transition-all duration-300">
-                  <img src={banqueDuCaireLogo} alt="Banque du Caire Logo" className="w-full h-full object-contain rounded-lg shadow-md" />
-                  <p className="absolute -bottom-6 left-1/2 transform -translate-x-1/2 text-xs text-blue-300 font-medium whitespace-nowrap">Banque du Caire</p>
-                </div>
                 <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 bg-white/30 backdrop-blur-sm rounded-lg opacity-30 hover:opacity-60 hover:scale-110 transition-all duration-300 flex-shrink-0 flex items-center justify-center p-2">
@@ -510,10 +498,6 @@ function App() {
               </div>
 
               <div className="bg-gray-800/50 p-8 rounded-xl border-l-4 border-blue-400 hover:shadow-lg hover:shadow-blue-500/20 transition-all relative">
-                <div className="absolute top-2 right-2 w-16 h-16 opacity-20 hover:opacity-50 hover:scale-105 transition-all duration-300">
-                  <img src={banqueMisrLogo} alt="Banque Misr Logo" className="w-full h-full object-contain rounded-lg shadow-md" />
-                  <p className="absolute -bottom-6 left-1/2 transform -translate-x-1/2 text-xs text-blue-300 font-medium whitespace-nowrap">Banque Misr</p>
-                </div>
                 <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 bg-white/30 backdrop-blur-sm rounded-lg opacity-30 hover:opacity-60 hover:scale-110 transition-all duration-300 flex-shrink-0 flex items-center justify-center p-2">
