@@ -207,6 +207,47 @@ function App() {
             <div className="bg-gray-900 rounded-xl overflow-hidden border border-gray-700 hover:border-blue-400 transition-all hover:shadow-xl hover:shadow-blue-500/20 transform hover:-translate-y-2">
               <div className="h-64 relative overflow-hidden">
                 <img 
+                  src={ecoCycleImage} 
+                  alt="Eco Cycle | Integrated Waste Management System" 
+                  className="w-full h-full object-cover"
+                  onError={(e) => {
+                    const target = e.target as HTMLImageElement;
+                    target.style.display = 'none';
+                    target.parentElement!.innerHTML = 
+                      `<div class="h-64 bg-gradient-to-br from-green-700 to-gray-900 flex items-center justify-center">
+                        <div class="text-center">
+                          <div class="text-6xl font-bold text-green-400 mb-4">ECO</div>
+                          <p class="text-green-300 text-xl font-semibold">CYCLE</p>
+                        </div>
+                      </div>`;
+                  }}
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent"></div>
+              </div>
+              <div className="p-6">
+                <h3 className="text-2xl font-bold mb-3 text-white">Eco Cycle | Integrated Waste Management System</h3>
+                <p className="text-gray-400 mb-4">A Technical System Analysis and Full-Stack platform designed to automate plastic waste lifecycle and reward systems.</p>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  <span className="px-3 py-1 bg-blue-900/50 text-blue-300 rounded-full text-sm font-medium">PHP</span>
+                  <span className="px-3 py-1 bg-cyan-900/50 text-cyan-300 rounded-full text-sm font-medium">React</span>
+                  <span className="px-3 py-1 bg-orange-900/50 text-orange-300 rounded-full text-sm font-medium">MySQL</span>
+                  <span className="px-3 py-1 bg-purple-900/50 text-purple-300 rounded-full text-sm font-medium">UML</span>
+                </div>
+                <a
+                  href="https://github.com/tokagabr/Eco-Cycle-System-Analysis"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors font-semibold"
+                >
+                  <ExternalLink className="w-5 h-5" />
+                  View System Analysis on GitHub
+                </a>
+              </div>
+            </div>
+
+            <div className="bg-gray-900 rounded-xl overflow-hidden border border-gray-700 hover:border-blue-400 transition-all hover:shadow-xl hover:shadow-blue-500/20 transform hover:-translate-y-2">
+              <div className="h-64 relative overflow-hidden">
+                <img 
                   src={netflixImage} 
                   alt="Netflix Dashboard" 
                   className="w-full h-full object-cover"
@@ -356,7 +397,7 @@ function App() {
             
             <div className="max-w-4xl mx-auto space-y-8">
               <div className="bg-gray-800/50 p-8 rounded-xl border-l-4 border-blue-400 hover:shadow-lg hover:shadow-blue-500/20 transition-all relative">
-                <div className="absolute top-6 right-6 w-16 h-16 opacity-20">
+                <div className="absolute top-4 right-4 w-20 h-20 opacity-30">
                   <img src={mcitLogo} alt="MCIT Logo" className="w-full h-full object-contain" />
                 </div>
                 <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
@@ -382,7 +423,7 @@ function App() {
               </div>
 
               <div className="bg-gray-800/50 p-8 rounded-xl border-l-4 border-blue-400 hover:shadow-lg hover:shadow-blue-500/20 transition-all relative">
-                <div className="absolute top-6 right-6 w-16 h-16 opacity-20">
+                <div className="absolute top-4 right-4 w-20 h-20 opacity-30">
                   <img src={ntiLogo} alt="NTI Logo" className="w-full h-full object-contain" />
                 </div>
                 <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
@@ -415,7 +456,7 @@ function App() {
             
             <div className="max-w-4xl mx-auto space-y-8">
               <div className="bg-gray-800/50 p-8 rounded-xl border-l-4 border-blue-400 hover:shadow-lg hover:shadow-blue-500/20 transition-all relative">
-                <div className="absolute top-6 right-6 w-16 h-16 opacity-20">
+                <div className="absolute top-4 right-4 w-20 h-20 opacity-30">
                   <img src={banqueDuCaireLogo} alt="Banque du Caire Logo" className="w-full h-full object-contain" />
                 </div>
                 <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
@@ -451,7 +492,7 @@ function App() {
               </div>
 
               <div className="bg-gray-800/50 p-8 rounded-xl border-l-4 border-blue-400 hover:shadow-lg hover:shadow-blue-500/20 transition-all relative">
-                <div className="absolute top-6 right-6 w-16 h-16 opacity-20">
+                <div className="absolute top-4 right-4 w-20 h-20 opacity-30">
                   <img src={banqueMisrLogo} alt="Banque Misr Logo" className="w-full h-full object-contain" />
                 </div>
                 <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
