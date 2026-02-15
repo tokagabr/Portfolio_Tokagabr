@@ -268,6 +268,17 @@ function App() {
               <div className="p-6">
                 <h3 className="text-2xl font-bold mb-3 text-white">Netflix Content Analytics Dashboard</h3>
                 <p className="text-gray-400 mb-4">Comprehensive analysis of Netflix content library, revealing insights into genre distribution, content trends, and regional availability patterns.</p>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  <span className="px-3 py-1 bg-green-600 rounded-lg shadow-lg opacity-80 hover:opacity-100 transition-all duration-300 flex-shrink-0 flex items-center justify-center p-2">
+                    <div className="text-white font-bold text-sm">Excel</div>
+                  </span>
+                  <span className="px-3 py-1 bg-blue-600 rounded-lg shadow-lg opacity-80 hover:opacity-100 transition-all duration-300 flex-shrink-0 flex items-center justify-center p-2">
+                    <div className="text-white font-bold text-sm">Power BI</div>
+                  </span>
+                  <span className="px-3 py-1 bg-orange-600 rounded-lg shadow-lg opacity-80 hover:opacity-100 transition-all duration-300 flex-shrink-0 flex items-center justify-center p-2">
+                    <div className="text-white font-bold text-sm">SQL</div>
+                  </span>
+                </div>
                 <a
                   href="https://github.com/tokagabr/netflix-dashboard"
                   target="_blank"
@@ -303,6 +314,17 @@ function App() {
               <div className="p-6">
                 <h3 className="text-2xl font-bold mb-3 text-white">Uber Eats Analytics Dashboard</h3>
                 <p className="text-gray-400 mb-4">In-depth analysis of food delivery operations, customer behavior patterns, and performance metrics to optimize delivery efficiency and customer satisfaction.</p>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  <span className="px-3 py-1 bg-green-600 rounded-lg shadow-lg opacity-80 hover:opacity-100 transition-all duration-300 flex-shrink-0 flex items-center justify-center p-2">
+                    <div className="text-white font-bold text-sm">Excel</div>
+                  </span>
+                  <span className="px-3 py-1 bg-blue-600 rounded-lg shadow-lg opacity-80 hover:opacity-100 transition-all duration-300 flex-shrink-0 flex items-center justify-center p-2">
+                    <div className="text-white font-bold text-sm">Power BI</div>
+                  </span>
+                  <span className="px-3 py-1 bg-orange-600 rounded-lg shadow-lg opacity-80 hover:opacity-100 transition-all duration-300 flex-shrink-0 flex items-center justify-center p-2">
+                    <div className="text-white font-bold text-sm">SQL</div>
+                  </span>
+                </div>
                 <a
                   href="https://github.com/tokagabr/uber-eats-analysis"
                   target="_blank"
@@ -338,6 +360,11 @@ function App() {
               <div className="p-6">
                 <h3 className="text-2xl font-bold mb-3 text-white">SQL Practice – School Database</h3>
                 <p className="text-gray-400 mb-4">SQL practice database applying core and advanced concepts including SELECT, JOINs, GROUP BY, Subqueries, and real business scenarios for school system management.</p>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  <span className="px-3 py-1 bg-orange-600 rounded-lg shadow-lg opacity-80 hover:opacity-100 transition-all duration-300 flex-shrink-0 flex items-center justify-center p-2">
+                    <div className="text-white font-bold text-sm">MySQL</div>
+                  </span>
+                </div>
                 <a
                   href="https://github.com/tokagabr/SQL-Queries-School-System"
                   target="_blank"
@@ -373,6 +400,14 @@ function App() {
               <div className="p-6">
                 <h3 className="text-2xl font-bold mb-3 text-white">HandyPro Lead Value Analysis</h3>
                 <p className="text-gray-400 mb-4">Comprehensive analysis of services and channels driving the most valuable leads for HandyPro Hub, evaluating urgency, seasonality, and customer segments to optimize lead management and marketing ROI.</p>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  <span className="px-3 py-1 bg-green-600 rounded-lg shadow-lg opacity-80 hover:opacity-100 transition-all duration-300 flex-shrink-0 flex items-center justify-center p-2">
+                    <div className="text-white font-bold text-sm">Excel</div>
+                  </span>
+                  <span className="px-3 py-1 bg-blue-600 rounded-lg shadow-lg opacity-80 hover:opacity-100 transition-all duration-300 flex-shrink-0 flex items-center justify-center p-2">
+                    <div className="text-white font-bold text-sm">Power BI</div>
+                  </span>
+                </div>
                 <a
                   href="https://github.com/tokagabr/Service-Channel-ROI-Analysis/tree/main"
                   target="_blank"
