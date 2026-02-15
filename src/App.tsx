@@ -402,9 +402,14 @@ function App() {
                   <p className="absolute -bottom-6 left-1/2 transform -translate-x-1/2 text-xs text-blue-300 font-medium whitespace-nowrap">Digital Egypt Builders</p>
                 </div>
                 <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
-                  <div>
-                    <h3 className="text-2xl font-bold text-white mb-2">Business Analysis Scholar</h3>
-                    <p className="text-blue-400 font-semibold">Digital Egypt Builders Initiative (MCIT)</p>
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 opacity-30 hover:opacity-60 hover:scale-110 transition-all duration-300 flex-shrink-0">
+                      <img src={mcitLogo} alt="MCIT Logo" className="w-full h-full object-contain rounded-lg shadow-md" />
+                    </div>
+                    <div>
+                      <h3 className="text-2xl font-bold text-white mb-2">Business Analysis Scholar</h3>
+                      <p className="text-blue-400 font-semibold">Digital Egypt Builders Initiative (MCIT)</p>
+                    </div>
                   </div>
                   <div className="text-gray-400 mt-2 md:mt-0 md:text-right">
                     <p>Cairo</p>
@@ -429,9 +434,14 @@ function App() {
                   <p className="absolute -bottom-6 left-1/2 transform -translate-x-1/2 text-xs text-blue-300 font-medium whitespace-nowrap">National Telecom Institute</p>
                 </div>
                 <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
-                  <div>
-                    <h3 className="text-2xl font-bold text-white mb-2">Power BI Trainee</h3>
-                    <p className="text-blue-400 font-semibold">National Telecommunication Institute (NTI)</p>
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 opacity-30 hover:opacity-60 hover:scale-110 transition-all duration-300 flex-shrink-0">
+                      <img src={ntiLogo} alt="NTI Logo" className="w-full h-full object-contain rounded-lg shadow-md" />
+                    </div>
+                    <div>
+                      <h3 className="text-2xl font-bold text-white mb-2">Power BI Trainee</h3>
+                      <p className="text-blue-400 font-semibold">National Telecommunication Institute (NTI)</p>
+                    </div>
                   </div>
                   <div className="text-gray-400 mt-2 md:mt-0 md:text-right">
                     <p>Zagazig</p>
@@ -463,9 +473,14 @@ function App() {
                   <p className="absolute -bottom-6 left-1/2 transform -translate-x-1/2 text-xs text-blue-300 font-medium whitespace-nowrap">Banque du Caire</p>
                 </div>
                 <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
-                  <div>
-                    <h3 className="text-2xl font-bold text-white mb-2">IT Intern</h3>
-                    <p className="text-blue-400 font-semibold">Banque du Caire</p>
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 opacity-30 hover:opacity-60 hover:scale-110 transition-all duration-300 flex-shrink-0">
+                      <img src={banqueDuCaireLogo} alt="Banque du Caire Logo" className="w-full h-full object-contain rounded-lg shadow-md" />
+                    </div>
+                    <div>
+                      <h3 className="text-2xl font-bold text-white mb-2">IT Intern</h3>
+                      <p className="text-blue-400 font-semibold">Banque du Caire</p>
+                    </div>
                   </div>
                   <div className="text-gray-400 mt-2 md:mt-0 md:text-right">
                     <p>Cairo</p>
@@ -500,9 +515,14 @@ function App() {
                   <p className="absolute -bottom-6 left-1/2 transform -translate-x-1/2 text-xs text-blue-300 font-medium whitespace-nowrap">Banque Misr</p>
                 </div>
                 <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
-                  <div>
-                    <h3 className="text-2xl font-bold text-white mb-2">Intern</h3>
-                    <p className="text-blue-400 font-semibold">Banque Misr</p>
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 opacity-30 hover:opacity-60 hover:scale-110 transition-all duration-300 flex-shrink-0">
+                      <img src={banqueMisrLogo} alt="Banque Misr Logo" className="w-full h-full object-contain rounded-lg shadow-md" />
+                    </div>
+                    <div>
+                      <h3 className="text-2xl font-bold text-white mb-2">Intern</h3>
+                      <p className="text-blue-400 font-semibold">Banque Misr</p>
+                    </div>
                   </div>
                   <div className="text-gray-400 mt-2 md:mt-0 md:text-right">
                     <p>Mit Ghamr</p>
