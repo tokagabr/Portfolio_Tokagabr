@@ -147,199 +147,128 @@ function App() {
           <h2 className="text-4xl font-bold text-center mb-16 text-blue-400">Technical Skills</h2>
 
           <div className="max-w-6xl mx-auto">
-            <div className="grid md:grid-cols-2 gap-8">
+            <div className="space-y-8">
               
-              {/* Data Analytics & BI */}
+              {/* Data Analytics & BI - Simple Layout */}
               <div className="bg-gray-800/50 p-8 rounded-xl border border-gray-700 hover:border-blue-400 transition-all hover:shadow-lg hover:shadow-blue-500/20">
-                <h3 className="text-2xl font-bold mb-8 text-blue-400 flex items-center gap-3">
-                  <Database className="w-8 h-8" />
-                  Data Analytics & BI
-                </h3>
+                <div className="flex items-center gap-4 mb-6">
+                  <Database className="w-8 h-8 text-blue-400" />
+                  <h3 className="text-2xl font-bold text-blue-400">Data Analytics & BI</h3>
+                </div>
                 
                 <div className="flex flex-wrap gap-4">
                   {/* SQL Tool */}
-                  <div className="relative group">
-                    <div className="flex items-center gap-2 px-4 py-2 bg-gray-900/50 rounded-lg hover:bg-gray-900 transition-colors cursor-pointer border border-orange-500/30">
-                      <div className="w-8 h-8 bg-white rounded-lg shadow-lg opacity-100 flex-shrink-0 flex items-center justify-center p-1">
-                        <img src={sqlLogo} alt="SQL Logo" className="w-full h-full object-contain" />
-                      </div>
-                      <span className="text-white font-medium">SQL</span>
+                  <div className="flex items-center gap-2 px-4 py-2 bg-gray-900/50 rounded-lg hover:bg-gray-900 transition-colors cursor-pointer border border-orange-500/30">
+                    <div className="w-8 h-8 bg-white rounded-lg shadow-lg opacity-100 flex-shrink-0 flex items-center justify-center p-1">
+                      <img src={sqlLogo} alt="SQL Logo" className="w-full h-full object-contain" />
                     </div>
-                    
-                    {/* Dropdown Menu */}
-                    <div className="absolute top-full left-0 mt-2 w-64 bg-gray-800 rounded-lg shadow-xl border border-gray-700 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-10">
-                      <div className="p-4">
-                        <h4 className="text-white font-semibold mb-2">MySQL</h4>
-                        <a href="#projects" className="text-blue-400 text-sm hover:text-blue-300 transition-colors">
-                          → See in SQL Project
-                        </a>
-                      </div>
-                    </div>
+                    <span className="text-white font-medium">SQL</span>
                   </div>
                   
                   {/* Power BI Tool */}
-                  <div className="relative group">
-                    <div className="flex items-center gap-2 px-4 py-2 bg-gray-900/50 rounded-lg hover:bg-gray-900 transition-colors cursor-pointer border border-blue-500/30">
-                      <div className="w-8 h-8 bg-white rounded-lg shadow-lg opacity-100 flex-shrink-0 flex items-center justify-center p-1">
-                        <img src={powerBiLogo} alt="Power BI Logo" className="w-full h-full object-contain" />
-                      </div>
-                      <span className="text-white font-medium">Power BI</span>
+                  <div className="flex items-center gap-2 px-4 py-2 bg-gray-900/50 rounded-lg hover:bg-gray-900 transition-colors cursor-pointer border border-blue-500/30">
+                    <div className="w-8 h-8 bg-white rounded-lg shadow-lg opacity-100 flex-shrink-0 flex items-center justify-center p-1">
+                      <img src={powerBiLogo} alt="Power BI Logo" className="w-full h-full object-contain" />
                     </div>
-                    
-                    {/* Dropdown Menu */}
-                    <div className="absolute top-full left-0 mt-2 w-64 bg-gray-800 rounded-lg shadow-xl border border-gray-700 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-10">
-                      <div className="p-4">
-                        <h4 className="text-white font-semibold mb-2">DAX & Dashboards</h4>
-                        <a href="#projects" className="text-blue-400 text-sm hover:text-blue-300 transition-colors">
-                          → See in Netflix & Uber Eats
-                        </a>
-                      </div>
-                    </div>
+                    <span className="text-white font-medium">Power BI</span>
                   </div>
                   
                   {/* Advanced Excel Tool */}
-                  <div className="relative group">
-                    <div className="flex items-center gap-2 px-4 py-2 bg-gray-900/50 rounded-lg hover:bg-gray-900 transition-colors cursor-pointer border border-green-500/30">
-                      <div className="w-8 h-8 bg-white rounded-lg shadow-lg opacity-100 flex-shrink-0 flex items-center justify-center p-1">
-                        <img src={excelLogo} alt="Excel Logo" className="w-full h-full object-contain" />
-                      </div>
-                      <span className="text-white font-medium">Advanced Excel</span>
+                  <div className="flex items-center gap-2 px-4 py-2 bg-gray-900/50 rounded-lg hover:bg-gray-900 transition-colors cursor-pointer border border-green-500/30">
+                    <div className="w-8 h-8 bg-white rounded-lg shadow-lg opacity-100 flex-shrink-0 flex items-center justify-center p-1">
+                      <img src={excelLogo} alt="Excel Logo" className="w-full h-full object-contain" />
                     </div>
-                    
-                    {/* Dropdown Menu */}
-                    <div className="absolute top-full left-0 mt-2 w-64 bg-gray-800 rounded-lg shadow-xl border border-gray-700 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-10">
-                      <div className="p-4">
-                        <h4 className="text-white font-semibold mb-2">Power Query & Pivot Tables</h4>
-                        <a href="#projects" className="text-blue-400 text-sm hover:text-blue-300 transition-colors">
-                          → See in ROI Analysis
-                        </a>
-                      </div>
-                    </div>
+                    <span className="text-white font-medium">Advanced Excel</span>
                   </div>
                   
                   {/* Python Tool */}
-                  <div className="relative group">
-                    <div className="flex items-center gap-2 px-4 py-2 bg-gray-900/50 rounded-lg hover:bg-gray-900 transition-colors cursor-pointer">
-                      <div className="w-8 h-8 bg-white rounded-lg shadow-lg opacity-80 hover:opacity-100 flex-shrink-0 flex items-center justify-center p-1">
-                        <img src={pythonLogo} alt="Python Logo" className="w-full h-full object-contain" />
-                      </div>
-                      <span className="text-white font-medium">Python</span>
+                  <div className="flex items-center gap-2 px-4 py-2 bg-gray-900/50 rounded-lg hover:bg-gray-900 transition-colors cursor-pointer">
+                    <div className="w-8 h-8 bg-white rounded-lg shadow-lg opacity-80 hover:opacity-100 flex-shrink-0 flex items-center justify-center p-1">
+                      <img src={pythonLogo} alt="Python Logo" className="w-full h-full object-contain" />
                     </div>
-                    
-                    {/* Dropdown Menu */}
-                    <div className="absolute top-full left-0 mt-2 w-64 bg-gray-800 rounded-lg shadow-xl border border-gray-700 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-10">
-                      <div className="p-4">
-                        <h4 className="text-white font-semibold mb-2">Data Exploration</h4>
+                    <span className="text-white font-medium">Python</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Software Development - Hover to Reveal */}
+              <div className="relative group">
+                <div className="bg-gray-800/50 p-8 rounded-xl border border-gray-700 hover:border-blue-400 transition-all hover:shadow-lg hover:shadow-blue-500/20 cursor-pointer">
+                  <div className="flex items-center gap-4">
+                    <Code className="w-8 h-8 text-blue-400" />
+                    <h3 className="text-2xl font-bold text-blue-400">Software Development</h3>
+                  </div>
+                </div>
+                
+                {/* Hidden Content - Appears on Hover */}
+                <div className="absolute top-full left-0 mt-4 w-full bg-gray-800 rounded-lg shadow-xl border border-gray-700 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-10">
+                  <div className="p-6">
+                    <div className="flex flex-wrap gap-4">
+                      <div className="px-4 py-2 bg-gray-900/50 rounded-lg border border-purple-500/30">
+                        <span className="text-white font-medium">Backend (PHP)</span>
+                      </div>
+                      <div className="px-4 py-2 bg-gray-900/50 rounded-lg border border-cyan-500/30">
+                        <span className="text-white font-medium">Frontend (React, JS, HTML/CSS)</span>
+                      </div>
+                      <div className="px-4 py-2 bg-gray-900/50 rounded-lg border border-pink-500/30">
+                        <span className="text-white font-medium">Styling (Bootstrap, Tailwind)</span>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
 
-              {/* Software Development */}
-              <div className="bg-gray-800/50 p-8 rounded-xl border border-gray-700 hover:border-blue-400 transition-all hover:shadow-lg hover:shadow-blue-500/20">
-                <h3 className="text-2xl font-bold mb-8 text-blue-400 flex items-center gap-3">
-                  <Code className="w-8 h-8" />
-                  Software Development
-                </h3>
+              {/* Business & Systems Analysis - Hover to Reveal */}
+              <div className="relative group">
+                <div className="bg-gray-800/50 p-8 rounded-xl border border-gray-700 hover:border-blue-400 transition-all hover:shadow-lg hover:shadow-blue-500/20 cursor-pointer">
+                  <div className="flex items-center gap-4">
+                    <BarChart3 className="w-8 h-8 text-blue-400" />
+                    <h3 className="text-2xl font-bold text-blue-400">Business & Systems Analysis</h3>
+                  </div>
+                </div>
                 
-                <div className="flex flex-wrap gap-4">
-                  {/* Backend */}
-                  <div className="relative group">
-                    <div className="px-4 py-2 bg-gray-900/50 rounded-lg hover:bg-gray-900 transition-colors cursor-pointer border border-purple-500/30">
-                      <span className="text-white font-medium">Backend</span>
-                    </div>
-                    
-                    {/* Dropdown Menu */}
-                    <div className="absolute top-full left-0 mt-2 w-64 bg-gray-800 rounded-lg shadow-xl border border-gray-700 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-10">
-                      <div className="p-4">
-                        <h4 className="text-white font-semibold mb-2">PHP</h4>
-                        <a href="#projects" className="text-blue-400 text-sm hover:text-blue-300 transition-colors">
-                          → See in Eco Cycle Project
-                        </a>
+                {/* Hidden Content - Appears on Hover */}
+                <div className="absolute top-full left-0 mt-4 w-full bg-gray-800 rounded-lg shadow-xl border border-gray-700 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-10">
+                  <div className="p-6">
+                    <div className="flex flex-wrap gap-4">
+                      <div className="px-4 py-2 bg-gray-900/50 rounded-lg border border-blue-500/30">
+                        <span className="text-white font-medium">UML Modeling</span>
                       </div>
-                    </div>
-                  </div>
-                  
-                  {/* Frontend */}
-                  <div className="relative group">
-                    <div className="px-4 py-2 bg-gray-900/50 rounded-lg hover:bg-gray-900 transition-colors cursor-pointer border border-cyan-500/30">
-                      <span className="text-white font-medium">Frontend</span>
-                    </div>
-                    
-                    {/* Dropdown Menu */}
-                    <div className="absolute top-full left-0 mt-2 w-64 bg-gray-800 rounded-lg shadow-xl border border-gray-700 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-10">
-                      <div className="p-4">
-                        <h4 className="text-white font-semibold mb-2">React, JavaScript, HTML5/CSS3</h4>
-                        <a href="#projects" className="text-blue-400 text-sm hover:text-blue-300 transition-colors">
-                          → See in Eco Cycle Project
-                        </a>
+                      <div className="px-4 py-2 bg-gray-900/50 rounded-lg border border-green-500/30">
+                        <span className="text-white font-medium">Requirements Engineering</span>
                       </div>
-                    </div>
-                  </div>
-                  
-                  {/* Styling */}
-                  <div className="relative group">
-                    <div className="px-4 py-2 bg-gray-900/50 rounded-lg hover:bg-gray-900 transition-colors cursor-pointer border border-pink-500/30">
-                      <span className="text-white font-medium">Styling</span>
-                    </div>
-                    
-                    {/* Dropdown Menu */}
-                    <div className="absolute top-full left-0 mt-2 w-64 bg-gray-800 rounded-lg shadow-xl border border-gray-700 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-10">
-                      <div className="p-4">
-                        <h4 className="text-white font-semibold mb-2">Bootstrap, Tailwind CSS</h4>
+                      <div className="px-4 py-2 bg-gray-900/50 rounded-lg border border-purple-500/30">
+                        <span className="text-white font-medium">SDLC (Agile, Scrum, Waterfall)</span>
+                      </div>
+                      <div className="px-4 py-2 bg-gray-900/50 rounded-lg border border-orange-500/30">
+                        <span className="text-white font-medium">BPMN 2.0</span>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
 
-              {/* IT Infrastructure & Tools */}
-              <div className="bg-gray-800/50 p-8 rounded-xl border border-gray-700 hover:border-blue-400 transition-all hover:shadow-lg hover:shadow-blue-500/20">
-                <h3 className="text-2xl font-bold mb-8 text-blue-400 flex items-center gap-3">
-                  <Database className="w-8 h-8" />
-                  IT Infrastructure & Tools
-                </h3>
+              {/* IT Infrastructure & Tools - Hover to Reveal */}
+              <div className="relative group">
+                <div className="bg-gray-800/50 p-8 rounded-xl border border-gray-700 hover:border-blue-400 transition-all hover:shadow-lg hover:shadow-blue-500/20 cursor-pointer">
+                  <div className="flex items-center gap-4">
+                    <Database className="w-8 h-8 text-blue-400" />
+                    <h3 className="text-2xl font-bold text-blue-400">IT Infrastructure & Tools</h3>
+                  </div>
+                </div>
                 
-                <div className="flex flex-wrap gap-4">
-                  {/* Networking */}
-                  <div className="relative group">
-                    <div className="px-4 py-2 bg-gray-900/50 rounded-lg hover:bg-gray-900 transition-colors cursor-pointer border border-red-500/30">
-                      <span className="text-white font-medium">Networking</span>
-                    </div>
-                    
-                    {/* Dropdown Menu */}
-                    <div className="absolute top-full left-0 mt-2 w-64 bg-gray-800 rounded-lg shadow-xl border border-gray-700 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-10">
-                      <div className="p-4">
-                        <h4 className="text-white font-semibold mb-2">TCP/IP, Windows Server</h4>
+                {/* Hidden Content - Appears on Hover */}
+                <div className="absolute top-full left-0 mt-4 w-full bg-gray-800 rounded-lg shadow-xl border border-gray-700 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-10">
+                  <div className="p-6">
+                    <div className="flex flex-wrap gap-4">
+                      <div className="px-4 py-2 bg-gray-900/50 rounded-lg border border-red-500/30">
+                        <span className="text-white font-medium">Networking (TCP/IP, Windows Server)</span>
                       </div>
-                    </div>
-                  </div>
-                  
-                  {/* Version Control */}
-                  <div className="relative group">
-                    <div className="px-4 py-2 bg-gray-900/50 rounded-lg hover:bg-gray-900 transition-colors cursor-pointer border border-orange-500/30">
-                      <span className="text-white font-medium">Version Control</span>
-                    </div>
-                    
-                    {/* Dropdown Menu */}
-                    <div className="absolute top-full left-0 mt-2 w-64 bg-gray-800 rounded-lg shadow-xl border border-gray-700 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-10">
-                      <div className="p-4">
-                        <h4 className="text-white font-semibold mb-2">Git & GitHub</h4>
+                      <div className="px-4 py-2 bg-gray-900/50 rounded-lg border border-orange-500/30">
+                        <span className="text-white font-medium">Version Control (Git & GitHub)</span>
                       </div>
-                    </div>
-                  </div>
-                  
-                  {/* Development Environment */}
-                  <div className="relative group">
-                    <div className="px-4 py-2 bg-gray-900/50 rounded-lg hover:bg-gray-900 transition-colors cursor-pointer border border-blue-500/30">
-                      <span className="text-white font-medium">Development Environment</span>
-                    </div>
-                    
-                    {/* Dropdown Menu */}
-                    <div className="absolute top-full left-0 mt-2 w-64 bg-gray-800 rounded-lg shadow-xl border border-gray-700 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-10">
-                      <div className="p-4">
-                        <h4 className="text-white font-semibold mb-2">VS Code, XAMPP</h4>
+                      <div className="px-4 py-2 bg-gray-900/50 rounded-lg border border-blue-500/30">
+                        <span className="text-white font-medium">Development Environment (VS Code, XAMPP)</span>
                       </div>
                     </div>
                   </div>
