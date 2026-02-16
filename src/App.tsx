@@ -73,7 +73,7 @@ function App() {
                   <ChevronDown className="w-5 h-5" />
                 </a>
                 <a
-                  href="https://drive.google.com/file/d/1rdbqPSE_2IcpPUdZ00xMAiR_ps4uvtcH/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1p4gqltX0Ue3aSMxK3boavOtRooF0uuO2/view?usp=drive_link"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-8 py-3 bg-gray-800 hover:bg-gray-700 text-white rounded-lg font-semibold transition-all transform hover:scale-105 border border-gray-700 hover:border-blue-400 flex items-center justify-center gap-2"
