@@ -191,88 +191,93 @@ function App() {
                 </div>
               </div>
 
-              {/* Software Development - Hover to Reveal */}
-              <div className="relative group">
-                <div className="bg-gray-800/50 p-8 rounded-xl border border-gray-700 hover:border-blue-400 transition-all hover:shadow-lg hover:shadow-blue-500/20 cursor-pointer">
-                  <div className="flex items-center gap-4">
-                    <Code className="w-8 h-8 text-blue-400" />
-                    <h3 className="text-2xl font-bold text-blue-400">Software Development</h3>
-                  </div>
-                </div>
+              {/* Other Categories - Horizontal Layout */}
+              <div className="flex flex-wrap gap-4">
                 
-                {/* Hidden Content - Appears on Hover */}
-                <div className="absolute top-full left-0 mt-4 w-full bg-gray-800 rounded-lg shadow-xl border border-gray-700 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-10">
-                  <div className="p-6">
-                    <div className="flex flex-wrap gap-4">
-                      <div className="px-4 py-2 bg-gray-900/50 rounded-lg border border-purple-500/30">
-                        <span className="text-white font-medium">Backend (PHP)</span>
-                      </div>
-                      <div className="px-4 py-2 bg-gray-900/50 rounded-lg border border-cyan-500/30">
-                        <span className="text-white font-medium">Frontend (React, JS, HTML/CSS)</span>
-                      </div>
-                      <div className="px-4 py-2 bg-gray-900/50 rounded-lg border border-pink-500/30">
-                        <span className="text-white font-medium">Styling (Bootstrap, Tailwind)</span>
+                {/* Software Development - Hover to Reveal */}
+                <div className="relative group">
+                  <div className="bg-gray-800/50 px-6 py-4 rounded-xl border border-gray-700 hover:border-blue-400 transition-all hover:shadow-lg hover:shadow-blue-500/20 cursor-pointer">
+                    <div className="flex items-center gap-3">
+                      <Code className="w-6 h-6 text-blue-400" />
+                      <h3 className="text-xl font-bold text-blue-400">Software Development</h3>
+                    </div>
+                  </div>
+                  
+                  {/* Hidden Content - Appears on Hover */}
+                  <div className="absolute top-full left-0 mt-2 w-80 bg-gray-800 rounded-lg shadow-xl border border-gray-700 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-10">
+                    <div className="p-4">
+                      <div className="space-y-2">
+                        <div className="px-3 py-2 bg-gray-900/50 rounded-lg border border-purple-500/30">
+                          <span className="text-white font-medium text-sm">Backend (PHP)</span>
+                        </div>
+                        <div className="px-3 py-2 bg-gray-900/50 rounded-lg border border-cyan-500/30">
+                          <span className="text-white font-medium text-sm">Frontend (React, JS, HTML/CSS)</span>
+                        </div>
+                        <div className="px-3 py-2 bg-gray-900/50 rounded-lg border border-pink-500/30">
+                          <span className="text-white font-medium text-sm">Styling (Bootstrap, Tailwind)</span>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
 
-              {/* Business & Systems Analysis - Hover to Reveal */}
-              <div className="relative group">
-                <div className="bg-gray-800/50 p-8 rounded-xl border border-gray-700 hover:border-blue-400 transition-all hover:shadow-lg hover:shadow-blue-500/20 cursor-pointer">
-                  <div className="flex items-center gap-4">
-                    <BarChart3 className="w-8 h-8 text-blue-400" />
-                    <h3 className="text-2xl font-bold text-blue-400">Business & Systems Analysis</h3>
+                {/* Business & Systems Analysis - Hover to Reveal */}
+                <div className="relative group">
+                  <div className="bg-gray-800/50 px-6 py-4 rounded-xl border border-gray-700 hover:border-blue-400 transition-all hover:shadow-lg hover:shadow-blue-500/20 cursor-pointer">
+                    <div className="flex items-center gap-3">
+                      <BarChart3 className="w-6 h-6 text-blue-400" />
+                      <h3 className="text-xl font-bold text-blue-400">Business & Systems Analysis</h3>
+                    </div>
                   </div>
-                </div>
-                
-                {/* Hidden Content - Appears on Hover */}
-                <div className="absolute top-full left-0 mt-4 w-full bg-gray-800 rounded-lg shadow-xl border border-gray-700 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-10">
-                  <div className="p-6">
-                    <div className="flex flex-wrap gap-4">
-                      <div className="px-4 py-2 bg-gray-900/50 rounded-lg border border-blue-500/30">
-                        <span className="text-white font-medium">UML Modeling</span>
-                      </div>
-                      <div className="px-4 py-2 bg-gray-900/50 rounded-lg border border-green-500/30">
-                        <span className="text-white font-medium">Requirements Engineering</span>
-                      </div>
-                      <div className="px-4 py-2 bg-gray-900/50 rounded-lg border border-purple-500/30">
-                        <span className="text-white font-medium">SDLC (Agile, Scrum, Waterfall)</span>
-                      </div>
-                      <div className="px-4 py-2 bg-gray-900/50 rounded-lg border border-orange-500/30">
-                        <span className="text-white font-medium">BPMN 2.0</span>
+                  
+                  {/* Hidden Content - Appears on Hover */}
+                  <div className="absolute top-full left-0 mt-2 w-80 bg-gray-800 rounded-lg shadow-xl border border-gray-700 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-10">
+                    <div className="p-4">
+                      <div className="space-y-2">
+                        <div className="px-3 py-2 bg-gray-900/50 rounded-lg border border-blue-500/30">
+                          <span className="text-white font-medium text-sm">UML Modeling</span>
+                        </div>
+                        <div className="px-3 py-2 bg-gray-900/50 rounded-lg border border-green-500/30">
+                          <span className="text-white font-medium text-sm">Requirements Engineering</span>
+                        </div>
+                        <div className="px-3 py-2 bg-gray-900/50 rounded-lg border border-purple-500/30">
+                          <span className="text-white font-medium text-sm">SDLC (Agile, Scrum, Waterfall)</span>
+                        </div>
+                        <div className="px-3 py-2 bg-gray-900/50 rounded-lg border border-orange-500/30">
+                          <span className="text-white font-medium text-sm">BPMN 2.0</span>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
 
-              {/* IT Infrastructure & Tools - Hover to Reveal */}
-              <div className="relative group">
-                <div className="bg-gray-800/50 p-8 rounded-xl border border-gray-700 hover:border-blue-400 transition-all hover:shadow-lg hover:shadow-blue-500/20 cursor-pointer">
-                  <div className="flex items-center gap-4">
-                    <Database className="w-8 h-8 text-blue-400" />
-                    <h3 className="text-2xl font-bold text-blue-400">IT Infrastructure & Tools</h3>
+                {/* IT Infrastructure & Tools - Hover to Reveal */}
+                <div className="relative group">
+                  <div className="bg-gray-800/50 px-6 py-4 rounded-xl border border-gray-700 hover:border-blue-400 transition-all hover:shadow-lg hover:shadow-blue-500/20 cursor-pointer">
+                    <div className="flex items-center gap-3">
+                      <Database className="w-6 h-6 text-blue-400" />
+                      <h3 className="text-xl font-bold text-blue-400">IT Infrastructure & Tools</h3>
+                    </div>
                   </div>
-                </div>
-                
-                {/* Hidden Content - Appears on Hover */}
-                <div className="absolute top-full left-0 mt-4 w-full bg-gray-800 rounded-lg shadow-xl border border-gray-700 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-10">
-                  <div className="p-6">
-                    <div className="flex flex-wrap gap-4">
-                      <div className="px-4 py-2 bg-gray-900/50 rounded-lg border border-red-500/30">
-                        <span className="text-white font-medium">Networking (TCP/IP, Windows Server)</span>
-                      </div>
-                      <div className="px-4 py-2 bg-gray-900/50 rounded-lg border border-orange-500/30">
-                        <span className="text-white font-medium">Version Control (Git & GitHub)</span>
-                      </div>
-                      <div className="px-4 py-2 bg-gray-900/50 rounded-lg border border-blue-500/30">
-                        <span className="text-white font-medium">Development Environment (VS Code, XAMPP)</span>
+                  
+                  {/* Hidden Content - Appears on Hover */}
+                  <div className="absolute top-full left-0 mt-2 w-80 bg-gray-800 rounded-lg shadow-xl border border-gray-700 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-10">
+                    <div className="p-4">
+                      <div className="space-y-2">
+                        <div className="px-3 py-2 bg-gray-900/50 rounded-lg border border-red-500/30">
+                          <span className="text-white font-medium text-sm">Networking (TCP/IP, Windows Server)</span>
+                        </div>
+                        <div className="px-3 py-2 bg-gray-900/50 rounded-lg border border-orange-500/30">
+                          <span className="text-white font-medium text-sm">Version Control (Git & GitHub)</span>
+                        </div>
+                        <div className="px-3 py-2 bg-gray-900/50 rounded-lg border border-blue-500/30">
+                          <span className="text-white font-medium text-sm">Development Environment (VS Code, XAMPP)</span>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
+
               </div>
 
             </div>
