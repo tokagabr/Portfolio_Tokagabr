@@ -9,6 +9,10 @@ import netflixImage from './assets/images/netflix-dashboard.png';
 import uberEatsImage from './assets/images/uber-eats-dashboard.png';
 import sqlImage from './assets/images/sql-school-database.png';
 import roiImage from './assets/images/handypro-roi-analysis.png';
+import sqlLogo from './assets/images/sql-3d.png';
+import powerBiLogo from './assets/images/power-bi-3d.png';
+import excelLogo from './assets/images/excel-3d.png';
+import pythonLogo from './assets/images/python-3d.png';
 
 function App() {
   
@@ -54,7 +58,7 @@ function App() {
                 Toka Gamal Gabr
               </h1>
               <h2 className="text-2xl md:text-3xl text-blue-200 mb-6 font-light">
-              Technical Business Analyst | Data Analyst 
+                Data Analyst | Business Analyst
               </h2>
               <p className="text-lg text-blue-100 mb-8 leading-relaxed">
                 Transforming complex data into actionable insights that drive KPI performance and support data-driven decision-making for stakeholders.
@@ -130,7 +134,8 @@ function App() {
           
           <div className="max-w-4xl mx-auto">
             <p className="text-xl text-gray-300 leading-relaxed text-center">
-Technical Business Analyst & MIS Scholar with a focus on bridging the gap between business needs and tech implementation. Experienced in System Analysis (UML), Data Analytics (Power BI/SQL), and Full-Stack development. Currently sharpening my skills at the DEBI (MCIT) scholarship
+              Entry-Level Data & Business Analyst with strong expertise in BI dashboards, data analysis, and business process optimization.
+              Skilled in translating business requirements into actionable insights that support data-driven decision-making for stakeholders.
             </p>
           </div>
         </div>
@@ -204,54 +209,41 @@ Technical Business Analyst & MIS Scholar with a focus on bridging the gap betwee
                   Data Analytics & BI
                 </h3>
                 
-                <div className="space-y-4">
-                  <div className="flex items-center gap-4 p-4 bg-gray-900/50 rounded-lg hover:bg-gray-900 transition-colors">
-                    <div className="w-12 h-12 bg-orange-600/20 rounded-lg flex items-center justify-center">
-                      <Database className="w-6 h-6 text-orange-400" />
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                  {/* SQL - First Priority */}
+                  <div className="flex flex-col items-center p-4 bg-gray-900/50 rounded-lg hover:bg-gray-900 transition-colors border-2 border-orange-500/30 cursor-pointer hover:scale-105">
+                    <div className="w-12 h-12 bg-white rounded-lg shadow-lg opacity-100 flex-shrink-0 flex items-center justify-center p-2 mb-3">
+                      <img src={sqlLogo} alt="SQL Logo" className="w-full h-full object-contain" />
                     </div>
-                    <div>
-                      <h4 className="text-white font-semibold mb-1">SQL</h4>
-                      <p className="text-gray-400 text-sm">MySQL</p>
-                      <a href="#projects" className="text-blue-400 text-xs hover:text-blue-300 transition-colors mt-1 inline-block">
-                        → See in SQL Project
-                      </a>
-                    </div>
+                    <h4 className="text-white font-semibold text-sm text-center">SQL</h4>
+                    <p className="text-gray-400 text-xs text-center">MySQL</p>
                   </div>
                   
-                  <div className="flex items-center gap-4 p-4 bg-gray-900/50 rounded-lg hover:bg-gray-900 transition-colors">
-                    <div className="w-12 h-12 bg-blue-600/20 rounded-lg flex items-center justify-center">
-                      <BarChart3 className="w-6 h-6 text-blue-400" />
+                  {/* Power BI - Second Priority */}
+                  <div className="flex flex-col items-center p-4 bg-gray-900/50 rounded-lg hover:bg-gray-900 transition-colors border-2 border-blue-500/30 cursor-pointer hover:scale-105">
+                    <div className="w-12 h-12 bg-white rounded-lg shadow-lg opacity-100 flex-shrink-0 flex items-center justify-center p-2 mb-3">
+                      <img src={powerBiLogo} alt="Power BI Logo" className="w-full h-full object-contain" />
                     </div>
-                    <div>
-                      <h4 className="text-white font-semibold mb-1">Power BI</h4>
-                      <p className="text-gray-400 text-sm">DAX, Interactive Dashboards</p>
-                      <a href="#projects" className="text-blue-400 text-xs hover:text-blue-300 transition-colors mt-1 inline-block">
-                        → See in Netflix & Uber Eats
-                      </a>
-                    </div>
+                    <h4 className="text-white font-semibold text-sm text-center">Power BI</h4>
+                    <p className="text-gray-400 text-xs text-center">DAX, Dashboards</p>
                   </div>
                   
-                  <div className="flex items-center gap-4 p-4 bg-gray-900/50 rounded-lg hover:bg-gray-900 transition-colors">
-                    <div className="w-12 h-12 bg-green-600/20 rounded-lg flex items-center justify-center">
-                      <BarChart3 className="w-6 h-6 text-green-400" />
+                  {/* Advanced Excel - Third Priority */}
+                  <div className="flex flex-col items-center p-4 bg-gray-900/50 rounded-lg hover:bg-gray-900 transition-colors border-2 border-green-500/30 cursor-pointer hover:scale-105">
+                    <div className="w-12 h-12 bg-white rounded-lg shadow-lg opacity-100 flex-shrink-0 flex items-center justify-center p-2 mb-3">
+                      <img src={excelLogo} alt="Excel Logo" className="w-full h-full object-contain" />
                     </div>
-                    <div>
-                      <h4 className="text-white font-semibold mb-1">Advanced Excel</h4>
-                      <p className="text-gray-400 text-sm">Power Query, Pivot Tables</p>
-                      <a href="#projects" className="text-blue-400 text-xs hover:text-blue-300 transition-colors mt-1 inline-block">
-                        → See in ROI Analysis
-                      </a>
-                    </div>
+                    <h4 className="text-white font-semibold text-sm text-center">Advanced Excel</h4>
+                    <p className="text-gray-400 text-xs text-center">Power Query, Pivot</p>
                   </div>
                   
-                  <div className="flex items-center gap-4 p-4 bg-gray-900/50 rounded-lg hover:bg-gray-900 transition-colors">
-                    <div className="w-12 h-12 bg-yellow-600/20 rounded-lg flex items-center justify-center">
-                      <Code className="w-6 h-6 text-yellow-400" />
+                  {/* Python - Fourth Priority */}
+                  <div className="flex flex-col items-center p-4 bg-gray-900/50 rounded-lg hover:bg-gray-900 transition-colors cursor-pointer hover:scale-105">
+                    <div className="w-12 h-12 bg-white rounded-lg shadow-lg opacity-80 hover:opacity-100 hover:scale-110 transition-all duration-300 flex-shrink-0 flex items-center justify-center p-2 mb-3">
+                      <img src={pythonLogo} alt="Python Logo" className="w-full h-full object-contain" />
                     </div>
-                    <div>
-                      <h4 className="text-white font-semibold mb-1">Python</h4>
-                      <p className="text-gray-400 text-sm">Data Exploration</p>
-                    </div>
+                    <h4 className="text-white font-semibold text-sm text-center">Python</h4>
+                    <p className="text-gray-400 text-xs text-center">Data Exploration</p>
                   </div>
                 </div>
               </div>
@@ -694,6 +686,21 @@ Technical Business Analyst & MIS Scholar with a focus on bridging the gap betwee
         </div>
       </section>
 
+      <section id="education" className="py-8 relative z-10">
+        <div className="container mx-auto px-6 relative z-10">
+          <h2 className="text-4xl font-bold text-center mb-16 text-blue-400">Education & Certifications</h2>
+          
+          <div className="max-w-4xl mx-auto">
+            <div className="bg-gray-900/50 rounded-xl p-8 border border-gray-700">
+              <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                <h3 className="text-2xl font-bold text-blue-400">B.Sc. in Management Information Systems (MIS)</h3>
+                <span className="text-gray-400">GPA: 3.5 / 4.0</span>
+              </div>
+              <p className="text-gray-300 mb-4">Sadat Academy for Management Sciences</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Contact Section */}
       <section id="contact" className="py-8 relative z-10">
