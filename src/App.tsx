@@ -196,7 +196,7 @@ function App() {
                 
                 {/* Software Development - Hover to Reveal */}
                 <div className="relative group">
-                  <div className="bg-gray-800/50 px-6 py-4 rounded-xl border border-gray-700 hover:border-blue-400 transition-all hover:shadow-lg hover:shadow-blue-500/20 cursor-pointer">
+                  <div className="bg-gray-800/50 px-6 py-4 rounded-xl border border-white hover:bg-white hover:border-white transition-all hover:shadow-lg hover:shadow-gray-300/20 cursor-pointer">
                     <div className="flex items-center gap-3">
                       <Code className="w-6 h-6 text-blue-400" />
                       <h3 className="text-xl font-bold text-blue-400">Software Development</h3>
@@ -223,7 +223,7 @@ function App() {
 
                 {/* Business & Systems Analysis - Hover to Reveal */}
                 <div className="relative group">
-                  <div className="bg-gray-800/50 px-6 py-4 rounded-xl border border-gray-700 hover:bg-green-500 hover:border-green-400 transition-all hover:shadow-lg hover:shadow-green-500/20 cursor-pointer">
+                  <div className="bg-gray-800/50 px-6 py-4 rounded-xl border border-white hover:bg-white hover:border-white transition-all hover:shadow-lg hover:shadow-gray-300/20 cursor-pointer">
                     <div className="flex items-center gap-3">
                       <BarChart3 className="w-6 h-6 text-blue-400" />
                       <h3 className="text-xl font-bold text-blue-400">Business & Systems Analysis</h3>
