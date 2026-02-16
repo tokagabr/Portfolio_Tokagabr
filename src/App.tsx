@@ -142,7 +142,7 @@ function App() {
       </section>
 
       {/* Technical Skills Section */}
-      <section id="skills" className="py-8 relative z-10">
+      <section id="skills" className="py-8 relative z-20">
         <div className="container mx-auto px-6 relative z-10">
           <h2 className="text-4xl font-bold text-center mb-16 text-blue-400">Technical Skills</h2>
 
