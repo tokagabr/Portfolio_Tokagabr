@@ -158,7 +158,7 @@ function App() {
                 
                 <div className="flex flex-wrap gap-4">
                   {/* SQL Tool */}
-                  <div className="flex items-center gap-2 px-4 py-2 bg-gray-900/50 rounded-lg hover:bg-blue-500 transition-colors cursor-pointer border border-orange-500/30">
+                  <div className="flex items-center gap-2 px-4 py-2 bg-gray-900/50 rounded-lg hover:bg-blue-500 transition-colors cursor-pointer border border-blue-500/30">
                     <div className="w-8 h-8 bg-white rounded-lg shadow-lg opacity-100 flex-shrink-0 flex items-center justify-center p-1">
                       <img src={sqlLogo} alt="SQL Logo" className="w-full h-full object-contain" />
                     </div>
@@ -166,7 +166,7 @@ function App() {
                   </div>
                   
                   {/* Power BI Tool */}
-                  <div className="flex items-center gap-2 px-4 py-2 bg-gray-900/50 rounded-lg hover:bg-yellow-500 transition-colors cursor-pointer border border-blue-500/30">
+                  <div className="flex items-center gap-2 px-4 py-2 bg-gray-900/50 rounded-lg hover:bg-yellow-500 transition-colors cursor-pointer border border-yellow-500/30">
                     <div className="w-8 h-8 bg-white rounded-lg shadow-lg opacity-100 flex-shrink-0 flex items-center justify-center p-1">
                       <img src={powerBiLogo} alt="Power BI Logo" className="w-full h-full object-contain" />
                     </div>
