@@ -182,8 +182,8 @@ function App() {
                   </div>
                   
                   {/* Python Tool */}
-                  <div className="flex items-center gap-2 px-4 py-2 bg-gray-900/50 rounded-lg hover:bg-white transition-colors cursor-pointer">
-                    <div className="w-8 h-8 bg-white rounded-lg shadow-lg opacity-80 hover:opacity-100 flex-shrink-0 flex items-center justify-center p-1">
+                  <div className="flex items-center gap-2 px-4 py-2 bg-gray-900/50 rounded-lg hover:bg-blue-500 transition-colors cursor-pointer border border-blue-500/30">
+                    <div className="w-8 h-8 bg-white rounded-lg shadow-lg opacity-100 flex-shrink-0 flex items-center justify-center p-1">
                       <img src={pythonLogo} alt="Python Logo" className="w-full h-full object-contain" />
                     </div>
                     <span className="text-white font-medium">Python</span>
