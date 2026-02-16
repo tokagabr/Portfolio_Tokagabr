@@ -237,13 +237,13 @@ function App() {
                         <div className="px-3 py-2 bg-gray-900/50 rounded-lg border border-blue-500/30">
                           <span className="text-white font-medium text-sm">UML Modeling</span>
                         </div>
-                        <div className="px-3 py-2 bg-gray-900/50 rounded-lg border border-green-500/30">
+                        <div className="px-3 py-2 bg-gray-900/50 rounded-lg border border-orange-500/30">
                           <span className="text-white font-medium text-sm">Requirements Engineering</span>
                         </div>
-                        <div className="px-3 py-2 bg-gray-900/50 rounded-lg border border-purple-500/30">
+                        <div className="px-3 py-2 bg-gray-900/50 rounded-lg border border-green-500/30">
                           <span className="text-white font-medium text-sm">SDLC (Agile, Scrum, Waterfall)</span>
                         </div>
-                        <div className="px-3 py-2 bg-gray-900/50 rounded-lg border border-orange-500/30">
+                        <div className="px-3 py-2 bg-gray-900/50 rounded-lg border border-purple-500/30">
                           <span className="text-white font-medium text-sm">BPMN 2.0</span>
                         </div>
                       </div>
