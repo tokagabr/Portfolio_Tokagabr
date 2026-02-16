@@ -253,7 +253,7 @@ function App() {
 
                 {/* IT Infrastructure & Tools - Hover to Reveal */}
                 <div className="relative group">
-                  <div className="bg-gray-800/50 px-6 py-4 rounded-xl border border-gray-700 hover:bg-white hover:border-gray-300 transition-all hover:shadow-lg hover:shadow-gray-300/20 cursor-pointer">
+                  <div className="bg-gray-800/50 px-6 py-4 rounded-xl border border-white hover:bg-white hover:border-gray-300 transition-all hover:shadow-lg hover:shadow-gray-300/20 cursor-pointer">
                     <div className="flex items-center gap-3">
                       <Database className="w-6 h-6 text-blue-400" />
                       <h3 className="text-xl font-bold text-blue-400">IT Infrastructure & Tools</h3>
