@@ -204,9 +204,9 @@ function App() {
                   </div>
                   
                   {/* Hidden Content - Appears on Hover */}
-                  <div className="absolute top-0 left-full ml-2 w-80 bg-gray-800 rounded-lg shadow-xl border border-gray-700 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-10">
+                  <div className="absolute top-full left-0 mt-2 w-80 bg-gray-800 rounded-lg shadow-xl border border-gray-700 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-10">
                     <div className="p-4">
-                      <div className="flex flex-row gap-2">
+                      <div className="flex flex-wrap gap-2">
                         <div className="px-3 py-2 bg-gray-900/50 rounded-lg border border-purple-500/30">
                           <span className="text-white font-medium text-sm">Backend (PHP)</span>
                         </div>
@@ -231,9 +231,9 @@ function App() {
                   </div>
                   
                   {/* Hidden Content - Appears on Hover */}
-                  <div className="absolute top-0 left-full ml-2 w-80 bg-gray-800 rounded-lg shadow-xl border border-gray-700 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-10">
+                  <div className="absolute top-full left-0 mt-2 w-80 bg-gray-800 rounded-lg shadow-xl border border-gray-700 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-10">
                     <div className="p-4">
-                      <div className="flex flex-row gap-2">
+                      <div className="flex flex-wrap gap-2">
                         <div className="px-3 py-2 bg-gray-900/50 rounded-lg border border-blue-500/30">
                           <span className="text-white font-medium text-sm">UML Modeling</span>
                         </div>
@@ -261,9 +261,9 @@ function App() {
                   </div>
                   
                   {/* Hidden Content - Appears on Hover */}
-                  <div className="absolute top-0 left-full ml-2 w-80 bg-gray-800 rounded-lg shadow-xl border border-gray-700 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-10">
+                  <div className="absolute top-full left-0 mt-2 w-80 bg-gray-800 rounded-lg shadow-xl border border-gray-700 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-10">
                     <div className="p-4">
-                      <div className="flex flex-row gap-2">
+                      <div className="flex flex-wrap gap-2">
                         <div className="px-3 py-2 bg-gray-900/50 rounded-lg border border-red-500/30">
                           <span className="text-white font-medium text-sm">Networking (TCP/IP, Windows Server)</span>
                         </div>
