@@ -158,7 +158,7 @@ function App() {
                 
                 <div className="flex flex-wrap gap-4">
                   {/* SQL Tool */}
-                  <div className="flex items-center gap-2 px-4 py-2 bg-gray-900/50 rounded-lg hover:bg-gray-900 transition-colors cursor-pointer border border-orange-500/30">
+                  <div className="flex items-center gap-2 px-4 py-2 bg-gray-900/50 rounded-lg hover:bg-blue-500 transition-colors cursor-pointer border border-orange-500/30">
                     <div className="w-8 h-8 bg-white rounded-lg shadow-lg opacity-100 flex-shrink-0 flex items-center justify-center p-1">
                       <img src={sqlLogo} alt="SQL Logo" className="w-full h-full object-contain" />
                     </div>
@@ -166,7 +166,7 @@ function App() {
                   </div>
                   
                   {/* Power BI Tool */}
-                  <div className="flex items-center gap-2 px-4 py-2 bg-gray-900/50 rounded-lg hover:bg-gray-900 transition-colors cursor-pointer border border-blue-500/30">
+                  <div className="flex items-center gap-2 px-4 py-2 bg-gray-900/50 rounded-lg hover:bg-yellow-500 transition-colors cursor-pointer border border-blue-500/30">
                     <div className="w-8 h-8 bg-white rounded-lg shadow-lg opacity-100 flex-shrink-0 flex items-center justify-center p-1">
                       <img src={powerBiLogo} alt="Power BI Logo" className="w-full h-full object-contain" />
                     </div>
@@ -174,7 +174,7 @@ function App() {
                   </div>
                   
                   {/* Advanced Excel Tool */}
-                  <div className="flex items-center gap-2 px-4 py-2 bg-gray-900/50 rounded-lg hover:bg-gray-900 transition-colors cursor-pointer border border-green-500/30">
+                  <div className="flex items-center gap-2 px-4 py-2 bg-gray-900/50 rounded-lg hover:bg-green-500 transition-colors cursor-pointer border border-green-500/30">
                     <div className="w-8 h-8 bg-white rounded-lg shadow-lg opacity-100 flex-shrink-0 flex items-center justify-center p-1">
                       <img src={excelLogo} alt="Excel Logo" className="w-full h-full object-contain" />
                     </div>
@@ -182,7 +182,7 @@ function App() {
                   </div>
                   
                   {/* Python Tool */}
-                  <div className="flex items-center gap-2 px-4 py-2 bg-gray-900/50 rounded-lg hover:bg-gray-900 transition-colors cursor-pointer">
+                  <div className="flex items-center gap-2 px-4 py-2 bg-gray-900/50 rounded-lg hover:bg-white transition-colors cursor-pointer">
                     <div className="w-8 h-8 bg-white rounded-lg shadow-lg opacity-80 hover:opacity-100 flex-shrink-0 flex items-center justify-center p-1">
                       <img src={pythonLogo} alt="Python Logo" className="w-full h-full object-contain" />
                     </div>
@@ -223,7 +223,7 @@ function App() {
 
                 {/* Business & Systems Analysis - Hover to Reveal */}
                 <div className="relative group">
-                  <div className="bg-gray-800/50 px-6 py-4 rounded-xl border border-gray-700 hover:border-blue-400 transition-all hover:shadow-lg hover:shadow-blue-500/20 cursor-pointer">
+                  <div className="bg-gray-800/50 px-6 py-4 rounded-xl border border-gray-700 hover:bg-green-500 hover:border-green-400 transition-all hover:shadow-lg hover:shadow-green-500/20 cursor-pointer">
                     <div className="flex items-center gap-3">
                       <BarChart3 className="w-6 h-6 text-blue-400" />
                       <h3 className="text-xl font-bold text-blue-400">Business & Systems Analysis</h3>
@@ -253,7 +253,7 @@ function App() {
 
                 {/* IT Infrastructure & Tools - Hover to Reveal */}
                 <div className="relative group">
-                  <div className="bg-gray-800/50 px-6 py-4 rounded-xl border border-gray-700 hover:border-blue-400 transition-all hover:shadow-lg hover:shadow-blue-500/20 cursor-pointer">
+                  <div className="bg-gray-800/50 px-6 py-4 rounded-xl border border-gray-700 hover:bg-white hover:border-gray-300 transition-all hover:shadow-lg hover:shadow-gray-300/20 cursor-pointer">
                     <div className="flex items-center gap-3">
                       <Database className="w-6 h-6 text-blue-400" />
                       <h3 className="text-xl font-bold text-blue-400">IT Infrastructure & Tools</h3>
