@@ -73,7 +73,7 @@ function App() {
                   <ChevronDown className="w-5 h-5" />
                 </a>
                 <a
-                  href="https://drive.google.com/file/d/1p4gqltX0Ue3aSMxK3boavOtRooF0uuO2/view?usp=drive_link"
+                  href="https://drive.google.com/file/d/1rdbqPSE_2IcpPUdZ00xMAiR_ps4uvtcH/view?usp=sharing"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-8 py-3 bg-gray-800 hover:bg-gray-700 text-white rounded-lg font-semibold transition-all transform hover:scale-105 border border-gray-700 hover:border-blue-400 flex items-center justify-center gap-2"
@@ -84,17 +84,6 @@ function App() {
               </div>
 
               <div className="flex flex-wrap gap-4 justify-center md:justify-start">
-                <a
-    href="https://wa.me/201065046029"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="flex items-center gap-2 text-green-400 hover:text-green-300 transition-colors"
-  >
-    <div className="w-8 h-8 bg-green-500 rounded-lg flex items-center justify-center">
-      <Phone className="w-5 h-5 text-white" />
-    </div>
-    <span className="text-gray-300">WhatsApp</span>
-  </a>
                 <a
                   href="https://www.linkedin.com/in/tokagabr/"
                   target="_blank"
@@ -196,7 +185,7 @@ function App() {
                 
                 {/* Software Development - Hover to Reveal */}
                 <div className="relative group">
-                  <div className="bg-gray-800/50 px-6 py-4 rounded-xl border border-white hover:bg-white hover:border-white transition-all hover:shadow-lg hover:shadow-gray-300/20 cursor-pointer">
+                  <div className="bg-gray-800/50 px-6 py-4 rounded-xl border border-blue-500/30 hover:bg-blue-500/10 hover:border-blue-500 transition-all hover:shadow-lg hover:shadow-blue-500/20 cursor-pointer">
                     <div className="flex items-center gap-3">
                       <Code className="w-6 h-6 text-blue-400" />
                       <h3 className="text-xl font-bold text-blue-400">Software Development</h3>
@@ -223,7 +212,7 @@ function App() {
 
                 {/* Business & Systems Analysis - Hover to Reveal */}
                 <div className="relative group">
-                  <div className="bg-gray-800/50 px-6 py-4 rounded-xl border border-white hover:bg-white hover:border-white transition-all hover:shadow-lg hover:shadow-gray-300/20 cursor-pointer">
+                  <div className="bg-gray-800/50 px-6 py-4 rounded-xl border border-blue-500/30 hover:bg-blue-500/10 hover:border-blue-500 transition-all hover:shadow-lg hover:shadow-blue-500/20 cursor-pointer">
                     <div className="flex items-center gap-3">
                       <BarChart3 className="w-6 h-6 text-blue-400" />
                       <h3 className="text-xl font-bold text-blue-400">Business & Systems Analysis</h3>
@@ -253,7 +242,7 @@ function App() {
 
                 {/* IT Infrastructure & Tools - Hover to Reveal */}
                 <div className="relative group">
-                  <div className="bg-gray-800/50 px-6 py-4 rounded-xl border border-white hover:bg-white hover:border-gray-300 transition-all hover:shadow-lg hover:shadow-gray-300/20 cursor-pointer">
+                  <div className="bg-gray-800/50 px-6 py-4 rounded-xl border border-blue-500/30 hover:bg-blue-500/10 hover:border-blue-500 transition-all hover:shadow-lg hover:shadow-blue-500/20 cursor-pointer">
                     <div className="flex items-center gap-3">
                       <Database className="w-6 h-6 text-blue-400" />
                       <h3 className="text-xl font-bold text-blue-400">IT Infrastructure & Tools</h3>
