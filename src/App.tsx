@@ -255,7 +255,7 @@ function App() {
                     <div className="p-4">
                       <div className="flex flex-wrap gap-2">
                         <div className="px-3 py-2 bg-gray-900/50 rounded-lg border border-red-500/30">
-                          <span className="text-white font-medium text-sm">Networking (TCP/IP, Windows Server)</span>
+                          <span className="text-white font-medium text-sm">Networking (CCNA,CCNB,Windows Server)</span>
                         </div>
                         <div className="px-3 py-2 bg-gray-900/50 rounded-lg border border-orange-500/30">
                           <span className="text-white font-medium text-sm">Version Control (Git & GitHub)</span>
