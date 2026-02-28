@@ -261,7 +261,7 @@ function App() {
                           <span className="text-white font-medium text-sm">Version Control (Git & GitHub)</span>
                         </div>
                         <div className="px-3 py-2 bg-gray-900/50 rounded-lg border border-blue-500/30">
-                          <span className="text-white font-medium text-sm">Development Environment (VS Code, XAMPP)</span>
+                          <span className="text-white font-medium text-sm">Development Environment (VS Code)</span>
                         </div>
                       </div>
                     </div>
