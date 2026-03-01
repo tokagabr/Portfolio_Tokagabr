@@ -255,13 +255,13 @@ function App() {
                     <div className="p-4">
                       <div className="flex flex-wrap gap-2">
                         <div className="px-3 py-2 bg-gray-900/50 rounded-lg border border-red-500/30">
-                          <span className="text-white font-medium text-sm">Networking (CCNA,CCNB,Windows Server)</span>
+                          <span className="text-white font-medium text-sm">Networking (TCP/IP, Windows Server)</span>
                         </div>
                         <div className="px-3 py-2 bg-gray-900/50 rounded-lg border border-orange-500/30">
                           <span className="text-white font-medium text-sm">Version Control (Git & GitHub)</span>
                         </div>
                         <div className="px-3 py-2 bg-gray-900/50 rounded-lg border border-blue-500/30">
-                          <span className="text-white font-medium text-sm">Development Environment (VS Code)</span>
+                          <span className="text-white font-medium text-sm">Development Environment (VS Code, XAMPP)</span>
                         </div>
                       </div>
                     </div>
@@ -480,69 +480,6 @@ function App() {
       <section id="experience" className="py-8 relative z-10" style={{scrollMarginTop: '80px'}}>
         <div className="container mx-auto px-6 relative z-10">
           
-          {/* Professional Development Section */}
-          <div className="mb-16">
-            <h2 className="text-4xl font-bold text-center mb-12 text-blue-400">Professional Development</h2>
-            
-            <div className="max-w-4xl mx-auto space-y-8">
-              <div className="bg-gray-800/50 p-8 rounded-xl border-l-4 border-blue-400 hover:shadow-lg hover:shadow-blue-500/20 transition-all relative">
-                <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
-                  <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 bg-white rounded-lg shadow-lg opacity-80 hover:opacity-100 hover:scale-110 transition-all duration-300 flex-shrink-0 flex items-center justify-center p-2">
-                      <img src={mcitLogo} alt="MCIT Logo" className="w-full h-full object-contain" />
-                    </div>
-                    <div>
-                      <h3 className="text-2xl font-bold text-white mb-2">Business Analysis Scholar</h3>
-                      <p className="text-blue-400 font-semibold">Digital Egypt Builders Initiative (MCIT)</p>
-                    </div>
-                  </div>
-                  <div className="text-gray-400 mt-2 md:mt-0 md:text-right">
-                    <p>Cairo</p>
-                    <p className="font-semibold">Nov 2025 – Present</p>
-                  </div>
-                </div>
-                <ul className="space-y-2 text-gray-300">
-                  <li className="flex items-start gap-2">
-                    <span className="text-blue-400 mt-1">▸</span>
-                    <span>Selected for a 9-month scholarship specializing in Agile, BPMN 2.0, and Digital Transformation</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-blue-400 mt-1">▸</span>
-                    <span>Designing system architectures and technical requirements for digital solutions</span>
-                  </li>
-                </ul>
-              </div>
-
-              <div className="bg-gray-800/50 p-8 rounded-xl border-l-4 border-blue-400 hover:shadow-lg hover:shadow-blue-500/20 transition-all relative">
-                <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
-                  <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 bg-white rounded-lg shadow-lg opacity-80 hover:opacity-100 hover:scale-110 transition-all duration-300 flex-shrink-0 flex items-center justify-center p-2">
-                      <img src={ntiLogo} alt="NTI Logo" className="w-full h-full object-contain" />
-                    </div>
-                    <div>
-                      <h3 className="text-2xl font-bold text-white mb-2">Power BI Trainee</h3>
-                      <p className="text-blue-400 font-semibold">National Telecommunication Institute (NTI)</p>
-                    </div>
-                  </div>
-                  <div className="text-gray-400 mt-2 md:mt-0 md:text-right">
-                    <p>Zagazig</p>
-                    <p className="font-semibold">Aug 2025 – Oct 2025</p>
-                  </div>
-                </div>
-                <ul className="space-y-2 text-gray-300">
-                  <li className="flex items-start gap-2">
-                    <span className="text-blue-400 mt-1">▸</span>
-                    <span>Mastered advanced Data Visualization and DAX formulas to create interactive business dashboards</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-blue-400 mt-1">▸</span>
-                    <span>Transformed complex raw datasets into actionable insights for stakeholder decision-making</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
           {/* Professional Experience Section */}
           <div>
             <h2 className="text-4xl font-bold text-center mb-12 text-blue-400">Professional Experience</h2>
@@ -652,6 +589,69 @@ function App() {
                   <li className="flex items-start gap-2">
                     <span className="text-blue-400 mt-1">▸</span>
                     <span>Facilitated customer transition to digital banking tools through improved service delivery</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          {/* Professional Development Section */}
+          <div className="mb-16">
+            <h2 className="text-4xl font-bold text-center mb-12 text-blue-400">Professional Development</h2>
+            
+            <div className="max-w-4xl mx-auto space-y-8">
+              <div className="bg-gray-800/50 p-8 rounded-xl border-l-4 border-blue-400 hover:shadow-lg hover:shadow-blue-500/20 transition-all relative">
+                <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 bg-white rounded-lg shadow-lg opacity-80 hover:opacity-100 hover:scale-110 transition-all duration-300 flex-shrink-0 flex items-center justify-center p-2">
+                      <img src={mcitLogo} alt="MCIT Logo" className="w-full h-full object-contain" />
+                    </div>
+                    <div>
+                      <h3 className="text-2xl font-bold text-white mb-2">Business Analysis Scholar</h3>
+                      <p className="text-blue-400 font-semibold">Digital Egypt Builders Initiative (MCIT)</p>
+                    </div>
+                  </div>
+                  <div className="text-gray-400 mt-2 md:mt-0 md:text-right">
+                    <p>Cairo</p>
+                    <p className="font-semibold">Nov 2025 – Present</p>
+                  </div>
+                </div>
+                <ul className="space-y-2 text-gray-300">
+                  <li className="flex items-start gap-2">
+                    <span className="text-blue-400 mt-1">▸</span>
+                    <span>Selected for a 9-month scholarship specializing in Agile, BPMN 2.0, and Digital Transformation</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-blue-400 mt-1">▸</span>
+                    <span>Designing system architectures and technical requirements for digital solutions</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="bg-gray-800/50 p-8 rounded-xl border-l-4 border-blue-400 hover:shadow-lg hover:shadow-blue-500/20 transition-all relative">
+                <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 bg-white rounded-lg shadow-lg opacity-80 hover:opacity-100 hover:scale-110 transition-all duration-300 flex-shrink-0 flex items-center justify-center p-2">
+                      <img src={ntiLogo} alt="NTI Logo" className="w-full h-full object-contain" />
+                    </div>
+                    <div>
+                      <h3 className="text-2xl font-bold text-white mb-2">Power BI Trainee</h3>
+                      <p className="text-blue-400 font-semibold">National Telecommunication Institute (NTI)</p>
+                    </div>
+                  </div>
+                  <div className="text-gray-400 mt-2 md:mt-0 md:text-right">
+                    <p>Zagazig</p>
+                    <p className="font-semibold">Aug 2025 – Oct 2025</p>
+                  </div>
+                </div>
+                <ul className="space-y-2 text-gray-300">
+                  <li className="flex items-start gap-2">
+                    <span className="text-blue-400 mt-1">▸</span>
+                    <span>Mastered advanced Data Visualization and DAX formulas to create interactive business dashboards</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-blue-400 mt-1">▸</span>
+                    <span>Transformed complex raw datasets into actionable insights for stakeholder decision-making</span>
                   </li>
                 </ul>
               </div>
