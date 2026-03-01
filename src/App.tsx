@@ -275,6 +275,189 @@ function App() {
         </div>
       </section>
 
+      <section id="experience" className="py-8 relative z-10" style={{scrollMarginTop: '80px'}}>
+        <div className="container mx-auto px-6 relative z-10">
+          
+          {/* Professional Experience Section */}
+          <div>
+            <h2 className="text-4xl font-bold text-center mb-12 text-blue-400">Professional Experience</h2>
+            
+            <div className="max-w-4xl mx-auto space-y-8">
+              <div className="bg-gray-800/50 p-8 rounded-xl border-l-4 border-blue-400 hover:shadow-lg hover:shadow-blue-500/20 transition-all relative">
+                <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 bg-[#1a2a44] rounded-lg shadow-lg opacity-100 hover:scale-110 transition-all duration-300 flex-shrink-0 flex items-center justify-center">
+                      <img src={divenoreLogo} alt="Divenore Logo" className="w-full h-full object-contain" />
+                    </div>
+                    <div>
+                      <h3 className="text-2xl font-bold text-white mb-2">Data Analyst</h3>
+                      <p className="text-blue-400 font-semibold">Divenore | (Part-time)</p>
+                    </div>
+                  </div>
+                  <div className="text-gray-400 mt-2 md:mt-0 md:text-right">
+                    <p>Cairo</p>
+                    <p className="font-semibold">Jan 2026 – Present</p>
+                  </div>
+                </div>
+                <ul className="space-y-2 text-gray-300 mb-4">
+                  <li className="flex items-start gap-2">
+                    <span className="text-blue-400 mt-1">▸</span>
+                    <span>Designing scalable SQL schemas and data collection frameworks for pre-launch phase of upcoming software products</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-blue-400 mt-1">▸</span>
+                    <span>Developing Power BI dashboards to track project development milestones and define core business KPIs</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-blue-400 mt-1">▸</span>
+                    <span>Translating business needs into technical documentation (UML/BPMN) to ensure data-driven product execution</span>
+                  </li>
+                </ul>
+                <div className="flex flex-wrap gap-2">
+                  <span className="px-3 py-1 bg-orange-900/50 text-orange-300 rounded-full text-sm font-medium">SQL</span>
+                  <span className="px-3 py-1 bg-blue-900/50 text-blue-300 rounded-full text-sm font-medium">Power BI</span>
+                  <span className="px-3 py-1 bg-purple-900/50 text-purple-300 rounded-full text-sm font-medium">UML</span>
+                  <span className="px-3 py-1 bg-green-900/50 text-green-300 rounded-full text-sm font-medium">BPMN</span>
+                </div>
+              </div>
+
+              <div className="bg-gray-800/50 p-8 rounded-xl border-l-4 border-blue-400 hover:shadow-lg hover:shadow-blue-500/20 transition-all relative">
+                <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 bg-white rounded-lg shadow-lg opacity-80 hover:opacity-100 hover:scale-110 transition-all duration-300 flex-shrink-0 flex items-center justify-center p-2">
+                      <img src={banqueDuCaireLogo} alt="Banque du Caire Logo" className="w-full h-full object-contain" />
+                    </div>
+                    <div>
+                      <h3 className="text-2xl font-bold text-white mb-2">IT Intern</h3>
+                      <p className="text-blue-400 font-semibold">Banque du Caire</p>
+                    </div>
+                  </div>
+                  <div className="text-gray-400 mt-2 md:mt-0 md:text-right">
+                    <p>Cairo</p>
+                    <p className="font-semibold">Jul 2024 – Aug 2024</p>
+                  </div>
+                </div>
+                <ul className="space-y-2 text-gray-300 mb-4">
+                  <li className="flex items-start gap-2">
+                    <span className="text-blue-400 mt-1">▸</span>
+                    <span>Analysed IT service desk workflows, identifying bottlenecks that improved ticket response time by 25%</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-blue-400 mt-1">▸</span>
+                    <span>Developed automated weekly performance reports using Excel PivotTables & Power Query</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-blue-400 mt-1">▸</span>
+                    <span>Collaborated with IT infrastructure team to monitor internal reporting tools, ensuring 99% data accuracy</span>
+                  </li>
+                </ul>
+                <div className="flex flex-wrap gap-2">
+                  <span className="px-3 py-1 bg-green-900/50 text-green-300 rounded-full text-sm font-medium">Excel</span>
+                  <span className="px-3 py-1 bg-blue-900/50 text-blue-300 rounded-full text-sm font-medium">Power BI</span>
+                  <span className="px-3 py-1 bg-orange-900/50 text-orange-300 rounded-full text-sm font-medium">SQL</span>
+                  <span className="px-3 py-1 bg-purple-900/50 text-purple-300 rounded-full text-sm font-medium">Windows Server</span>
+                </div>
+              </div>
+
+              <div className="bg-gray-800/50 p-8 rounded-xl border-l-4 border-blue-400 hover:shadow-lg hover:shadow-blue-500/20 transition-all relative">
+                <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 bg-red-500 rounded-lg shadow-lg opacity-80 hover:opacity-100 hover:scale-110 transition-all duration-300 flex-shrink-0 flex items-center justify-center p-2">
+                      <img src={banqueMisrLogo} alt="Banque Misr Logo" className="w-full h-full object-contain" />
+                    </div>
+                    <div>
+                      <h3 className="text-2xl font-bold text-white mb-2">Intern</h3>
+                      <p className="text-blue-400 font-semibold">Banque Misr</p>
+                    </div>
+                  </div>
+                  <div className="text-gray-400 mt-2 md:mt-0 md:text-right">
+                    <p>Mit Ghamr</p>
+                    <p className="font-semibold">Aug 2023 – Sep 2023</p>
+                  </div>
+                </div>
+                <ul className="space-y-2 text-gray-300">
+                  <li className="flex items-start gap-2">
+                    <span className="text-blue-400 mt-1">▸</span>
+                    <span>Optimized customer service workflows by analysing service cycles, achieving a 20% reduction in processing time</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-blue-400 mt-1">▸</span>
+                    <span>Enhanced data integrity and digital adoption by designing standardized tracking templates—reducing errors by 15%</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-blue-400 mt-1">▸</span>
+                    <span>Facilitated customer transition to digital banking tools through improved service delivery</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          {/* Professional Development Section */}
+          <div className="mb-16">
+            <h2 className="text-4xl font-bold text-center mb-12 text-blue-400">Professional Development</h2>
+            
+            <div className="max-w-4xl mx-auto space-y-8">
+              <div className="bg-gray-800/50 p-8 rounded-xl border-l-4 border-blue-400 hover:shadow-lg hover:shadow-blue-500/20 transition-all relative">
+                <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 bg-white rounded-lg shadow-lg opacity-80 hover:opacity-100 hover:scale-110 transition-all duration-300 flex-shrink-0 flex items-center justify-center p-2">
+                      <img src={mcitLogo} alt="MCIT Logo" className="w-full h-full object-contain" />
+                    </div>
+                    <div>
+                      <h3 className="text-2xl font-bold text-white mb-2">Business Analysis Scholar</h3>
+                      <p className="text-blue-400 font-semibold">Digital Egypt Builders Initiative (MCIT)</p>
+                    </div>
+                  </div>
+                  <div className="text-gray-400 mt-2 md:mt-0 md:text-right">
+                    <p>Cairo</p>
+                    <p className="font-semibold">Nov 2025 – Present</p>
+                  </div>
+                </div>
+                <ul className="space-y-2 text-gray-300">
+                  <li className="flex items-start gap-2">
+                    <span className="text-blue-400 mt-1">▸</span>
+                    <span>Selected for a 9-month scholarship specializing in Agile, BPMN 2.0, and Digital Transformation</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-blue-400 mt-1">▸</span>
+                    <span>Designing system architectures and technical requirements for digital solutions</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="bg-gray-800/50 p-8 rounded-xl border-l-4 border-blue-400 hover:shadow-lg hover:shadow-blue-500/20 transition-all relative">
+                <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 bg-white rounded-lg shadow-lg opacity-80 hover:opacity-100 hover:scale-110 transition-all duration-300 flex-shrink-0 flex items-center justify-center p-2">
+                      <img src={ntiLogo} alt="NTI Logo" className="w-full h-full object-contain" />
+                    </div>
+                    <div>
+                      <h3 className="text-2xl font-bold text-white mb-2">Power BI Trainee</h3>
+                      <p className="text-blue-400 font-semibold">National Telecommunication Institute (NTI)</p>
+                    </div>
+                  </div>
+                  <div className="text-gray-400 mt-2 md:mt-0 md:text-right">
+                    <p>Zagazig</p>
+                    <p className="font-semibold">Aug 2025 – Oct 2025</p>
+                  </div>
+                </div>
+                <ul className="space-y-2 text-gray-300">
+                  <li className="flex items-start gap-2">
+                    <span className="text-blue-400 mt-1">▸</span>
+                    <span>Mastered advanced Data Visualization and DAX formulas to create interactive business dashboards</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-blue-400 mt-1">▸</span>
+                    <span>Transformed complex raw datasets into actionable insights for stakeholder decision-making</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Projects Section */}
       <section id="projects" className="py-8 relative z-10">
         <div className="container mx-auto px-6 relative z-10">
@@ -471,189 +654,6 @@ function App() {
                   <ExternalLink className="w-5 h-5" />
                   View Full Analysis on GitHub
                 </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="experience" className="py-8 relative z-10" style={{scrollMarginTop: '80px'}}>
-        <div className="container mx-auto px-6 relative z-10">
-          
-          {/* Professional Experience Section */}
-          <div>
-            <h2 className="text-4xl font-bold text-center mb-12 text-blue-400">Professional Experience</h2>
-            
-            <div className="max-w-4xl mx-auto space-y-8">
-              <div className="bg-gray-800/50 p-8 rounded-xl border-l-4 border-blue-400 hover:shadow-lg hover:shadow-blue-500/20 transition-all relative">
-                <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
-                  <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 bg-[#1a2a44] rounded-lg shadow-lg opacity-100 hover:scale-110 transition-all duration-300 flex-shrink-0 flex items-center justify-center">
-                      <img src={divenoreLogo} alt="Divenore Logo" className="w-full h-full object-contain" />
-                    </div>
-                    <div>
-                      <h3 className="text-2xl font-bold text-white mb-2">Data Analyst</h3>
-                      <p className="text-blue-400 font-semibold">Divenore | (Part-time)</p>
-                    </div>
-                  </div>
-                  <div className="text-gray-400 mt-2 md:mt-0 md:text-right">
-                    <p>Cairo</p>
-                    <p className="font-semibold">Jan 2026 – Present</p>
-                  </div>
-                </div>
-                <ul className="space-y-2 text-gray-300 mb-4">
-                  <li className="flex items-start gap-2">
-                    <span className="text-blue-400 mt-1">▸</span>
-                    <span>Designing scalable SQL schemas and data collection frameworks for pre-launch phase of upcoming software products</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-blue-400 mt-1">▸</span>
-                    <span>Developing Power BI dashboards to track project development milestones and define core business KPIs</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-blue-400 mt-1">▸</span>
-                    <span>Translating business needs into technical documentation (UML/BPMN) to ensure data-driven product execution</span>
-                  </li>
-                </ul>
-                <div className="flex flex-wrap gap-2">
-                  <span className="px-3 py-1 bg-orange-900/50 text-orange-300 rounded-full text-sm font-medium">SQL</span>
-                  <span className="px-3 py-1 bg-blue-900/50 text-blue-300 rounded-full text-sm font-medium">Power BI</span>
-                  <span className="px-3 py-1 bg-purple-900/50 text-purple-300 rounded-full text-sm font-medium">UML</span>
-                  <span className="px-3 py-1 bg-green-900/50 text-green-300 rounded-full text-sm font-medium">BPMN</span>
-                </div>
-              </div>
-
-              <div className="bg-gray-800/50 p-8 rounded-xl border-l-4 border-blue-400 hover:shadow-lg hover:shadow-blue-500/20 transition-all relative">
-                <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
-                  <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 bg-white rounded-lg shadow-lg opacity-80 hover:opacity-100 hover:scale-110 transition-all duration-300 flex-shrink-0 flex items-center justify-center p-2">
-                      <img src={banqueDuCaireLogo} alt="Banque du Caire Logo" className="w-full h-full object-contain" />
-                    </div>
-                    <div>
-                      <h3 className="text-2xl font-bold text-white mb-2">IT Intern</h3>
-                      <p className="text-blue-400 font-semibold">Banque du Caire</p>
-                    </div>
-                  </div>
-                  <div className="text-gray-400 mt-2 md:mt-0 md:text-right">
-                    <p>Cairo</p>
-                    <p className="font-semibold">Jul 2024 – Aug 2024</p>
-                  </div>
-                </div>
-                <ul className="space-y-2 text-gray-300 mb-4">
-                  <li className="flex items-start gap-2">
-                    <span className="text-blue-400 mt-1">▸</span>
-                    <span>Analysed IT service desk workflows, identifying bottlenecks that improved ticket response time by 25%</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-blue-400 mt-1">▸</span>
-                    <span>Developed automated weekly performance reports using Excel PivotTables & Power Query</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-blue-400 mt-1">▸</span>
-                    <span>Collaborated with IT infrastructure team to monitor internal reporting tools, ensuring 99% data accuracy</span>
-                  </li>
-                </ul>
-                <div className="flex flex-wrap gap-2">
-                  <span className="px-3 py-1 bg-green-900/50 text-green-300 rounded-full text-sm font-medium">Excel</span>
-                  <span className="px-3 py-1 bg-blue-900/50 text-blue-300 rounded-full text-sm font-medium">Power BI</span>
-                  <span className="px-3 py-1 bg-orange-900/50 text-orange-300 rounded-full text-sm font-medium">SQL</span>
-                  <span className="px-3 py-1 bg-purple-900/50 text-purple-300 rounded-full text-sm font-medium">Windows Server</span>
-                </div>
-              </div>
-
-              <div className="bg-gray-800/50 p-8 rounded-xl border-l-4 border-blue-400 hover:shadow-lg hover:shadow-blue-500/20 transition-all relative">
-                <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
-                  <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 bg-red-500 rounded-lg shadow-lg opacity-80 hover:opacity-100 hover:scale-110 transition-all duration-300 flex-shrink-0 flex items-center justify-center p-2">
-                      <img src={banqueMisrLogo} alt="Banque Misr Logo" className="w-full h-full object-contain" />
-                    </div>
-                    <div>
-                      <h3 className="text-2xl font-bold text-white mb-2">Intern</h3>
-                      <p className="text-blue-400 font-semibold">Banque Misr</p>
-                    </div>
-                  </div>
-                  <div className="text-gray-400 mt-2 md:mt-0 md:text-right">
-                    <p>Mit Ghamr</p>
-                    <p className="font-semibold">Aug 2023 – Sep 2023</p>
-                  </div>
-                </div>
-                <ul className="space-y-2 text-gray-300">
-                  <li className="flex items-start gap-2">
-                    <span className="text-blue-400 mt-1">▸</span>
-                    <span>Optimized customer service workflows by analysing service cycles, achieving a 20% reduction in processing time</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-blue-400 mt-1">▸</span>
-                    <span>Enhanced data integrity and digital adoption by designing standardized tracking templates—reducing errors by 15%</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-blue-400 mt-1">▸</span>
-                    <span>Facilitated customer transition to digital banking tools through improved service delivery</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          {/* Professional Development Section */}
-          <div className="mb-16">
-            <h2 className="text-4xl font-bold text-center mb-12 text-blue-400">Professional Development</h2>
-            
-            <div className="max-w-4xl mx-auto space-y-8">
-              <div className="bg-gray-800/50 p-8 rounded-xl border-l-4 border-blue-400 hover:shadow-lg hover:shadow-blue-500/20 transition-all relative">
-                <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
-                  <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 bg-white rounded-lg shadow-lg opacity-80 hover:opacity-100 hover:scale-110 transition-all duration-300 flex-shrink-0 flex items-center justify-center p-2">
-                      <img src={mcitLogo} alt="MCIT Logo" className="w-full h-full object-contain" />
-                    </div>
-                    <div>
-                      <h3 className="text-2xl font-bold text-white mb-2">Business Analysis Scholar</h3>
-                      <p className="text-blue-400 font-semibold">Digital Egypt Builders Initiative (MCIT)</p>
-                    </div>
-                  </div>
-                  <div className="text-gray-400 mt-2 md:mt-0 md:text-right">
-                    <p>Cairo</p>
-                    <p className="font-semibold">Nov 2025 – Present</p>
-                  </div>
-                </div>
-                <ul className="space-y-2 text-gray-300">
-                  <li className="flex items-start gap-2">
-                    <span className="text-blue-400 mt-1">▸</span>
-                    <span>Selected for a 9-month scholarship specializing in Agile, BPMN 2.0, and Digital Transformation</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-blue-400 mt-1">▸</span>
-                    <span>Designing system architectures and technical requirements for digital solutions</span>
-                  </li>
-                </ul>
-              </div>
-
-              <div className="bg-gray-800/50 p-8 rounded-xl border-l-4 border-blue-400 hover:shadow-lg hover:shadow-blue-500/20 transition-all relative">
-                <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
-                  <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 bg-white rounded-lg shadow-lg opacity-80 hover:opacity-100 hover:scale-110 transition-all duration-300 flex-shrink-0 flex items-center justify-center p-2">
-                      <img src={ntiLogo} alt="NTI Logo" className="w-full h-full object-contain" />
-                    </div>
-                    <div>
-                      <h3 className="text-2xl font-bold text-white mb-2">Power BI Trainee</h3>
-                      <p className="text-blue-400 font-semibold">National Telecommunication Institute (NTI)</p>
-                    </div>
-                  </div>
-                  <div className="text-gray-400 mt-2 md:mt-0 md:text-right">
-                    <p>Zagazig</p>
-                    <p className="font-semibold">Aug 2025 – Oct 2025</p>
-                  </div>
-                </div>
-                <ul className="space-y-2 text-gray-300">
-                  <li className="flex items-start gap-2">
-                    <span className="text-blue-400 mt-1">▸</span>
-                    <span>Mastered advanced Data Visualization and DAX formulas to create interactive business dashboards</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-blue-400 mt-1">▸</span>
-                    <span>Transformed complex raw datasets into actionable insights for stakeholder decision-making</span>
-                  </li>
-                </ul>
               </div>
             </div>
           </div>
