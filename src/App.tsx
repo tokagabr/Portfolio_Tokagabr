@@ -570,7 +570,7 @@ function App() {
                   <span className="px-3 py-1 bg-blue-900/50 text-blue-300 rounded-full text-sm font-medium">Power BI</span>
                 </div>
                 <a
-                  href="https://github.com/tokagabr/uber-eats-analysis"
+                  href="https://github.com/tokagabr/UberEats-Dashboard"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors font-semibold"
