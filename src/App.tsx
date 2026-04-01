@@ -10,6 +10,7 @@ import netflixImage from './assets/images/netflix-dashboard.png';
 import uberEatsImage from './assets/images/uber-eats-dashboard.png';
 import sqlImage from './assets/images/sql-school-database.png';
 import roiImage from './assets/images/handypro-roi-analysis.png';
+import mavenFuzzyImage from './assets/images/mavenfuzzyfactory-cover.png';
 import sqlLogo from './assets/images/sql-3d.png';
 import powerBiLogo from './assets/images/power-bi-3d.png';
 import excelLogo from './assets/images/excel-3d.png';
@@ -466,12 +467,21 @@ function App() {
           <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
             <div className="bg-gray-900 rounded-xl overflow-hidden border border-gray-700 hover:border-blue-400 transition-all hover:shadow-xl hover:shadow-blue-500/20 transform hover:-translate-y-2">
               <div className="h-64 relative overflow-hidden">
-                <div className="h-64 bg-gradient-to-br from-orange-900 to-black flex items-center justify-center">
-                  <div className="text-center">
-                    <div className="text-6xl font-bold text-orange-500 mb-4">MF</div>
-                    <p className="text-orange-400 text-xl font-semibold">MAVEN</p>
-                  </div>
-                </div>
+                <img 
+                  src={mavenFuzzyImage} 
+                  alt="MavenFuzzyFactory Business Analytics" 
+                  className="w-full h-full object-cover"
+                  onError={(e) => {
+                    e.target.style.display = 'none';
+                    e.target.parentElement.innerHTML = 
+                      `<div class="h-64 bg-gradient-to-br from-orange-900 to-black flex items-center justify-center">
+                        <div class="text-center">
+                          <div class="text-6xl font-bold text-orange-500 mb-4">MF</div>
+                          <p class="text-orange-400 text-xl font-semibold">MAVEN</p>
+                        </div>
+                      </div>`;
+                  }}
+                />
                 <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent"></div>
               </div>
               <div className="p-6">
