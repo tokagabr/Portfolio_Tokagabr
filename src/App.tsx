@@ -199,13 +199,16 @@ function App() {
                     <div className="p-4">
                       <div className="flex flex-wrap gap-2">
                         <div className="px-3 py-2 bg-gray-900/50 rounded-lg border border-purple-500/30">
-                          <span className="text-white font-medium text-sm">Backend (PHP)</span>
+                          <span className="text-white font-medium text-sm">SDLC</span>
                         </div>
                         <div className="px-3 py-2 bg-gray-900/50 rounded-lg border border-cyan-500/30">
-                          <span className="text-white font-medium text-sm">Frontend (React, JS, HTML/CSS)</span>
+                          <span className="text-white font-medium text-sm">Python</span>
                         </div>
                         <div className="px-3 py-2 bg-gray-900/50 rounded-lg border border-pink-500/30">
-                          <span className="text-white font-medium text-sm">Styling (Bootstrap, Tailwind)</span>
+                          <span className="text-white font-medium text-sm">Git/GitHub</span>
+                        </div>
+                        <div className="px-3 py-2 bg-gray-900/50 rounded-lg border border-green-500/30">
+                          <span className="text-white font-medium text-sm">Web Fundamentals</span>
                         </div>
                       </div>
                     </div>
@@ -226,16 +229,16 @@ function App() {
                     <div className="p-4">
                       <div className="flex flex-wrap gap-2">
                         <div className="px-3 py-2 bg-gray-900/50 rounded-lg border border-blue-500/30">
-                          <span className="text-white font-medium text-sm">UML Modeling</span>
+                          <span className="text-white font-medium text-sm">BPMN 2.0</span>
                         </div>
                         <div className="px-3 py-2 bg-gray-900/50 rounded-lg border border-orange-500/30">
-                          <span className="text-white font-medium text-sm">Requirements Engineering</span>
+                          <span className="text-white font-medium text-sm">Agile (Scrum)</span>
                         </div>
                         <div className="px-3 py-2 bg-gray-900/50 rounded-lg border border-green-500/30">
-                          <span className="text-white font-medium text-sm">SDLC (Agile, Scrum, Waterfall)</span>
+                          <span className="text-white font-medium text-sm">UML</span>
                         </div>
                         <div className="px-3 py-2 bg-gray-900/50 rounded-lg border border-purple-500/30">
-                          <span className="text-white font-medium text-sm">BPMN 2.0</span>
+                          <span className="text-white font-medium text-sm">Requirement Engineering</span>
                         </div>
                       </div>
                     </div>
@@ -256,13 +259,16 @@ function App() {
                     <div className="p-4">
                       <div className="flex flex-wrap gap-2">
                         <div className="px-3 py-2 bg-gray-900/50 rounded-lg border border-red-500/30">
-                          <span className="text-white font-medium text-sm">Networking (TCP/IP, Windows Server)</span>
+                          <span className="text-white font-medium text-sm">Docker</span>
                         </div>
                         <div className="px-3 py-2 bg-gray-900/50 rounded-lg border border-orange-500/30">
-                          <span className="text-white font-medium text-sm">Version Control (Git & GitHub)</span>
+                          <span className="text-white font-medium text-sm">Microsoft Azure</span>
                         </div>
                         <div className="px-3 py-2 bg-gray-900/50 rounded-lg border border-blue-500/30">
-                          <span className="text-white font-medium text-sm">Development Environment (VS Code, XAMPP)</span>
+                          <span className="text-white font-medium text-sm">Linux</span>
+                        </div>
+                        <div className="px-3 py-2 bg-gray-900/50 rounded-lg border border-purple-500/30">
+                          <span className="text-white font-medium text-sm">Azure Data Studio</span>
                         </div>
                       </div>
                     </div>
@@ -406,8 +412,8 @@ function App() {
                       <img src={mcitLogo} alt="MCIT Logo" className="w-full h-full object-contain" />
                     </div>
                     <div>
-                      <h3 className="text-2xl font-bold text-white mb-2"> Pre-Master’s in Business Analysis </h3>
-                      <p className="text-blue-400 font-semibold">Digital Egypt Builders Initiative (DEBI) - MCIT </p>
+                      <h3 className="text-2xl font-bold text-white mb-2">Business Analysis Scholar</h3>
+                      <p className="text-blue-400 font-semibold">Digital Egypt Builders Initiative (MCIT)</p>
                     </div>
                   </div>
                   <div className="text-gray-400 mt-2 md:mt-0 md:text-right">
