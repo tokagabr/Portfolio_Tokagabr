@@ -406,8 +406,8 @@ function App() {
                       <img src={mcitLogo} alt="MCIT Logo" className="w-full h-full object-contain" />
                     </div>
                     <div>
-                      <h3 className="text-2xl font-bold text-white mb-2">Business Analysis Scholar</h3>
-                      <p className="text-blue-400 font-semibold">Digital Egypt Builders Initiative (MCIT)</p>
+                      <h3 className="text-2xl font-bold text-white mb-2"> Digital Egypt Builders Initiative (DEBI) - MCIT </h3>
+                      <p className="text-blue-400 font-semibold">Pre-Master’s in Business Analysis</p>
                     </div>
                   </div>
                   <div className="text-gray-400 mt-2 md:mt-0 md:text-right">
