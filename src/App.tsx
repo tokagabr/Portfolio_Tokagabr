@@ -395,7 +395,7 @@ function App() {
           </div>
 
           {/* Professional Development Section */}
-          <div className="mb-16">
+          <div className="mb-8">
             <h2 className="text-4xl font-bold text-center mb-12 text-blue-400">Professional Development</h2>
             
             <div className="max-w-4xl mx-auto space-y-8">
