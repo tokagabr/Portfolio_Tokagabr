@@ -396,7 +396,7 @@ function App() {
 
           {/* Professional Development Section */}
           <div className="mb-8">
-            <h2 className="text-4xl font-bold text-center mb-12 text-blue-400">Professional Development</h2>
+            <h2 className="text-4xl font-bold text-center mb-8 text-blue-400">Professional Development</h2>
             
             <div className="max-w-4xl mx-auto space-y-8">
               <div className="bg-gray-800/50 p-8 rounded-xl border-l-4 border-blue-400 hover:shadow-lg hover:shadow-blue-500/20 transition-all relative">
@@ -758,3 +758,4 @@ function App() {
 }
 
 export default App; 
+
