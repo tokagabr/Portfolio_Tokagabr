@@ -74,7 +74,7 @@ function App() {
                   <ChevronDown className="w-5 h-5" />
                 </a>
                 <a
-                  href="https://drive.google.com/file/d/1dppFactohabuYcFxrm7kk8GxF4gYQ7Zg/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1x6LagIj7hjImJbAmG10-7YTqpZcLyfxB/view?usp=sharing"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-8 py-3 bg-gray-800 hover:bg-gray-700 text-white rounded-lg font-semibold transition-all transform hover:scale-105 border border-gray-700 hover:border-blue-400 flex items-center justify-center gap-2"
@@ -466,6 +466,36 @@ function App() {
           <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
             <div className="bg-gray-900 rounded-xl overflow-hidden border border-gray-700 hover:border-blue-400 transition-all hover:shadow-xl hover:shadow-blue-500/20 transform hover:-translate-y-2">
               <div className="h-64 relative overflow-hidden">
+                <div className="h-64 bg-gradient-to-br from-orange-900 to-black flex items-center justify-center">
+                  <div className="text-center">
+                    <div className="text-6xl font-bold text-orange-500 mb-4">MF</div>
+                    <p className="text-orange-400 text-xl font-semibold">MAVEN</p>
+                  </div>
+                </div>
+                <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent"></div>
+              </div>
+              <div className="p-6">
+                <h3 className="text-2xl font-bold mb-3 text-white">MavenFuzzyFactory — Business Analytics Hackathon</h3>
+                <p className="text-gray-400 mb-4">E-Commerce Growth Challenge with Top 3 Finish. Analyzed 1.2M+ records across 6 tables to deliver data-driven investor pitch proving business growth efficiency and $100K strategic roadmap.</p>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  <span className="px-3 py-1 bg-orange-900/50 text-orange-300 rounded-full text-sm font-medium">MySQL</span>
+                  <span className="px-3 py-1 bg-green-900/50 text-green-300 rounded-full text-sm font-medium">Excel</span>
+                  <span className="px-3 py-1 bg-blue-900/50 text-blue-300 rounded-full text-sm font-medium">Power BI</span>
+                </div>
+                <a
+                  href="https://github.com/tokagabr/mavenfuzzyfactory"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors font-semibold"
+                >
+                  <ExternalLink className="w-5 h-5" />
+                  View Full Analysis on GitHub
+                </a>
+              </div>
+            </div>
+
+            <div className="bg-gray-900 rounded-xl overflow-hidden border border-gray-700 hover:border-blue-400 transition-all hover:shadow-xl hover:shadow-blue-500/20 transform hover:-translate-y-2">
+              <div className="h-64 relative overflow-hidden">
                 <img 
                   src={ecoCycleImage} 
                   alt="Eco Cycle | Integrated Waste Management System" 
@@ -532,7 +562,7 @@ function App() {
                   <span className="px-3 py-1 bg-blue-900/50 text-blue-300 rounded-full text-sm font-medium">Power BI</span>
                 </div>
                 <a
-                  href="https://github.com/tokagabr/Netflix-Data-Analysis-Dashboard-Power-BI-Project-"
+                  href="https://github.com/tokagabr/netflix-dashboard"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors font-semibold"
@@ -570,7 +600,7 @@ function App() {
                   <span className="px-3 py-1 bg-blue-900/50 text-blue-300 rounded-full text-sm font-medium">Power BI</span>
                 </div>
                 <a
-                  href="https://github.com/tokagabr/UberEats-Dashboard"
+                  href="https://github.com/tokagabr/uber-eats-analysis"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors font-semibold"
