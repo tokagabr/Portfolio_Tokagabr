@@ -762,8 +762,7 @@ in customer retention.</p>
                 <h3 className="text-2xl font-bold text-blue-400">B.Sc. in Management Information Systems (MIS)</h3>
                 <span className="text-gray-400">GPA: 3.5 / 4.0</span>
               </div>
-              <p className="text-gray-300 mb-2">Sadat Academy for Management Sciences</p>
-              <p className="text-blue-400 font-bold text-lg mb-4">🏆 Top 3 &mdash; Business Analytics Hackathon | Maven Analytics | Mar 2026</p>
+              <p className="text-gray-300 mb-4">Sadat Academy for Management Sciences</p>
             </div>
           </div>
         </div>
