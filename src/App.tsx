@@ -9,7 +9,6 @@ import divenoreLogo from './assets/images/divenore-logo.png';
 import netflixImage from './assets/images/netflix-dashboard.png';
 import uberEatsImage from './assets/images/uber-eats-dashboard.png';
 import sqlImage from './assets/images/sql-school-database.png';
-import roiImage from './assets/images/handypro-roi-analysis.png';
 import mavenFuzzyImage from './assets/images/mavenfuzzyfactory-cover.png';
 import sqlLogo from './assets/images/sql-3d.png';
 import powerBiLogo from './assets/images/power-bi-3d.png';
@@ -681,44 +680,6 @@ in customer retention.</p>
 
             <div className="bg-gray-900 rounded-xl overflow-hidden border border-gray-700 hover:border-blue-400 transition-all hover:shadow-xl hover:shadow-blue-500/20 transform hover:-translate-y-2">
               <div className="h-64 relative overflow-hidden">
-                <img 
-                  src={roiImage} 
-                  alt="HandyPro ROI Analysis" 
-                  className="w-full h-full object-cover"
-                  onError={(e) => {
-                    e.target.style.display = 'none';
-                    e.target.parentElement.innerHTML = 
-                      <div class="h-64 bg-gradient-to-br from-purple-900 to-black flex items-center justify-center">
-                        <div class="text-center">
-                          <div class="text-6xl font-bold text-purple-500 mb-4">ROI</div>
-                          <p class="text-purple-400 text-xl font-semibold">ANALYSIS</p>
-                        </div>
-                      </div>
-                    ;
-                  }}
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent"></div>
-              </div>
-              <div className="p-6">
-                <h3 className="text-2xl font-bold mb-3 text-white">HandyPro Lead Value Analysis</h3>
-                <p className="text-gray-400 mb-4">Comprehensive analysis of services and channels driving the most valuable leads for HandyPro Hub, evaluating urgency, seasonality, and customer segments to optimize lead management and marketing ROI.</p>
-                <div className="flex flex-wrap gap-2 mb-4">
-                  <span className="px-3 py-1 bg-green-900/50 text-green-300 rounded-full text-sm font-medium">Excel</span>
-                </div>
-                <a
-                  href="https://github.com/tokagabr/Service-Channel-ROI-Analysis"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors font-semibold"
-                >
-                  <ExternalLink className="w-5 h-5" />
-                  View Full Analysis on GitHub
-                </a>
-              </div>
-            </div>
-
-            <div className="bg-gray-900 rounded-xl overflow-hidden border border-gray-700 hover:border-blue-400 transition-all hover:shadow-xl hover:shadow-blue-500/20 transform hover:-translate-y-2">
-              <div className="h-64 relative overflow-hidden">
                 <div className="h-64 bg-gradient-to-br from-purple-900 to-gray-900 flex items-center justify-center">
                   <div className="text-center">
                     <div className="text-6xl font-bold text-purple-500 mb-4">TC</div>
@@ -729,10 +690,13 @@ in customer retention.</p>
               </div>
               <div className="p-6">
                 <h3 className="text-2xl font-bold mb-3 text-white">Telecom Customer Churn Analysis</h3>
-                <p className="text-gray-400 mb-4">Analysed 7,000+ customer records to surface key churn 
-                drivers &mdash; identified Competitor Offers as the #1 attrition factor. 
-                Built an interactive Excel dashboard with PivotTables & Power Query, 
-                improving at-risk segment identification by 20%.</p>
+                <p className="text-gray-400 mb-4">Analysed 7,000+ customer records to surface key churn drivers &mdash; 
+                identified Competitor Offers as the #1 attrition factor. Built an 
+                interactive Excel dashboard with PivotTables & Power Query, improving 
+                at-risk segment identification by 20%. Additionally analysed services 
+                and channels driving the most valuable leads, evaluating urgency, 
+                seasonality, and customer segments to optimize lead management and 
+                marketing ROI.</p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   <span className="px-3 py-1 bg-green-900/50 text-green-300 rounded-full text-sm font-medium">Advanced Excel</span>
                   <span className="px-3 py-1 bg-blue-900/50 text-blue-300 rounded-full text-sm font-medium">Power Query</span>
