@@ -40,7 +40,6 @@ function App() {
               <a href="#skills" className="hover:text-blue-400 transition-colors">Skills</a>
               <a href="#projects" className="hover:text-blue-400 transition-colors">Projects</a>
               <a href="#experience" className="hover:text-blue-400 transition-colors">Experience</a>
-              <a href="#certifications" className="hover:text-blue-400 transition-colors">Certifications</a>
               <a href="#contact" className="hover:text-blue-400 transition-colors">Contact</a>
             </div>
           </div>
@@ -129,15 +128,9 @@ function App() {
           <div className="max-w-4xl mx-auto">
             <p className="text-xl text-gray-300 leading-relaxed text-center">
               I'm a Business Information Systems graduate who spent 4 years building 
-              across multiple tracks &mdash; data analysis, business analysis, web development, 
-              and networking. That breadth isn't scattered &mdash; it means I can work with 
+              across multiple tracks  data analysis, business analysis, web development, 
+              and networking. That breadth isn't scattered  it means I can work with 
               any team, speak any language, and deliver end-to-end solutions.
-
-              I've analysed 1.7M+ records in a hackathon where my team finished Top 3, 
-              built Power BI dashboards for real stakeholders at a tech startup, and 
-              reduced operational inefficiencies by up to 25% during banking internships. 
-              Currently completing a nationally competitive 9-month Business Analysis 
-              scholarship through MCIT.
             </p>
           </div>
         </div>
