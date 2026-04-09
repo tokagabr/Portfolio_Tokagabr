@@ -9,6 +9,7 @@ import divenoreLogo from './assets/images/divenore-logo.png';
 import netflixImage from './assets/images/netflix-dashboard.png';
 import uberEatsImage from './assets/images/uber-eats-dashboard.png';
 import sqlImage from './assets/images/sql-school-database.png';
+import roiImage from './assets/images/handypro-roi-analysis.png';
 import mavenFuzzyImage from './assets/images/mavenfuzzyfactory-cover.png';
 import sqlLogo from './assets/images/sql-3d.png';
 import powerBiLogo from './assets/images/power-bi-3d.png';
@@ -680,12 +681,21 @@ in customer retention.</p>
 
             <div className="bg-gray-900 rounded-xl overflow-hidden border border-gray-700 hover:border-blue-400 transition-all hover:shadow-xl hover:shadow-blue-500/20 transform hover:-translate-y-2">
               <div className="h-64 relative overflow-hidden">
-                <div className="h-64 bg-gradient-to-br from-purple-900 to-gray-900 flex items-center justify-center">
-                  <div className="text-center">
-                    <div className="text-6xl font-bold text-purple-500 mb-4">TC</div>
-                    <p className="text-purple-400 text-xl font-semibold">TELECOM</p>
-                  </div>
-                </div>
+                <img 
+                  src={roiImage} 
+                  alt="Telecom Customer Churn Analysis" 
+                  className="w-full h-full object-cover"
+                  onError={(e) => {
+                    e.target.style.display = 'none';
+                    e.target.parentElement.innerHTML = 
+                      `<div class="h-64 bg-gradient-to-br from-purple-900 to-gray-900 flex items-center justify-center">
+                        <div class="text-center">
+                          <div class="text-6xl font-bold text-purple-500 mb-4">TC</div>
+                          <p class="text-purple-400 text-xl font-semibold">TELECOM</p>
+                        </div>
+                      </div>`;
+                  }}
+                />
                 <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent"></div>
               </div>
               <div className="p-6">
