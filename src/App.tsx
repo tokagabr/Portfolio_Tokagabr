@@ -40,6 +40,7 @@ function App() {
               <a href="#skills" className="hover:text-blue-400 transition-colors">Skills</a>
               <a href="#projects" className="hover:text-blue-400 transition-colors">Projects</a>
               <a href="#experience" className="hover:text-blue-400 transition-colors">Experience</a>
+              <a href="#certifications" className="hover:text-blue-400 transition-colors">Certifications</a>
               <a href="#contact" className="hover:text-blue-400 transition-colors">Contact</a>
             </div>
           </div>
@@ -63,7 +64,9 @@ function App() {
                 Data Analyst | Business Analyst
               </h2>
               <p className="text-lg text-blue-100 mb-8 leading-relaxed">
-                Transforming complex data into actionable insights that drive KPI performance and support data-driven decision-making for stakeholders.
+                Fresh graduate sitting at the intersection of business thinking and 
+                technical execution. I turn raw data into decisions, translate business 
+                problems into technical solutions, and bridge the gap between teams.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start mb-8">
@@ -125,8 +128,16 @@ function App() {
           
           <div className="max-w-4xl mx-auto">
             <p className="text-xl text-gray-300 leading-relaxed text-center">
-              Entry-Level Data & Business Analyst with strong expertise in BI dashboards, data analysis, and business process optimization.
-              Skilled in translating business requirements into actionable insights that support data-driven decision-making for stakeholders.
+              I'm a Business Information Systems graduate who spent 4 years building 
+              across multiple tracks &mdash; data analysis, business analysis, web development, 
+              and networking. That breadth isn't scattered &mdash; it means I can work with 
+              any team, speak any language, and deliver end-to-end solutions.
+
+              I've analysed 1.7M+ records in a hackathon where my team finished Top 3, 
+              built Power BI dashboards for real stakeholders at a tech startup, and 
+              reduced operational inefficiencies by up to 25% during banking internships. 
+              Currently completing a nationally competitive 9-month Business Analysis 
+              scholarship through MCIT.
             </p>
           </div>
         </div>
@@ -201,9 +212,6 @@ function App() {
                         <div className="px-3 py-2 bg-gray-900/50 rounded-lg border border-purple-500/30">
                           <span className="text-white font-medium text-sm">SDLC</span>
                         </div>
-                        <div className="px-3 py-2 bg-gray-900/50 rounded-lg border border-cyan-500/30">
-                          <span className="text-white font-medium text-sm">Python</span>
-                        </div>
                         <div className="px-3 py-2 bg-gray-900/50 rounded-lg border border-pink-500/30">
                           <span className="text-white font-medium text-sm">Git/GitHub</span>
                         </div>
@@ -258,17 +266,14 @@ function App() {
                   <div className="absolute top-full left-0 mt-2 w-80 bg-gray-800 rounded-lg shadow-xl border border-gray-700 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-10">
                     <div className="p-4">
                       <div className="flex flex-wrap gap-2">
-                        <div className="px-3 py-2 bg-gray-900/50 rounded-lg border border-red-500/30">
-                          <span className="text-white font-medium text-sm">Docker</span>
-                        </div>
-                        <div className="px-3 py-2 bg-gray-900/50 rounded-lg border border-orange-500/30">
-                          <span className="text-white font-medium text-sm">Microsoft Azure</span>
-                        </div>
                         <div className="px-3 py-2 bg-gray-900/50 rounded-lg border border-blue-500/30">
-                          <span className="text-white font-medium text-sm">Linux</span>
+                          <span className="text-white font-medium text-sm">Networking Fundamentals</span>
                         </div>
                         <div className="px-3 py-2 bg-gray-900/50 rounded-lg border border-purple-500/30">
-                          <span className="text-white font-medium text-sm">Azure Data Studio</span>
+                          <span className="text-white font-medium text-sm">Windows Server</span>
+                        </div>
+                        <div className="px-3 py-2 bg-gray-900/50 rounded-lg border border-green-500/30">
+                          <span className="text-white font-medium text-sm">IT Service Desk</span>
                         </div>
                       </div>
                     </div>
@@ -373,7 +378,7 @@ function App() {
                       <img src={banqueMisrLogo} alt="Banque Misr Logo" className="w-full h-full object-contain" />
                     </div>
                     <div>
-                      <h3 className="text-2xl font-bold text-white mb-2">Intern</h3>
+                      <h3 className="text-2xl font-bold text-white mb-2">Operations Intern</h3>
                       <p className="text-blue-400 font-semibold">Banque Misr</p>
                     </div>
                   </div>
@@ -492,7 +497,7 @@ function App() {
               </div>
               <div className="p-6">
                 <h3 className="text-2xl font-bold mb-3 text-white">MavenFuzzyFactory — Business Analytics Hackathon</h3>
-                <p className="text-gray-400 mb-4">E-Commerce Growth Challenge with Top 3 Finish. Analyzed 1.2M+ records across 6 tables to deliver data-driven investor pitch proving business growth efficiency and $100K strategic roadmap.</p>
+                <p className="text-gray-400 mb-4">E-Commerce Growth Challenge with Top 3 Finish. Analyzed 1.7M+ records across 6 tables to deliver data-driven investor pitch proving business growth efficiency and $100K strategic roadmap.</p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   <span className="px-3 py-1 bg-orange-900/50 text-orange-300 rounded-full text-sm font-medium">MySQL</span>
                   <span className="px-3 py-1 bg-green-900/50 text-green-300 rounded-full text-sm font-medium">Excel</span>
@@ -573,7 +578,10 @@ function App() {
               </div>
               <div className="p-6">
                 <h3 className="text-2xl font-bold mb-3 text-white">Netflix Content Analytics Dashboard</h3>
-                <p className="text-gray-400 mb-4">Comprehensive analysis of Netflix content library, revealing insights into genre distribution, content trends, and regional availability patterns.</p>
+                <p className="text-gray-400 mb-4">Analysed 8,000+ titles to identify key content trends across genres, 
+release patterns, and regional availability. Built an interactive 
+Power BI dashboard revealing distribution insights to support 
+content strategy decisions.</p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   <span className="px-3 py-1 bg-blue-900/50 text-blue-300 rounded-full text-sm font-medium">Power BI</span>
                 </div>
@@ -611,7 +619,10 @@ function App() {
               </div>
               <div className="p-6">
                 <h3 className="text-2xl font-bold mb-3 text-white">Uber Eats Analytics Dashboard</h3>
-                <p className="text-gray-400 mb-4">In-depth analysis of food delivery operations, customer behavior patterns, and performance metrics to optimize delivery efficiency and customer satisfaction.</p>
+                <p className="text-gray-400 mb-4">Processed 3M+ delivery records in SQL to identify peak hours and 
+regional performance patterns. Built interactive Power BI dashboard 
+that cut reporting time by 30% and modelled a projected 15% uplift 
+in customer retention.</p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   <span className="px-3 py-1 bg-blue-900/50 text-blue-300 rounded-full text-sm font-medium">Power BI</span>
                 </div>
@@ -648,8 +659,11 @@ function App() {
                 <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent"></div>
               </div>
               <div className="p-6">
-                <h3 className="text-2xl font-bold mb-3 text-white">SQL Practice – School Database</h3>
-                <p className="text-gray-400 mb-4">SQL practice database applying core and advanced concepts including SELECT, JOINs, GROUP BY, Subqueries, and real business scenarios for school system management.</p>
+                <h3 className="text-2xl font-bold mb-3 text-white">School Management Database System</h3>
+                <p className="text-gray-400 mb-4">Architected a normalized relational schema with 5+ optimized tables, 
+   enforcing data integrity via constraints and normalization. Developed 
+   complex SQL queries using JOINs and Subqueries for administrative 
+   reporting on student load and course demand.</p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   <span className="px-3 py-1 bg-orange-900/50 text-orange-300 rounded-full text-sm font-medium">MySQL</span>
                 </div>
@@ -692,7 +706,39 @@ function App() {
                   <span className="px-3 py-1 bg-green-900/50 text-green-300 rounded-full text-sm font-medium">Excel</span>
                 </div>
                 <a
-                  href="https://github.com/tokagabr/Service-Channel-ROI-Analysis/tree/main"
+                  href="https://github.com/tokagabr/Service-Channel-ROI-Analysis"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors font-semibold"
+                >
+                  <ExternalLink className="w-5 h-5" />
+                  View Full Analysis on GitHub
+                </a>
+              </div>
+            </div>
+
+            <div className="bg-gray-900 rounded-xl overflow-hidden border border-gray-700 hover:border-blue-400 transition-all hover:shadow-xl hover:shadow-blue-500/20 transform hover:-translate-y-2">
+              <div className="h-64 relative overflow-hidden">
+                <div className="h-64 bg-gradient-to-br from-purple-900 to-gray-900 flex items-center justify-center">
+                  <div className="text-center">
+                    <div className="text-6xl font-bold text-purple-500 mb-4">TC</div>
+                    <p className="text-purple-400 text-xl font-semibold">TELECOM</p>
+                  </div>
+                </div>
+                <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent"></div>
+              </div>
+              <div className="p-6">
+                <h3 className="text-2xl font-bold mb-3 text-white">Telecom Customer Churn Analysis</h3>
+                <p className="text-gray-400 mb-4">Analysed 7,000+ customer records to surface key churn 
+                drivers &mdash; identified Competitor Offers as the #1 attrition factor. 
+                Built an interactive Excel dashboard with PivotTables & Power Query, 
+                improving at-risk segment identification by 20%.</p>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  <span className="px-3 py-1 bg-green-900/50 text-green-300 rounded-full text-sm font-medium">Advanced Excel</span>
+                  <span className="px-3 py-1 bg-blue-900/50 text-blue-300 rounded-full text-sm font-medium">Power Query</span>
+                </div>
+                <a
+                  href="https://github.com/tokagabr/Telecom-Analysis"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors font-semibold"
@@ -717,6 +763,55 @@ function App() {
                 <span className="text-gray-400">GPA: 3.5 / 4.0</span>
               </div>
               <p className="text-gray-300 mb-4">Sadat Academy for Management Sciences</p>
+            </div>
+
+            <div className="bg-gray-900/50 rounded-xl p-8 border border-gray-700 mt-8">
+              <h3 className="text-2xl font-bold text-blue-400 mb-6">Certifications & Awards</h3>
+              
+              <div className="space-y-4">
+                <div className="flex items-start gap-3 p-3 bg-blue-900/20 rounded-lg border-l-4 border-blue-400">
+                  <span className="text-2xl">**</span>
+                  <div>
+                    <p className="text-white font-bold">Top 3 &mdash; Business Analytics Hackathon | Maven Analytics | Mar 2026</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start gap-3 p-3 bg-gray-800/50 rounded-lg">
+                  <span className="text-xl text-blue-400">2.</span>
+                  <div>
+                    <p className="text-white">Business Analysis Scholarship (Nationally Competitive) | MCIT / DEBI | Nov 2025 &ndash; Present</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start gap-3 p-3 bg-gray-800/50 rounded-lg">
+                  <span className="text-xl text-blue-400">3.</span>
+                  <div>
+                    <p className="text-white">Power BI Trainee Certificate | NTI | Oct 2025</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start gap-3 p-3 bg-gray-800/50 rounded-lg">
+                  <span className="text-xl text-blue-400">4.</span>
+                  <div>
+                    <p className="text-white">Excel & Power BI Specialization (5 Courses) | Corporate Finance Institute &mdash; Coursera | Dec 2025 &ndash; Mar 2026</p>
+                    <p className="text-gray-400 text-sm mt-2 ml-6">Power BI Fundamentals &middot; Financial Statements in Power BI &middot; Intermediate DAX & Time Intelligence &middot; Power Query Fundamentals &middot; Power Pivot Fundamentals</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start gap-3 p-3 bg-gray-800/50 rounded-lg">
+                  <span className="text-xl text-blue-400">5.</span>
+                  <div>
+                    <p className="text-white">Introduction to Databases | Meta &mdash; Coursera | Jan 2026</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start gap-3 p-3 bg-gray-800/50 rounded-lg">
+                  <span className="text-xl text-blue-400">6.</span>
+                  <div>
+                    <p className="text-white">Business Statistics & Business Decisions | Rice University &mdash; Coursera | Dec 2025</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -747,6 +842,7 @@ function App() {
                   GitHub
                 </a>
               </div>
+              
             </div>
           </div>
         </div>
@@ -764,4 +860,3 @@ function App() {
 }
 
 export default App; 
-
