@@ -762,56 +762,8 @@ in customer retention.</p>
                 <h3 className="text-2xl font-bold text-blue-400">B.Sc. in Management Information Systems (MIS)</h3>
                 <span className="text-gray-400">GPA: 3.5 / 4.0</span>
               </div>
-              <p className="text-gray-300 mb-4">Sadat Academy for Management Sciences</p>
-            </div>
-
-            <div className="bg-gray-900/50 rounded-xl p-8 border border-gray-700 mt-8">
-              <h3 className="text-2xl font-bold text-blue-400 mb-6">Certifications & Awards</h3>
-              
-              <div className="space-y-4">
-                <div className="flex items-start gap-3 p-3 bg-blue-900/20 rounded-lg border-l-4 border-blue-400">
-                  <span className="text-2xl">**</span>
-                  <div>
-                    <p className="text-white font-bold">Top 3 &mdash; Business Analytics Hackathon | Maven Analytics | Mar 2026</p>
-                  </div>
-                </div>
-                
-                <div className="flex items-start gap-3 p-3 bg-gray-800/50 rounded-lg">
-                  <span className="text-xl text-blue-400">2.</span>
-                  <div>
-                    <p className="text-white">Business Analysis Scholarship (Nationally Competitive) | MCIT / DEBI | Nov 2025 &ndash; Present</p>
-                  </div>
-                </div>
-                
-                <div className="flex items-start gap-3 p-3 bg-gray-800/50 rounded-lg">
-                  <span className="text-xl text-blue-400">3.</span>
-                  <div>
-                    <p className="text-white">Power BI Trainee Certificate | NTI | Oct 2025</p>
-                  </div>
-                </div>
-                
-                <div className="flex items-start gap-3 p-3 bg-gray-800/50 rounded-lg">
-                  <span className="text-xl text-blue-400">4.</span>
-                  <div>
-                    <p className="text-white">Excel & Power BI Specialization (5 Courses) | Corporate Finance Institute &mdash; Coursera | Dec 2025 &ndash; Mar 2026</p>
-                    <p className="text-gray-400 text-sm mt-2 ml-6">Power BI Fundamentals &middot; Financial Statements in Power BI &middot; Intermediate DAX & Time Intelligence &middot; Power Query Fundamentals &middot; Power Pivot Fundamentals</p>
-                  </div>
-                </div>
-                
-                <div className="flex items-start gap-3 p-3 bg-gray-800/50 rounded-lg">
-                  <span className="text-xl text-blue-400">5.</span>
-                  <div>
-                    <p className="text-white">Introduction to Databases | Meta &mdash; Coursera | Jan 2026</p>
-                  </div>
-                </div>
-                
-                <div className="flex items-start gap-3 p-3 bg-gray-800/50 rounded-lg">
-                  <span className="text-xl text-blue-400">6.</span>
-                  <div>
-                    <p className="text-white">Business Statistics & Business Decisions | Rice University &mdash; Coursera | Dec 2025</p>
-                  </div>
-                </div>
-              </div>
+              <p className="text-gray-300 mb-2">Sadat Academy for Management Sciences</p>
+              <p className="text-blue-400 font-bold text-lg mb-4">🏆 Top 3 &mdash; Business Analytics Hackathon | Maven Analytics | Mar 2026</p>
             </div>
           </div>
         </div>
