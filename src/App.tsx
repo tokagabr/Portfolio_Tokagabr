@@ -299,44 +299,6 @@ function App() {
               <div className="bg-gray-800/50 p-8 rounded-xl border-l-4 border-blue-400 hover:shadow-lg hover:shadow-blue-500/20 transition-all relative">
                 <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
                   <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 bg-[#1a2a44] rounded-lg shadow-lg opacity-100 hover:scale-110 transition-all duration-300 flex-shrink-0 flex items-center justify-center">
-                      <img src={divenoreLogo} alt="Divenore Logo" className="w-full h-full object-contain" />
-                    </div>
-                    <div>
-                      <h3 className="text-2xl font-bold text-white mb-2">Data Analyst</h3>
-                      <p className="text-blue-400 font-semibold">Divenore | (Part-time)</p>
-                    </div>
-                  </div>
-                  <div className="text-gray-400 mt-2 md:mt-0 md:text-right">
-                    <p>Cairo</p>
-                    <p className="font-semibold">Jan 2026 – Present</p>
-                  </div>
-                </div>
-                <ul className="space-y-2 text-gray-300 mb-4">
-                  <li className="flex items-start gap-2">
-                    <span className="text-blue-400 mt-1">▸</span>
-                    <span>Designing scalable SQL schemas and data collection frameworks for pre-launch phase of upcoming software products</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-blue-400 mt-1">▸</span>
-                    <span>Developing Power BI dashboards to track project development milestones and define core business KPIs</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-blue-400 mt-1">▸</span>
-                    <span>Translating business needs into technical documentation (UML/BPMN) to ensure data-driven product execution</span>
-                  </li>
-                </ul>
-                <div className="flex flex-wrap gap-2">
-                  <span className="px-3 py-1 bg-orange-900/50 text-orange-300 rounded-full text-sm font-medium">SQL</span>
-                  <span className="px-3 py-1 bg-blue-900/50 text-blue-300 rounded-full text-sm font-medium">Power BI</span>
-                  <span className="px-3 py-1 bg-purple-900/50 text-purple-300 rounded-full text-sm font-medium">UML</span>
-                  <span className="px-3 py-1 bg-green-900/50 text-green-300 rounded-full text-sm font-medium">BPMN</span>
-                </div>
-              </div>
-
-              <div className="bg-gray-800/50 p-8 rounded-xl border-l-4 border-blue-400 hover:shadow-lg hover:shadow-blue-500/20 transition-all relative">
-                <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
-                  <div className="flex items-start gap-4">
                     <div className="w-12 h-12 bg-white rounded-lg shadow-lg opacity-80 hover:opacity-100 hover:scale-110 transition-all duration-300 flex-shrink-0 flex items-center justify-center p-2">
                       <img src={compurootsLogo} alt="CompuRoots Logo" className="w-full h-full object-contain" />
                     </div>
@@ -369,6 +331,44 @@ function App() {
                   <span className="px-3 py-1 bg-green-900/50 text-green-300 rounded-full text-sm font-medium">Cisco Networking</span>
                   <span className="px-3 py-1 bg-orange-900/50 text-orange-300 rounded-full text-sm font-medium">Dell Technologies</span>
                   <span className="px-3 py-1 bg-purple-900/50 text-purple-300 rounded-full text-sm font-medium">Technical Sales</span>
+                </div>
+              </div>
+
+              <div className="bg-gray-800/50 p-8 rounded-xl border-l-4 border-blue-400 hover:shadow-lg hover:shadow-blue-500/20 transition-all relative">
+                <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 bg-[#1a2a44] rounded-lg shadow-lg opacity-100 hover:scale-110 transition-all duration-300 flex-shrink-0 flex items-center justify-center">
+                      <img src={divenoreLogo} alt="Divenore Logo" className="w-full h-full object-contain" />
+                    </div>
+                    <div>
+                      <h3 className="text-2xl font-bold text-white mb-2">Data Analyst</h3>
+                      <p className="text-blue-400 font-semibold">Divenore | (Part-time)</p>
+                    </div>
+                  </div>
+                  <div className="text-gray-400 mt-2 md:mt-0 md:text-right">
+                    <p>Cairo</p>
+                    <p className="font-semibold">Jan 2026 – Present</p>
+                  </div>
+                </div>
+                <ul className="space-y-2 text-gray-300 mb-4">
+                  <li className="flex items-start gap-2">
+                    <span className="text-blue-400 mt-1">▸</span>
+                    <span>Designing scalable SQL schemas and data collection frameworks for pre-launch phase of upcoming software products</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-blue-400 mt-1">▸</span>
+                    <span>Developing Power BI dashboards to track project development milestones and define core business KPIs</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-blue-400 mt-1">▸</span>
+                    <span>Translating business needs into technical documentation (UML/BPMN) to ensure data-driven product execution</span>
+                  </li>
+                </ul>
+                <div className="flex flex-wrap gap-2">
+                  <span className="px-3 py-1 bg-orange-900/50 text-orange-300 rounded-full text-sm font-medium">SQL</span>
+                  <span className="px-3 py-1 bg-blue-900/50 text-blue-300 rounded-full text-sm font-medium">Power BI</span>
+                  <span className="px-3 py-1 bg-purple-900/50 text-purple-300 rounded-full text-sm font-medium">UML</span>
+                  <span className="px-3 py-1 bg-green-900/50 text-green-300 rounded-full text-sm font-medium">BPMN</span>
                 </div>
               </div>
 
