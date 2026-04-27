@@ -6,6 +6,7 @@ import ntiLogo from './assets/images/nti-logo.png';
 import banqueDuCaireLogo from './assets/images/banque-du-caire-logo.png';
 import banqueMisrLogo from './assets/images/banque-misr-logo.png';
 import divenoreLogo from './assets/images/divenore-logo.png';
+import compurootsLogo from './assets/images/compuroots-logo.png';
 import netflixImage from './assets/images/netflix-dashboard.png';
 import uberEatsImage from './assets/images/uber-eats-dashboard.png';
 import sqlImage from './assets/images/sql-school-database.png';
@@ -40,6 +41,7 @@ function App() {
               <a href="#skills" className="hover:text-blue-400 transition-colors">Skills</a>
               <a href="#projects" className="hover:text-blue-400 transition-colors">Projects</a>
               <a href="#experience" className="hover:text-blue-400 transition-colors">Experience</a>
+              <a href="#certifications" className="hover:text-blue-400 transition-colors">Certifications</a>
               <a href="#contact" className="hover:text-blue-400 transition-colors">Contact</a>
             </div>
           </div>
@@ -77,7 +79,7 @@ function App() {
                   <ChevronDown className="w-5 h-5" />
                 </a>
                 <a
-                  href="https://drive.google.com/file/d/12_mcnyGp98FNMN18Hlef8OmVESv5l_77/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1x6LagIj7hjImJbAmG10-7YTqpZcLyfxB/view?usp=sharing"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-8 py-3 bg-gray-800 hover:bg-gray-700 text-white rounded-lg font-semibold transition-all transform hover:scale-105 border border-gray-700 hover:border-blue-400 flex items-center justify-center gap-2"
@@ -128,9 +130,15 @@ function App() {
           <div className="max-w-4xl mx-auto">
             <p className="text-xl text-gray-300 leading-relaxed text-center">
               I'm a Business Information Systems graduate who spent 4 years building 
-              across multiple tracks  data analysis, business analysis, web development, 
-              and networking. That breadth isn't scattered  it means I can work with 
+              across multiple tracks &mdash; data analysis, business analysis, web development, 
+              and networking. That breadth isn't scattered &mdash; it means I can work with 
               any team, speak any language, and deliver end-to-end solutions.
+
+              I've analysed 1.7M+ records in a hackathon where my team finished Top 3, 
+              built Power BI dashboards for real stakeholders at a tech startup, and 
+              reduced operational inefficiencies by up to 25% during banking internships. 
+              Currently completing a nationally competitive 9-month Business Analysis 
+              scholarship through MCIT.
             </p>
           </div>
         </div>
@@ -323,6 +331,44 @@ function App() {
                   <span className="px-3 py-1 bg-blue-900/50 text-blue-300 rounded-full text-sm font-medium">Power BI</span>
                   <span className="px-3 py-1 bg-purple-900/50 text-purple-300 rounded-full text-sm font-medium">UML</span>
                   <span className="px-3 py-1 bg-green-900/50 text-green-300 rounded-full text-sm font-medium">BPMN</span>
+                </div>
+              </div>
+
+              <div className="bg-gray-800/50 p-8 rounded-xl border-l-4 border-blue-400 hover:shadow-lg hover:shadow-blue-500/20 transition-all relative">
+                <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 bg-white rounded-lg shadow-lg opacity-80 hover:opacity-100 hover:scale-110 transition-all duration-300 flex-shrink-0 flex items-center justify-center p-2">
+                      <img src={compurootsLogo} alt="CompuRoots Logo" className="w-full h-full object-contain" />
+                    </div>
+                    <div>
+                      <h3 className="text-2xl font-bold text-white mb-2">Tech Sales Intern</h3>
+                      <p className="text-blue-400 font-semibold">CompuRoots</p>
+                    </div>
+                  </div>
+                  <div className="text-gray-400 mt-2 md:mt-0 md:text-right">
+                    <p>Cairo</p>
+                    <p className="font-semibold">Apr 2026 – Present</p>
+                  </div>
+                </div>
+                <ul className="space-y-2 text-gray-300 mb-4">
+                  <li className="flex items-start gap-2">
+                    <span className="text-blue-400 mt-1">▸</span>
+                    <span>Bridging the gap between complex IT infrastructure and strategic business needs</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-blue-400 mt-1">▸</span>
+                    <span>Assisting in designing integrated solutions involving Dell Technologies, Cisco networking, and ERP systems (Odoo/SAP)</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-blue-400 mt-1">▸</span>
+                    <span>Understanding customer requirements and translating them into technical proposals that drive digital transformation and real business value</span>
+                  </li>
+                </ul>
+                <div className="flex flex-wrap gap-2">
+                  <span className="px-3 py-1 bg-blue-900/50 text-blue-300 rounded-full text-sm font-medium">ERP Systems</span>
+                  <span className="px-3 py-1 bg-green-900/50 text-green-300 rounded-full text-sm font-medium">Cisco Networking</span>
+                  <span className="px-3 py-1 bg-orange-900/50 text-orange-300 rounded-full text-sm font-medium">Dell Technologies</span>
+                  <span className="px-3 py-1 bg-purple-900/50 text-purple-300 rounded-full text-sm font-medium">Technical Sales</span>
                 </div>
               </div>
 
