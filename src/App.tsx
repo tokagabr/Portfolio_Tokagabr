@@ -346,7 +346,7 @@ function App() {
                   </div>
                   <div className="text-gray-400 mt-2 md:mt-0 md:text-right">
                     <p>Cairo</p>
-                    <p className="font-semibold">Jan 2026 – Present</p>
+                    <p className="font-semibold">Jan 2026 – April 2026</p>
                   </div>
                 </div>
                 <ul className="space-y-2 text-gray-300 mb-4">
