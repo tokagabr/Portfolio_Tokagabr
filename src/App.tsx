@@ -61,7 +61,7 @@ function App() {
                 Toka Gamal Gabr
               </h1>
               <h2 className="text-2xl md:text-3xl text-blue-200 mb-6 font-light">
-                Data Analyst | Business Analyst
+              Business Analyst | Process Analysis & Data-Driven Requirements
               </h2>
               <p className="text-lg text-blue-100 mb-8 leading-relaxed">
                 Fresh graduate sitting at the intersection of business thinking and 
@@ -78,7 +78,7 @@ function App() {
                   <ChevronDown className="w-5 h-5" />
                 </a>
                 <a
-                  href="https://drive.google.com/file/d/12_mcnyGp98FNMN18Hlef8OmVESv5l_77/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1RibIm72-Eq1U8f8eyv5XFrtHbocLjMx9/view?usp=sharing"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-8 py-3 bg-gray-800 hover:bg-gray-700 text-white rounded-lg font-semibold transition-all transform hover:scale-105 border border-gray-700 hover:border-blue-400 flex items-center justify-center gap-2"
@@ -128,16 +128,11 @@ function App() {
           
           <div className="max-w-4xl mx-auto">
             <p className="text-xl text-gray-300 leading-relaxed text-center">
-              I'm a Business Information Systems graduate who spent 4 years building 
-              across multiple tracks &mdash; data analysis, business analysis, web development, 
-              and networking. That breadth isn't scattered &mdash; it means I can work with 
-              any team, speak any language, and deliver end-to-end solutions.
-
-              I've analysed 1.7M+ records in a hackathon where my team finished Top 3, 
-              built Power BI dashboards for real stakeholders at a tech startup, and 
-              reduced operational inefficiencies by up to 25% during banking internships. 
-              Currently completing a nationally competitive 9-month Business Analysis 
-              scholarship through MCIT.
+            I'm a Business Information Systems graduate who spent 4 years building across data analysis, business analysis, web development, and networking 
+            not because I was unfocused, but because I wanted to understand how everything connects.
+            That breadth means I can sit with a developer, a stakeholder, or a data team  and actually contribute in each conversation.
+            I've analysed 1.7M+ records in a hackathon where my team finished Top 3, built Power BI dashboards for real stakeholders at a tech startup, and reduced operational inefficiencies by up to 25% across two banking internships.
+            Currently completing a nationally competitive 9-month Business Analysis scholarship through MCIT — and always looking for the next problem worth solving.
             </p>
           </div>
         </div>
