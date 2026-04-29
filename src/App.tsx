@@ -318,7 +318,7 @@ function App() {
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-blue-400 mt-1">▸</span>
-                    <span>Assisting in designing integrated solutions involving Dell Technologies, Cisco networking, and ERP systems (Odoo/SAP)</span>
+                    <span>Assisting in designing integrated solutions involving Dell Technologies, Cisco networking, and ERP systems (Odoo)</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-blue-400 mt-1">▸</span>
