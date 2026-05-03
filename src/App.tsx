@@ -555,25 +555,6 @@ function App() {
             </div>
 
             <div className="bg-gray-900 rounded-xl overflow-hidden border border-gray-700 hover:border-blue-400 transition-all hover:shadow-xl hover:shadow-blue-500/20 transform hover:-translate-y-2">
-              <div className="h-64 relative overflow-hidden">
-                <img 
-                  src={studentPerformanceImage} 
-                  alt="Student Performance Analysis" 
-                  className="w-full h-full object-cover"
-                  onError={(e) => {
-                    const target = e.target as HTMLImageElement;
-                    target.style.display = 'none';
-                    target.parentElement!.innerHTML = 
-                      `<div class="h-64 bg-gradient-to-br from-blue-900 to-gray-900 flex items-center justify-center">
-                        <div class="text-center">
-                          <div class="text-6xl font-bold text-blue-400 mb-4">SPA</div>
-                          <p class="text-blue-300 text-xl font-semibold">STUDENT</p>
-                        </div>
-                      </div>`;
-                  }}
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent"></div>
-              </div>
               <div className="p-6">
                 <h3 className="text-2xl font-bold mb-3 text-white">Student Performance Analysis</h3>
                 <p className="text-gray-400 mb-4">Cleaned messy academic data: converted text ages, resolved 21 duplicate records, and handled invalid entries. Engineered 3 features (PassStatus, AttendanceCategory, AgeGroup) to enable department-level segmentation. Identified 0.78 correlation between attendance and scores; flagged Science department's 0% graduation rate as a data anomaly.</p>
