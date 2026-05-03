@@ -12,6 +12,7 @@ import uberEatsImage from './assets/images/uber-eats-dashboard.png';
 import sqlImage from './assets/images/sql-school-database.png';
 import roiImage from './assets/images/handypro-roi-analysis.png';
 import mavenFuzzyImage from './assets/images/mavenfuzzyfactory-cover.png';
+import studentPerformanceImage from './assets/images/student-performance-analysis.png';
 import sqlLogo from './assets/images/sql-3d.png';
 import powerBiLogo from './assets/images/power-bi-3d.png';
 import excelLogo from './assets/images/excel-3d.png';
@@ -61,7 +62,7 @@ function App() {
                 Toka Gamal Gabr
               </h1>
               <h2 className="text-2xl md:text-3xl text-blue-200 mb-6 font-light">
-              Business Analyst | Process Analysis & Data-Driven Requirements
+                Data Analyst | Business Analyst
               </h2>
               <p className="text-lg text-blue-100 mb-8 leading-relaxed">
                 Fresh graduate sitting at the intersection of business thinking and 
@@ -78,7 +79,7 @@ function App() {
                   <ChevronDown className="w-5 h-5" />
                 </a>
                 <a
-                  href="https://drive.google.com/file/d/1RibIm72-Eq1U8f8eyv5XFrtHbocLjMx9/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1_-nLebkoxdaoMx_3FDfe7tpHws4UXcsL/view?usp=sharing"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-8 py-3 bg-gray-800 hover:bg-gray-700 text-white rounded-lg font-semibold transition-all transform hover:scale-105 border border-gray-700 hover:border-blue-400 flex items-center justify-center gap-2"
@@ -128,11 +129,16 @@ function App() {
           
           <div className="max-w-4xl mx-auto">
             <p className="text-xl text-gray-300 leading-relaxed text-center">
-            I'm a Business Information Systems graduate who spent 4 years building across data analysis, business analysis, web development, and networking 
-            not because I was unfocused, but because I wanted to understand how everything connects.
-            That breadth means I can sit with a developer, a stakeholder, or a data team  and actually contribute in each conversation.
-            I've analysed 1.7M+ records in a hackathon where my team finished Top 3, built Power BI dashboards for real stakeholders at a tech startup, and reduced operational inefficiencies by up to 25% across two banking internships.
-            Currently completing a nationally competitive 9-month Business Analysis scholarship through MCIT — and always looking for the next problem worth solving.
+              I'm a Business Information Systems graduate who spent 4 years building 
+              across multiple tracks &mdash; data analysis, business analysis, web development, 
+              and networking. That breadth isn't scattered &mdash; it means I can work with 
+              any team, speak any language, and deliver end-to-end solutions.
+
+              I've analysed 1.7M+ records in a hackathon where my team finished Top 3, 
+              built Power BI dashboards for real stakeholders at a tech startup, and 
+              reduced operational inefficiencies by up to 25% during banking internships. 
+              Currently completing a nationally competitive 9-month Business Analysis 
+              scholarship through MCIT.
             </p>
           </div>
         </div>
@@ -313,7 +319,7 @@ function App() {
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-blue-400 mt-1">▸</span>
-                    <span>Assisting in designing integrated solutions involving Dell Technologies, Cisco networking, and ERP systems (Odoo)</span>
+                    <span>Assisting in designing integrated solutions involving Dell Technologies, Cisco networking, and ERP systems (Odoo/SAP)</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-blue-400 mt-1">▸</span>
@@ -341,7 +347,7 @@ function App() {
                   </div>
                   <div className="text-gray-400 mt-2 md:mt-0 md:text-right">
                     <p>Cairo</p>
-                    <p className="font-semibold">Jan 2026 – April 2026</p>
+                    <p className="font-semibold">Jan 2026 – Present</p>
                   </div>
                 </div>
                 <ul className="space-y-2 text-gray-300 mb-4">
@@ -544,6 +550,46 @@ function App() {
                 >
                   <ExternalLink className="w-5 h-5" />
                   View Full Analysis on GitHub
+                </a>
+              </div>
+            </div>
+
+            <div className="bg-gray-900 rounded-xl overflow-hidden border border-gray-700 hover:border-blue-400 transition-all hover:shadow-xl hover:shadow-blue-500/20 transform hover:-translate-y-2">
+              <div className="h-64 relative overflow-hidden">
+                <img 
+                  src={studentPerformanceImage} 
+                  alt="Student Performance Analysis" 
+                  className="w-full h-full object-cover"
+                  onError={(e) => {
+                    const target = e.target as HTMLImageElement;
+                    target.style.display = 'none';
+                    target.parentElement!.innerHTML = 
+                      `<div class="h-64 bg-gradient-to-br from-blue-900 to-gray-900 flex items-center justify-center">
+                        <div class="text-center">
+                          <div class="text-6xl font-bold text-blue-400 mb-4">SPA</div>
+                          <p class="text-blue-300 text-xl font-semibold">STUDENT</p>
+                        </div>
+                      </div>`;
+                  }}
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent"></div>
+              </div>
+              <div className="p-6">
+                <h3 className="text-2xl font-bold mb-3 text-white">Student Performance Analysis</h3>
+                <p className="text-gray-400 mb-4">Cleaned messy academic data: converted text ages, resolved 21 duplicate records, and handled invalid entries. Engineered 3 features (PassStatus, AttendanceCategory, AgeGroup) to enable department-level segmentation. Identified 0.78 correlation between attendance and scores; flagged Science department's 0% graduation rate as a data anomaly.</p>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  <span className="px-3 py-1 bg-blue-900/50 text-blue-300 rounded-full text-sm font-medium">Python</span>
+                  <span className="px-3 py-1 bg-green-900/50 text-green-300 rounded-full text-sm font-medium">Pandas</span>
+                  <span className="px-3 py-1 bg-yellow-900/50 text-yellow-300 rounded-full text-sm font-medium">NumPy</span>
+                </div>
+                <a
+                  href="https://github.com/tokagabr/Student-Performance-Analysis"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors font-semibold"
+                >
+                  <ExternalLink className="w-5 h-5" />
+                  View Analysis on GitHub
                 </a>
               </div>
             </div>
