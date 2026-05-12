@@ -296,7 +296,7 @@ function App() {
                       <img src={compurootsLogo} alt="CompuRoots Logo" className="w-full h-full object-contain" />
                     </div>
                     <div>
-                      <h3 className="text-2xl font-bold text-white mb-2">Tech Sales Intern</h3>
+                      <h3 className="text-2xl font-bold text-white mb-2">Tech Intern</h3>
                       <p className="text-blue-400 font-semibold">CompuRoots</p>
                     </div>
                   </div>
