@@ -579,23 +579,15 @@ function App() {
                 <ul className="space-y-2 text-gray-300 mb-4">
                   <li className="flex items-start gap-2">
                     <span className="text-blue-400 mt-1">▸</span>
-                    <span>Designed and queried a 4-table MySQL database (15,500+ records) using SQLAlchemy and pd.read_sql() to load attack logs, IP intelligence, affected services, and SOC timeline into enriched Pandas DataFrames for cross-table analysis</span>
+                    <span>Queried a 4-table MySQL database (15,500 records) via SQLAlchemy to analyze a coordinated multi-vector attack (DDoS, SQL Injection, Brute Force, XSS) across 550 IPs from 13 countries</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-blue-400 mt-1">▸</span>
-                    <span>Identified a coordinated multi-vector attack (DDoS, SQL Injection, Brute Force, XSS) across 550 IPs from 13 countries — all 5 vectors launched within 27.8 seconds</span>
+                    <span>Detected a 24.2% SQL Injection WAF bypass rate and classified 550 IPs into 3 threat tiers using a custom composite scoring model</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-blue-400 mt-1">▸</span>
-                    <span>Detected a critical SQL Injection WAF bypass rate of 24.2% using set-union anonymization logic (correcting for overlapping TOR/VPN/Proxy flags)</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-blue-400 mt-1">▸</span>
-                    <span>Built a composite IP threat-scoring system; classified 550 IPs into 3 blocking tiers and produced a board-ready executive dashboard and CISO technical report</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-blue-400 mt-1">▸</span>
-                    <span>Proposed a $575K remediation plan reducing repeat-attack risk from 40% to &lt;10%</span>
+                    <span>Delivered an executive dashboard + CISO report with a $575K remediation plan reducing repeat-attack risk from 40% to &lt;10%</span>
                   </li>
                 </ul>
                 <div className="flex flex-wrap gap-2 mb-4">
