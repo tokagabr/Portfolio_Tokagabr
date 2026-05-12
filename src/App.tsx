@@ -579,15 +579,11 @@ function App() {
                 <ul className="space-y-2 text-gray-300 mb-4">
                   <li className="flex items-start gap-2">
                     <span className="text-blue-400 mt-1">▸</span>
-                    <span>Queried a 4-table MySQL database (15,500 records) via SQLAlchemy to analyze a coordinated multi-vector attack (DDoS, SQL Injection, Brute Force, XSS) across 550 IPs from 13 countries</span>
+                    <span>Queried a 4-table MySQL database (15,500 records) to analyze a coordinated multi-vector attack across 550 IPs from 13 countries</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-blue-400 mt-1">▸</span>
-                    <span>Detected a 24.2% SQL Injection WAF bypass rate and classified 550 IPs into 3 threat tiers using a custom composite scoring model</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-blue-400 mt-1">▸</span>
-                    <span>Delivered an executive dashboard + CISO report with a $575K remediation plan reducing repeat-attack risk from 40% to &lt;10%</span>
+                    <span>Detected 24.2% SQL Injection WAF bypass; built IP threat-scoring system and delivered CISO report with $575K remediation plan</span>
                   </li>
                 </ul>
                 <div className="flex flex-wrap gap-2 mb-4">
