@@ -12,7 +12,7 @@ import uberEatsImage from './assets/images/uber-eats-dashboard.png';
 import sqlImage from './assets/images/sql-school-database.png';
 import roiImage from './assets/images/handypro-roi-analysis.png';
 import mavenFuzzyImage from './assets/images/mavenfuzzyfactory-cover.png';
-import studentPerformanceImage from './assets/images/student-performance-analysis.png';
+import operationSwiftImage from './assets/images/Cyberstorm Attack Analysis & Response.png';
 import sqlLogo from './assets/images/sql-3d.png';
 import powerBiLogo from './assets/images/power-bi-3d.png';
 import excelLogo from './assets/images/excel-3d.png';
@@ -555,16 +555,60 @@ function App() {
             </div>
 
             <div className="bg-gray-900 rounded-xl overflow-hidden border border-gray-700 hover:border-blue-400 transition-all hover:shadow-xl hover:shadow-blue-500/20 transform hover:-translate-y-2">
+              <div className="h-64 relative overflow-hidden">
+                <img 
+                  src={operationSwiftImage} 
+                  alt="Operation Swift Recovery" 
+                  className="w-full h-full object-cover"
+                  onError={(e) => {
+                    const target = e.target as HTMLImageElement;
+                    target.style.display = 'none';
+                    target.parentElement!.innerHTML = 
+                      `<div class="h-64 bg-gradient-to-br from-red-900 to-gray-900 flex items-center justify-center">
+                        <div class="text-center">
+                          <div class="text-6xl font-bold text-red-400 mb-4">OSR</div>
+                          <p class="text-red-300 text-xl font-semibold">CYBER</p>
+                        </div>
+                      </div>`;
+                  }}
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent"></div>
+              </div>
               <div className="p-6">
-                <h3 className="text-2xl font-bold mb-3 text-white">Student Performance Analysis</h3>
-                <p className="text-gray-400 mb-4">Cleaned messy academic data: converted text ages, resolved 21 duplicate records, and handled invalid entries. Engineered 3 features (PassStatus, AttendanceCategory, AgeGroup) to enable department-level segmentation. Identified 0.78 correlation between attendance and scores; flagged Science department's 0% graduation rate as a data anomaly.</p>
+                <h3 className="text-2xl font-bold mb-3 text-white">Operation Swift Recovery — Cyber Attack Forensic Analysis</h3>
+                <ul className="space-y-2 text-gray-300 mb-4">
+                  <li className="flex items-start gap-2">
+                    <span className="text-blue-400 mt-1">▸</span>
+                    <span>Designed and queried a 4-table MySQL database (15,500+ records) using SQLAlchemy and pd.read_sql() to load attack logs, IP intelligence, affected services, and SOC timeline into enriched Pandas DataFrames for cross-table analysis</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-blue-400 mt-1">▸</span>
+                    <span>Identified a coordinated multi-vector attack (DDoS, SQL Injection, Brute Force, XSS) across 550 IPs from 13 countries — all 5 vectors launched within 27.8 seconds</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-blue-400 mt-1">▸</span>
+                    <span>Detected a critical SQL Injection WAF bypass rate of 24.2% using set-union anonymization logic (correcting for overlapping TOR/VPN/Proxy flags)</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-blue-400 mt-1">▸</span>
+                    <span>Built a composite IP threat-scoring system; classified 550 IPs into 3 blocking tiers and produced a board-ready executive dashboard and CISO technical report</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-blue-400 mt-1">▸</span>
+                    <span>Proposed a $575K remediation plan reducing repeat-attack risk from 40% to &lt;10%</span>
+                  </li>
+                </ul>
                 <div className="flex flex-wrap gap-2 mb-4">
                   <span className="px-3 py-1 bg-blue-900/50 text-blue-300 rounded-full text-sm font-medium">Python</span>
+                  <span className="px-3 py-1 bg-orange-900/50 text-orange-300 rounded-full text-sm font-medium">MySQL</span>
+                  <span className="px-3 py-1 bg-purple-900/50 text-purple-300 rounded-full text-sm font-medium">SQLAlchemy</span>
                   <span className="px-3 py-1 bg-green-900/50 text-green-300 rounded-full text-sm font-medium">Pandas</span>
-                  <span className="px-3 py-1 bg-yellow-900/50 text-yellow-300 rounded-full text-sm font-medium">NumPy</span>
+                  <span className="px-3 py-1 bg-red-900/50 text-red-300 rounded-full text-sm font-medium">Matplotlib</span>
+                  <span className="px-3 py-1 bg-cyan-900/50 text-cyan-300 rounded-full text-sm font-medium">Jupyter</span>
+                  <span className="px-3 py-1 bg-gray-700/50 text-gray-300 rounded-full text-sm font-medium">2024</span>
                 </div>
                 <a
-                  href="https://github.com/tokagabr/Student-Performance-Analysis"
+                  href="https://github.com/tokagabr/operation-swift-recovery/tree/main"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors font-semibold"
@@ -694,47 +738,6 @@ in customer retention.</p>
                 >
                   <ExternalLink className="w-5 h-5" />
                   View Full Analysis on GitHub
-                </a>
-              </div>
-            </div>
-
-            <div className="bg-gray-900 rounded-xl overflow-hidden border border-gray-700 hover:border-blue-400 transition-all hover:shadow-xl hover:shadow-blue-500/20 transform hover:-translate-y-2">
-              <div className="h-64 relative overflow-hidden">
-                <img 
-                  src={sqlImage} 
-                  alt="SQL School Database" 
-                  className="w-full h-full object-cover"
-                  onError={(e) => {
-                    e.target.style.display = 'none';
-                    e.target.parentElement.innerHTML = 
-                      <div class="h-64 bg-gradient-to-br from-blue-900 to-black flex items-center justify-center">
-                        <div class="text-center">
-                          <div class="text-6xl font-bold text-blue-500 mb-4">SQL</div>
-                          <p class="text-blue-400 text-xl font-semibold">SCHOOL</p>
-                        </div>
-                      </div>
-                    ;
-                  }}
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent"></div>
-              </div>
-              <div className="p-6">
-                <h3 className="text-2xl font-bold mb-3 text-white">School Management Database System</h3>
-                <p className="text-gray-400 mb-4">Architected a normalized relational schema with 5+ optimized tables, 
-   enforcing data integrity via constraints and normalization. Developed 
-   complex SQL queries using JOINs and Subqueries for administrative 
-   reporting on student load and course demand.</p>
-                <div className="flex flex-wrap gap-2 mb-4">
-                  <span className="px-3 py-1 bg-orange-900/50 text-orange-300 rounded-full text-sm font-medium">MySQL</span>
-                </div>
-                <a
-                  href="https://github.com/tokagabr/SQL-Queries-School-System"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors font-semibold"
-                >
-                  <ExternalLink className="w-5 h-5" />
-                  View Project on GitHub
                 </a>
               </div>
             </div>
