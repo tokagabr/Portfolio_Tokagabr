@@ -650,47 +650,6 @@ function App() {
             <div className="bg-gray-900 rounded-xl overflow-hidden border border-gray-700 hover:border-blue-400 transition-all hover:shadow-xl hover:shadow-blue-500/20 transform hover:-translate-y-2">
               <div className="h-64 relative overflow-hidden">
                 <img 
-                  src={netflixImage} 
-                  alt="Netflix Dashboard" 
-                  className="w-full h-full object-cover"
-                  onError={(e) => {
-                    e.target.style.display = 'none';
-                    e.target.parentElement.innerHTML = 
-                      <div class="h-64 bg-gradient-to-br from-red-900 to-black flex items-center justify-center">
-                        <div class="text-center">
-                          <div class="text-8xl font-bold text-red-600 mb-4">N</div>
-                          <p class="text-red-400 text-xl font-semibold">NETFLIX</p>
-                        </div>
-                      </div>
-                    ;
-                  }}
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent"></div>
-              </div>
-              <div className="p-6">
-                <h3 className="text-2xl font-bold mb-3 text-white">Netflix Content Analytics Dashboard</h3>
-                <p className="text-gray-400 mb-4">Analysed 8,000+ titles to identify key content trends across genres, 
-release patterns, and regional availability. Built an interactive 
-Power BI dashboard revealing distribution insights to support 
-content strategy decisions.</p>
-                <div className="flex flex-wrap gap-2 mb-4">
-                  <span className="px-3 py-1 bg-blue-900/50 text-blue-300 rounded-full text-sm font-medium">Power BI</span>
-                </div>
-                <a
-                  href="https://github.com/tokagabr/netflix-dashboard"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors font-semibold"
-                >
-                  <ExternalLink className="w-5 h-5" />
-                  View Full Analysis on GitHub
-                </a>
-              </div>
-            </div>
-
-            <div className="bg-gray-900 rounded-xl overflow-hidden border border-gray-700 hover:border-blue-400 transition-all hover:shadow-xl hover:shadow-blue-500/20 transform hover:-translate-y-2">
-              <div className="h-64 relative overflow-hidden">
-                <img 
                   src={uberEatsImage} 
                   alt="Uber Eats Dashboard" 
                   className="w-full h-full object-cover"
