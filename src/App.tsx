@@ -79,7 +79,7 @@ function App() {
                   <ChevronDown className="w-5 h-5" />
                 </a>
                 <a
-                  href="https://drive.google.com/file/d/1_-nLebkoxdaoMx_3FDfe7tpHws4UXcsL/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1xlgrvWBPDZSmXHVwto1eCszRVc8_5Bhh/view?usp=drive_link"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-8 py-3 bg-gray-800 hover:bg-gray-700 text-white rounded-lg font-semibold transition-all transform hover:scale-105 border border-gray-700 hover:border-blue-400 flex items-center justify-center gap-2"
@@ -129,16 +129,9 @@ function App() {
           
           <div className="max-w-4xl mx-auto">
             <p className="text-xl text-gray-300 leading-relaxed text-center">
-              I'm a Business Information Systems graduate who spent 4 years building 
-              across multiple tracks &mdash; data analysis, business analysis, web development, 
-              and networking. That breadth isn't scattered &mdash; it means I can work with 
-              any team, speak any language, and deliver end-to-end solutions.
-
-              I've analysed 1.7M+ records in a hackathon where my team finished Top 3, 
-              built Power BI dashboards for real stakeholders at a tech startup, and 
-              reduced operational inefficiencies by up to 25% during banking internships. 
-              Currently completing a nationally competitive 9-month Business Analysis 
-              scholarship through MCIT.
+             Business Information Systems graduate with experience across data analysis, business analysis, and technical development.
+             Delivered impact through analyzing 1.7M+ records (Top 3 hackathon), building Power BI dashboards, and improving operational efficiency by up to 25% in banking internships. 
+             Currently enrolled in a competitive MCIT Business Analysis scholarship, focusing on Agile, BPMN, and data-driven decision making.
             </p>
           </div>
         </div>
