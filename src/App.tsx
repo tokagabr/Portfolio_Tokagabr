@@ -593,7 +593,6 @@ function App() {
                   <span className="px-3 py-1 bg-green-900/50 text-green-300 rounded-full text-sm font-medium">Pandas</span>
                   <span className="px-3 py-1 bg-red-900/50 text-red-300 rounded-full text-sm font-medium">Matplotlib</span>
                   <span className="px-3 py-1 bg-cyan-900/50 text-cyan-300 rounded-full text-sm font-medium">Jupyter</span>
-                  <span className="px-3 py-1 bg-gray-700/50 text-gray-300 rounded-full text-sm font-medium">2024</span>
                 </div>
                 <a
                   href="https://github.com/tokagabr/operation-swift-recovery/tree/main"
