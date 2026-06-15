@@ -17,6 +17,7 @@ import sqlLogo from './assets/images/sql-3d.png';
 import powerBiLogo from './assets/images/power-bi-3d.png';
 import excelLogo from './assets/images/excel-3d.png';
 import pythonLogo from './assets/images/python-3d.png';
+import mlLogo from './assets/images/ML.png';
 
 function App() {
   
@@ -183,6 +184,13 @@ function App() {
                       <img src={pythonLogo} alt="Python Logo" className="w-full h-full object-contain" />
                     </div>
                     <span className="text-white font-medium">Python</span>
+                  </div>
+                  {/* Machine Learning Tool */}
+                  <div className="flex items-center gap-2 px-4 py-2 bg-gray-900/50 rounded-lg hover:bg-purple-500 transition-colors cursor-pointer border border-purple-500/30">
+                    <div className="w-8 h-8 bg-white rounded-lg shadow-lg opacity-100 flex-shrink-0 flex items-center justify-center p-1">
+                      <img src={mlLogo} alt="Machine Learning Logo" className="w-full h-full object-contain" />
+                    </div>
+                    <span className="text-white font-medium">Machine Learning</span>
                   </div>
                 </div>
               </div>
