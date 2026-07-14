@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Mail, Linkedin, Github, Phone, Download, ExternalLink, ChevronDown, Database, BarChart3, Code, Play, Terminal, CheckCircle2, TrendingUp, Award, Briefcase, GraduationCap } from 'lucide-react';
+import { Mail, Linkedin, Github, Download, ExternalLink, ChevronDown, Database, BarChart3, Code, Play, Terminal, TrendingUp, Award, Briefcase, GraduationCap } from 'lucide-react';
 import profileImage from './assets/images/1.png';
 import ecoCycleImage from './assets/images/eco-cycle.png';
 import mcitLogo from './assets/images/mcit-logo.png';
@@ -145,8 +145,13 @@ function App() {
 
   useEffect(() => {
     handleRunQuery(selectedSqlQuery);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [selectedSqlQuery]);
-  
+
+  // Derive the displayed SQL parts from the selected query
+  const displayedColumns = selectedSqlQuery.match(/SELECT (.*?) FROM/)?.[1] || "*";
+  const displayedTable = selectedSqlQuery.split("FROM ")[1]?.split(";")[0]?.split(" WHERE")[0] || "core_skills";
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 via-slate-900 to-gray-900 text-gray-100 relative overflow-hidden">
       {/* Background Effects */}
@@ -177,7 +182,7 @@ function App() {
 
       {/* Hero Section */}
       <section id="hero" className="min-h-screen flex items-center justify-center pt-20 md:pt-4 relative z-10">
-        
+
         <div className="container mx-auto px-6 relative z-10">
           <div className="flex flex-col md:flex-row items-center justify-center gap-4">
             <div className="w-64 h-64 rounded-full overflow-hidden border-4 border-blue-400 shadow-2xl shadow-blue-500/50">
@@ -196,7 +201,7 @@ function App() {
                 technical execution. I turn raw data into decisions, translate business 
                 problems into technical solutions, and bridge the gap between teams.
               </p>
-              
+
               <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start mb-8">
                 <a
                   href="#projects"
@@ -225,8 +230,8 @@ function App() {
                 >
                   <Linkedin className="w-6 h-6" />
                   <span className="text-gray-300">LinkedIn</span>
-                </a> 
-                
+                </a>
+
                 <a
                   href="mailto:tokagbr25@gmail.com"
                   className="flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors"
@@ -334,10 +339,10 @@ function App() {
       </section>
 
       {/* About Section */}
-   <section id="about" className="py-8 relative z-10">
+      <section id="about" className="py-8 relative z-10">
         <div className="container mx-auto px-6 relative z-10">
           <h2 className="text-4xl font-bold text-center mb-12 text-blue-400">About Me</h2>
-          
+
           <div className="max-w-4xl mx-auto">
             <p className="text-xl text-gray-300 leading-relaxed text-center">
               I'm a Business Information Systems graduate who spent 4 years building 
@@ -362,14 +367,14 @@ function App() {
 
           <div className="max-w-6xl mx-auto">
             <div className="space-y-8">
-              
+
               {/* Data Analytics & BI - Simple Layout */}
               <div className="bg-gray-800/50 p-8 rounded-xl border border-gray-700 hover:border-blue-400 transition-all hover:shadow-lg hover:shadow-blue-500/20">
                 <div className="flex items-center gap-4 mb-6">
                   <Database className="w-8 h-8 text-blue-400" />
                   <h3 className="text-2xl font-bold text-blue-400">Data Analysis</h3>
                 </div>
-                
+
                 <div className="flex flex-wrap gap-4">
                   {/* SQL Tool */}
                   <div className="flex items-center gap-2 px-4 py-2 bg-gray-900/50 rounded-lg hover:bg-blue-500 transition-colors cursor-pointer border border-blue-500/30">
@@ -378,7 +383,7 @@ function App() {
                     </div>
                     <span className="text-white font-medium">SQL</span>
                   </div>
-                  
+
                   {/* Power BI Tool */}
                   <div className="flex items-center gap-2 px-4 py-2 bg-gray-900/50 rounded-lg hover:bg-yellow-500 transition-colors cursor-pointer border border-yellow-500/30">
                     <div className="w-8 h-8 bg-white rounded-lg shadow-lg opacity-100 flex-shrink-0 flex items-center justify-center p-1">
@@ -386,7 +391,7 @@ function App() {
                     </div>
                     <span className="text-white font-medium">Power BI</span>
                   </div>
-                  
+
                   {/* Advanced Excel Tool */}
                   <div className="flex items-center gap-2 px-4 py-2 bg-gray-900/50 rounded-lg hover:bg-green-500 transition-colors cursor-pointer border border-green-500/30">
                     <div className="w-8 h-8 bg-white rounded-lg shadow-lg opacity-100 flex-shrink-0 flex items-center justify-center p-1">
@@ -394,7 +399,7 @@ function App() {
                     </div>
                     <span className="text-white font-medium">Advanced Excel</span>
                   </div>
-                  
+
                   {/* Python Tool */}
                   <div className="flex items-center gap-2 px-4 py-2 bg-gray-900/50 rounded-lg hover:bg-blue-500 transition-colors cursor-pointer border border-blue-500/30">
                     <div className="w-8 h-8 bg-white rounded-lg shadow-lg opacity-100 flex-shrink-0 flex items-center justify-center p-1">
@@ -415,7 +420,7 @@ function App() {
 
               {/* Other Categories - Horizontal Layout */}
               <div className="flex flex-wrap gap-4">
-                
+
                 {/* Software Development - Hover to Reveal */}
                 <div className="relative group">
                   <div className="bg-gray-800/50 px-6 py-4 rounded-xl border border-blue-500/30 hover:bg-blue-500/10 hover:border-blue-500 transition-all hover:shadow-lg hover:shadow-blue-500/20 cursor-pointer">
@@ -424,7 +429,7 @@ function App() {
                       <h3 className="text-xl font-bold text-blue-400">Software Development</h3>
                     </div>
                   </div>
-                  
+
                   {/* Hidden Content - Appears on Hover */}
                   <div className="absolute top-full left-0 mt-2 w-80 bg-gray-800 rounded-lg shadow-xl border border-gray-700 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-10">
                     <div className="p-4">
@@ -451,7 +456,7 @@ function App() {
                       <h3 className="text-xl font-bold text-blue-400">Business & Systems Analysis</h3>
                     </div>
                   </div>
-                  
+
                   {/* Hidden Content - Appears on Hover */}
                   <div className="absolute top-full left-0 mt-2 w-80 bg-gray-800 rounded-lg shadow-xl border border-gray-700 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-10">
                     <div className="p-4">
@@ -481,7 +486,7 @@ function App() {
                       <h3 className="text-xl font-bold text-blue-400">IT Infrastructure & Tools</h3>
                     </div>
                   </div>
-                  
+
                   {/* Hidden Content - Appears on Hover */}
                   <div className="absolute top-full left-0 mt-2 w-80 bg-gray-800 rounded-lg shadow-xl border border-gray-700 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-10">
                     <div className="p-4">
@@ -507,195 +512,195 @@ function App() {
         </div>
       </section>
 
-        {/* Mock SQL Query Playground Section */}
-        <section id="sql-playground" className="py-12 relative z-20 bg-gray-900/60 border-t border-gray-800">
-          <div className="container mx-auto px-6 max-w-6xl">
-            <div className="text-center mb-10">
-              <div className="inline-flex items-center gap-2 px-3 py-1 bg-blue-500/10 border border-blue-500/20 text-blue-400 rounded-full text-xs font-semibold mb-3">
-                <Terminal className="w-3.5 h-3.5" />
-                Interactive Console
+      {/* Mock SQL Query Playground Section */}
+      <section id="sql-playground" className="py-12 relative z-20 bg-gray-900/60 border-t border-gray-800">
+        <div className="container mx-auto px-6 max-w-6xl">
+          <div className="text-center mb-10">
+            <div className="inline-flex items-center gap-2 px-3 py-1 bg-blue-500/10 border border-blue-500/20 text-blue-400 rounded-full text-xs font-semibold mb-3">
+              <Terminal className="w-3.5 h-3.5" />
+              Interactive Console
+            </div>
+            <h2 className="text-3xl font-bold text-white mb-2">Portfolio SQL Playground</h2>
+            <p className="text-gray-400 max-w-2xl mx-auto">
+              Run mock SQL queries against my portfolio database schema to inspect my skills, experience, and accomplishments.
+            </p>
+          </div>
+
+          <div className="bg-slate-950 rounded-xl border border-gray-800 overflow-hidden shadow-2xl">
+            {/* Editor Window Header */}
+            <div className="bg-slate-900/90 border-b border-gray-800 px-4 py-3 flex items-center justify-between">
+              <div className="flex items-center gap-2">
+                <div className="w-3 h-3 rounded-full bg-red-500/85"></div>
+                <div className="w-3 h-3 rounded-full bg-yellow-500/85"></div>
+                <div className="w-3 h-3 rounded-full bg-green-500/85"></div>
+                <span className="text-gray-500 text-xs ml-4 font-mono">toka_portfolio_db.sql</span>
               </div>
-              <h2 className="text-3xl font-bold text-white mb-2">Portfolio SQL Playground</h2>
-              <p className="text-gray-400 max-w-2xl mx-auto">
-                Run mock SQL queries against my portfolio database schema to inspect my skills, experience, and accomplishments.
-              </p>
+              <div className="text-xs text-gray-500 font-mono flex items-center gap-2">
+                <Database className="w-3 h-3 text-blue-400" />
+                <span>MySQL 8.0</span>
+              </div>
             </div>
 
-            <div className="bg-slate-955 rounded-xl border border-gray-850 overflow-hidden shadow-2xl">
-              {/* Editor Window Header */}
-              <div className="bg-slate-900/90 border-b border-gray-800 px-4 py-3 flex items-center justify-between">
-                <div className="flex items-center gap-2">
-                  <div className="w-3 h-3 rounded-full bg-red-500/85"></div>
-                  <div className="w-3 h-3 rounded-full bg-yellow-500/85"></div>
-                  <div className="w-3 h-3 rounded-full bg-green-500/85"></div>
-                  <span className="text-gray-500 text-xs ml-4 font-mono">toka_portfolio_db.sql</span>
-                </div>
-                <div className="text-xs text-gray-500 font-mono flex items-center gap-2">
-                  <Database className="w-3 h-3 text-blue-400" />
-                  <span>MySQL 8.0</span>
+            <div className="grid grid-cols-1 lg:grid-cols-4 min-h-[350px]">
+              {/* Database Sidebar */}
+              <div className="bg-slate-950 border-r border-gray-800 p-4 font-mono text-xs text-gray-400">
+                <p className="font-semibold uppercase text-[10px] tracking-wider mb-4 text-gray-500">Schema Explorer</p>
+                <div className="space-y-4">
+                  <div>
+                    <span className="flex items-center gap-2 text-blue-400 mb-2">
+                      <Database className="w-3.5 h-3.5" />
+                      toka_portfolio_db
+                    </span>
+                    <ul className="pl-4 space-y-2 select-none">
+                      <li
+                        onClick={() => setSelectedSqlQuery("SELECT * FROM core_skills;")}
+                        className={`flex items-center gap-2 cursor-pointer hover:text-white transition-colors ${selectedSqlQuery === "SELECT * FROM core_skills;" ? "text-emerald-400 font-semibold" : ""}`}
+                      >
+                        <span>⊞</span> core_skills
+                      </li>
+                      <li
+                        onClick={() => setSelectedSqlQuery("SELECT company, role, duration FROM work_experience;")}
+                        className={`flex items-center gap-2 cursor-pointer hover:text-white transition-colors ${selectedSqlQuery === "SELECT company, role, duration FROM work_experience;" ? "text-emerald-400 font-semibold" : ""}`}
+                      >
+                        <span>⊞</span> work_experience
+                      </li>
+                      <li
+                        onClick={() => setSelectedSqlQuery("SELECT project_name, records_analyzed, finish_rank FROM hackathon_achievements;")}
+                        className={`flex items-center gap-2 cursor-pointer hover:text-white transition-colors ${selectedSqlQuery === "SELECT project_name, records_analyzed, finish_rank FROM hackathon_achievements;" ? "text-emerald-400 font-semibold" : ""}`}
+                      >
+                        <span>⊞</span> hackathon_achievements
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
 
-              <div className="grid grid-cols-1 lg:grid-cols-4 min-h-[350px]">
-                {/* Database Sidebar */}
-                <div className="bg-slate-950 border-r border-gray-800 p-4 font-mono text-xs text-gray-400">
-                  <p className="font-semibold text-white uppercase text-[10px] tracking-wider mb-4 text-gray-500">Schema Explorer</p>
-                  <div className="space-y-4">
-                    <div>
-                      <span className="flex items-center gap-2 text-blue-400 mb-2">
-                        <Database className="w-3.5 h-3.5" />
-                        toka_portfolio_db
-                      </span>
-                      <ul className="pl-4 space-y-2 select-none">
-                        <li 
-                          onClick={() => setSelectedSqlQuery("SELECT * FROM core_skills;")}
-                          className={`flex items-center gap-2 cursor-pointer hover:text-white transition-colors ${selectedSqlQuery === "SELECT * FROM core_skills;" ? "text-emerald-400 font-semibold" : ""}`}
-                        >
-                          <span>⊞</span> core_skills
-                        </li>
-                        <li 
-                          onClick={() => setSelectedSqlQuery("SELECT company, role, duration FROM work_experience;")}
-                          className={`flex items-center gap-2 cursor-pointer hover:text-white transition-colors ${selectedSqlQuery === "SELECT company, role, duration FROM work_experience;" ? "text-emerald-400 font-semibold" : ""}`}
-                        >
-                          <span>⊞</span> work_experience
-                        </li>
-                        <li 
-                          onClick={() => setSelectedSqlQuery("SELECT project_name, records_analyzed, finish_rank FROM hackathon_achievements;")}
-                          className={`flex items-center gap-2 cursor-pointer hover:text-white transition-colors ${selectedSqlQuery === "SELECT project_name, records_analyzed, finish_rank FROM hackathon_achievements;" ? "text-emerald-400 font-semibold" : ""}`}
-                        >
-                          <span>⊞</span> hackathon_achievements
-                        </li>
-                      </ul>
+              {/* Editor Workspace */}
+              <div className="lg:col-span-3 flex flex-col bg-[#0b0f19]">
+                {/* Query Input Box */}
+                <div className="p-5 flex-grow border-b border-gray-800/80 font-mono text-sm leading-relaxed relative min-h-[140px]">
+                  <div className="absolute right-4 top-4 flex items-center gap-2">
+                    <button
+                      onClick={() => handleRunQuery(selectedSqlQuery)}
+                      disabled={isExecutingSql}
+                      className="px-4 py-1.5 bg-emerald-500 hover:bg-emerald-600 disabled:bg-emerald-800 text-white rounded font-sans text-xs font-bold transition-all shadow-md shadow-emerald-500/20 flex items-center gap-1.5"
+                    >
+                      <Play className="w-3 h-3 fill-current" />
+                      {isExecutingSql ? "Running..." : "Run Query"}
+                    </button>
+                  </div>
+
+                  {/* Predefined Query Toggles */}
+                  <div className="flex flex-wrap gap-2 mb-6 max-w-[80%]">
+                    <span className="text-[10px] text-gray-500 self-center uppercase mr-1">Quick Queries:</span>
+                    <button
+                      onClick={() => setSelectedSqlQuery("SELECT * FROM core_skills;")}
+                      className={`px-2 py-0.5 rounded text-[11px] font-mono border transition-all ${selectedSqlQuery === "SELECT * FROM core_skills;" ? "bg-blue-500/10 border-blue-400 text-blue-400" : "bg-transparent border-gray-800 text-gray-400 hover:border-gray-700"}`}
+                    >
+                      skills
+                    </button>
+                    <button
+                      onClick={() => setSelectedSqlQuery("SELECT company, role, duration FROM work_experience;")}
+                      className={`px-2 py-0.5 rounded text-[11px] font-mono border transition-all ${selectedSqlQuery === "SELECT company, role, duration FROM work_experience;" ? "bg-blue-500/10 border-blue-400 text-blue-400" : "bg-transparent border-gray-800 text-gray-400 hover:border-gray-700"}`}
+                    >
+                      experience
+                    </button>
+                    <button
+                      onClick={() => setSelectedSqlQuery("SELECT project_name, records_analyzed, finish_rank FROM hackathon_achievements;")}
+                      className={`px-2 py-0.5 rounded text-[11px] font-mono border transition-all ${selectedSqlQuery === "SELECT project_name, records_analyzed, finish_rank FROM hackathon_achievements;" ? "bg-blue-500/10 border-blue-400 text-blue-400" : "bg-transparent border-gray-800 text-gray-400 hover:border-gray-700"}`}
+                    >
+                      achievements
+                    </button>
+                  </div>
+
+                  {/* SQL Syntax Visual Block */}
+                  <div className="flex gap-4">
+                    <div className="text-gray-600 select-none text-right">
+                      <div>1</div>
+                      <div>2</div>
+                    </div>
+                    <div className="text-gray-100 flex-grow">
+                      <div>
+                        <span className="text-pink-400 font-bold">SELECT</span> <span className="text-white">{displayedColumns}</span>
+                      </div>
+                      <div>
+                        <span className="text-pink-400 font-bold">FROM</span> <span className="text-emerald-400 font-semibold">{displayedTable}</span>
+                        {selectedSqlQuery.includes("WHERE") && (
+                          <> <span className="text-pink-400 font-bold">WHERE</span> <span className="text-blue-300">{selectedSqlQuery.split("WHERE ")[1]?.split(";")[0]}</span></>
+                        )}
+                        <span className="text-white">;</span>
+                        <span className="w-1.5 h-4 bg-blue-400 inline-block animate-pulse ml-0.5 align-middle"></span>
+                      </div>
                     </div>
                   </div>
                 </div>
 
-                {/* Editor Workspace */}
-                <div className="lg:col-span-3 flex flex-col bg-[#0b0f19]">
-                  {/* Query Input Box */}
-                  <div className="p-5 flex-grow border-b border-gray-800/80 font-mono text-sm leading-relaxed relative min-h-[140px]">
-                    <div className="absolute right-4 top-4 flex items-center gap-2">
-                      <button 
-                        onClick={() => handleRunQuery(selectedSqlQuery)}
-                        disabled={isExecutingSql}
-                        className="px-4 py-1.5 bg-emerald-500 hover:bg-emerald-600 disabled:bg-emerald-800 text-white rounded font-sans text-xs font-bold transition-all shadow-md shadow-emerald-500/20 flex items-center gap-1.5"
-                      >
-                        <Play className="w-3 h-3 fill-current" />
-                        {isExecutingSql ? "Running..." : "Run Query"}
-                      </button>
+                {/* Console Output Window */}
+                <div className="p-4 bg-[#080b13] min-h-[180px] flex flex-col justify-between font-mono text-xs border-t border-gray-900">
+                  <div>
+                    <div className="flex justify-between items-center text-gray-500 border-b border-gray-900 pb-2 mb-3">
+                      <span>Result Grid</span>
+                      <span>{isExecutingSql ? "Executing..." : "Success"}</span>
                     </div>
 
-                    {/* Predefined Query Toggles */}
-                    <div className="flex flex-wrap gap-2 mb-6 max-w-[80%]">
-                      <span className="text-[10px] text-gray-500 self-center uppercase mr-1">Quick Queries:</span>
-                      <button 
-                        onClick={() => setSelectedSqlQuery("SELECT * FROM core_skills;")}
-                        className={`px-2 py-0.5 rounded text-[11px] font-mono border transition-all ${selectedSqlQuery === "SELECT * FROM core_skills;" ? "bg-blue-500/10 border-blue-400 text-blue-400" : "bg-transparent border-gray-800 text-gray-400 hover:border-gray-700"}`}
-                      >
-                        skills
-                      </button>
-                      <button 
-                        onClick={() => setSelectedSqlQuery("SELECT company, role, duration FROM work_experience;")}
-                        className={`px-2 py-0.5 rounded text-[11px] font-mono border transition-all ${selectedSqlQuery === "SELECT company, role, duration FROM work_experience;" ? "bg-blue-500/10 border-blue-400 text-blue-400" : "bg-transparent border-gray-800 text-gray-400 hover:border-gray-700"}`}
-                      >
-                        experience
-                      </button>
-                      <button 
-                        onClick={() => setSelectedSqlQuery("SELECT project_name, records_analyzed, finish_rank FROM hackathon_achievements;")}
-                        className={`px-2 py-0.5 rounded text-[11px] font-mono border transition-all ${selectedSqlQuery === "SELECT project_name, records_analyzed, finish_rank FROM hackathon_achievements;" ? "bg-blue-500/10 border-blue-400 text-blue-400" : "bg-transparent border-gray-800 text-gray-400 hover:border-gray-700"}`}
-                      >
-                        achievements
-                      </button>
-                    </div>
-
-                    {/* SQL Syntax Visual Block */}
-                    <div className="flex gap-4">
-                      <div className="text-gray-600 select-none text-right">
-                        <div>1</div>
-                        <div>2</div>
+                    {isExecutingSql ? (
+                      <div className="flex items-center justify-center py-6 gap-3 text-gray-400">
+                        <div className="w-4 h-4 border-2 border-emerald-400 border-t-transparent rounded-full animate-spin"></div>
+                        <span>Executing query on database schema...</span>
                       </div>
-                      <div className="text-gray-100 flex-grow">
-                        <div>
-                          <span className="text-pink-400 font-bold">SELECT</span> <span className="text-white">*</span>
-                        </div>
-                        <div>
-                          <span className="text-pink-400 font-bold">FROM</span> <span className="text-emerald-400 font-semibold">{selectedSqlQuery.split("FROM ")[1]?.split(";")[0] || "core_skills"}</span>
-                          {selectedSqlQuery.includes("WHERE") && (
-                            <> <span className="text-pink-400 font-bold">WHERE</span> <span className="text-blue-300">{selectedSqlQuery.split("WHERE ")[1]?.split(";")[0]}</span></>
-                          )}
-                          <span className="text-white">;</span>
-                          <span className="w-1.5 h-4 bg-blue-400 inline-block animate-pulse ml-0.5 align-middle"></span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Console Output Window */}
-                  <div className="p-4 bg-[#080b13] min-h-[180px] flex flex-col justify-between font-mono text-xs border-t border-gray-900">
-                    <div>
-                      <div className="flex justify-between items-center text-gray-500 border-b border-gray-900 pb-2 mb-3">
-                        <span>Result Grid</span>
-                        <span>{isExecutingSql ? "Executing..." : "Success"}</span>
-                      </div>
-
-                      {isExecutingSql ? (
-                        <div className="flex items-center justify-center py-6 gap-3 text-gray-400">
-                          <div className="w-4 h-4 border-2 border-emerald-400 border-t-transparent rounded-full animate-spin"></div>
-                          <span>Executing query on database schema...</span>
-                        </div>
-                      ) : sqlQuerySuccess && sqlResultRows.length > 0 ? (
-                        <div className="overflow-x-auto max-h-[140px]">
-                          <table className="w-full text-left border-collapse">
-                            <thead>
-                              <tr className="border-b border-gray-800 text-gray-400 bg-gray-900/30">
-                                {sqlResultCols.map((col, idx) => (
-                                  <th key={idx} className="py-2 px-3 font-semibold uppercase text-[10px] text-blue-400 whitespace-nowrap">{col}</th>
+                    ) : sqlQuerySuccess && sqlResultRows.length > 0 ? (
+                      <div className="overflow-x-auto max-h-[140px]">
+                        <table className="w-full text-left border-collapse">
+                          <thead>
+                            <tr className="border-b border-gray-800 text-gray-400 bg-gray-900/30">
+                              {sqlResultCols.map((col, idx) => (
+                                <th key={idx} className="py-2 px-3 font-semibold uppercase text-[10px] text-blue-400 whitespace-nowrap">{col}</th>
+                              ))}
+                            </tr>
+                          </thead>
+                          <tbody>
+                            {sqlResultRows.map((row, rIdx) => (
+                              <tr key={rIdx} className="border-b border-gray-800/40 hover:bg-gray-800/10 text-gray-300">
+                                {sqlResultCols.map((col, cIdx) => (
+                                  <td key={cIdx} className="py-2 px-3 whitespace-nowrap">{row[col]}</td>
                                 ))}
                               </tr>
-                            </thead>
-                            <tbody>
-                              {sqlResultRows.map((row, rIdx) => (
-                                <tr key={rIdx} className="border-b border-gray-800/40 hover:bg-gray-800/10 text-gray-300">
-                                  {sqlResultCols.map((col, cIdx) => (
-                                    <td key={cIdx} className="py-2 px-3 whitespace-nowrap">{row[col]}</td>
-                                  ))}
-                                </tr>
-                              ))}
-                            </tbody>
-                          </table>
-                        </div>
-                      ) : (
-                        <div className="text-gray-500 italic py-4 text-center">Run a query to view results.</div>
-                      )}
-                    </div>
+                            ))}
+                          </tbody>
+                        </table>
+                      </div>
+                    ) : (
+                      <div className="text-gray-500 italic py-4 text-center">Run a query to view results.</div>
+                    )}
+                  </div>
 
-                    <div className="mt-4 text-gray-500 text-[10px] border-t border-gray-900 pt-2 flex justify-between">
-                      <span>Database: toka_portfolio_db</span>
-                      <span>{sqlResultRows.length} rows returned (0.01 sec)</span>
-                    </div>
+                  <div className="mt-4 text-gray-500 text-[10px] border-t border-gray-900 pt-2 flex justify-between">
+                    <span>Database: toka_portfolio_db</span>
+                    <span>{sqlResultRows.length} rows returned (0.01 sec)</span>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-      <section id="experience" className="py-8 relative z-10" style={{scrollMarginTop: '80px'}}>
+      <section id="experience" className="py-8 relative z-10" style={{ scrollMarginTop: '80px' }}>
         <div className="container mx-auto px-6 relative z-10">
-          
+
           <div className="text-center max-w-2xl mx-auto mb-10">
             <h2 className="text-4xl font-bold text-center text-blue-400 mb-4">Experience & Growth</h2>
-            
+
             {/* Dynamic Switcher Tab Bar */}
             <div className="inline-flex p-1 bg-gray-800/80 backdrop-blur rounded-lg border border-gray-700/60 max-w-md mx-auto mb-8">
-              <button 
+              <button
                 onClick={() => setActiveExperienceTab("work")}
                 className={`px-5 py-2.5 rounded-md text-sm font-semibold transition-all flex items-center gap-2 ${activeExperienceTab === "work" ? "bg-blue-500 text-white shadow-md" : "text-gray-400 hover:text-white bg-transparent"}`}
               >
                 <Briefcase className="w-4 h-4" />
                 Work Experience
               </button>
-              <button 
+              <button
                 onClick={() => setActiveExperienceTab("development")}
                 className={`px-5 py-2.5 rounded-md text-sm font-semibold transition-all flex items-center gap-2 ${activeExperienceTab === "development" ? "bg-blue-500 text-white shadow-md" : "text-gray-400 hover:text-white bg-transparent"}`}
               >
@@ -916,14 +921,13 @@ function App() {
           )}
         </div>
       </section>
-      </section>
 
       {/* Projects Section */}
       <section id="projects" className="py-12 relative z-10">
         <div className="container mx-auto px-6 relative z-10">
           <div className="text-center max-w-2xl mx-auto mb-10">
             <h2 className="text-4xl font-bold text-blue-400 mb-4">Featured Projects</h2>
-            
+
             {/* Projects Filter Pills */}
             <div className="flex flex-wrap justify-center gap-2 mb-8">
               {["All", "SQL", "Power BI", "Python", "Excel"].map((filter) => (
@@ -950,14 +954,14 @@ function App() {
               <div key={idx} className="bg-gray-900 rounded-xl overflow-hidden border border-gray-700 hover:border-blue-400 transition-all hover:shadow-xl hover:shadow-blue-500/20 transform hover:-translate-y-2 duration-300 flex flex-col justify-between animate-fade-in">
                 <div>
                   <div className="h-64 relative overflow-hidden">
-                    <img 
-                      src={project.image} 
-                      alt={project.title} 
+                    <img
+                      src={project.image}
+                      alt={project.title}
                       className="w-full h-full object-cover"
                       onError={(e) => {
                         const target = e.target as HTMLImageElement;
                         target.style.display = 'none';
-                        target.parentElement!.innerHTML = 
+                        target.parentElement!.innerHTML =
                           `<div class="h-64 bg-gradient-to-br ${project.fallbackColor} flex items-center justify-center">
                             <div class="text-center">
                               <div class="text-6xl font-bold text-blue-400/30 mb-4">${project.fallbackText}</div>
@@ -973,17 +977,17 @@ function App() {
                     <p className="text-gray-400 mb-4 text-sm leading-relaxed">{project.description}</p>
                   </div>
                 </div>
-                
+
                 <div className="p-6 pt-0">
                   <div className="flex flex-wrap gap-2 mb-4">
                     {project.tags.map((tag, tagIdx) => (
-                      <span 
-                        key={tagIdx} 
+                      <span
+                        key={tagIdx}
                         className={`px-3 py-1 rounded-full text-xs font-medium ${
                           tag === "SQL" || tag === "MySQL" || tag === "SQLAlchemy"
                             ? "bg-blue-900/45 text-blue-300 border border-blue-800/30"
                             : tag === "Power BI" || tag === "Power Query"
-                            ? "bg-yellow-905/45 text-yellow-300 border border-yellow-800/30"
+                            ? "bg-yellow-900/45 text-yellow-300 border border-yellow-800/30"
                             : tag === "Python" || tag === "Pandas" || tag === "Scikit-learn" || tag === "Machine Learning"
                             ? "bg-purple-900/45 text-purple-300 border border-purple-800/30"
                             : tag === "Excel"
@@ -1016,7 +1020,7 @@ function App() {
       <section id="education" className="py-8 relative z-10">
         <div className="container mx-auto px-6 relative z-10">
           <h2 className="text-4xl font-bold text-center mb-16 text-blue-400">Education & Certifications</h2>
-          
+
           <div className="max-w-4xl mx-auto">
             <div className="bg-gray-900/50 rounded-xl p-8 border border-gray-700">
               <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
@@ -1033,13 +1037,13 @@ function App() {
       <section id="contact" className="py-8 relative z-10">
         <div className="container mx-auto px-6 relative z-10">
           <h2 className="text-4xl font-bold text-center mb-16 text-blue-400">Get In Touch</h2>
-          
+
           <div className="max-w-2xl mx-auto">
             <div className="bg-gray-800/50 rounded-xl p-8 border border-gray-700">
               <p className="text-center text-gray-300 mb-8">
                 I'm always interested in hearing about new projects and opportunities.
               </p>
-              
+
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a href="mailto:tokagbr25@gmail.com" className="flex items-center justify-center gap-2 px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white rounded-lg font-semibold transition-all transform hover:scale-105">
                   <Mail className="w-5 h-5" />
@@ -1054,7 +1058,7 @@ function App() {
                   GitHub
                 </a>
               </div>
-              
+
             </div>
           </div>
         </div>
@@ -1063,7 +1067,7 @@ function App() {
       <footer className="py-4 border-t border-gray-800 relative z-10">
         <div className="container mx-auto px-6 text-center relative z-10">
           <p className="text-gray-400">
-            © 2025 Toka Gamal Gabr. All rights reserved.
+            © 2026 Toka Gamal Gabr. All rights reserved.
           </p>
         </div>
       </footer>
@@ -1071,4 +1075,4 @@ function App() {
   );
 }
 
-export default App; 
+export default App;
