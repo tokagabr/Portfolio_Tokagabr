@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from 'react';
-import { Mail, Linkedin, Github, Download, ExternalLink, ChevronDown, Database, BarChart3, Code, Play, Terminal, TrendingUp, Award, Briefcase, GraduationCap } from 'lucide-react';
+import { Mail, Linkedin, Github, Phone, Download, ExternalLink, ChevronDown, Database, BarChart3, Code } from 'lucide-react';
 import profileImage from './assets/images/1.png';
 import ecoCycleImage from './assets/images/eco-cycle.png';
 import mcitLogo from './assets/images/mcit-logo.png';
@@ -14,400 +13,18 @@ import sqlImage from './assets/images/sql-school-database.png';
 import roiImage from './assets/images/handypro-roi-analysis.png';
 import mavenFuzzyImage from './assets/images/mavenfuzzyfactory-cover.png';
 import operationSwiftImage from './assets/images/Cyberstorm Attack Analysis & Response.png';
-import customerSegmentationImage from './assets/images/customer-segmentation.png';
 import sqlLogo from './assets/images/sql-3d.png';
 import powerBiLogo from './assets/images/power-bi-3d.png';
 import excelLogo from './assets/images/excel-3d.png';
 import pythonLogo from './assets/images/python-3d.png';
 import mlLogo from './assets/images/ML.png';
 
-const PROJECTS_DATA = [
-  {
-    title: "MavenFuzzyFactory — Business Analytics Hackathon",
-    description: "E-Commerce Growth Challenge with Top 3 Finish. Analyzed 1.7M+ records across 6 tables to deliver data-driven investor pitch proving business growth efficiency and $100K strategic roadmap.",
-    tags: ["SQL", "Excel", "Power BI"],
-    image: mavenFuzzyImage,
-    link: "https://github.com/tokagabr/mavenfuzzyfactory",
-    fallbackText: "MF",
-    fallbackColor: "from-orange-900 to-black",
-    fallbackLabel: "MAVEN"
-  },
-  {
-    title: "Operation Swift Recovery — Cyber Attack Forensic Analysis",
-    description: "Queried a 4-table MySQL database (15,500 records) to analyze a coordinated multi-vector attack across 550 IPs from 13 countries. Detected 24.2% SQL Injection WAF bypass; built IP threat-scoring system and delivered CISO report with $575K remediation plan.",
-    tags: ["Python", "SQL", "MySQL", "Pandas", "Matplotlib", "Jupyter"],
-    image: operationSwiftImage,
-    link: "https://github.com/tokagabr/operation-swift-recovery/tree/main",
-    fallbackText: "OSR",
-    fallbackColor: "from-red-900 to-gray-900",
-    fallbackLabel: "CYBER"
-  },
-  {
-    title: "Customer Segmentation & Marketing Campaign Prediction",
-    description: "Machine learning project that segments 2,240 customers using K-Means Clustering and predicts marketing campaign acceptance. Achieved 86.61% accuracy while providing data-driven recommendations for customer targeting.",
-    tags: ["Python", "Pandas", "Scikit-learn", "Machine Learning"],
-    image: customerSegmentationImage,
-    link: "",
-    fallbackText: "CS",
-    fallbackColor: "from-purple-900 to-gray-900",
-    fallbackLabel: "CUSTOMER"
-  },
-  {
-    title: "Eco Cycle | Integrated Waste Management System",
-    description: "A Technical System Analysis and Full-Stack platform designed to automate plastic waste lifecycle and reward systems.",
-    tags: ["PHP", "React", "SQL", "UML"],
-    image: ecoCycleImage,
-    link: "https://github.com/tokagabr/Eco-Cycle-System-Analysis",
-    fallbackText: "ECO",
-    fallbackColor: "from-green-700 to-gray-900",
-    fallbackLabel: "CYCLE"
-  },
-  {
-    title: "Uber Eats Analytics Dashboard",
-    description: "Processed 3M+ delivery records in SQL to identify peak hours and regional performance patterns. Built interactive Power BI dashboard that cut reporting time by 30% and modelled a projected 15% uplift in customer retention.",
-    tags: ["Power BI", "SQL"],
-    image: uberEatsImage,
-    link: "https://github.com/tokagabr/uber-eats-analysis",
-    fallbackText: "UBER",
-    fallbackColor: "from-green-900 to-black",
-    fallbackLabel: "EATS"
-  },
-  {
-    title: "Telecom Customer Churn Analysis",
-    description: "Analysed 7,000+ customer records to surface key churn drivers — identified Competitor Offers as the #1 attrition factor. Built an interactive Excel dashboard with PivotTables & Power Query, improving at-risk segment identification by 20%. Additionally analysed services and channels driving the most valuable leads, evaluating urgency, seasonality, and customer segments to optimize lead management and marketing ROI.",
-    tags: ["Excel", "Power Query"],
-    image: roiImage,
-    link: "https://github.com/tokagabr/Telecom-Analysis",
-    fallbackText: "TC",
-    fallbackColor: "from-purple-900 to-gray-900",
-    fallbackLabel: "TELECOM"
-  }
-];
-
 function App() {
-  // Filters and Switchers
-  const [activeProjectFilter, setActiveProjectFilter] = useState("All");
-  const [activeExperienceTab, setActiveExperienceTab] = useState("work");
 
-  // SQL Playground State
-  const [selectedSqlQuery, setSelectedSqlQuery] = useState("SELECT * FROM core_skills;");
-  const [sqlResultRows, setSqlResultRows] = useState<any[]>([]);
-  const [sqlResultCols, setSqlResultCols] = useState<string[]>([]);
-  const [isExecutingSql, setIsExecutingSql] = useState(false);
-  const [sqlQuerySuccess, setSqlQuerySuccess] = useState(false);
-
-  const sqlDatabase: Record<string, { columns: string[], rows: any[] }> = {
-    "SELECT * FROM core_skills;": {
-      columns: ["skill_name", "proficiency", "experience_years", "primary_use_case"],
-      rows: [
-        { skill_name: "SQL (MySQL/PostgreSQL)", proficiency: "Expert", experience_years: "2+ Years", primary_use_case: "Database querying, data cleaning, logs auditing" },
-        { skill_name: "Power BI", proficiency: "Advanced", experience_years: "2 Years", primary_use_case: "Interactive executive dashboards, KPI modeling, DAX" },
-        { skill_name: "Advanced Excel", proficiency: "Expert", experience_years: "3 Years", primary_use_case: "PivotTables, Power Query, ROI modeling, reporting" },
-        { skill_name: "Python", proficiency: "Intermediate", experience_years: "1 Year", primary_use_case: "Data analysis (Pandas/NumPy), visualization" },
-        { skill_name: "Machine Learning", proficiency: "Intermediate", experience_years: "1 Year", primary_use_case: "Customer segmentation (K-Means), predictive modeling" }
-      ]
-    },
-    "SELECT company, role, duration FROM work_experience;": {
-      columns: ["company", "role", "duration", "key_impact"],
-      rows: [
-        { company: "CompuRoots", role: "Pre Sales Intern", duration: "Apr 2026 – Present", key_impact: "Bridging IT infrastructure with strategic business needs" },
-        { company: "Divenore", role: "Data Analyst (Part-time)", duration: "Jan 2026 – Present", key_impact: "Designed SQL schemas & BI dashboards for pre-launch product" },
-        { company: "Banque du Caire", role: "IT Intern", duration: "Jul – Aug 2024", key_impact: "Optimized IT service desk workflows, speeding response by 25%" },
-        { company: "Banque Misr", role: "Operations Intern", duration: "Aug – Sep 2023", key_impact: "Reduced customer processing cycles by 20%" }
-      ]
-    },
-    "SELECT project_name, records_analyzed, finish_rank FROM hackathon_achievements;": {
-      columns: ["project_name", "records_analyzed", "finish_rank", "business_outcome"],
-      rows: [
-        { project_name: "MavenFuzzyFactory", records_analyzed: "1.7M+ rows", finish_rank: "Top 3 Finish", business_outcome: "Investor pitch & $100K efficiency roadmap" },
-        { project_name: "Operation Swift Recovery", records_analyzed: "15,500 rows", finish_rank: "Top Tier", business_outcome: "Detected WAF bypass, CISO remediation plan" },
-        { project_name: "Uber Eats Dashboard", records_analyzed: "3.0M+ rows", finish_rank: "Completed", business_outcome: "Cut weekly reporting overhead by 30%" }
-      ]
-    }
-  };
-
-  const handleRunQuery = (queryText: string) => {
-    setIsExecutingSql(true);
-    setSqlQuerySuccess(false);
-    setTimeout(() => {
-      const data = sqlDatabase[queryText];
-      if (data) {
-        setSqlResultCols(data.columns);
-        setSqlResultRows(data.rows);
-        setSqlQuerySuccess(true);
-      } else {
-        setSqlResultCols(["Error"]);
-        setSqlResultRows([{ Error: "Query not found" }]);
-      }
-      setIsExecutingSql(false);
-    }, 600);
-  };
-
-  useEffect(() => {
-    handleRunQuery(selectedSqlQuery);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [selectedSqlQuery]);
-
-  // Derive the displayed SQL parts from the selected query
-  const displayedColumns = selectedSqlQuery.match(/SELECT (.*?) FROM/)?.[1] || "*";
-  const displayedTable = selectedSqlQuery.split("FROM ")[1]?.split(";")[0]?.split(" WHERE")[0] || "core_skills";
-
-  return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-slate-900 to-gray-900 text-gray-100 relative overflow-hidden">
-      {/* Background Effects */}
-      <div className="fixed inset-0 opacity-20 pointer-events-none">
-        <div className="absolute top-20 left-20 w-72 h-72 bg-blue-500 rounded-full filter blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-20 right-20 w-96 h-96 bg-cyan-500 rounded-full filter blur-3xl animate-pulse delay-1000"></div>
-      </div>
-      {/* Header */}
-      <header className="fixed top-0 left-0 right-0 bg-gray-900/95 backdrop-blur-sm z-50 border-b border-gray-800">
-        <nav className="container mx-auto px-6 py-4">
-          <div className="flex justify-between items-center">
-            <div className="flex items-center gap-4">
-              <div className="w-10 h-10 rounded-full overflow-hidden border-2 border-blue-400">
-                <img src={profileImage} alt="Toka Gamal Gabr" className="w-full h-full object-cover" />
-              </div>
-              <h1 className="text-xl font-bold text-blue-400">Toka Gamal Gabr</h1>
-            </div>
-            <div className="hidden md:flex space-x-8">
-              <a href="#about" className="hover:text-blue-400 transition-colors">About</a>
-              <a href="#skills" className="hover:text-blue-400 transition-colors">Skills</a>
-              <a href="#projects" className="hover:text-blue-400 transition-colors">Projects</a>
-              <a href="#experience" className="hover:text-blue-400 transition-colors">Experience</a>
-              <a href="#contact" className="hover:text-blue-400 transition-colors">Contact</a>
-            </div>
-          </div>
-        </nav>
-      </header>
-
-      {/* Hero Section */}
-      <section id="hero" className="min-h-screen flex items-center justify-center pt-20 md:pt-4 relative z-10">
-
-        <div className="container mx-auto px-6 relative z-10">
-          <div className="flex flex-col md:flex-row items-center justify-center gap-4">
-            <div className="w-64 h-64 rounded-full overflow-hidden border-4 border-blue-400 shadow-2xl shadow-blue-500/50">
-              <img src={profileImage} alt="Toka Gamal Gabr" className="w-full h-full object-cover" />
-            </div>
-
-            <div className="text-center md:text-left max-w-2xl">
-              <h1 className="text-5xl md:text-6xl font-bold mb-4 text-white">
-                Toka Gamal Gabr
-              </h1>
-              <h2 className="text-2xl md:text-3xl text-blue-200 mb-6 font-light">
-                Data Analyst
-              </h2>
-              <p className="text-lg text-blue-100 mb-8 leading-relaxed">
-                Fresh graduate sitting at the intersection of business thinking and 
-                technical execution. I turn raw data into decisions, translate business 
-                problems into technical solutions, and bridge the gap between teams.
-              </p>
-
-              <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start mb-8">
-                <a
-                  href="#projects"
-                  className="px-8 py-3 bg-blue-500 hover:bg-blue-600 text-white rounded-lg font-semibold transition-all transform hover:scale-105 flex items-center justify-center gap-2 shadow-lg hover:shadow-blue-500/50"
-                >
-                  View Projects
-                  <ChevronDown className="w-5 h-5" />
-                </a>
-                <a
-                  href="https://drive.google.com/file/d/1_-nLebkoxdaoMx_3FDfe7tpHws4UXcsL/view?usp=sharing"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="px-8 py-3 bg-gray-800 hover:bg-gray-700 text-white rounded-lg font-semibold transition-all transform hover:scale-105 border border-gray-700 hover:border-blue-400 flex items-center justify-center gap-2"
-                >
-                  <Download className="w-5 h-5" />
-                  Download CV
-                </a>
-              </div>
-
-              <div className="flex flex-wrap gap-4 justify-center md:justify-start">
-                <a
-                  href="https://www.linkedin.com/in/tokagabr/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors"
-                >
-                  <Linkedin className="w-6 h-6" />
-                  <span className="text-gray-300">LinkedIn</span>
-                </a>
-
-                <a
-                  href="mailto:tokagbr25@gmail.com"
-                  className="flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors"
-                >
-                  <Mail className="w-6 h-6" />
-                  <span className="text-gray-300">Email</span>
-                </a>
-                <a
-                  href="https://github.com/tokagabr"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-gray-400 hover:text-gray-300 transition-colors"
-                >
-                  <Github className="w-6 h-6" />
-                  <span className="text-gray-300">GitHub</span>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* KPI / Impact Dashboard Section */}
-      <section id="impact" className="py-12 relative z-10 bg-gray-900/40 border-y border-gray-800/80">
-        <div className="container mx-auto px-6 relative z-10">
-          <div className="text-center max-w-2xl mx-auto mb-10">
-            <h2 className="text-3xl font-bold text-blue-400 mb-2">Data & Business Impact</h2>
-            <p className="text-gray-400">Key metrics from hackathons, internships, and research projects</p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
-            {/* Metric 1 */}
-            <div className="bg-gray-800/40 backdrop-blur-md p-6 rounded-xl border border-gray-700/60 hover:border-blue-400/50 transition-all hover:-translate-y-1 duration-300 hover:shadow-lg hover:shadow-blue-500/10 flex flex-col justify-between">
-              <div>
-                <div className="flex justify-between items-start mb-4">
-                  <Database className="w-6 h-6 text-blue-400" />
-                  <span className="text-xs px-2 py-0.5 bg-blue-500/10 text-blue-300 rounded-full font-medium">Data Volume</span>
-                </div>
-                <h3 className="text-4xl font-extrabold text-white mb-2 tracking-tight">4.7M+</h3>
-                <p className="text-sm font-semibold text-gray-200 mb-1">Records Queried & Analyzed</p>
-                <p className="text-xs text-gray-400">Across e-commerce, logistics, and database audit logs</p>
-              </div>
-              <div className="mt-4 pt-4 border-t border-gray-800">
-                <div className="w-full bg-gray-800 rounded-full h-1.5 overflow-hidden">
-                  <div className="bg-blue-400 h-1.5 rounded-full" style={{ width: '85%' }}></div>
-                </div>
-              </div>
-            </div>
-
-            {/* Metric 2 */}
-            <div className="bg-gray-800/40 backdrop-blur-md p-6 rounded-xl border border-gray-700/60 hover:border-cyan-400/50 transition-all hover:-translate-y-1 duration-300 hover:shadow-lg hover:shadow-cyan-500/10 flex flex-col justify-between">
-              <div>
-                <div className="flex justify-between items-start mb-4">
-                  <TrendingUp className="w-6 h-6 text-cyan-400" />
-                  <span className="text-xs px-2 py-0.5 bg-cyan-500/10 text-cyan-300 rounded-full font-medium">Efficiency</span>
-                </div>
-                <h3 className="text-4xl font-extrabold text-white mb-2 tracking-tight">+25%</h3>
-                <p className="text-sm font-semibold text-gray-200 mb-1">IT Service Desk Response Time</p>
-                <p className="text-xs text-gray-400">Optimized ticket cycles at Banque du Caire</p>
-              </div>
-              <div className="mt-4 pt-4 border-t border-gray-800">
-                <div className="w-full bg-gray-800 rounded-full h-1.5 overflow-hidden">
-                  <div className="bg-cyan-400 h-1.5 rounded-full" style={{ width: '75%' }}></div>
-                </div>
-              </div>
-            </div>
-
-            {/* Metric 3 */}
-            <div className="bg-gray-800/40 backdrop-blur-md p-6 rounded-xl border border-gray-700/60 hover:border-purple-400/50 transition-all hover:-translate-y-1 duration-300 hover:shadow-lg hover:shadow-purple-500/10 flex flex-col justify-between">
-              <div>
-                <div className="flex justify-between items-start mb-4">
-                  <Code className="w-6 h-6 text-purple-400" />
-                  <span className="text-xs px-2 py-0.5 bg-purple-500/10 text-purple-300 rounded-full font-medium">ML Performance</span>
-                </div>
-                <h3 className="text-4xl font-extrabold text-white mb-2 tracking-tight">86.6%</h3>
-                <p className="text-sm font-semibold text-gray-200 mb-1">Model Prediction Accuracy</p>
-                <p className="text-xs text-gray-400">K-Means Customer Segmentation Campaign target</p>
-              </div>
-              <div className="mt-4 pt-4 border-t border-gray-800">
-                <div className="w-full bg-gray-800 rounded-full h-1.5 overflow-hidden">
-                  <div className="bg-purple-400 h-1.5 rounded-full" style={{ width: '86.6%' }}></div>
-                </div>
-              </div>
-            </div>
-
-            {/* Metric 4 */}
-            <div className="bg-gray-800/40 backdrop-blur-md p-6 rounded-xl border border-gray-700/60 hover:border-amber-400/50 transition-all hover:-translate-y-1 duration-300 hover:shadow-lg hover:shadow-amber-500/10 flex flex-col justify-between">
-              <div>
-                <div className="flex justify-between items-start mb-4">
-                  <Award className="w-6 h-6 text-amber-400" />
-                  <span className="text-xs px-2 py-0.5 bg-amber-500/10 text-amber-300 rounded-full font-medium">Competitions</span>
-                </div>
-                <h3 className="text-4xl font-extrabold text-white mb-2 tracking-tight">Top 3</h3>
-                <p className="text-sm font-semibold text-gray-200 mb-1">Business Analytics Hackathon</p>
-                <p className="text-xs text-gray-400">MavenFuzzyFactory E-Commerce Challenge</p>
-              </div>
-              <div className="mt-4 pt-4 border-t border-gray-800">
-                <div className="w-full bg-gray-800 rounded-full h-1.5 overflow-hidden">
-                  <div className="bg-amber-400 h-1.5 rounded-full" style={{ width: '95%' }}></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* About Section */}
-      <section id="about" className="py-8 relative z-10">
-        <div className="container mx-auto px-6 relative z-10">
-          <h2 className="text-4xl font-bold text-center mb-12 text-blue-400">About Me</h2>
-
-          <div className="max-w-4xl mx-auto">
-            <p className="text-xl text-gray-300 leading-relaxed text-center">
-              I'm a Business Information Systems graduate who spent 4 years building 
-              across multiple tracks &mdash; data analysis, business analysis, web development, 
-              and networking. That breadth isn't scattered &mdash; it means I can work with 
-              any team, speak any language, and deliver end-to-end solutions.
-
-              I've analysed 1.7M+ records in a hackathon where my team finished Top 3, 
-              built Power BI dashboards for real stakeholders at a tech startup, and 
-              reduced operational inefficiencies by up to 25% during banking internships. 
-              Currently completing a nationally competitive 9-month Business Analysis 
-              scholarship through MCIT.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Technical Skills Section */}
-      <section id="skills" className="py-8 relative z-20 mt-16">
-        <div className="container mx-auto px-6 relative z-10">
-          <h2 className="text-4xl font-bold text-center mb-16 text-blue-400">Technical Skills</h2>
-
-          <div className="max-w-6xl mx-auto">
-            <div className="space-y-8">
-
-              {/* Data Analytics & BI - Simple Layout */}
-              <div className="bg-gray-800/50 p-8 rounded-xl border border-gray-700 hover:border-blue-400 transition-all hover:shadow-lg hover:shadow-blue-500/20">
-                <div className="flex items-center gap-4 mb-6">
-                  <Database className="w-8 h-8 text-blue-400" />
-                  <h3 className="text-2xl font-bold text-blue-400">Data Analysis</h3>
-                </div>
-
-                <div className="flex flex-wrap gap-4">
-                  {/* SQL Tool */}
-                  <div className="flex items-center gap-2 px-4 py-2 bg-gray-900/50 rounded-lg hover:bg-blue-500 transition-colors cursor-pointer border border-blue-500/30">
-                    <div className="w-8 h-8 bg-white rounded-lg shadow-lg opacity-100 flex-shrink-0 flex items-center justify-center p-1">
-                      <img src={sqlLogo} alt="SQL Logo" className="w-full h-full object-contain" />
-                    </div>
-                    <span className="text-white font-medium">SQL</span>
-                  </div>
-
-                  {/* Power BI Tool */}
-                  <div className="flex items-center gap-2 px-4 py-2 bg-gray-900/50 rounded-lg hover:bg-yellow-500 transition-colors cursor-pointer border border-yellow-500/30">
-                    <div className="w-8 h-8 bg-white rounded-lg shadow-lg opacity-100 flex-shrink-0 flex items-center justify-center p-1">
-                      <img src={powerBiLogo} alt="Power BI Logo" className="w-full h-full object-contain" />
-                    </div>
-                    <span className="text-white font-medium">Power BI</span>
-                  </div>
-
-                  {/* Advanced Excel Tool */}
-                  <div className="flex items-center gap-2 px-4 py-2 bg-gray-900/50 rounded-lg hover:bg-green-500 transition-colors cursor-pointer border border-green-500/30">
-                    <div className="w-8 h-8 bg-white rounded-lg shadow-lg opacity-100 flex-shrink-0 flex items-center justify-center p-1">
-                      <img src={excelLogo} alt="Excel Logo" className="w-full h-full object-contain" />
-                    </div>
-                    <span className="text-white font-medium">Advanced Excel</span>
-                  </div>
-
-                  {/* Python Tool */}
-                  <div className="flex items-center gap-2 px-4 py-2 bg-gray-900/50 rounded-lg hover:bg-blue-500 transition-colors cursor-pointer border border-blue-500/30">
-                    <div className="w-8 h-8 bg-white rounded-lg shadow-lg opacity-100 flex-shrink-0 flex items-center justify-center p-1">
-                      <img src={pythonLogo} alt="Python Logo" className="w-full h-full object-contain" />
+@@ -184,516 +185,523 @@
                     </div>
                     <span className="text-white font-medium">Python</span>
                   </div>
-
                   {/* Machine Learning Tool */}
                   <div className="flex items-center gap-2 px-4 py-2 bg-gray-900/50 rounded-lg hover:bg-purple-500 transition-colors cursor-pointer border border-purple-500/30">
                     <div className="w-8 h-8 bg-white rounded-lg shadow-lg opacity-100 flex-shrink-0 flex items-center justify-center p-1">
@@ -417,302 +34,19 @@ function App() {
                   </div>
                 </div>
               </div>
-
-              {/* Other Categories - Horizontal Layout */}
-              <div className="flex flex-wrap gap-4">
-
-                {/* Software Development - Hover to Reveal */}
-                <div className="relative group">
-                  <div className="bg-gray-800/50 px-6 py-4 rounded-xl border border-blue-500/30 hover:bg-blue-500/10 hover:border-blue-500 transition-all hover:shadow-lg hover:shadow-blue-500/20 cursor-pointer">
-                    <div className="flex items-center gap-3">
-                      <Code className="w-6 h-6 text-blue-400" />
-                      <h3 className="text-xl font-bold text-blue-400">Software Development</h3>
-                    </div>
-                  </div>
-
-                  {/* Hidden Content - Appears on Hover */}
-                  <div className="absolute top-full left-0 mt-2 w-80 bg-gray-800 rounded-lg shadow-xl border border-gray-700 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-10">
-                    <div className="p-4">
-                      <div className="flex flex-wrap gap-2">
-                        <div className="px-3 py-2 bg-gray-900/50 rounded-lg border border-purple-500/30">
-                          <span className="text-white font-medium text-sm">SDLC</span>
-                        </div>
-                        <div className="px-3 py-2 bg-gray-900/50 rounded-lg border border-pink-500/30">
-                          <span className="text-white font-medium text-sm">Git/GitHub</span>
-                        </div>
-                        <div className="px-3 py-2 bg-gray-900/50 rounded-lg border border-green-500/30">
-                          <span className="text-white font-medium text-sm">Web Fundamentals</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Business & Systems Analysis - Hover to Reveal */}
-                <div className="relative group">
-                  <div className="bg-gray-800/50 px-6 py-4 rounded-xl border border-blue-500/30 hover:bg-blue-500/10 hover:border-blue-500 transition-all hover:shadow-lg hover:shadow-blue-500/20 cursor-pointer">
-                    <div className="flex items-center gap-3">
-                      <BarChart3 className="w-6 h-6 text-blue-400" />
-                      <h3 className="text-xl font-bold text-blue-400">Business & Systems Analysis</h3>
-                    </div>
-                  </div>
-
-                  {/* Hidden Content - Appears on Hover */}
-                  <div className="absolute top-full left-0 mt-2 w-80 bg-gray-800 rounded-lg shadow-xl border border-gray-700 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-10">
-                    <div className="p-4">
-                      <div className="flex flex-wrap gap-2">
-                        <div className="px-3 py-2 bg-gray-900/50 rounded-lg border border-blue-500/30">
-                          <span className="text-white font-medium text-sm">BPMN 2.0</span>
-                        </div>
-                        <div className="px-3 py-2 bg-gray-900/50 rounded-lg border border-orange-500/30">
-                          <span className="text-white font-medium text-sm">Agile (Scrum)</span>
-                        </div>
-                        <div className="px-3 py-2 bg-gray-900/50 rounded-lg border border-green-500/30">
-                          <span className="text-white font-medium text-sm">UML</span>
-                        </div>
-                        <div className="px-3 py-2 bg-gray-900/50 rounded-lg border border-purple-500/30">
-                          <span className="text-white font-medium text-sm">Requirement Engineering</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                {/* IT Infrastructure & Tools - Hover to Reveal */}
-                <div className="relative group">
-                  <div className="bg-gray-800/50 px-6 py-4 rounded-xl border border-blue-500/30 hover:bg-blue-500/10 hover:border-blue-500 transition-all hover:shadow-lg hover:shadow-blue-500/20 cursor-pointer">
-                    <div className="flex items-center gap-3">
-                      <Database className="w-6 h-6 text-blue-400" />
-                      <h3 className="text-xl font-bold text-blue-400">IT Infrastructure & Tools</h3>
-                    </div>
-                  </div>
-
-                  {/* Hidden Content - Appears on Hover */}
-                  <div className="absolute top-full left-0 mt-2 w-80 bg-gray-800 rounded-lg shadow-xl border border-gray-700 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-10">
-                    <div className="p-4">
-                      <div className="flex flex-wrap gap-2">
-                        <div className="px-3 py-2 bg-gray-900/50 rounded-lg border border-blue-500/30">
-                          <span className="text-white font-medium text-sm">Networking Fundamentals</span>
-                        </div>
-                        <div className="px-3 py-2 bg-gray-900/50 rounded-lg border border-purple-500/30">
-                          <span className="text-white font-medium text-sm">Windows Server</span>
-                        </div>
-                        <div className="px-3 py-2 bg-gray-900/50 rounded-lg border border-green-500/30">
-                          <span className="text-white font-medium text-sm">IT Service Desk</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-
             </div>
           </div>
         </div>
       </section>
 
-      {/* Mock SQL Query Playground Section */}
-      <section id="sql-playground" className="py-12 relative z-20 bg-gray-900/60 border-t border-gray-800">
-        <div className="container mx-auto px-6 max-w-6xl">
-          <div className="text-center mb-10">
-            <div className="inline-flex items-center gap-2 px-3 py-1 bg-blue-500/10 border border-blue-500/20 text-blue-400 rounded-full text-xs font-semibold mb-3">
-              <Terminal className="w-3.5 h-3.5" />
-              Interactive Console
-            </div>
-            <h2 className="text-3xl font-bold text-white mb-2">Portfolio SQL Playground</h2>
-            <p className="text-gray-400 max-w-2xl mx-auto">
-              Run mock SQL queries against my portfolio database schema to inspect my skills, experience, and accomplishments.
-            </p>
-          </div>
-
-          <div className="bg-slate-950 rounded-xl border border-gray-800 overflow-hidden shadow-2xl">
-            {/* Editor Window Header */}
-            <div className="bg-slate-900/90 border-b border-gray-800 px-4 py-3 flex items-center justify-between">
-              <div className="flex items-center gap-2">
-                <div className="w-3 h-3 rounded-full bg-red-500/85"></div>
-                <div className="w-3 h-3 rounded-full bg-yellow-500/85"></div>
-                <div className="w-3 h-3 rounded-full bg-green-500/85"></div>
-                <span className="text-gray-500 text-xs ml-4 font-mono">toka_portfolio_db.sql</span>
-              </div>
-              <div className="text-xs text-gray-500 font-mono flex items-center gap-2">
-                <Database className="w-3 h-3 text-blue-400" />
-                <span>MySQL 8.0</span>
-              </div>
-            </div>
-
-            <div className="grid grid-cols-1 lg:grid-cols-4 min-h-[350px]">
-              {/* Database Sidebar */}
-              <div className="bg-slate-950 border-r border-gray-800 p-4 font-mono text-xs text-gray-400">
-                <p className="font-semibold uppercase text-[10px] tracking-wider mb-4 text-gray-500">Schema Explorer</p>
-                <div className="space-y-4">
-                  <div>
-                    <span className="flex items-center gap-2 text-blue-400 mb-2">
-                      <Database className="w-3.5 h-3.5" />
-                      toka_portfolio_db
-                    </span>
-                    <ul className="pl-4 space-y-2 select-none">
-                      <li
-                        onClick={() => setSelectedSqlQuery("SELECT * FROM core_skills;")}
-                        className={`flex items-center gap-2 cursor-pointer hover:text-white transition-colors ${selectedSqlQuery === "SELECT * FROM core_skills;" ? "text-emerald-400 font-semibold" : ""}`}
-                      >
-                        <span>⊞</span> core_skills
-                      </li>
-                      <li
-                        onClick={() => setSelectedSqlQuery("SELECT company, role, duration FROM work_experience;")}
-                        className={`flex items-center gap-2 cursor-pointer hover:text-white transition-colors ${selectedSqlQuery === "SELECT company, role, duration FROM work_experience;" ? "text-emerald-400 font-semibold" : ""}`}
-                      >
-                        <span>⊞</span> work_experience
-                      </li>
-                      <li
-                        onClick={() => setSelectedSqlQuery("SELECT project_name, records_analyzed, finish_rank FROM hackathon_achievements;")}
-                        className={`flex items-center gap-2 cursor-pointer hover:text-white transition-colors ${selectedSqlQuery === "SELECT project_name, records_analyzed, finish_rank FROM hackathon_achievements;" ? "text-emerald-400 font-semibold" : ""}`}
-                      >
-                        <span>⊞</span> hackathon_achievements
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
-              {/* Editor Workspace */}
-              <div className="lg:col-span-3 flex flex-col bg-[#0b0f19]">
-                {/* Query Input Box */}
-                <div className="p-5 flex-grow border-b border-gray-800/80 font-mono text-sm leading-relaxed relative min-h-[140px]">
-                  <div className="absolute right-4 top-4 flex items-center gap-2">
-                    <button
-                      onClick={() => handleRunQuery(selectedSqlQuery)}
-                      disabled={isExecutingSql}
-                      className="px-4 py-1.5 bg-emerald-500 hover:bg-emerald-600 disabled:bg-emerald-800 text-white rounded font-sans text-xs font-bold transition-all shadow-md shadow-emerald-500/20 flex items-center gap-1.5"
-                    >
-                      <Play className="w-3 h-3 fill-current" />
-                      {isExecutingSql ? "Running..." : "Run Query"}
-                    </button>
-                  </div>
-
-                  {/* Predefined Query Toggles */}
-                  <div className="flex flex-wrap gap-2 mb-6 max-w-[80%]">
-                    <span className="text-[10px] text-gray-500 self-center uppercase mr-1">Quick Queries:</span>
-                    <button
-                      onClick={() => setSelectedSqlQuery("SELECT * FROM core_skills;")}
-                      className={`px-2 py-0.5 rounded text-[11px] font-mono border transition-all ${selectedSqlQuery === "SELECT * FROM core_skills;" ? "bg-blue-500/10 border-blue-400 text-blue-400" : "bg-transparent border-gray-800 text-gray-400 hover:border-gray-700"}`}
-                    >
-                      skills
-                    </button>
-                    <button
-                      onClick={() => setSelectedSqlQuery("SELECT company, role, duration FROM work_experience;")}
-                      className={`px-2 py-0.5 rounded text-[11px] font-mono border transition-all ${selectedSqlQuery === "SELECT company, role, duration FROM work_experience;" ? "bg-blue-500/10 border-blue-400 text-blue-400" : "bg-transparent border-gray-800 text-gray-400 hover:border-gray-700"}`}
-                    >
-                      experience
-                    </button>
-                    <button
-                      onClick={() => setSelectedSqlQuery("SELECT project_name, records_analyzed, finish_rank FROM hackathon_achievements;")}
-                      className={`px-2 py-0.5 rounded text-[11px] font-mono border transition-all ${selectedSqlQuery === "SELECT project_name, records_analyzed, finish_rank FROM hackathon_achievements;" ? "bg-blue-500/10 border-blue-400 text-blue-400" : "bg-transparent border-gray-800 text-gray-400 hover:border-gray-700"}`}
-                    >
-                      achievements
-                    </button>
-                  </div>
-
-                  {/* SQL Syntax Visual Block */}
-                  <div className="flex gap-4">
-                    <div className="text-gray-600 select-none text-right">
-                      <div>1</div>
-                      <div>2</div>
-                    </div>
-                    <div className="text-gray-100 flex-grow">
-                      <div>
-                        <span className="text-pink-400 font-bold">SELECT</span> <span className="text-white">{displayedColumns}</span>
-                      </div>
-                      <div>
-                        <span className="text-pink-400 font-bold">FROM</span> <span className="text-emerald-400 font-semibold">{displayedTable}</span>
-                        {selectedSqlQuery.includes("WHERE") && (
-                          <> <span className="text-pink-400 font-bold">WHERE</span> <span className="text-blue-300">{selectedSqlQuery.split("WHERE ")[1]?.split(";")[0]}</span></>
-                        )}
-                        <span className="text-white">;</span>
-                        <span className="w-1.5 h-4 bg-blue-400 inline-block animate-pulse ml-0.5 align-middle"></span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Console Output Window */}
-                <div className="p-4 bg-[#080b13] min-h-[180px] flex flex-col justify-between font-mono text-xs border-t border-gray-900">
-                  <div>
-                    <div className="flex justify-between items-center text-gray-500 border-b border-gray-900 pb-2 mb-3">
-                      <span>Result Grid</span>
-                      <span>{isExecutingSql ? "Executing..." : "Success"}</span>
-                    </div>
-
-                    {isExecutingSql ? (
-                      <div className="flex items-center justify-center py-6 gap-3 text-gray-400">
-                        <div className="w-4 h-4 border-2 border-emerald-400 border-t-transparent rounded-full animate-spin"></div>
-                        <span>Executing query on database schema...</span>
-                      </div>
-                    ) : sqlQuerySuccess && sqlResultRows.length > 0 ? (
-                      <div className="overflow-x-auto max-h-[140px]">
-                        <table className="w-full text-left border-collapse">
-                          <thead>
-                            <tr className="border-b border-gray-800 text-gray-400 bg-gray-900/30">
-                              {sqlResultCols.map((col, idx) => (
-                                <th key={idx} className="py-2 px-3 font-semibold uppercase text-[10px] text-blue-400 whitespace-nowrap">{col}</th>
-                              ))}
-                            </tr>
-                          </thead>
-                          <tbody>
-                            {sqlResultRows.map((row, rIdx) => (
-                              <tr key={rIdx} className="border-b border-gray-800/40 hover:bg-gray-800/10 text-gray-300">
-                                {sqlResultCols.map((col, cIdx) => (
-                                  <td key={cIdx} className="py-2 px-3 whitespace-nowrap">{row[col]}</td>
-                                ))}
-                              </tr>
-                            ))}
-                          </tbody>
-                        </table>
-                      </div>
-                    ) : (
-                      <div className="text-gray-500 italic py-4 text-center">Run a query to view results.</div>
-                    )}
-                  </div>
-
-                  <div className="mt-4 text-gray-500 text-[10px] border-t border-gray-900 pt-2 flex justify-between">
-                    <span>Database: toka_portfolio_db</span>
-                    <span>{sqlResultRows.length} rows returned (0.01 sec)</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="experience" className="py-8 relative z-10" style={{ scrollMarginTop: '80px' }}>
+      <section id="experience" className="py-8 relative z-10" style={{scrollMarginTop: '80px'}}>
         <div className="container mx-auto px-6 relative z-10">
 
-          <div className="text-center max-w-2xl mx-auto mb-10">
-            <h2 className="text-4xl font-bold text-center text-blue-400 mb-4">Experience & Growth</h2>
+          {/* Professional Experience Section */}
+          <div>
+            <h2 className="text-4xl font-bold text-center mb-12 text-blue-400">Professional Experience</h2>
 
-            {/* Dynamic Switcher Tab Bar */}
-            <div className="inline-flex p-1 bg-gray-800/80 backdrop-blur rounded-lg border border-gray-700/60 max-w-md mx-auto mb-8">
-              <button
-                onClick={() => setActiveExperienceTab("work")}
-                className={`px-5 py-2.5 rounded-md text-sm font-semibold transition-all flex items-center gap-2 ${activeExperienceTab === "work" ? "bg-blue-500 text-white shadow-md" : "text-gray-400 hover:text-white bg-transparent"}`}
-              >
-                <Briefcase className="w-4 h-4" />
-                Work Experience
-              </button>
-              <button
-                onClick={() => setActiveExperienceTab("development")}
-                className={`px-5 py-2.5 rounded-md text-sm font-semibold transition-all flex items-center gap-2 ${activeExperienceTab === "development" ? "bg-blue-500 text-white shadow-md" : "text-gray-400 hover:text-white bg-transparent"}`}
-              >
-                <GraduationCap className="w-4 h-4" />
-                Professional Development
-              </button>
-            </div>
-          </div>
-
-          {activeExperienceTab === "work" ? (
-            /* Work Experience */
-            <div className="max-w-4xl mx-auto space-y-8 animate-fade-in">
+            <div className="max-w-4xl mx-auto space-y-8">
               <div className="bg-gray-800/50 p-8 rounded-xl border-l-4 border-blue-400 hover:shadow-lg hover:shadow-blue-500/20 transition-all relative">
                 <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
                   <div className="flex items-start gap-4">
@@ -720,7 +54,7 @@ function App() {
                       <img src={compurootsLogo} alt="CompuRoots Logo" className="w-full h-full object-contain" />
                     </div>
                     <div>
-                      <h3 className="text-2xl font-bold text-white mb-2">Pre Sales Intern</h3>
+                      <h3 className="text-2xl font-bold text-white mb-2">Tech Intern</h3>
                       <p className="text-blue-400 font-semibold">CompuRoots</p>
                     </div>
                   </div>
@@ -859,9 +193,13 @@ function App() {
                 </ul>
               </div>
             </div>
-          ) : (
-            /* Professional Development */
-            <div className="max-w-4xl mx-auto space-y-4 animate-fade-in">
+          </div>
+
+          {/* Professional Development Section */}
+          <div className="mb-4 mt-4">
+            <h2 className="text-4xl font-bold text-center mb-8 text-blue-400">Professional Development</h2>
+
+            <div className="max-w-4xl mx-auto space-y-4">
               <div className="bg-gray-800/50 p-8 rounded-xl border-l-4 border-blue-400 hover:shadow-lg hover:shadow-blue-500/20 transition-all relative">
                 <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
                   <div className="flex items-start gap-4">
@@ -918,101 +256,232 @@ function App() {
                 </ul>
               </div>
             </div>
-          )}
+          </div>
         </div>
       </section>
 
       {/* Projects Section */}
-      <section id="projects" className="py-12 relative z-10">
+      <section id="projects" className="py-8 relative z-10">
         <div className="container mx-auto px-6 relative z-10">
-          <div className="text-center max-w-2xl mx-auto mb-10">
-            <h2 className="text-4xl font-bold text-blue-400 mb-4">Featured Projects</h2>
-
-            {/* Projects Filter Pills */}
-            <div className="flex flex-wrap justify-center gap-2 mb-8">
-              {["All", "SQL", "Power BI", "Python", "Excel"].map((filter) => (
-                <button
-                  key={filter}
-                  onClick={() => setActiveProjectFilter(filter)}
-                  className={`px-4 py-1.5 rounded-full text-xs font-semibold border transition-all ${
-                    activeProjectFilter === filter
-                      ? "bg-blue-500 border-blue-400 text-white shadow-md shadow-blue-500/20"
-                      : "bg-gray-800/40 border-gray-700/60 text-gray-400 hover:text-white hover:border-gray-600"
-                  }`}
-                >
-                  {filter}
-                </button>
-              ))}
-            </div>
-          </div>
+          <h2 className="text-4xl font-bold text-center mb-16 text-blue-400">Featured Projects</h2>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-            {PROJECTS_DATA.filter(project => {
-              if (activeProjectFilter === "All") return true;
-              return project.tags.some(tag => tag.toLowerCase() === activeProjectFilter.toLowerCase() || (activeProjectFilter === "SQL" && (tag === "MySQL" || tag === "SQLAlchemy" || tag === "Power Query")));
-            }).map((project, idx) => (
-              <div key={idx} className="bg-gray-900 rounded-xl overflow-hidden border border-gray-700 hover:border-blue-400 transition-all hover:shadow-xl hover:shadow-blue-500/20 transform hover:-translate-y-2 duration-300 flex flex-col justify-between animate-fade-in">
-                <div>
-                  <div className="h-64 relative overflow-hidden">
-                    <img
-                      src={project.image}
-                      alt={project.title}
-                      className="w-full h-full object-cover"
-                      onError={(e) => {
-                        const target = e.target as HTMLImageElement;
-                        target.style.display = 'none';
-                        target.parentElement!.innerHTML =
-                          `<div class="h-64 bg-gradient-to-br ${project.fallbackColor} flex items-center justify-center">
-                            <div class="text-center">
-                              <div class="text-6xl font-bold text-blue-400/30 mb-4">${project.fallbackText}</div>
-                              <p class="text-blue-400/80 text-xl font-semibold">${project.fallbackLabel}</p>
-                            </div>
-                          </div>`;
-                      }}
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent"></div>
-                  </div>
-                  <div className="p-6">
-                    <h3 className="text-2xl font-bold mb-3 text-white">{project.title}</h3>
-                    <p className="text-gray-400 mb-4 text-sm leading-relaxed">{project.description}</p>
-                  </div>
-                </div>
-
-                <div className="p-6 pt-0">
-                  <div className="flex flex-wrap gap-2 mb-4">
-                    {project.tags.map((tag, tagIdx) => (
-                      <span
-                        key={tagIdx}
-                        className={`px-3 py-1 rounded-full text-xs font-medium ${
-                          tag === "SQL" || tag === "MySQL" || tag === "SQLAlchemy"
-                            ? "bg-blue-900/45 text-blue-300 border border-blue-800/30"
-                            : tag === "Power BI" || tag === "Power Query"
-                            ? "bg-yellow-900/45 text-yellow-300 border border-yellow-800/30"
-                            : tag === "Python" || tag === "Pandas" || tag === "Scikit-learn" || tag === "Machine Learning"
-                            ? "bg-purple-900/45 text-purple-300 border border-purple-800/30"
-                            : tag === "Excel"
-                            ? "bg-green-900/45 text-green-300 border border-green-800/30"
-                            : "bg-gray-800 text-gray-300"
-                        }`}
-                      >
-                        {tag}
-                      </span>
-                    ))}
-                  </div>
-                  {project.link && (
-                    <a
-                      href={project.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors font-semibold text-sm"
-                    >
-                      <ExternalLink className="w-4 h-4" />
-                      View Analysis on GitHub
-                    </a>
-                  )}
-                </div>
+            <div className="bg-gray-900 rounded-xl overflow-hidden border border-gray-700 hover:border-blue-400 transition-all hover:shadow-xl hover:shadow-blue-500/20 transform hover:-translate-y-2">
+              <div className="h-64 relative overflow-hidden">
+                <img 
+                  src={mavenFuzzyImage} 
+                  alt="MavenFuzzyFactory Business Analytics" 
+                  className="w-full h-full object-cover"
+                  onError={(e) => {
+                    e.target.style.display = 'none';
+                    e.target.parentElement.innerHTML = 
+                      `<div class="h-64 bg-gradient-to-br from-orange-900 to-black flex items-center justify-center">
+                        <div class="text-center">
+                          <div class="text-6xl font-bold text-orange-500 mb-4">MF</div>
+                          <p class="text-orange-400 text-xl font-semibold">MAVEN</p>
+                        </div>
+                      </div>`;
+                  }}
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent"></div>
               </div>
-            ))}
+              <div className="p-6">
+                <h3 className="text-2xl font-bold mb-3 text-white">MavenFuzzyFactory — Business Analytics Hackathon</h3>
+                <p className="text-gray-400 mb-4">E-Commerce Growth Challenge with Top 3 Finish. Analyzed 1.7M+ records across 6 tables to deliver data-driven investor pitch proving business growth efficiency and $100K strategic roadmap.</p>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  <span className="px-3 py-1 bg-orange-900/50 text-orange-300 rounded-full text-sm font-medium">MySQL</span>
+                  <span className="px-3 py-1 bg-green-900/50 text-green-300 rounded-full text-sm font-medium">Excel</span>
+                  <span className="px-3 py-1 bg-blue-900/50 text-blue-300 rounded-full text-sm font-medium">Power BI</span>
+                </div>
+                <a
+                  href="https://github.com/tokagabr/mavenfuzzyfactory"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors font-semibold"
+                >
+                  <ExternalLink className="w-5 h-5" />
+                  View Full Analysis on GitHub
+                </a>
+              </div>
+            </div>
+
+            <div className="bg-gray-900 rounded-xl overflow-hidden border border-gray-700 hover:border-blue-400 transition-all hover:shadow-xl hover:shadow-blue-500/20 transform hover:-translate-y-2">
+              <div className="h-64 relative overflow-hidden">
+                <img 
+                  src={operationSwiftImage} 
+                  alt="Operation Swift Recovery" 
+                  className="w-full h-full object-cover"
+                  onError={(e) => {
+                    const target = e.target as HTMLImageElement;
+                    target.style.display = 'none';
+                    target.parentElement!.innerHTML = 
+                      `<div class="h-64 bg-gradient-to-br from-red-900 to-gray-900 flex items-center justify-center">
+                        <div class="text-center">
+                          <div class="text-6xl font-bold text-red-400 mb-4">OSR</div>
+                          <p class="text-red-300 text-xl font-semibold">CYBER</p>
+                        </div>
+                      </div>`;
+                  }}
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent"></div>
+              </div>
+              <div className="p-6">
+                <h3 className="text-2xl font-bold mb-3 text-white">Operation Swift Recovery — Cyber Attack Forensic Analysis</h3>
+                <ul className="space-y-2 text-gray-300 mb-4">
+                  <li className="flex items-start gap-2">
+                    <span className="text-blue-400 mt-1">▸</span>
+                    <span>Queried a 4-table MySQL database (15,500 records) to analyze a coordinated multi-vector attack across 550 IPs from 13 countries</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-blue-400 mt-1">▸</span>
+                    <span>Detected 24.2% SQL Injection WAF bypass; built IP threat-scoring system and delivered CISO report with $575K remediation plan</span>
+                  </li>
+                </ul>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  <span className="px-3 py-1 bg-blue-900/50 text-blue-300 rounded-full text-sm font-medium">Python</span>
+                  <span className="px-3 py-1 bg-orange-900/50 text-orange-300 rounded-full text-sm font-medium">MySQL</span>
+                  <span className="px-3 py-1 bg-purple-900/50 text-purple-300 rounded-full text-sm font-medium">SQLAlchemy</span>
+                  <span className="px-3 py-1 bg-green-900/50 text-green-300 rounded-full text-sm font-medium">Pandas</span>
+                  <span className="px-3 py-1 bg-red-900/50 text-red-300 rounded-full text-sm font-medium">Matplotlib</span>
+                  <span className="px-3 py-1 bg-cyan-900/50 text-cyan-300 rounded-full text-sm font-medium">Jupyter</span>
+                </div>
+                <a
+                  href="https://github.com/tokagabr/operation-swift-recovery/tree/main"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors font-semibold"
+                >
+                  <ExternalLink className="w-5 h-5" />
+                  View Analysis on GitHub
+                </a>
+              </div>
+            </div>
+
+            <div className="bg-gray-900 rounded-xl overflow-hidden border border-gray-700 hover:border-blue-400 transition-all hover:shadow-xl hover:shadow-blue-500/20 transform hover:-translate-y-2">
+              <div className="h-64 relative overflow-hidden">
+                <img 
+                  src={ecoCycleImage} 
+                  alt="Eco Cycle | Integrated Waste Management System" 
+                  className="w-full h-full object-cover"
+                  onError={(e) => {
+                    const target = e.target as HTMLImageElement;
+                    target.style.display = 'none';
+                    target.parentElement!.innerHTML = 
+                      `<div class="h-64 bg-gradient-to-br from-green-700 to-gray-900 flex items-center justify-center">
+                        <div class="text-center">
+                          <div class="text-6xl font-bold text-green-400 mb-4">ECO</div>
+                          <p class="text-green-300 text-xl font-semibold">CYCLE</p>
+                        </div>
+                      </div>`;
+                  }}
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent"></div>
+              </div>
+              <div className="p-6">
+                <h3 className="text-2xl font-bold mb-3 text-white">Eco Cycle | Integrated Waste Management System</h3>
+                <p className="text-gray-400 mb-4">A Technical System Analysis and Full-Stack platform designed to automate plastic waste lifecycle and reward systems.</p>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  <span className="px-3 py-1 bg-blue-900/50 text-blue-300 rounded-full text-sm font-medium">PHP</span>
+                  <span className="px-3 py-1 bg-cyan-900/50 text-cyan-300 rounded-full text-sm font-medium">React</span>
+                  <span className="px-3 py-1 bg-orange-900/50 text-orange-300 rounded-full text-sm font-medium">MySQL</span>
+                  <span className="px-3 py-1 bg-purple-900/50 text-purple-300 rounded-full text-sm font-medium">UML</span>
+                </div>
+                <a
+                  href="https://github.com/tokagabr/Eco-Cycle-System-Analysis"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors font-semibold"
+                >
+                  <ExternalLink className="w-5 h-5" />
+                  View System Analysis on GitHub
+                </a>
+              </div>
+            </div>
+
+            <div className="bg-gray-900 rounded-xl overflow-hidden border border-gray-700 hover:border-blue-400 transition-all hover:shadow-xl hover:shadow-blue-500/20 transform hover:-translate-y-2">
+              <div className="h-64 relative overflow-hidden">
+                <img 
+                  src={uberEatsImage} 
+                  alt="Uber Eats Dashboard" 
+                  className="w-full h-full object-cover"
+                  onError={(e) => {
+                    e.target.style.display = 'none';
+                    e.target.parentElement.innerHTML = 
+                      <div class="h-64 bg-gradient-to-br from-green-900 to-black flex items-center justify-center">
+                        <div class="text-center">
+                          <div class="text-6xl font-bold text-green-500 mb-4">UBER</div>
+                          <p class="text-green-400 text-xl font-semibold">EATS</p>
+                        </div>
+                      </div>
+                    ;
+                  }}
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent"></div>
+              </div>
+              <div className="p-6">
+                <h3 className="text-2xl font-bold mb-3 text-white">Uber Eats Analytics Dashboard</h3>
+                <p className="text-gray-400 mb-4">Processed 3M+ delivery records in SQL to identify peak hours and 
+regional performance patterns. Built interactive Power BI dashboard 
+that cut reporting time by 30% and modelled a projected 15% uplift 
+in customer retention.</p>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  <span className="px-3 py-1 bg-blue-900/50 text-blue-300 rounded-full text-sm font-medium">Power BI</span>
+                </div>
+                <a
+                  href="https://github.com/tokagabr/uber-eats-analysis"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors font-semibold"
+                >
+                  <ExternalLink className="w-5 h-5" />
+                  View Full Analysis on GitHub
+                </a>
+              </div>
+            </div>
+
+            <div className="bg-gray-900 rounded-xl overflow-hidden border border-gray-700 hover:border-blue-400 transition-all hover:shadow-xl hover:shadow-blue-500/20 transform hover:-translate-y-2">
+              <div className="h-64 relative overflow-hidden">
+                <img 
+                  src={roiImage} 
+                  alt="Telecom Customer Churn Analysis" 
+                  className="w-full h-full object-cover"
+                  onError={(e) => {
+                    e.target.style.display = 'none';
+                    e.target.parentElement.innerHTML = 
+                      `<div class="h-64 bg-gradient-to-br from-purple-900 to-gray-900 flex items-center justify-center">
+                        <div class="text-center">
+                          <div class="text-6xl font-bold text-purple-500 mb-4">TC</div>
+                          <p class="text-purple-400 text-xl font-semibold">TELECOM</p>
+                        </div>
+                      </div>`;
+                  }}
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent"></div>
+              </div>
+              <div className="p-6">
+                <h3 className="text-2xl font-bold mb-3 text-white">Telecom Customer Churn Analysis</h3>
+                <p className="text-gray-400 mb-4">Analysed 7,000+ customer records to surface key churn drivers &mdash; 
+                identified Competitor Offers as the #1 attrition factor. Built an 
+                interactive Excel dashboard with PivotTables & Power Query, improving 
+                at-risk segment identification by 20%. Additionally analysed services 
+                and channels driving the most valuable leads, evaluating urgency, 
+                seasonality, and customer segments to optimize lead management and 
+                marketing ROI.</p>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  <span className="px-3 py-1 bg-green-900/50 text-green-300 rounded-full text-sm font-medium">Advanced Excel</span>
+                  <span className="px-3 py-1 bg-blue-900/50 text-blue-300 rounded-full text-sm font-medium">Power Query</span>
+                </div>
+                <a
+                  href="https://github.com/tokagabr/Telecom-Analysis"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors font-semibold"
+                >
+                  <ExternalLink className="w-5 h-5" />
+                  View Full Analysis on GitHub
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -1067,7 +536,7 @@ function App() {
       <footer className="py-4 border-t border-gray-800 relative z-10">
         <div className="container mx-auto px-6 text-center relative z-10">
           <p className="text-gray-400">
-            © 2026 Toka Gamal Gabr. All rights reserved.
+            © 2025 Toka Gamal Gabr. All rights reserved.
           </p>
         </div>
       </footer>
@@ -1075,4 +544,4 @@ function App() {
   );
 }
 
-export default App;
+export default App; 
