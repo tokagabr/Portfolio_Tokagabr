@@ -20,8 +20,168 @@ import pythonLogo from './assets/images/python-3d.png';
 import mlLogo from './assets/images/ML.png';
 
 function App() {
+  
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-slate-900 to-gray-900 text-gray-100 relative overflow-hidden">
+      {/* Background Effects */}
+      <div className="fixed inset-0 opacity-20 pointer-events-none">
+        <div className="absolute top-20 left-20 w-72 h-72 bg-blue-500 rounded-full filter blur-3xl animate-pulse"></div>
+        <div className="absolute bottom-20 right-20 w-96 h-96 bg-cyan-500 rounded-full filter blur-3xl animate-pulse delay-1000"></div>
+      </div>
+      {/* Header */}
+      <header className="fixed top-0 left-0 right-0 bg-gray-900/95 backdrop-blur-sm z-50 border-b border-gray-800">
+        <nav className="container mx-auto px-6 py-4">
+          <div className="flex justify-between items-center">
+            <div className="flex items-center gap-4">
+              <div className="w-10 h-10 rounded-full overflow-hidden border-2 border-blue-400">
+                <img src={profileImage} alt="Toka Gamal Gabr" className="w-full h-full object-cover" />
+              </div>
+              <h1 className="text-xl font-bold text-blue-400">Toka Gamal Gabr</h1>
+            </div>
+            <div className="hidden md:flex space-x-8">
+              <a href="#about" className="hover:text-blue-400 transition-colors">About</a>
+              <a href="#skills" className="hover:text-blue-400 transition-colors">Skills</a>
+              <a href="#projects" className="hover:text-blue-400 transition-colors">Projects</a>
+              <a href="#experience" className="hover:text-blue-400 transition-colors">Experience</a>
+              <a href="#contact" className="hover:text-blue-400 transition-colors">Contact</a>
+            </div>
+          </div>
+        </nav>
+      </header>
 
-@@ -184,516 +185,523 @@
+      {/* Hero Section */}
+      <section id="hero" className="min-h-screen flex items-center justify-center pt-20 md:pt-4 relative z-10">
+        
+        <div className="container mx-auto px-6 relative z-10">
+          <div className="flex flex-col md:flex-row items-center justify-center gap-4">
+            <div className="w-64 h-64 rounded-full overflow-hidden border-4 border-blue-400 shadow-2xl shadow-blue-500/50">
+              <img src={profileImage} alt="Toka Gamal Gabr" className="w-full h-full object-cover" />
+            </div>
+
+            <div className="text-center md:text-left max-w-2xl">
+              <h1 className="text-5xl md:text-6xl font-bold mb-4 text-white">
+                Toka Gamal Gabr
+              </h1>
+              <h2 className="text-2xl md:text-3xl text-blue-200 mb-6 font-light">
+                Data Analyst 
+              </h2>
+              <p className="text-lg text-blue-100 mb-8 leading-relaxed">
+                Fresh graduate sitting at the intersection of business thinking and 
+                technical execution. I turn raw data into decisions, translate business 
+                problems into technical solutions, and bridge the gap between teams.
+              </p>
+              
+              <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start mb-8">
+                <a
+                  href="#projects"
+                  className="px-8 py-3 bg-blue-500 hover:bg-blue-600 text-white rounded-lg font-semibold transition-all transform hover:scale-105 flex items-center justify-center gap-2 shadow-lg hover:shadow-blue-500/50"
+                >
+                  View Projects
+                  <ChevronDown className="w-5 h-5" />
+                </a>
+                <a
+                  href="https://drive.google.com/file/d/10VCkOiDAbGulMlB4WOAq2O76IXVBp5GY/view?usp=sharing"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-8 py-3 bg-gray-800 hover:bg-gray-700 text-white rounded-lg font-semibold transition-all transform hover:scale-105 border border-gray-700 hover:border-blue-400 flex items-center justify-center gap-2"
+                >
+                  <Download className="w-5 h-5" />
+                  Download CV
+                </a>
+              </div>
+
+              <div className="flex flex-wrap gap-4 justify-center md:justify-start">
+                <a
+                  href="https://www.linkedin.com/in/tokagabr/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors"
+                >
+                  <Linkedin className="w-6 h-6" />
+                  <span className="text-gray-300">LinkedIn</span>
+                </a> 
+                
+                <a
+                  href="mailto:tokagbr25@gmail.com"
+                  className="flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors"
+                >
+                  <Mail className="w-6 h-6" />
+                  <span className="text-gray-300">Email</span>
+                </a>
+                <a
+                  href="https://github.com/tokagabr"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 text-gray-400 hover:text-gray-300 transition-colors"
+                >
+                  <Github className="w-6 h-6" />
+                  <span className="text-gray-300">GitHub</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* About Section */}
+   <section id="about" className="py-8 relative z-10">
+        <div className="container mx-auto px-6 relative z-10">
+          <h2 className="text-4xl font-bold text-center mb-12 text-blue-400">About Me</h2>
+          
+          <div className="max-w-4xl mx-auto">
+            <p className="text-xl text-gray-300 leading-relaxed text-center">
+             Business Information Systems graduate with experience across data analysis, business analysis, and technical development.
+             Delivered impact through analyzing 1.7M+ records (Top 3 hackathon), building Power BI dashboards, and improving operational efficiency by up to 25% in banking internships. 
+             Currently enrolled in a competitive MCIT Business Analysis scholarship, focusing on Agile, BPMN, and data-driven decision making.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Technical Skills Section */}
+      <section id="skills" className="py-8 relative z-20 mt-16">
+        <div className="container mx-auto px-6 relative z-10">
+          <h2 className="text-4xl font-bold text-center mb-16 text-blue-400">Technical Skills</h2>
+
+          <div className="max-w-6xl mx-auto">
+            <div className="space-y-8">
+              
+              {/* Data Analytics & BI - Simple Layout */}
+              <div className="bg-gray-800/50 p-8 rounded-xl border border-gray-700 hover:border-blue-400 transition-all hover:shadow-lg hover:shadow-blue-500/20">
+                <div className="flex items-center gap-4 mb-6">
+                  <Database className="w-8 h-8 text-blue-400" />
+                  <h3 className="text-2xl font-bold text-blue-400">Data Analytics & BI</h3>
+                </div>
+                
+                <div className="flex flex-wrap gap-4">
+                  {/* SQL Tool */}
+                  <div className="flex items-center gap-2 px-4 py-2 bg-gray-900/50 rounded-lg hover:bg-blue-500 transition-colors cursor-pointer border border-blue-500/30">
+                    <div className="w-8 h-8 bg-white rounded-lg shadow-lg opacity-100 flex-shrink-0 flex items-center justify-center p-1">
+                      <img src={sqlLogo} alt="SQL Logo" className="w-full h-full object-contain" />
+                    </div>
+                    <span className="text-white font-medium">SQL</span>
+                  </div>
+                  
+                  {/* Power BI Tool */}
+                  <div className="flex items-center gap-2 px-4 py-2 bg-gray-900/50 rounded-lg hover:bg-yellow-500 transition-colors cursor-pointer border border-yellow-500/30">
+                    <div className="w-8 h-8 bg-white rounded-lg shadow-lg opacity-100 flex-shrink-0 flex items-center justify-center p-1">
+                      <img src={powerBiLogo} alt="Power BI Logo" className="w-full h-full object-contain" />
+                    </div>
+                    <span className="text-white font-medium">Power BI</span>
+                  </div>
+                  
+                  {/* Advanced Excel Tool */}
+                  <div className="flex items-center gap-2 px-4 py-2 bg-gray-900/50 rounded-lg hover:bg-green-500 transition-colors cursor-pointer border border-green-500/30">
+                    <div className="w-8 h-8 bg-white rounded-lg shadow-lg opacity-100 flex-shrink-0 flex items-center justify-center p-1">
+                      <img src={excelLogo} alt="Excel Logo" className="w-full h-full object-contain" />
+                    </div>
+                    <span className="text-white font-medium">Advanced Excel</span>
+                  </div>
+                  
+                  {/* Python Tool */}
+                  <div className="flex items-center gap-2 px-4 py-2 bg-gray-900/50 rounded-lg hover:bg-blue-500 transition-colors cursor-pointer border border-blue-500/30">
+                    <div className="w-8 h-8 bg-white rounded-lg shadow-lg opacity-100 flex-shrink-0 flex items-center justify-center p-1">
+                      <img src={pythonLogo} alt="Python Logo" className="w-full h-full object-contain" />
                     </div>
                     <span className="text-white font-medium">Python</span>
                   </div>
@@ -41,11 +201,11 @@ function App() {
 
       <section id="experience" className="py-8 relative z-10" style={{scrollMarginTop: '80px'}}>
         <div className="container mx-auto px-6 relative z-10">
-
+          
           {/* Professional Experience Section */}
           <div>
             <h2 className="text-4xl font-bold text-center mb-12 text-blue-400">Professional Experience</h2>
-
+            
             <div className="max-w-4xl mx-auto space-y-8">
               <div className="bg-gray-800/50 p-8 rounded-xl border-l-4 border-blue-400 hover:shadow-lg hover:shadow-blue-500/20 transition-all relative">
                 <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
@@ -198,7 +358,7 @@ function App() {
           {/* Professional Development Section */}
           <div className="mb-4 mt-4">
             <h2 className="text-4xl font-bold text-center mb-8 text-blue-400">Professional Development</h2>
-
+            
             <div className="max-w-4xl mx-auto space-y-4">
               <div className="bg-gray-800/50 p-8 rounded-xl border-l-4 border-blue-400 hover:shadow-lg hover:shadow-blue-500/20 transition-all relative">
                 <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
@@ -489,7 +649,7 @@ in customer retention.</p>
       <section id="education" className="py-8 relative z-10">
         <div className="container mx-auto px-6 relative z-10">
           <h2 className="text-4xl font-bold text-center mb-16 text-blue-400">Education & Certifications</h2>
-
+          
           <div className="max-w-4xl mx-auto">
             <div className="bg-gray-900/50 rounded-xl p-8 border border-gray-700">
               <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
@@ -506,13 +666,13 @@ in customer retention.</p>
       <section id="contact" className="py-8 relative z-10">
         <div className="container mx-auto px-6 relative z-10">
           <h2 className="text-4xl font-bold text-center mb-16 text-blue-400">Get In Touch</h2>
-
+          
           <div className="max-w-2xl mx-auto">
             <div className="bg-gray-800/50 rounded-xl p-8 border border-gray-700">
               <p className="text-center text-gray-300 mb-8">
                 I'm always interested in hearing about new projects and opportunities.
               </p>
-
+              
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a href="mailto:tokagbr25@gmail.com" className="flex items-center justify-center gap-2 px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white rounded-lg font-semibold transition-all transform hover:scale-105">
                   <Mail className="w-5 h-5" />
@@ -527,7 +687,7 @@ in customer retention.</p>
                   GitHub
                 </a>
               </div>
-
+              
             </div>
           </div>
         </div>
