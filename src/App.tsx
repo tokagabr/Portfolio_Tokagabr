@@ -63,7 +63,7 @@ function App() {
                 Toka Gamal Gabr
               </h1>
               <h2 className="text-2xl md:text-3xl text-blue-200 mb-6 font-light">
-                Data Analyst 
+                Presales Engineer – Compute & Storage  | Business & Data Analyst 
               </h2>
               <p className="text-lg text-blue-100 mb-8 leading-relaxed">
                 Fresh graduate sitting at the intersection of business thinking and 
