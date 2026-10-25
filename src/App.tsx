@@ -214,7 +214,7 @@ function App() {
                       <img src={compurootsLogo} alt="CompuRoots Logo" className="w-full h-full object-contain" />
                     </div>
                     <div>
-                      <h3 className="text-2xl font-bold text-white mb-2">Pre Sales Intern</h3>
+                      <h3 className="text-2xl font-bold text-white mb-2">Presales Engineer – Compute & Storage </h3>
                       <p className="text-blue-400 font-semibold">CompuRoots</p>
                     </div>
                   </div>
@@ -258,7 +258,7 @@ function App() {
                   </div>
                   <div className="text-gray-400 mt-2 md:mt-0 md:text-right">
                     <p>Cairo</p>
-                    <p className="font-semibold">Jan 2026 – Present</p>
+                    <p className="font-semibold">Jan 2026 – OCT 2026</p>
                   </div>
                 </div>
                 <ul className="space-y-2 text-gray-300 mb-4">
